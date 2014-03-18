@@ -40,21 +40,48 @@
 	var ScrollText = function(){};
 
 	ScrollText.prototype = {
-		init: function(parames){
+		init: function(params){
 			var self = this,
-				parames = parames || {};
+				params = params || {},
+				num    = params.elem+" li",
+				$elem  = $(params.elem),
+				type   = params.type || 1;
 
-			self.$elem = $(parames.elem);
-			self.$type = $(parames.type);
+			self.moveY   = 0;
+			self.$distY  = params.distY;
+			self.$num    = $(num).length;
+			self.$move   = $elem.children("ul");
 
-			var len = self.$elem.children("li").length;
-			self.$elem.append(self.$elem.html());
+			var $html   = self.$move.html();
 
-			// setInterval(function(){
-				self.$elem.animate({
-					top: "-35px"
-				}, 1000);
-			// }, 1000);
+			if(type==1){
+				$elem.addClass("ScrollUp");
+			}
+			self.$move.append($html);
+
+			self.loop();
+		},
+		loop: function(){
+			var self = this;
+			self.$move.css("top", -self.moveY+"px");
+			self.moveY++;
+			self.setTime();
+		},
+		setTime: function(){
+			var self = this;
+			setTimeout(function(){
+				if((self.moveY!=0) && (self.moveY%self.$distY==0)){
+					if(self.moveY == self.$num * self.$distY){
+						self.$move.css("top", "0");
+						self.moveY = 0;
+					}
+					setTimeout(function(){
+						self.loop();
+					}, 2000);
+				}else{
+					self.loop();
+				}
+			}, 50);
 		}
 	};
 
@@ -62,6 +89,13 @@
 })(window);
 
 new ScrollText().init({
-	elem: ".header_msg ul",
-	type: "1"
-})
+	elem: ".header_msg div",
+	distY: 35,
+	type: 1
+});
+
+new ScrollText().init({
+	elem: ".home_msg",
+	distY: 35,
+	type: 1
+});

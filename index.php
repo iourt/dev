@@ -11,9 +11,11 @@
                     <dd class="title_r"><a href="">更多</a></dd>
                 </dl>
             </h3>
-            <ul class="home_msg">
-                <li>2月13日  爱投资成交金额200万，共有130人成功投资</li>
-            </ul>
+            <div class="home_msg">
+                <ul>
+                    <li>2月13日  爱投资成交金额200万，共有130人成功投资</li>
+                </ul>
+            </div>
             <div style="padding:0 20px;">
                 <table class="home_list_table col_mod_01" cellspacing="0" cellpadding="0">
                     <tr>
