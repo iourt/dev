@@ -13,6 +13,32 @@
 			$fixed.css("right",(($width-990)/2-42-10)+"px");
 		}
 	}
+
+
+	$(window).on("scroll", function(){
+		console.log($(window).scrollTop());
+
+		var a = $(window).height(),
+			b = $("body").height(),
+			c = $(".footer").height();
+
+ d + a = b - c
+
+ d + a + c = b
+
+		if(($(window).scrollTop() + a - b + c) >= 0){
+			var d = $(window).scrollTop() - $("body").height() - $(".footer").height() - $(window).height();
+			$(".fixed").css("bottom", a+"px");
+		}
+	});
+
+
+	console.log($("body").height());
+
+	console.log();
+
+	console.log($(window).height());
+	// alert($(".footer").offset().top);
 })();
 
 // 子菜单显示
