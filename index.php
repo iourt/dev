@@ -976,7 +976,7 @@
 
 <script type="text/javascript" src="themes/js/app/home.js"></script>
 <script type="text/javascript">
-// 计时器
+// 计时器调
 (function(){
     var $clockTime = $(".money_time");
     $clockTime.each(function(i){
