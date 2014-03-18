@@ -593,7 +593,7 @@
                 <dl>
                     <dt>
                         <img src="themes/temp/1.jpg" />
-                        <a href="">支付宝</a>
+                        <a href="">余额宝</a>
                     </dt>
                     <dd>
                         <div class="row_t">华夏基金. 财富宝</div>
@@ -618,7 +618,7 @@
                 <dl>
                     <dt>
                         <img src="themes/temp/1.jpg" />
-                        <a href="">支付宝</a>
+                        <a href="">余额宝</a>
                     </dt>
                     <dd>
                         <div class="row_t">华夏基金. 财富宝</div>
@@ -643,7 +643,7 @@
                 <dl>
                     <dt>
                         <img src="themes/temp/1.jpg" />
-                        <a href="">支付宝</a>
+                        <a href="">余额宝</a>
                     </dt>
                     <dd>
                         <div class="row_t">华夏基金. 财富宝</div>
@@ -668,7 +668,7 @@
                 <dl>
                     <dt>
                         <img src="themes/temp/1.jpg" />
-                        <a href="">支付宝</a>
+                        <a href="">余额宝</a>
                     </dt>
                     <dd>
                         <div class="row_t">华夏基金. 财富宝</div>
@@ -693,7 +693,7 @@
                 <dl>
                     <dt>
                         <img src="themes/temp/1.jpg" />
-                        <a href="">支付宝</a>
+                        <a href="">余额宝</a>
                     </dt>
                     <dd>
                         <div class="row_t">华夏基金. 财富宝</div>
@@ -718,7 +718,7 @@
                 <dl>
                     <dt>
                         <img src="themes/temp/1.jpg" />
-                        <a href="">支付宝</a>
+                        <a href="">余额宝</a>
                     </dt>
                     <dd>
                         <div class="row_t">华夏基金. 财富宝</div>
@@ -743,7 +743,7 @@
                 <dl>
                     <dt>
                         <img src="themes/temp/1.jpg" />
-                        <a href="">支付宝</a>
+                        <a href="">余额宝</a>
                     </dt>
                     <dd>
                         <div class="row_t">华夏基金. 财富宝</div>
