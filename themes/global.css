@@ -1,1 +1,18 @@
-﻿
+﻿.path{
+	width:100%; line-height:50px; background:url(images/banner_shadow.png) repeat-x 0 top;
+}
+	.path div{
+		width:990px; margin:0 auto; font-size:14px; color:#a0a0a0;
+	}
+
+.wrap{
+	width:990px; margin:0 auto;
+}
+
+	
+.table_list_01{
+	width:100%;
+}
+	.table_list_01 td{
+		border-bottom:1px solid #ebebeb;
+	}
