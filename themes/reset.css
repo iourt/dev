@@ -147,7 +147,7 @@ body{
 
 
 .fixed{
-	width:42px; position:fixed; height:145px; bottom:100px; z-index:100;
+	width:42px; position:fixed; height:145px; bottom:10px; z-index:100;
 }
 	.fixed a{
 		display:block; background-image:url(images/btn_fixed.png); background-repeat:no-repeat; width:42px; height:42px;
