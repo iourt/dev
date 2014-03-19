@@ -27,8 +27,8 @@
             <div class="header_logo_div">
                 <img src="themes/images/logo.jpg" alt="" />
                 <ul>
-                    <li class="current"><a href="">首页</a></li>
-                    <li class="menu_icon">
+                    <li class="menu_home current"><a href="">首页</a></li>
+                    <li class="menu_home menu_icon">
                         理财产品
                         <div class="sub_menu">
                             <div class="sub_menu_t"></div>
@@ -40,7 +40,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="menu_icon">
+                    <li class="menu_home menu_icon">
                         网贷专栏
                         <div class="sub_menu">
                             <div class="sub_menu_t"></div>
