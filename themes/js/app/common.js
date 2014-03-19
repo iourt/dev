@@ -20,15 +20,21 @@
 
 		var a = $(window).height(),
 			b = $("body").height(),
-			c = $(".footer").height();
+			c = $(".footer").height(),
+			d = $(window).scrollTop(),
+			e = b - a -d;
 
- d + a = b - c
+			console.log("window "+$(window).height());
+			console.log("body "+$("body").height());
+			console.log("footer "+$(".footer").height());
+			console.log("scrollTop "+$(window).scrollTop());
+			console.log("b-a-d "+(b-a-d));
 
- d + a + c = b
-
-		if(($(window).scrollTop() + a - b + c) >= 0){
+		if(e<=c){
 			var d = $(window).scrollTop() - $("body").height() - $(".footer").height() - $(window).height();
-			$(".fixed").css("bottom", a+"px");
+			$(".fixed").css("bottom", (10+c-e)+"px");
+		}else{
+			$(".fixed").css("bottom", "10px");
 		}
 	});
 
