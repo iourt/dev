@@ -104,9 +104,9 @@ document.addEventListener("DOMContentLoaded", function(event){
 		isClick = false;
 
 	banner.hover(function(){
-		$(this).addClass("hover");
+		$(this).parent().addClass("hover");
 	}, function(){
-		$(this).removeClass("hover");
+		$(this).parent().removeClass("hover");
 	});
 	
 
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 			$spanText.eq(3).html("42.9");
 			$spanText.eq(4).html("500.5");
 		}else{
-			banner.html("<span>月收益</span>平均年收益率");
+			banner.html("月收益");
 			$spanText.eq(0).html(textVal[0]);
 			$spanText.eq(1).html(textVal[1]);
 			$spanText.eq(2).html(textVal[2]);
