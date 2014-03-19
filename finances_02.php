@@ -11,7 +11,7 @@
 
 
 <div class="wrap clearfix">
-	<div class="border_04" style="margin-bottom:20px;">
+	<div class="border_04" style="margin-bottom:30px;">
 		<table class="table_list_02" cellspacing="0" cellpadding="0">
 		<tr>
 			<th class="null"></th>
@@ -99,6 +99,22 @@
 			<td class="col col_02">支付宝</td>
 			<td class="col col_03">天弘增利宝货币市场基金</td>
 			<td class="col col_04">
+				<strong>1.7840</strong>
+			</td>
+			<td class="col col_05">6.891%</td>
+			<td class="col col_06">5.821%</td>
+			<td class="col col_07">5.821%</td>
+			<td class="col col_08">5.821%</td>
+			<td class="col col_09">5.821%</td>
+			<td class="col col_10"></td>
+			<td class="null"></td>
+		</tr>
+		<tr>
+			<td class="null"></td>
+			<td class="col col_01"><a href="">余额宝</a></td>
+			<td class="col col_02">支付宝</td>
+			<td class="col col_03">天弘增利宝货币市场基金</td>
+			<td class="col col_04">
 				<strong>1.7840</strong><br>
 				<span class="color_gray">1-28</span>
 			</td>
@@ -109,10 +125,195 @@
 			<td class="col col_09">5.821%</td>
 			<td class="col col_10"></td>
 			<td class="null"></td>
-		</tr>			
+		</tr>
+		<tr>
+			<td class="null"></td>
+			<td class="col col_01"><a href="">余额宝</a></td>
+			<td class="col col_02">支付宝</td>
+			<td class="col col_03">天弘增利宝货币市场基金</td>
+			<td class="col col_04">
+				<strong>1.7840</strong><br>
+				<span class="color_gray">1-28</span>
+			</td>
+			<td class="col col_05">6.891%</td>
+			<td class="col col_06">5.821%</td>
+			<td class="col col_07">5.821%</td>
+			<td class="col col_08">5.821%</td>
+			<td class="col col_09">5.821%</td>
+			<td class="col col_10"></td>
+			<td class="null"></td>
+		</tr>
+		<tr>
+			<td class="null"></td>
+			<td class="col col_01"><a href="">余额宝</a></td>
+			<td class="col col_02">支付宝</td>
+			<td class="col col_03">天弘增利宝货币市场基金</td>
+			<td class="col col_04">
+				<strong>1.7840</strong><br>
+				<span class="color_gray">1-28</span>
+			</td>
+			<td class="col col_05">6.891%</td>
+			<td class="col col_06">5.821%</td>
+			<td class="col col_07">5.821%</td>
+			<td class="col col_08">5.821%</td>
+			<td class="col col_09">5.821%</td>
+			<td class="col col_10"></td>
+			<td class="null"></td>
+		</tr>
+		<tr>
+			<td class="null"></td>
+			<td class="col col_01"><a href="">余额宝</a></td>
+			<td class="col col_02">支付宝</td>
+			<td class="col col_03">天弘增利宝货币市场基金</td>
+			<td class="col col_04">
+				<strong>1.7840</strong><br>
+				<span class="color_gray">1-28</span>
+			</td>
+			<td class="col col_05">6.891%</td>
+			<td class="col col_06">5.821%</td>
+			<td class="col col_07">5.821%</td>
+			<td class="col col_08">5.821%</td>
+			<td class="col col_09">5.821%</td>
+			<td class="col col_10"></td>
+			<td class="null"></td>
+		</tr>
+		<tr>
+			<td class="null"></td>
+			<td class="col col_01"><a href="">余额宝</a></td>
+			<td class="col col_02">支付宝</td>
+			<td class="col col_03">天弘增利宝货币市场基金</td>
+			<td class="col col_04">
+				<strong>1.7840</strong><br>
+				<span class="color_gray">1-28</span>
+			</td>
+			<td class="col col_05">6.891%</td>
+			<td class="col col_06">5.821%</td>
+			<td class="col col_07">5.821%</td>
+			<td class="col col_08">5.821%</td>
+			<td class="col col_09">5.821%</td>
+			<td class="col col_10"></td>
+			<td class="null"></td>
+		</tr>
+		<tr>
+			<td class="null"></td>
+			<td class="col col_01"><a href="">余额宝</a></td>
+			<td class="col col_02">支付宝</td>
+			<td class="col col_03">天弘增利宝货币市场基金</td>
+			<td class="col col_04">
+				<strong>1.7840</strong><br>
+				<span class="color_gray">1-28</span>
+			</td>
+			<td class="col col_05">6.891%</td>
+			<td class="col col_06">5.821%</td>
+			<td class="col col_07">5.821%</td>
+			<td class="col col_08">5.821%</td>
+			<td class="col col_09">5.821%</td>
+			<td class="col col_10"></td>
+			<td class="null"></td>
+		</tr>
+		<tr>
+			<td class="null"></td>
+			<td class="col col_01"><a href="">余额宝</a></td>
+			<td class="col col_02">支付宝</td>
+			<td class="col col_03">天弘增利宝货币市场基金</td>
+			<td class="col col_04">
+				<strong>1.7840</strong><br>
+				<span class="color_gray">1-28</span>
+			</td>
+			<td class="col col_05">6.891%</td>
+			<td class="col col_06">5.821%</td>
+			<td class="col col_07">5.821%</td>
+			<td class="col col_08">5.821%</td>
+			<td class="col col_09">5.821%</td>
+			<td class="col col_10"></td>
+			<td class="null"></td>
+		</tr>
+		<tr>
+			<td class="null"></td>
+			<td class="col col_01"><a href="">余额宝</a></td>
+			<td class="col col_02">支付宝</td>
+			<td class="col col_03">天弘增利宝货币市场基金</td>
+			<td class="col col_04">
+				<strong>1.7840</strong><br>
+				<span class="color_gray">1-28</span>
+			</td>
+			<td class="col col_05">6.891%</td>
+			<td class="col col_06">5.821%</td>
+			<td class="col col_07">5.821%</td>
+			<td class="col col_08">5.821%</td>
+			<td class="col col_09">5.821%</td>
+			<td class="col col_10"></td>
+			<td class="null"></td>
+		</tr>
+		<tr>
+			<td class="null"></td>
+			<td class="col col_01"><a href="">余额宝</a></td>
+			<td class="col col_02">支付宝</td>
+			<td class="col col_03">天弘增利宝货币市场基金</td>
+			<td class="col col_04">
+				<strong>1.7840</strong><br>
+				<span class="color_gray">1-28</span>
+			</td>
+			<td class="col col_05">6.891%</td>
+			<td class="col col_06">5.821%</td>
+			<td class="col col_07">5.821%</td>
+			<td class="col col_08">5.821%</td>
+			<td class="col col_09">5.821%</td>
+			<td class="col col_10"></td>
+			<td class="null"></td>
+		</tr>
+		<tr>
+			<td class="null"></td>
+			<td class="col col_01"><a href="">余额宝</a></td>
+			<td class="col col_02">支付宝</td>
+			<td class="col col_03">天弘增利宝货币市场基金</td>
+			<td class="col col_04">
+				<strong>1.7840</strong><br>
+				<span class="color_gray">1-28</span>
+			</td>
+			<td class="col col_05">6.891%</td>
+			<td class="col col_06">5.821%</td>
+			<td class="col col_07">5.821%</td>
+			<td class="col col_08">5.821%</td>
+			<td class="col col_09">5.821%</td>
+			<td class="col col_10"></td>
+			<td class="null"></td>
+		</tr>
+		<tr>
+			<td class="null"></td>
+			<td class="col col_01"><a href="">余额宝</a></td>
+			<td class="col col_02">支付宝</td>
+			<td class="col col_03">天弘增利宝货币市场基金</td>
+			<td class="col col_04">
+				<strong>1.7840</strong><br>
+				<span class="color_gray">1-28</span>
+			</td>
+			<td class="col col_05">6.891%</td>
+			<td class="col col_06">5.821%</td>
+			<td class="col col_07">5.821%</td>
+			<td class="col col_08">5.821%</td>
+			<td class="col col_09">5.821%</td>
+			<td class="col col_10"></td>
+			<td class="null"></td>
+		</tr>
+		<tr>
+			<td class="null"></td>
+			<td class="col col_01"><a href="">余额宝</a></td>
+			<td class="col col_02">支付宝</td>
+			<td class="col col_03">天弘增利宝货币市场基金</td>
+			<td class="col col_04">
+				<strong>1.7840</strong><br>
+				<span class="color_gray">1-28</span>
+			</td>
+			<td class="col col_05">6.891%</td>
+			<td class="col col_06">5.821%</td>
+			<td class="col col_07">5.821%</td>
+			<td class="col col_08">5.821%</td>
+			<td class="col col_09">5.821%</td>
+			<td class="col col_10"></td>
+			<td class="null"></td>
+		</tr>	
 		</table>
 	</div>
-
-	<?php include 'show_page.php'; ?>
 </div>
 <?php include 'public_footer.php'; ?>
