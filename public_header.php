@@ -27,8 +27,8 @@
             <div class="header_logo_div">
                 <img src="themes/images/logo.jpg" alt="" />
                 <ul>
-                    <li class="menu_home current"><a href="">首页</a></li>
-                    <li class="menu_home menu_icon">
+                    <li class="menu_home"><a href="">首页</a></li>
+                    <li class="menu_prod menu_icon">
                         理财产品
                         <div class="sub_menu">
                             <div class="sub_menu_t"></div>
@@ -40,7 +40,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="menu_home menu_icon">
+                    <li class="menu_cart menu_icon">
                         网贷专栏
                         <div class="sub_menu">
                             <div class="sub_menu_t"></div>
@@ -54,8 +54,8 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href="">理财微课堂</a></li>
-                    <li><a href="">理财圈资讯</a></li>
+                    <li class="menu_study"><a href="">理财微课堂</a></li>
+                    <li class="menu_new"><a href="">理财圈资讯</a></li>
                 </ul>
             </div>
         </div>

@@ -1,5 +1,10 @@
 <?php include 'public_header.php'; ?>
 <link rel="stylesheet" href="themes/global.css" type="text/css" />
+<style type="text/css">
+.header_logo li.menu_prod{
+	color:#044b9d
+}
+</style>
 <div class="path">
 	<div>理财产品 > <a href="">货币基金</a></div>
 </div>

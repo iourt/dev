@@ -1,5 +1,11 @@
 <?php include 'public_header.php'; ?>
 <link rel="stylesheet" href="themes/home.css" type="text/css" />
+<style type="text/css">
+.header_logo li.menu_home,
+.header_logo li.menu_home a{
+	color:#044b9d
+}
+</style>
 <?php include 'index_banner.php'; ?>
 <div class="home_wrapper clearfix">
     <div class="home_left clearfix">
