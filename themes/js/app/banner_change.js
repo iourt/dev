@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 
 // banner
 (function(){
-	var banner = $(".home_banner_left dt div"),
+	var banner = $(".home_banner_left dt div span"),
 		isClick = false;
 
 	banner.hover(function(){
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 
 	banner.on("click", function(){
 		if(!isClick){
-			banner.html("<span>年收益</span>平均年收益率");
+			banner.html("年收益");
 			$spanText.eq(0).html("100.5");
 			$spanText.eq(1).html("230.6");
 			$spanText.eq(2).html("300.7");
