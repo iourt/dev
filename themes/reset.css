@@ -138,6 +138,7 @@ body{
 	.footer .footer_link a{
 		float:left; width:96px; line-height:30px; font-size:12px;
 	}
+	.footer .footer_link a:hover{ color:#fff; }
 	.footer .footer_copyright{
 		border-top:1px solid #454749; line-height:40px; text-align:center;
 	}
@@ -167,3 +168,7 @@ body{
 		display:block; color:#636363; background:url(images/icon_04.jpg) no-repeat 0 center; padding-left:15px; line-height:30px; font-size:14px;
 	}
 	.list_point li a:hover{ color:#247df5; }
+
+.color_yellow{ color:#fb6b0d; }
+.color_gray{ color:#7a7a7a; font-weight:normal; }
+.color_gray.b{ font-weight:bold; }
