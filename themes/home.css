@@ -25,7 +25,7 @@
 		float:left; width:80px; text-indent:10px;
 	}
 	.home_banner .home_banner_left .b_mid{
-		float:left; width:350px; background:#3581c9; height:22px; position:relative;
+		float:left; width:365px; background:#3581c9; height:22px; position:relative;
 	}
 	.home_banner .home_banner_left .b_mid div{
 		position:absolute; left:0; top:0; height:22px; z-index:1;
