@@ -302,21 +302,6 @@
 	.home_right .h_border{
 		 padding:15px;
 	}
-	.home_right .title_02{
-		font-size:0; height:45px;
-	}
-	.home_right .title_02 dt,
-	.home_right .title_02 dd{
-		float:left; line-height:20px; padding-bottom:10px;
-	}
-	.home_right .title_02 dt{
-		border-bottom:2px solid #bd0100; font-size:16px; font-weight:bold; width:85px;
-	}
-	.home_right .title_02 dd{
-		border-bottom:1px solid #ececec; width:162px; font-size:14px; text-align:right;
-	}
-	.home_right .title_02 dd a{ color:#666; }
-	.home_right .title_02 dd a:hover{ color:#247df5; }
 
 .home_border_988{
 	margin:0 auto; width:988px; border:1px solid #ebebeb; background:#fff; margin-bottom:20px;

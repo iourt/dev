@@ -172,3 +172,21 @@ body{
 .color_yellow{ color:#fb6b0d; }
 .color_gray{ color:#7a7a7a; font-weight:normal; }
 .color_gray.b{ font-weight:bold; }
+
+
+
+.title_02{
+	font-size:0; height:45px;
+}
+	.title_02 dt,
+	.title_02 dd{
+		float:left; line-height:20px; padding-bottom:10px;
+	}
+	.title_02 dt{
+		border-bottom:2px solid #bd0100; font-size:16px; font-weight:bold; width:85px;
+	}
+	.title_02 dd{
+		border-bottom:1px solid #ececec; width:162px; font-size:14px; text-align:right;
+	}
+	.title_02 dd a{ color:#666; }
+	.title_02 dd a:hover{ color:#247df5; }
