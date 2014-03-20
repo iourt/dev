@@ -1,3 +1,14 @@
+// iPad
+var isPad = function(){
+	var ua = navigator.userAgent.toLowerCase(),
+		o  = ua.match(/iPad/i),
+		type = false;
+	if(o=="ipad"){
+		type = true;
+	}
+	return type;
+};
+
 // 浮动的侧边按钮
 (function(){
 	refix();
@@ -37,14 +48,6 @@
 			$(".fixed").css("bottom", "10px");
 		}
 	});
-
-
-	console.log($("body").height());
-
-	console.log();
-
-	console.log($(window).height());
-	// alert($(".footer").offset().top);
 })();
 
 // 子菜单显示
@@ -65,6 +68,67 @@
 		$(this).addClass("hover");
 		$(this).children(".sub_menu").css("display","block");
 	});
+})();
+
+
+// 带关闭的浮动框
+(function(){
+	var $listDetails      = $(".list_detail .list_detail_hit"),
+		$listDetailsBox   = $(".list_detail .mod_box"),
+		$listDetailsClose = $(".list_detail .mod_box_close");
+
+	document.onclick = function(event){
+		var e = e || window.event,
+			tar = e.srcElement || e.target;
+		if(tar.className != "list_detail_hit hover"){
+			$(".mod_box").css("display","none");
+			$(".list_detail").removeClass("hover");
+		}
+	};
+
+	$listDetailsClose.hover(function(){
+		$(this).addClass("hover_close");
+	}, function(){
+		$(this).removeClass("hover_close");
+	});
+	$listDetailsClose.on("click", function(){
+		$(this).parent().css("display","none");
+		// $(".home_list_table .w_5").removeClass("hover");
+		$listDetails.css("position","static");
+	});
+	
+	$listDetails.hover(function(){
+		$(this).addClass("hover");
+	},function(){
+		$(this).removeClass("hover");
+	});
+	$listDetails.on("click", function(){
+		$listDetailsBox.css("display","none");
+		$(this).parent().css("position","relative");
+		$(this).parent().addClass("hover");
+		$(this).parent().children(".mod_box").css("display","block");
+	});
+})();
+
+
+// hover浮动框
+(function(){
+	var $boxDetails = $(".box_detail");
+	if(isPad()){
+		$boxDetails.on("click", function(){
+			$boxDetails.children(".mod_box").css("display","none");
+			$(this).css("position","relative");
+			$(this).children(".mod_box").css("display","block");
+		});
+	}else{
+		$boxDetails.hover(function(){
+			$(this).css("position","relative");
+			$(this).children(".mod_box").css("display","block");
+		}, function(){
+			$(this).css("position","relative");
+			$(this).children(".mod_box").css("display","none");
+		});
+	}
 })();
 
 // 滚动字幕

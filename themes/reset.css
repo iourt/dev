@@ -180,11 +180,37 @@ body{
 	font-size:0; position:relative; overflow:hidden; padding-bottom:10px;
 }
 	.title_02 dt{
-		border-bottom:2px solid #bd0100; font-size:16px; font-weight:bold; line-height:24px; padding-bottom:15px;
+		border-bottom:2px solid #bd0100; font-size:16px; font-weight:bold; line-height:20px; padding-bottom:15px;
 		position:absolute; left:0; top:0;
 	}
 	.title_02 dd{
-		border-bottom:1px solid #ececec; font-size:14px; text-align:right; line-height:25px; padding-bottom:15px;
+		border-bottom:1px solid #ececec; font-size:14px; text-align:right; line-height:21px; padding-bottom:15px;
 	}
 	.title_02 dd a{ color:#666; }
 	.title_02 dd a:hover{ color:#247df5; }
+
+
+/*弹窗*/
+.mod_box{
+	position:absolute; z-index:3; background:#fff; border:1px solid #d4dade; padding:10px; color:#000; display:none;
+	-webkit-box-shadow:2px 2px 3px rgba(0,0,0,.1), -2px -2px 3px rgba(0,0,0,.1);
+	   -moz-box-shadow:2px 2px 3px rgba(0,0,0,.1), -2px -2px 3px rgba(0,0,0,.1);
+		 -o-box-shadow:2px 2px 3px rgba(0,0,0,.1), -2px -2px 3px rgba(0,0,0,.1);
+			box-shadow:2px 2px 3px rgba(0,0,0,.1), -2px -2px 3px rgba(0,0,0,.1);
+	-webkit-border-radius:4px;
+	   -moz-border-radius:4px;
+		 -o-border-radius:4px;
+			border-radius:4px;
+}
+	.mod_box .mod_box_icon,
+	.mod_box .mod_box_close{
+		background-image:url(images/icon_box.png); background-repeat:no-repeat; width:20px;
+	}
+	.mod_box .mod_box_icon{
+		height:14px; overflow:hidden; position:absolute; top:-14px; *top:-13px; right:40px; background-position:0 -620px; z-index:4;
+	}
+	.mod_box .mod_box_close{
+		height:20px; position:absolute; right:10px; top:10px; z-index:4; cursor:pointer; background-position:0 -200px;
+	}
+	.mod_box .mod_box_close:hover,
+	.mod_box .mod_box_close.hover_close{ background-position:0 -250px; }
