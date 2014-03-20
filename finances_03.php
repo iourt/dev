@@ -45,7 +45,7 @@
                     <li class="hit type-5" data-type="5" data-id=""></li>
                 </ul>
             </div>
-            <div class="select_li clearfix">
+            <div id="type-1" class="select_li clearfix">
                 <div class="select_li_title">选择平台：</div>
                 <div class="select_li_no current">不限</div>
                 <div class="select_li_detail clearfix" id="hide_li">
@@ -80,7 +80,7 @@
                     <div class="hide">收起</div>
                 </div>
             </div>
-            <div class="select_li clearfix">
+            <div id="type-2" class="select_li clearfix">
                 <div class="select_li_title">担保：</div>
                 <div class="select_li_no current">不限</div>
                 <div class="select_li_detail clearfix">
@@ -91,7 +91,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="select_li clearfix">
+            <div id="type-3" class="select_li clearfix">
                 <div class="select_li_title">还款方式：</div>
                 <div class="select_li_no current">不限</div>
                 <div class="select_li_detail clearfix">
@@ -101,7 +101,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="select_li clearfix">
+            <div id="type-4" class="select_li clearfix">
                 <div class="select_li_title">年化利率：</div>
                 <div class="select_li_no current">不限</div>
                 <div class="select_li_detail clearfix">
@@ -113,7 +113,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="select_li clearfix">
+            <div id="type-5" class="select_li clearfix">
                 <div class="select_li_title">期限：</div>
                 <div class="select_li_no current">不限</div>
                 <div class="select_li_detail clearfix">
