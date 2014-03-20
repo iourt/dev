@@ -1,5 +1,4 @@
-﻿/**rest**/
-body,h1,h2,h3,p,dl,dd,ol,ul,th,td,fieldset,input,button,textarea,form,canvas,audio,video,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{
+﻿body,h1,h2,h3,p,dl,dd,ol,ul,th,td,fieldset,input,button,textarea,form,canvas,audio,video,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{
 	margin:0; padding:0;
 }
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{
