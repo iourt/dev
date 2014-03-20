@@ -53,6 +53,42 @@
 	.select_01 dt.current,
 	.select_01 .select_case_c li.current{ background:#fb6b0d; color:#fff; }
 
+.select_02{ background:#fff; border:1px solid #dcdcde; border-top:none; font-size:14px; }
+	.select_02 .select_title{
+		border-bottom:1px solid #dcdcde; margin-bottom:10px; padding:10px 20px; height:26px; 
+	}
+	.select_02 .select_title li{ margin-right:10px; display:none; }
+	.select_02 .select_title li.current{ display:inline; }
+	.select_02 .select_title li.null{ line-height:26px; }
+	.select_02 .select_title li.hit{
+		border:1px dotted #ce2d3c; padding:0 20px 0 5px; color:#ce2d3c; line-height:24px; cursor:pointer;
+		background-image:url(images/icon_close.jpg?5); background-repeat:no-repeat; background-position:right 1px;
+	}
+	.select_02 .select_title .hit:hover,
+	.select_02 .select_title .hit.hover{ background-position:right -39px; }
+	.select_02 .select_li{ margin-bottom:10px; }
+	.select_02 .select_li .select_li_title{ width:90px; color:#646464; float:left; text-align:right; line-height:25px; }
+	.select_02 .select_li .select_li_no{ width:50px; text-align:center; float:left; line-height:25px; }
+	.select_02 .select_li .select_li_no:hover,
+	.select_02 .select_li .select_li_no.hover,
+	.select_02 .select_li .select_li_no.current{ background:#fb6b0d; color:#fff; cursor:pointer; }
+	.select_02 .select_li .select_li_detail{ width:540px; float:right; position:relative; }
+	.select_02 .select_li li{ float:left; line-height:24px; margin-right:20px; display:inline; padding:0 5px; margin-bottom:5px; }
+	.select_02 .select_li li:hover,
+	.select_02 .select_li li.hover,
+	.select_02 .select_li li.current{ background:#fb6b0d; color:#fff; cursor:pointer; }
+	.select_02 .select_li .select_li_detail .more,
+	.select_02 .select_li .select_li_detail .more:hover,
+	.select_02 .select_li .select_li_detail .hide,
+	.select_02 .select_li .select_li_detail .hide:hover{
+		color:#646464; position:absolute; line-height:25px; right:20px; bottom:4px; padding-right:15px; cursor:pointer;
+		background-image:url(images/icon_hide.png); background-repeat:no-repeat; background-position:right 10px; background-color:#fff;
+	}
+	.select_02 .select_li .select_li_detail .hide,
+	.select_02 .select_li .select_li_detail .hide:hover{
+		display:none; background-position:right -40px;
+	}
+
 /*列表*/
 .table_list_01{ width:100%; }
 	.table_list_01 .null{ width:20px; }
@@ -308,5 +344,30 @@
 
 /*理财计算*/
 .mod_count{
-	background:#034694; 
+	background:url(images/icon_money.png) no-repeat 20px center #034694; padding-left:340px; position:relative; height:140px; overflow:hidden;
 }
+	.mod_count .r_top{ position:absolute; left:130px; top:10px; color:#fff; }
+	.mod_count .r_top .r_a{ font:bold 20px/40px "Microsoft YaHei"; }
+	.mod_count .r_top .r_b{ font-size:16px; }
+	.mod_count .r_top .r_input{
+		background:#d2d3d3; border:none; height:25px; padding:2px 5px; font:bold 14px/25px "Microsoft YaHei";
+		color:#fb6b0d; width:100px; outline:none;
+	}
+	.mod_count .r_top .r_c{ font:14px/35px "Microsoft YaHei"; overflow:hidden; height:30px; }
+	.mod_count .r_top .r_c span{ color:#fa770f; padding-left:10px; }
+	.mod_count .r_li{
+		font-size:0; padding:10px; text-align:center; line-height:0;
+	}
+	.mod_count .r_li li{
+		width:90px; height:30px; line-height:30px; text-align:center; overflow:hidden; margin:5px 6px; font-size:12px; color:#fff;
+		background:#305a87; cursor:pointer; float:left;
+
+		background:rgba(255,255,255,.1);
+		-webkit-border-radius:2px;
+		   -moz-border-radius:2px;
+			 -o-border-radius:2px;
+				border-radius:2px;
+	}
+	.mod_count .r_li li:hover,
+	.mod_count .r_li li.hover{ background:#2e6299; }
+	.mod_count .r_li li.current{ background:#fb6b0d; }
