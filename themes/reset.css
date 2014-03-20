@@ -146,7 +146,7 @@ body{
 		background:url(images/footer_img.png) no-repeat center center; height:75px;
 	}
 
-
+/*侧边导航*/
 .fixed{
 	width:42px; position:fixed; height:145px; bottom:10px; z-index:100;
 }
@@ -169,6 +169,8 @@ body{
 	}
 	.list_point li a:hover{ color:#247df5; }
 
+
+/*颜色*/
 .color_yellow{ color:#fb6b0d; }
 .color_gray{ color:#7a7a7a; font-weight:normal; }
 .color_gray.b{ font-weight:bold; }
@@ -176,17 +178,14 @@ body{
 
 
 .title_02{
-	font-size:0; height:45px;
+	font-size:0; position:relative; overflow:hidden; padding-bottom:10px;
 }
-	.title_02 dt,
-	.title_02 dd{
-		float:left; line-height:20px; padding-bottom:10px;
-	}
 	.title_02 dt{
-		border-bottom:2px solid #bd0100; font-size:16px; font-weight:bold; width:85px;
+		border-bottom:2px solid #bd0100; font-size:16px; font-weight:bold; line-height:24px; padding-bottom:15px;
+		position:absolute; left:0; top:0;
 	}
 	.title_02 dd{
-		border-bottom:1px solid #ececec; width:162px; font-size:14px; text-align:right;
+		border-bottom:1px solid #ececec; font-size:14px; text-align:right; line-height:25px; padding-bottom:15px;
 	}
 	.title_02 dd a{ color:#666; }
 	.title_02 dd a:hover{ color:#247df5; }

@@ -86,8 +86,8 @@
 	<div class="mod_right clearfix">
         <div class="border_02">
             <dl class="title_02 clearfix">
-                <dt style="width:100px;">货币基金动态</dt>
-                <dd style="width:137px;"><a href="">更多</a></dd>
+                <dt>货币基金动态</dt>
+                <dd><a href="">更多</a></dd>
             </dl>
             <ul class="list_point clearfix">
                 <li><a href="">5成银行理财品收益不透明，投资...</a></li>
