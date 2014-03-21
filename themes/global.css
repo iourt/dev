@@ -41,7 +41,7 @@
 	.select_01 .select_case_b li{
 		float:left; line-height:25px; width:105px; margin-bottom:5px; cursor:pointer;
 	}
-	.select_01 .select_case_b li.hover{ color:#247df5; }
+	.select_01 .select_case_b li.hover{ color:#1663ff; }
 	.select_01 .select_case_c li{
 		font-weight:bold; float:left; line-height:25px; width:30px; text-align:center;
 		margin-right:5px; margin-bottom:5px; cursor:pointer;

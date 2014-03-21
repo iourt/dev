@@ -27,7 +27,7 @@ a{
 	text-decoration:none; outline:0; color:#333;
 }
 a:visited{ text-decoration:none; }
-a:hover{ color:#247df5; }
+a:hover{ color:#247df5; color:#1663ff; }
 em,b{
 	font-style:normal;
 }
@@ -132,7 +132,7 @@ body{
 		position:relative; padding:10px 10px 10px 100px; border-top:1px solid #454749; border-bottom:1px solid #101011; font-size:0;
 	}
 	.footer .footer_link div{
-		line-height:30px; font-weight:bold; font-size:14px; line-height:30px; position:absolute; left:10px; top:10px; z-index:1;
+		line-height:30px; font-weight:bold; font-size:16px; line-height:30px; position:absolute; left:10px; top:10px; z-index:1;
 	}
 	.footer .footer_link a{
 		float:left; width:96px; line-height:30px; font-size:12px;
@@ -166,7 +166,7 @@ body{
 	.list_point li a{
 		display:block; color:#636363; background:url(images/icon_04.jpg) no-repeat 0 center; padding-left:15px; line-height:30px; font-size:14px;
 	}
-	.list_point li a:hover{ color:#247df5; }
+	.list_point li a:hover{ color:#1663ff; }
 
 
 /*颜色*/
@@ -187,7 +187,7 @@ body{
 		border-bottom:1px solid #ececec; font-size:14px; text-align:right; line-height:21px; padding-bottom:15px;
 	}
 	.title_02 dd a{ color:#666; }
-	.title_02 dd a:hover{ color:#247df5; }
+	.title_02 dd a:hover{ color:#1663ff; }
 
 
 /*弹窗*/

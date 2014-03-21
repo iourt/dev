@@ -586,7 +586,7 @@
 
 
 <div class="home_border_988 clearfix">
-    <h3 class="title_01 title_blue">
+    <h3 class="title_01 title_blue" style="background:#6f6f8;/">
         <dl>
             <dt class="title_l"><strong>类余额宝理财产品</strong><span>|</span>最潮、最in的互联网理财</dt>
             <dd class="title_r"><a href="">更多</a></dd>
@@ -787,6 +787,7 @@
         <li>
             <div class="money_logo clearfix">
                 <img src="themes/temp/money_logo.jpg" />
+                <em>招商银行</em>
                 <div>
                     <a href="">招银进宝之鼎鼎成金10165号理财计划</a><br>
                     <span>(代码:310165)</span>
@@ -804,7 +805,7 @@
                         实际年化收益
                         <samp>
                             <div class="hidden_text_detail">
-                                <div></div>
+                                <div>12</div>
                                 <p>实际年化收益率=预期年化收益率*理财期限/实际资金占用天数</p>
                                 其中：<br>
                                 1、理财期限以天数计<br>
@@ -835,6 +836,7 @@
         <li>
             <div class="money_logo clearfix">
                 <img src="themes/temp/money_logo.jpg" />
+                <em>招商银行</em>
                 <div>
                     <a href="">招银进宝之鼎鼎成金10165号理财计划</a><br>
                     <span>(代码:310165)</span>
@@ -883,6 +885,7 @@
         <li>
             <div class="money_logo clearfix">
                 <img src="themes/temp/money_logo.jpg" />
+                <em>招商银行</em>
                 <div>
                     <a href="">招银进宝之鼎鼎成金10165号理财计划</a><br>
                     <span>(代码:310165)</span>
@@ -931,6 +934,7 @@
         <li>
             <div class="money_logo clearfix">
                 <img src="themes/temp/money_logo.jpg" />
+                <em>招商银行</em>
                 <div>
                     <a href="">招银进宝之鼎鼎成金10165号理财计划</a><br>
                     <span>(代码:310165)</span>
