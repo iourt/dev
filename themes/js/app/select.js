@@ -1,6 +1,6 @@
 (function(){
-    var $li     = $(".select_li_detail li"),
-        $no     = $(".select_li .select_li_no");
+    var $li = $(".select_li_detail li"),
+        $no = $(".select_li .select_li_no");
 
     var $titleNull = $(".select_title .null"),
         $titleList = $(".select_title ul"),
@@ -57,6 +57,7 @@
 		var $hit = $(".select_title .hit");
 		if($hit.length == 0){
 			$titleNull.css("display","block");
+			$titleNo.addClass("current");
 		}
 		var $id = $(this).attr("data-id");
 		$('#titleName li[data-id='+$id+']').removeClass("current");
@@ -64,7 +65,7 @@
 	});
 
 	var $num    = $titleName.length,
-		$divide = 11,
+		$divide = 10,
 		$over   = $(".select_li_name"),
 		$show   = $("#titleName .more");
 	if($num >= $divide){
@@ -82,63 +83,3 @@
 		$(this).html("更多");
 	});
 })();
-
-
-
-// (function(){
-//     var $box      = $("#titleName ul"),
-//         $boxLi    = $("#titleName li"),
-//         $num      = $boxLi.length,
-//     	$data = {
-//     		dataId: [],
-//     		dataHtml: []
-//     	},
-//         $show     = $("#titleName .more"),
-//         $hide     = $("#titleName .hide"),
-//         $str      = "";
-
-//     $boxLi.each(function(i){
-//         $data.dataId[i] = $(this).attr("data-id");
-//         $data.dataHtml[i] = $(this).html();
-//     });
-//     if($num>12){
-//         for(var i=0; i<12; i++){
-//             $str += '<li data-id="'+$data.dataId[i]+'">'+$data.dataHtml[i]+'</li>';
-//         }
-//         $box.html($str);
-//         $str = "";
-//     }
-
-//     $show.on("click", function(){
-//     	var $current = $("#titleName li.current"),
-//     		$currentId = [];
-//     	$current.each(function(i){
-//     		$currentId[i] = $(this).attr("data-id");
-//     	});
-
-//         $(this).css("display","none");
-//         $hide.css("display","block");
-//         for(var i=0; i<$num; i++){
-//         	$str += '<li ';
-//         	$currentId.each(function(index){
-//         		if($currentId[index] == $data.dataId[i]){
-//         			$str +='class="current" '
-//         		}
-//         	});
-//             $str += 'data-id="'+$data.dataId[i]+'">'+$data.dataHtml[i]+'</li>';
-//         }
-//         $box.html($str);
-//         $str = "";
-//     });
-
-//     $hide.on("click", function(){
-//         $(this).css("display","none");
-//         $show.css("display","block");
-//         for(var i=0; i<12; i++){
-//             $str += '<li data-id="'+$data.dataId[i]+'">'+$data.dataHtml[i]+'</li>';
-//         }
-//         $box.html($str);
-//         $str = "";
-//     });
-
-// })();

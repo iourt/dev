@@ -14,11 +14,15 @@
 <div class="wrap clearfix">
 	<div class="mod_left clearfix">
 		<div class="border_03 select_01">
-			<div class="select_title">已选全部基金公司</div>
+            <div class="select_title clearfix">
+                <ul class="clearfix">
+                    <li class="current null">已选全部基金公司</li>
+                </ul>
+            </div>
 			<div class="select_detail clearfix">
 				<div class="select_col">选择基金公司</div>
 				<ul class="select_case_a clearfix">
-					<li>不限</li>
+					<li class="no_title">不限</li>
 					<li class="current">热门</li>
 					<li><b>A-G</b></li>
 					<li><b>H-M</b></li>
@@ -26,18 +30,40 @@
 					<li><b>U-Z</b></li>
 				</ul>
 				<ul class="select_case_b clearfix">
-					<li>华夏基金</li><li>大成基金</li><li>东吴基金</li><li>国投瑞银</li><li>长城基金</li>
-					<li>长盛基金</li><li>富国基金</li><li>富安达基金</li><li>广发基金</li><li>博时基金</li>
-					<li>宝盈基金</li><li>国泰基金</li><li>东方基金</li><li>长信基金</li><li>财通基金</li>
-					<li>光大保德信</li><li>方正富邦</li><li>长安基金</li><li>安信基金</li><li>国金通用</li>
-					<li>德邦基金</li><li>道富基金</li><li>国开泰富</li><li>国联安基金</li><li>东证资管</li>
-					<li>国寿安保</li><li>工银瑞信</li><li>国海富兰克林</li>
+					<li data-id="1">华夏基金</li>
+					<li data-id="2">大成基金</li>
+					<li data-id="3">东吴基金</li>
+					<li data-id="4">国投瑞银</li>
+					<li data-id="5">长城基金</li>
+					<li data-id="6">长盛基金</li>
+					<li data-id="7">富国基金</li>
+					<li data-id="8">富安达基金</li>
+					<li data-id="9">广发基金</li>
+					<li data-id="10">博时基金</li>
+					<li data-id="12">宝盈基金</li>
+					<li data-id="13">国泰基金</li>
+					<li data-id="14">东方基金</li>
+					<li data-id="15">长信基金</li>
+					<li data-id="16">财通基金</li>
+					<li data-id="17">光大保德信</li>
+					<li data-id="18">方正富邦</li>
+					<li data-id="19">长安基金</li>
+					<li data-id="20">安信基金</li>
+					<li data-id="21">国金通用</li>
+					<li data-id="22">德邦基金</li>
+					<li data-id="23">道富基金</li>
+					<li data-id="24">国开泰富</li>
+					<li data-id="25">国联安基金</li>
+					<li data-id="26">东证资管</li>
+					<li data-id="27">国寿安保</li>
+					<li data-id="28">工银瑞信</li>
+					<li data-id="29">国海富兰克林</li>
 				</ul>
 			</div>
 			<div class="select_detail clearfix">
 				<div class="select_col">按字母找基金</div>
 				<dl class="clearfix">
-					<dt class="current">不限</dt>
+					<dt class="select_no current">不限</dt>
 					<dd>
 						<ul class="select_case_c clearfix">
 							<li>A</li> <li>B</li> <li>C</li> <li>D</li> <li>E</li> <li>F</li> <li>G</li> 
@@ -49,44 +75,9 @@
 				</dl>
 			</div>
 		</div>
+		<script type="text/javascript" src="themes/js/app/select-01.js"></script>
 	</div>
-	<script type="text/javascript">
-	(function(){
-		var $hotOne     = $(".select_case_a li"),
-			$hotTwo     = $(".select_case_b li"),
-			$hotThree   = $(".select_case_c li"),
-			$select     = $(".select_01 li"),
-			$hotThreeDt = $(".select_01 dt");
-
-		$select.hover(function(){
-			$(this).addClass("hover");
-		}, function(){
-			$(this).removeClass("hover");
-		});
-
-		$hotOne.on("click", function(){
-			$hotOne.removeClass("current");
-			$(this).addClass("current");
-		});
-
-		$hotTwo.on("click", function(){
-			$hotTwo.removeClass("current");
-			$(this).addClass("current");
-		});
-
-		$hotThree.on("click", function(){
-			$hotThreeDt.removeClass("current");
-			$(this).addClass("current");
-		});
-
-		$hotThreeDt.on("click", function(){
-			$hotThree.removeClass("current");
-			$(this).addClass("current");
-		});
-	})();
-	</script>
 	
-
 
 	<div class="mod_right clearfix">
         <div class="border_02">

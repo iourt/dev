@@ -56,31 +56,21 @@
                 <div class="select_li_no_name current">不限</div>
                 <div class="select_li_name over clearfix" id="titleName">
                     <ul class="clearfix">
-                        <li data-type="1" data-id="1">爱投资</li>
-                        <li data-type="1" data-id="2">第一F2P</li>
-                        <li data-type="1" data-id="3">合力贷</li>
-                        <li data-type="1" data-id="4">红岭创投</li>
-                        <li data-type="1" data-id="5">积木盒子</li>
-                        <li data-type="1" data-id="6">开鑫贷</li>
-                        <li data-type="1" data-id="7">陆金所</li>
-                        <li data-type="1" data-id="8">拍拍贷</li>
-                        <li data-type="1" data-id="9">人人贷</li>
-                        <li data-type="1" data-id="10">翼龙贷</li>
-                        <li data-type="1" data-id="11">有利网</li>
-                        <li data-type="1" data-id="12">万惠投融</li>
-                        <li data-type="1" data-id="13">温商贷</li>
-                        <li data-type="1" data-id="14">拍拍贷</li>
-                        <li data-type="1" data-id="15">人人贷</li>
-                        <li data-type="1" data-id="16">翼龙贷</li>
-                        <li data-type="1" data-id="17">有利网</li>
-                        <li data-type="1" data-id="18">万惠投融</li>
-                        <li data-type="1" data-id="19">温商贷</li>
-                        <li data-type="1" data-id="20">拍拍贷</li>
-                        <li data-type="1" data-id="21">人人贷</li>
-                        <li data-type="1" data-id="22">翼龙贷</li>
-                        <li data-type="1" data-id="23">有利网</li>
-                        <li data-type="1" data-id="24">万惠投融</li>
-                        <li data-type="1" data-id="25">温商贷</li>
+                        <li data-id="1">中国银行</li>
+                        <li data-id="2">工商银行</li>
+                        <li data-id="3">招商银行</li>
+                        <li data-id="4">农业银行</li>
+                        <li data-id="5">建设银行</li>
+                        <li data-id="6">交通银行</li>
+                        <li data-id="7">民生银行</li>
+                        <li data-id="8">平安银行</li>
+                        <li data-id="9">中信银行</li>
+                        <li data-id="10">广发银行</li>
+                        <li data-id="11">光大银行</li>
+                        <li data-id="12">兴业银行</li>
+                        <li data-id="13">南京银行</li>
+                        <li data-id="14">上海银行</li>
+                        <li data-id="15">浦发银行</li>
                     </ul>
                     <div class="more">更多</div>
                 </div>
@@ -124,14 +114,527 @@
 
 
         <div class="clearfix">
-            <dl>
+            <dl class="list_art_01 clearfix">
                 <dt>
-                    
+                    <h2>产品列表</h2>
+                    <ul>
+                        <li class="hit">发售时间</li>
+                        <li class="hit">理财期限</li>
+                        <li class="hit">收益率</li>
+                        <li class="sub_01">排序：</li>
+                    </ul>
+                    <script type="text/javascript">
+                    (function(){
+                        var $hit = $(".list_art_01 li.hit");
+                        $hit.toggle(function(){
+                            $(this).addClass("current");
+                        }, function(){
+                            $(this).removeClass("current");
+                        });
+                    })();
+                    </script>
                 </dt>
-                <dd>
+                <dd class="clearfix">
+                    <div class="col_left">
+                        <img src="themes/temp/money_logo.jpg" />
+                        招商银行
+                    </div>
+                    <div class="col_mid">
+                        <h3>招银进宝之鼎鼎成金10165号理财计划</h3>
+                        <div class="sub_detail">(代码:310165)-苏州分行销售</div>
+                        <ul class="sub_list clearfix">
+                            <li class="s_01">
+                                <span>5.90%</span><br>
+                                预期年化收益
+                            </li>
+                            <li class="s_02">
+                                <span>5.10%</span><br>
+                                实际年化收益
+                            </li>
+                            <li class="s_03">
+                                <span>120</span><b style="color:#000;">天</b><br>
+                                期限
+                            </li>
+                            <li class="s_04">
+                                <span>￥969.8</span><br>
+                                收益
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col_right">
+                        <div class="money_time clearfix" data-time="2014-03-21 21:41:00">
+                            <div class="clock_text">抢购倒计时</div>
+                            <div class="clock_time">
+                                <span>00</span>天<span>00</span>时<span>00</span>分<span>00</span>秒
+                            </div>
+                        </div>
+                        <div class="sub_link"><a href="">查看详情</a></div>
+                    </div>
                 </dd>
+                <dd class="clearfix">
+                    <div class="col_left">
+                        <img src="themes/temp/money_logo.jpg" />
+                        招商银行
+                    </div>
+                    <div class="col_mid">
+                        <h3>招银进宝之鼎鼎成金10165号理财计划</h3>
+                        <div class="sub_detail">(代码:310165)-苏州分行销售</div>
+                        <ul class="sub_list clearfix">
+                            <li class="s_01">
+                                <span>5.90%</span><br>
+                                预期年化收益
+                            </li>
+                            <li class="s_02">
+                                <span>5.10%</span><br>
+                                实际年化收益
+                            </li>
+                            <li class="s_03">
+                                <span>120</span><b style="color:#000;">天</b><br>
+                                期限
+                            </li>
+                            <li class="s_04">
+                                <span>￥969.8</span><br>
+                                收益
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col_right">
+                        <div class="money_time clearfix" data-time="2014-06-21 21:41:00">
+                            <div class="clock_text">抢购倒计时</div>
+                            <div class="clock_time">
+                                <span>00</span>天<span>00</span>时<span>00</span>分<span>00</span>秒
+                            </div>
+                        </div>
+                        <div class="sub_link"><a href="">查看详情</a></div>
+                    </div>
+                </dd>
+                <dd class="clearfix">
+                    <div class="col_left">
+                        <img src="themes/temp/money_logo.jpg" />
+                        招商银行
+                    </div>
+                    <div class="col_mid">
+                        <h3>招银进宝之鼎鼎成金10165号理财计划</h3>
+                        <div class="sub_detail">(代码:310165)-苏州分行销售</div>
+                        <ul class="sub_list clearfix">
+                            <li class="s_01">
+                                <span>5.90%</span><br>
+                                预期年化收益
+                            </li>
+                            <li class="s_02">
+                                <span>5.10%</span><br>
+                                实际年化收益
+                            </li>
+                            <li class="s_03">
+                                <span>120</span><b style="color:#000;">天</b><br>
+                                期限
+                            </li>
+                            <li class="s_04">
+                                <span>￥969.8</span><br>
+                                收益
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col_right">
+                        <div class="money_time clearfix" data-time="2014-06-21 21:41:00">
+                            <div class="clock_text">抢购倒计时</div>
+                            <div class="clock_time">
+                                <span>00</span>天<span>00</span>时<span>00</span>分<span>00</span>秒
+                            </div>
+                        </div>
+                        <div class="sub_link"><a href="">查看详情</a></div>
+                    </div>
+                </dd>
+                <dd class="clearfix">
+                    <div class="col_left">
+                        <img src="themes/temp/money_logo.jpg" />
+                        招商银行
+                    </div>
+                    <div class="col_mid">
+                        <h3>招银进宝之鼎鼎成金10165号理财计划</h3>
+                        <div class="sub_detail">(代码:310165)-苏州分行销售</div>
+                        <ul class="sub_list clearfix">
+                            <li class="s_01">
+                                <span>5.90%</span><br>
+                                预期年化收益
+                            </li>
+                            <li class="s_02">
+                                <span>5.10%</span><br>
+                                实际年化收益
+                            </li>
+                            <li class="s_03">
+                                <span>120</span><b style="color:#000;">天</b><br>
+                                期限
+                            </li>
+                            <li class="s_04">
+                                <span>￥969.8</span><br>
+                                收益
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col_right">
+                        <div class="money_time clearfix" data-time="2014-06-21 21:41:00">
+                            <div class="clock_text">抢购倒计时</div>
+                            <div class="clock_time">
+                                <span>00</span>天<span>00</span>时<span>00</span>分<span>00</span>秒
+                            </div>
+                        </div>
+                        <div class="sub_link"><a href="">查看详情</a></div>
+                    </div>
+                </dd>
+                <dd class="clearfix">
+                    <div class="col_left">
+                        <img src="themes/temp/money_logo.jpg" />
+                        招商银行
+                    </div>
+                    <div class="col_mid">
+                        <h3>招银进宝之鼎鼎成金10165号理财计划</h3>
+                        <div class="sub_detail">(代码:310165)-苏州分行销售</div>
+                        <ul class="sub_list clearfix">
+                            <li class="s_01">
+                                <span>5.90%</span><br>
+                                预期年化收益
+                            </li>
+                            <li class="s_02">
+                                <span>5.10%</span><br>
+                                实际年化收益
+                            </li>
+                            <li class="s_03">
+                                <span>120</span><b style="color:#000;">天</b><br>
+                                期限
+                            </li>
+                            <li class="s_04">
+                                <span>￥969.8</span><br>
+                                收益
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col_right">
+                        <div class="money_time clearfix" data-time="2014-06-21 21:41:00">
+                            <div class="clock_text">抢购倒计时</div>
+                            <div class="clock_time">
+                                <span>00</span>天<span>00</span>时<span>00</span>分<span>00</span>秒
+                            </div>
+                        </div>
+                        <div class="sub_link"><a href="">查看详情</a></div>
+                    </div>
+                </dd>
+                <dd class="clearfix">
+                    <div class="col_left">
+                        <img src="themes/temp/money_logo.jpg" />
+                        招商银行
+                    </div>
+                    <div class="col_mid">
+                        <h3>招银进宝之鼎鼎成金10165号理财计划</h3>
+                        <div class="sub_detail">(代码:310165)-苏州分行销售</div>
+                        <ul class="sub_list clearfix">
+                            <li class="s_01">
+                                <span>5.90%</span><br>
+                                预期年化收益
+                            </li>
+                            <li class="s_02">
+                                <span>5.10%</span><br>
+                                实际年化收益
+                            </li>
+                            <li class="s_03">
+                                <span>120</span><b style="color:#000;">天</b><br>
+                                期限
+                            </li>
+                            <li class="s_04">
+                                <span>￥969.8</span><br>
+                                收益
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col_right">
+                        <div class="money_time clearfix" data-time="2014-06-21 21:41:00">
+                            <div class="clock_text">抢购倒计时</div>
+                            <div class="clock_time">
+                                <span>00</span>天<span>00</span>时<span>00</span>分<span>00</span>秒
+                            </div>
+                        </div>
+                        <div class="sub_link"><a href="">查看详情</a></div>
+                    </div>
+                </dd>
+                <dd class="clearfix">
+                    <div class="col_left">
+                        <img src="themes/temp/money_logo.jpg" />
+                        招商银行
+                    </div>
+                    <div class="col_mid">
+                        <h3>招银进宝之鼎鼎成金10165号理财计划</h3>
+                        <div class="sub_detail">(代码:310165)-苏州分行销售</div>
+                        <ul class="sub_list clearfix">
+                            <li class="s_01">
+                                <span>5.90%</span><br>
+                                预期年化收益
+                            </li>
+                            <li class="s_02">
+                                <span>5.10%</span><br>
+                                实际年化收益
+                            </li>
+                            <li class="s_03">
+                                <span>120</span><b style="color:#000;">天</b><br>
+                                期限
+                            </li>
+                            <li class="s_04">
+                                <span>￥969.8</span><br>
+                                收益
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col_right">
+                        <div class="money_time clearfix" data-time="2014-06-21 21:41:00">
+                            <div class="clock_text">抢购倒计时</div>
+                            <div class="clock_time">
+                                <span>00</span>天<span>00</span>时<span>00</span>分<span>00</span>秒
+                            </div>
+                        </div>
+                        <div class="sub_link"><a href="">查看详情</a></div>
+                    </div>
+                </dd>
+                <dd class="clearfix">
+                    <div class="col_left">
+                        <img src="themes/temp/money_logo.jpg" />
+                        招商银行
+                    </div>
+                    <div class="col_mid">
+                        <h3>招银进宝之鼎鼎成金10165号理财计划</h3>
+                        <div class="sub_detail">(代码:310165)-苏州分行销售</div>
+                        <ul class="sub_list clearfix">
+                            <li class="s_01">
+                                <span>5.90%</span><br>
+                                预期年化收益
+                            </li>
+                            <li class="s_02">
+                                <span>5.10%</span><br>
+                                实际年化收益
+                            </li>
+                            <li class="s_03">
+                                <span>120</span><b style="color:#000;">天</b><br>
+                                期限
+                            </li>
+                            <li class="s_04">
+                                <span>￥969.8</span><br>
+                                收益
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col_right">
+                        <div class="money_time clearfix" data-time="2014-06-21 21:41:00">
+                            <div class="clock_text">抢购倒计时</div>
+                            <div class="clock_time">
+                                <span>00</span>天<span>00</span>时<span>00</span>分<span>00</span>秒
+                            </div>
+                        </div>
+                        <div class="sub_link"><a href="">查看详情</a></div>
+                    </div>
+                </dd>
+                <dd class="clearfix">
+                    <div class="col_left">
+                        <img src="themes/temp/money_logo.jpg" />
+                        招商银行
+                    </div>
+                    <div class="col_mid">
+                        <h3>招银进宝之鼎鼎成金10165号理财计划</h3>
+                        <div class="sub_detail">(代码:310165)-苏州分行销售</div>
+                        <ul class="sub_list clearfix">
+                            <li class="s_01">
+                                <span>5.90%</span><br>
+                                预期年化收益
+                            </li>
+                            <li class="s_02">
+                                <span>5.10%</span><br>
+                                实际年化收益
+                            </li>
+                            <li class="s_03">
+                                <span>120</span><b style="color:#000;">天</b><br>
+                                期限
+                            </li>
+                            <li class="s_04">
+                                <span>￥969.8</span><br>
+                                收益
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col_right">
+                        <div class="money_time clearfix" data-time="2014-06-21 21:41:00">
+                            <div class="clock_text">抢购倒计时</div>
+                            <div class="clock_time">
+                                <span>00</span>天<span>00</span>时<span>00</span>分<span>00</span>秒
+                            </div>
+                        </div>
+                        <div class="sub_link"><a href="">查看详情</a></div>
+                    </div>
+                </dd>
+                <dd class="clearfix">
+                    <div class="col_left">
+                        <img src="themes/temp/money_logo.jpg" />
+                        招商银行
+                    </div>
+                    <div class="col_mid">
+                        <h3>招银进宝之鼎鼎成金10165号理财计划</h3>
+                        <div class="sub_detail">(代码:310165)-苏州分行销售</div>
+                        <ul class="sub_list clearfix">
+                            <li class="s_01">
+                                <span>5.90%</span><br>
+                                预期年化收益
+                            </li>
+                            <li class="s_02">
+                                <span>5.10%</span><br>
+                                实际年化收益
+                            </li>
+                            <li class="s_03">
+                                <span>120</span><b style="color:#000;">天</b><br>
+                                期限
+                            </li>
+                            <li class="s_04">
+                                <span>￥969.8</span><br>
+                                收益
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col_right">
+                        <div class="money_time clearfix" data-time="2014-06-21 21:41:00">
+                            <div class="clock_text">抢购倒计时</div>
+                            <div class="clock_time">
+                                <span>00</span>天<span>00</span>时<span>00</span>分<span>00</span>秒
+                            </div>
+                        </div>
+                        <div class="sub_link"><a href="">查看详情</a></div>
+                    </div>
+                </dd>
+                <dd class="clearfix">
+                    <div class="col_left">
+                        <img src="themes/temp/money_logo.jpg" />
+                        招商银行
+                    </div>
+                    <div class="col_mid">
+                        <h3>招银进宝之鼎鼎成金10165号理财计划</h3>
+                        <div class="sub_detail">(代码:310165)-苏州分行销售</div>
+                        <ul class="sub_list clearfix">
+                            <li class="s_01">
+                                <span>5.90%</span><br>
+                                预期年化收益
+                            </li>
+                            <li class="s_02">
+                                <span>5.10%</span><br>
+                                实际年化收益
+                            </li>
+                            <li class="s_03">
+                                <span>120</span><b style="color:#000;">天</b><br>
+                                期限
+                            </li>
+                            <li class="s_04">
+                                <span>￥969.8</span><br>
+                                收益
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col_right">
+                        <div class="money_time clearfix" data-time="2014-06-21 21:41:00">
+                            <div class="clock_text">抢购倒计时</div>
+                            <div class="clock_time">
+                                <span>00</span>天<span>00</span>时<span>00</span>分<span>00</span>秒
+                            </div>
+                        </div>
+                        <div class="sub_link"><a href="">查看详情</a></div>
+                    </div>
+                </dd>
+                <dd class="clearfix">
+                    <div class="col_left">
+                        <img src="themes/temp/money_logo.jpg" />
+                        招商银行
+                    </div>
+                    <div class="col_mid">
+                        <h3>招银进宝之鼎鼎成金10165号理财计划</h3>
+                        <div class="sub_detail">(代码:310165)-苏州分行销售</div>
+                        <ul class="sub_list clearfix">
+                            <li class="s_01">
+                                <span>5.90%</span><br>
+                                预期年化收益
+                            </li>
+                            <li class="s_02">
+                                <span>5.10%</span><br>
+                                实际年化收益
+                            </li>
+                            <li class="s_03">
+                                <span>120</span><b style="color:#000;">天</b><br>
+                                期限
+                            </li>
+                            <li class="s_04">
+                                <span>￥969.8</span><br>
+                                收益
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col_right">
+                        <div class="money_time clearfix" data-time="2014-06-21 21:41:00">
+                            <div class="clock_text">抢购倒计时</div>
+                            <div class="clock_time">
+                                <span>00</span>天<span>00</span>时<span>00</span>分<span>00</span>秒
+                            </div>
+                        </div>
+                        <div class="sub_link"><a href="">查看详情</a></div>
+                    </div>
+                </dd>
+                <dd class="clearfix">
+                    <div class="col_left">
+                        <img src="themes/temp/money_logo.jpg" />
+                        招商银行
+                    </div>
+                    <div class="col_mid">
+                        <h3>招银进宝之鼎鼎成金10165号理财计划</h3>
+                        <div class="sub_detail">(代码:310165)-苏州分行销售</div>
+                        <ul class="sub_list clearfix">
+                            <li class="s_01">
+                                <span>5.90%</span><br>
+                                预期年化收益
+                            </li>
+                            <li class="s_02">
+                                <span>5.10%</span><br>
+                                实际年化收益
+                            </li>
+                            <li class="s_03">
+                                <span>120</span><b style="color:#000;">天</b><br>
+                                期限
+                            </li>
+                            <li class="s_04">
+                                <span>￥969.8</span><br>
+                                收益
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col_right">
+                        <div class="money_time clearfix" data-time="2014-06-21 21:41:00">
+                            <div class="clock_text">抢购倒计时</div>
+                            <div class="clock_time">
+                                <span>00</span>天<span>00</span>时<span>00</span>分<span>00</span>秒
+                            </div>
+                        </div>
+                        <div class="sub_link"><a href="">查看详情</a></div>
+                    </div>
+                </dd>
+            </dl>
         </div>
-
+        <script type="text/javascript" src="themes/js/app/times.js"></script>
+        <script type="text/javascript">
+        (function(){
+            var $clockTime = $(".money_time");
+            $clockTime.each(function(i){
+                var $this = $(this);
+                new TimeCount().init({
+                    type: true,
+                    elem: $this,
+                    nowTime: parseInt(<?php echo time() ?>),
+                    times: $this.attr("data-time"),
+                    changeText: ".clock_text",
+                    changeTime: ".clock_time",
+                    changeClass: "clock_start"
+                });
+            });
+        })();
+        </script>
 
         <?php include 'show_page.php'; ?>
     </div>

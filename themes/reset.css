@@ -202,6 +202,17 @@ body{
 		 -o-border-radius:4px;
 			border-radius:4px;
 }
+	.mod_box .scroll{
+		height:300px; overflow-y:auto;
+		scrollbar-arrow-color:#aaa; /*三角箭头的颜色*/
+		scrollbar-face-color:#ddd; /*立体滚动条的颜色（包括箭头部分的背景色）*/
+		scrollbar-3dlight-color:#ddd; /*立体滚动条亮边的颜色*/
+		scrollbar-highlight-color:#ddd; /*滚动条的高亮颜色（左阴影？）*/
+		scrollbar-shadow-color:#ddd; /*立体滚动条阴影的颜色*/
+		scrollbar-darkshadow-color:#ddd; /*立体滚动条外阴影的颜色*/
+		scrollbar-track-color:#eee; /*立体滚动条背景颜色*/
+		scrollbar-base-color:#ccc; /*滚动条的基色*/
+	}
 	.mod_box .mod_box_icon,
 	.mod_box .mod_box_close{
 		background-image:url(images/icon_box.png); background-repeat:no-repeat; width:20px;
