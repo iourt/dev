@@ -118,18 +118,28 @@
                 <dt>
                     <h2>产品列表</h2>
                     <ul>
-                        <li class="hit">发售时间</li>
+                        <li class="hit up">发售时间</li>
                         <li class="hit">理财期限</li>
-                        <li class="hit">收益率</li>
+                        <li class="hit up">收益率</li>
                         <li class="sub_01">排序：</li>
                     </ul>
                     <script type="text/javascript">
                     (function(){
                         var $hit = $(".list_art_01 li.hit");
                         $hit.toggle(function(){
-                            $(this).addClass("current");
+                            var cl = $(this).attr("class");
+                            if(cl.indexOf("up") >= 0){
+                                $(this).removeClass("up");
+                            }else{
+                                $(this).addClass("up");
+                            }
                         }, function(){
-                            $(this).removeClass("current");
+                            var cl = $(this).attr("class");
+                            if(cl.indexOf("up") >= 0){
+                                $(this).removeClass("up");
+                            }else{
+                                $(this).addClass("up");
+                            }
                         });
                     })();
                     </script>
