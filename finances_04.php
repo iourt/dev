@@ -54,7 +54,7 @@
             <div id="type-1" class="select_li clearfix">
                 <div class="select_li_title">选择银行：</div>
                 <div class="select_li_no_name current">不限</div>
-                <div class="select_li_detail over clearfix" id="titleName">
+                <div class="select_li_name over clearfix" id="titleName">
                     <ul class="clearfix">
                         <li data-type="1" data-id="1">爱投资</li>
                         <li data-type="1" data-id="2">第一F2P</li>
