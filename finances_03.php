@@ -15,7 +15,7 @@
 	<div class="mod_left clearfix">
         <div class="mod_count">
             <div class="r_top">
-                请选择或输入
+                <span style="color:#9c9eab;">请选择或输入</span>
                 <div class="r_a">您打算投多少钱</div>
                 <div class="r_b" class="r_a">
                     <input class="r_input" type="text" value="50000" /> 元
@@ -33,22 +33,28 @@
                 <li data-num="50000"  data-font="五万" class="current">5 万</li>
                 <li data-num="100000" data-font="十万">10 万</li>
             </ul>
+            <script type="text/javascript">
+            (function(){
+                var $a = $(".mod_count li"),
+                    $input = $(".r_input");
+                $a.on("click", function(){
+                    $a.removeClass("current");
+                    $(this).addClass("current");
+                    $input.val($(this).attr("data-num"));
+                });
+            })();
+            </script>
         </div>
         <div class="select_02 clearfix" style="margin-bottom:20px;">
-            <div class="select_title">
-                <ul>
+            <div class="select_title clearfix">
+                <ul class="clearfix">
                     <li class="current null">已选全部平台</li>
-                    <li class="hit type-1" data-type="1" data-id=""></li>
-                    <li class="hit type-2" data-type="2" data-id=""></li>
-                    <li class="hit type-3" data-type="3" data-id=""></li>
-                    <li class="hit type-4" data-type="4" data-id=""></li>
-                    <li class="hit type-5" data-type="5" data-id=""></li>
                 </ul>
             </div>
             <div id="type-1" class="select_li clearfix">
                 <div class="select_li_title">选择平台：</div>
-                <div class="select_li_no current">不限</div>
-                <div class="select_li_detail clearfix" id="hide_li">
+                <div class="select_li_no_name current">不限</div>
+                <div class="select_li_name over clearfix" id="titleName">
                     <ul class="clearfix">
                         <li data-type="1" data-id="1">爱投资</li>
                         <li data-type="1" data-id="2">第一F2P</li>
@@ -77,7 +83,6 @@
                         <li data-type="1" data-id="25">温商贷</li>
                     </ul>
                     <div class="more">更多</div>
-                    <div class="hide">收起</div>
                 </div>
             </div>
             <div id="type-2" class="select_li clearfix">
@@ -163,12 +168,12 @@
 				<th class="col null"></th>
 				<th class="col hit_box col_01">网贷平台</th>
 				<th class="col">项目名称</th>
-				<th class="col hit_box col_03">融资金额<br><span class="color_gray">元</span></th>
+				<th class="col hit_box col_03">融资金额<br><span class="color_gray">(元)</span></th>
 				<th class="col hit_box col_04">进度</th>
-				<th class="col hit_box col_05">起点金额<br><span class="color_gray">元</span></th>
+				<th class="col hit_box col_05">起点金额<br><span class="color_gray">(元)</span></th>
 				<th class="col hit_box col_06">年化利率</th>
 				<th class="col hit_box col_07">期限</th>
-				<th class="col hit_box col_08">收益金额<br><span class="color_gray">元</span></th>
+				<th class="col hit_box col_08">收益金额<br><span class="color_gray">(元)</span></th>
 				<th class="col hit_box col_09">还款方式</th>
 				<th class="col"></th>
 				<th class="col null"></th>

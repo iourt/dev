@@ -26,14 +26,14 @@
 		});
 	}
 
-	window.onclick = function(event){
-		var e = e || window.event,
-			tar = e.srcElement || e.target;
-		if(tar.className != "list_detail"){
-			$(".list_detail_float").css("display","none");
-			// $(".home_list_table .w_5").removeClass("hover");
-		}
-	};
+	// window.onclick = function(event){
+	// 	var e = e || window.event,
+	// 		tar = e.srcElement || e.target;
+	// 	if(tar.className != "list_detail"){
+	// 		$(".list_detail_float").css("display","none");
+	// 		// $(".home_list_table .w_5").removeClass("hover");
+	// 	}
+	// };
 
 	$btnClose.hover(function(){
 		$(this).addClass("hover_close");
@@ -52,6 +52,7 @@
 		$(this).removeClass("hover");
 	});
 	$listDetails.on("click", function(){
+		$(".list_detail_float").css("display","none");
 		$(this).parent().css("position","relative");
 		// $(this).parent().addClass("hover");
 		$(this).parent().children(".list_detail_float").css("display","block");

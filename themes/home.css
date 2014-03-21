@@ -53,7 +53,7 @@
 		padding-left:20px; float:left;
 	}
 	.home_banner .home_banner_left .b_right span{
-		font-size:16px; color:#000; font-weight:bold; font-family:Arial;
+		font-size:16px; color:#fb6a0d; font-weight:bold; font-family:Arial;
 	}
 	.home_banner .home_banner_right{
 		width:340px; padding-right:10px; float:right;
@@ -111,7 +111,7 @@
 		width:1px; overflow:hidden; padding:0 20px; color:#cbcbcd; font-weight:normal;
 	}
 	.title_01 .title_r{
-		text-align:right; float:right; padding-right:20px; font-size:12px; font-style:normal;
+		text-align:right; float:right; padding-right:20px; font-size:14px; font-style:normal;
 	}
 	.title_01 .title_r a{ color:#6e6e6e; }
 	.title_01 .title_r a:hover{ color:#1663ff; }
@@ -195,6 +195,8 @@
 	.home_list_table .w_1{ padding-left:10px; font-weight:bold; }
 	.home_list_table td.w_1{ font-size:14px; padding-left:10px; }
 	.home_list_table td.w_2{ font-size:14px; }
+	.home_list_table.col_mod_01 td,
+	.home_list_table.col_mod_02 td{ font-size:14px; }
 	.home_list_table.col_mod_01 .w_3{ width:70px; }
 	.home_list_table.col_mod_01 td.w_3{ color:#fb6a0d; }
 	.home_list_table.col_mod_01 .w_4{ width:80px; }
@@ -219,6 +221,17 @@
 		   -moz-border-radius:4px;
 			 -o-border-radius:4px;
 				border-radius:4px;
+	}
+	.home_list_table .list_detail_float{
+		height:300px; overflow-y:auto;
+		scrollbar-arrow-color:#aaa; /*三角箭头的颜色*/
+		scrollbar-face-color:#ddd; /*立体滚动条的颜色（包括箭头部分的背景色）*/
+		scrollbar-3dlight-color:#ddd; /*立体滚动条亮边的颜色*/
+		scrollbar-highlight-color:#ddd; /*滚动条的高亮颜色（左阴影？）*/
+		scrollbar-shadow-color:#ddd; /*立体滚动条阴影的颜色*/
+		scrollbar-darkshadow-color:#ddd; /*立体滚动条外阴影的颜色*/
+		scrollbar-track-color:#eee; /*立体滚动条背景颜色*/
+		scrollbar-base-color:#ccc; /*滚动条的基色*/
 	}
 	.home_list_table .box_detail_icon,
 	.home_list_table .list_detail_icon{
@@ -362,7 +375,7 @@
 		width:50%; float:left; line-height:20px;
 	}
 	.home_list_slide li dd .row_f div span{
-		color:#000; font-size:14px; font-family:Arial;
+		color:#000; font-size:16px; font-family:Arial Black;
 	}
 
 
@@ -398,7 +411,7 @@
 		width:103px; float:left; line-height:18px; padding:15px 0 0 10px;
 	}
 	.money_list .money_num span{
-		color:#000; font-size:16px; font-weight:bold;
+		color:#000; font-size:16px; font-weight:bold; font-family:Arial Black;
 	}
 	.money_list .money_num em{
 		color:#fb6b0d; font-size:12px;
@@ -453,9 +466,7 @@
 	}
 
 
-.home_link{
-	text-align:center;
-}
+.home_link{ text-align:center; }
 	.home_link a{
 		color:#8d98a7; display:block; height:60px; line-height:60px; font-size:18px; width:250px; margin:0 auto;
 		background-image:url(images/icon_box.png); background-repeat:no-repeat; background-position:220px -80px;

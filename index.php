@@ -129,12 +129,6 @@
                                     <tr class="caption"><th>月份</th><th>月收本息</th><th>月收本金</th><th>月收利息</th><th>待收本息</th></tr>
                                     <tr><td>1月</td><td>6450.00</td><td>6090.00</td><td>360.00</td><td>45180.00</td></tr>
                                     <tr><td>2月</td><td>6450.00</td><td>6090.00</td><td>310.00</td><td>45180.00</td></tr>
-                                    <tr><td>3月</td><td>6450.00</td><td>6090.00</td><td>270.00</td><td>45180.00</td></tr>
-                                    <tr><td>4月</td><td>6450.00</td><td>6090.00</td><td>230.00</td><td>45180.00</td></tr>
-                                    <tr><td>5月</td><td>6450.00</td><td>6090.00</td><td>180.00</td><td>45180.00</td></tr>
-                                    <tr><td>6月</td><td>6450.00</td><td>6090.00</td><td>100.00</td><td>45180.00</td></tr>
-                                    <tr><td>7月</td><td>6450.00</td><td>6090.00</td><td>90.00</td><td>45180.00</td></tr>
-                                    <tr><td>8月</td><td>6450.00</td><td>6090.00</td><td>50.00</td><td>45180.00</td></tr>
                                 </table>
                             </div>
                         </td>
@@ -474,7 +468,7 @@
                     <tr>
                         <td class="w_col w_1"><a href="">广发天天红货币</a></td>
                         <td class="w_col w_2">广发基金</td>
-                        <td class="w_col w_3"><span class="span_font_red">1.7840</span><span class="span_font_gray">(01-28)</span></td>
+                        <td class="w_col w_3"><span class="span_font_red">1.7840</span> <span class="span_font_gray">01-28</span></td>
                         <td class="w_col w_4">6.891%</td>
                         <td class="w_col w_5">6.891%</td>
                         <td class="w_col w_6 a_box_gray"><a href="">去投资</a></td>
@@ -482,7 +476,7 @@
                     <tr>
                         <td class="w_col w_1"><a href="">广发货币A</a></td>
                         <td class="w_col w_2">广发基金</td>
-                        <td class="w_col w_3"><span class="span_font_red">1.6838</span><span class="span_font_gray">(01-28)</span></td>
+                        <td class="w_col w_3"><span class="span_font_red">1.6838</span></td>
                         <td class="w_col w_4">6.218%</td>
                         <td class="w_col w_5">6.218%</td>
                         <td class="w_col w_6 a_box_gray"><a href="">去投资</a></td>
@@ -490,7 +484,7 @@
                     <tr>
                         <td class="w_col w_1"><a href="">广发货币B</a></td>
                         <td class="w_col w_2">广发基金</td>
-                        <td class="w_col w_3"><span class="span_font_red">1.7529</span><span class="span_font_gray">(01-28)</span></td>
+                        <td class="w_col w_3"><span class="span_font_red">1.7529</span></td>
                         <td class="w_col w_4">6.592%</td>
                         <td class="w_col w_5">6.592%</td>
                         <td class="w_col w_6 a_box_gray"><a href="">去投资</a></td>
@@ -498,7 +492,7 @@
                     <tr>
                         <td class="w_col w_1"><a href="">博时现金收益货币B</a></td>
                         <td class="w_col w_2">博时基金</td>
-                        <td class="w_col w_3"><span class="span_font_red">1.5827</span><span class="span_font_gray">(01-28)</span></td>
+                        <td class="w_col w_3"><span class="span_font_red">1.5827</span></td>
                         <td class="w_col w_4">5.920%</td>
                         <td class="w_col w_5">5.920%</td>
                         <td class="w_col w_6 a_box_gray"><a href="">去投资</a></td>
@@ -506,7 +500,7 @@
                     <tr>
                         <td class="w_col w_1"><a href="">广发天天红货币</a></td>
                         <td class="w_col w_2">广发基金</td>
-                        <td class="w_col w_3"><span class="span_font_red">1.7835</span><span class="span_font_gray">(01-28)</span></td>
+                        <td class="w_col w_3"><span class="span_font_red">1.7835</span></td>
                         <td class="w_col w_4">6.891%</td>
                         <td class="w_col w_5">6.891%</td>
                         <td class="w_col w_6 a_box_gray"><a href="">去投资</a></td>
@@ -514,7 +508,7 @@
                     <tr>
                         <td class="w_col w_1"><a href="">广发货币A</a></td>
                         <td class="w_col w_2">广发基金</td>
-                        <td class="w_col w_3"><span class="span_font_red">1.7820</span><span class="span_font_gray">(01-28)</span></td>
+                        <td class="w_col w_3"><span class="span_font_red">1.7820</span></td>
                         <td class="w_col w_4">5.572%</td>
                         <td class="w_col w_5">5.572%</td>
                         <td class="w_col w_6 a_box_gray"><a href="">去投资</a></td>
@@ -522,7 +516,7 @@
                     <tr>
                         <td class="w_col w_1"><a href="">广发货币B</a></td>
                         <td class="w_col w_2">广发基金</td>
-                        <td class="w_col w_3"><span class="span_font_red">1.7820</span><span class="span_font_gray">(01-28)</span></td>
+                        <td class="w_col w_3"><span class="span_font_red">1.7820</span></td>
                         <td class="w_col w_4">5.572%</td>
                         <td class="w_col w_5">5.572%</td>
                         <td class="w_col w_6 a_box_gray"><a href="">去投资</a></td>
@@ -530,7 +524,7 @@
                     <tr>
                         <td class="w_col w_1"><a href="">博时现金收益货币A</a></td>
                         <td class="w_col w_2">博时基金</td>
-                        <td class="w_col w_3"><span class="span_font_red">1.7810</span><span class="span_font_gray">(01-28)</span></td>
+                        <td class="w_col w_3"><span class="span_font_red">1.7810</span></td>
                         <td class="w_col w_4">5.752%</td>
                         <td class="w_col w_5">5.752%</td>
                         <td class="w_col w_6 a_box_gray"><a href="">去投资</a></td>
@@ -586,7 +580,7 @@
 
 
 <div class="home_border_988 clearfix">
-    <h3 class="title_01 title_blue" style="background:#6f6f8;/">
+    <h3 class="title_01 title_blue" style="background:#f6f6f8;/">
         <dl>
             <dt class="title_l"><strong>类余额宝理财产品</strong><span>|</span>最潮、最in的互联网理财</dt>
             <dd class="title_r"><a href="">更多</a></dd>
@@ -604,7 +598,7 @@
                         <a href="">余额宝</a>
                     </dt>
                     <dd>
-                        <div class="row_t">华夏基金. 财富宝</div>
+                        <div class="row_t">天弘基金. 增利宝货币</div>
                         <div class="row_b">1.7840</div>
                         <div class="row_m">
                             <span>万份收益(元)</span> 01-28
@@ -629,7 +623,7 @@
                         <a href="">余额宝</a>
                     </dt>
                     <dd>
-                        <div class="row_t">华夏基金. 财富宝</div>
+                        <div class="row_t">天弘基金. 增利宝货币</div>
                         <div class="row_b">1.7840</div>
                         <div class="row_m">
                             <span>万份收益(元)</span> 01-28
@@ -654,7 +648,7 @@
                         <a href="">余额宝</a>
                     </dt>
                     <dd>
-                        <div class="row_t">华夏基金. 财富宝</div>
+                        <div class="row_t">天弘基金. 增利宝货币</div>
                         <div class="row_b">1.7840</div>
                         <div class="row_m">
                             <span>万份收益(元)</span> 01-28
@@ -679,7 +673,7 @@
                         <a href="">余额宝</a>
                     </dt>
                     <dd>
-                        <div class="row_t">华夏基金. 财富宝</div>
+                        <div class="row_t">天弘基金. 增利宝货币</div>
                         <div class="row_b">1.7840</div>
                         <div class="row_m">
                             <span>万份收益(元)</span> 01-28
@@ -704,7 +698,7 @@
                         <a href="">余额宝</a>
                     </dt>
                     <dd>
-                        <div class="row_t">华夏基金. 财富宝</div>
+                        <div class="row_t">天弘基金. 增利宝货币</div>
                         <div class="row_b">1.7840</div>
                         <div class="row_m">
                             <span>万份收益(元)</span> 01-28
@@ -729,7 +723,7 @@
                         <a href="">余额宝</a>
                     </dt>
                     <dd>
-                        <div class="row_t">华夏基金. 财富宝</div>
+                        <div class="row_t">天弘基金. 增利宝货币</div>
                         <div class="row_b">8.888</div>
                         <div class="row_m">
                             <span>万份收益(元)</span> 01-28
@@ -754,7 +748,7 @@
                         <a href="">余额宝</a>
                     </dt>
                     <dd>
-                        <div class="row_t">华夏基金. 财富宝</div>
+                        <div class="row_t">天弘基金. 增利宝货币</div>
                         <div class="row_b">1.2323</div>
                         <div class="row_m">
                             <span>万份收益(元)</span> 01-28
@@ -821,7 +815,7 @@
                         收益
                     </div>
                     <div class="money_num_col">
-                        <span>120 天</span><br>
+                        <span>120 <b style="font-family:Microsoft YaHei">天</b></span><br>
                         期限
                     </div>
                 </dd>
@@ -870,7 +864,7 @@
                         收益
                     </div>
                     <div class="money_num_col">
-                        <span>120 天</span><br>
+                        <span>120 <b style="font-family:Microsoft YaHei">天</b></span><br>
                         期限
                     </div>
                 </dd>
@@ -919,7 +913,7 @@
                         收益
                     </div>
                     <div class="money_num_col">
-                        <span>120 天</span><br>
+                        <span>120 <b style="font-family:Microsoft YaHei">天</b></span><br>
                         期限
                     </div>
                 </dd>
@@ -968,7 +962,7 @@
                         收益
                     </div>
                     <div class="money_num_col">
-                        <span>120 天</span><br>
+                        <span>120 <b style="font-family:Microsoft YaHei">天</b></span><br>
                         期限
                     </div>
                 </dd>

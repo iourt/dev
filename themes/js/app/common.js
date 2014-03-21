@@ -77,14 +77,14 @@ var isPad = function(){
 		$listDetailsBox   = $(".list_detail .mod_box"),
 		$listDetailsClose = $(".list_detail .mod_box_close");
 
-	document.onclick = function(event){
-		var e = e || window.event,
-			tar = e.srcElement || e.target;
-		if(tar.className != "list_detail_hit hover"){
-			$(".mod_box").css("display","none");
-			$(".list_detail").removeClass("hover");
-		}
-	};
+	// document.onclick = function(event){
+	// 	var e = e || window.event,
+	// 		tar = e.srcElement || e.target;
+	// 	if(tar.className != "list_detail_hit hover"){
+	// 		$(".mod_box").css("display","none");
+	// 		$(".list_detail").removeClass("hover");
+	// 	}
+	// };
 
 	$listDetailsClose.hover(function(){
 		$(this).addClass("hover_close");

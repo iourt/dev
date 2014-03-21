@@ -55,22 +55,27 @@
 		var $hotOne     = $(".select_case_a li"),
 			$hotTwo     = $(".select_case_b li"),
 			$hotThree   = $(".select_case_c li"),
+			$select     = $(".select_01 li"),
 			$hotThreeDt = $(".select_01 dt");
+
+		$select.hover(function(){
+			$(this).addClass("hover");
+		}, function(){
+			$(this).removeClass("hover");
+		});
 
 		$hotOne.on("click", function(){
 			$hotOne.removeClass("current");
 			$(this).addClass("current");
 		});
 
-		$hotTwo.hover(function(){
-			$(this).addClass("hover");
-		}, function(){
-			$(this).removeClass("hover");
+		$hotTwo.on("click", function(){
+			$hotTwo.removeClass("current");
+			$(this).addClass("current");
 		});
 
 		$hotThree.on("click", function(){
 			$hotThreeDt.removeClass("current");
-			$hotThree.removeClass("current");
 			$(this).addClass("current");
 		});
 
