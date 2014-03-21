@@ -215,7 +215,7 @@
 	/*浮动框*/
 	.home_list_table .box_detail_show,
 	.home_list_table .list_detail_float{
-		position:absolute; z-index:3; background:#fff; border:1px solid #d4dade; padding:20px 10px; display:none; color:#000; font-size:12px;
+		position:absolute; z-index:3; background:#fff; border:1px solid #d4dade; padding:10px 10px; display:none; color:#000; font-size:12px;
 		-webkit-box-shadow:2px 2px 3px rgba(0,0,0,.1), -2px -2px 3px rgba(0,0,0,.1);
 		   -moz-box-shadow:2px 2px 3px rgba(0,0,0,.1), -2px -2px 3px rgba(0,0,0,.1);
 			 -o-box-shadow:2px 2px 3px rgba(0,0,0,.1), -2px -2px 3px rgba(0,0,0,.1);
@@ -226,7 +226,7 @@
 				border-radius:4px;
 	}
 	.home_list_table .scroll{
-		height:300px; overflow-y:auto;
+		height:300px; overflow-y:auto; margin:10px 0;
 		scrollbar-arrow-color:#aaa; /*三角箭头的颜色*/
 		scrollbar-face-color:#ddd; /*立体滚动条的颜色（包括箭头部分的背景色）*/
 		scrollbar-3dlight-color:#ddd; /*立体滚动条亮边的颜色*/
