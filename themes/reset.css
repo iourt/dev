@@ -200,9 +200,34 @@ body{
 
 
 
-.title_02{
-	font-size:0; position:relative; overflow:hidden; padding-bottom:10px;
+.title_01{
+	height:55px; line-height:55px; font-weight:bold; border-bottom:1px solid #dcdcdc; display:block;
+	overflow:hidden; background:#f6f6f8;
 }
+	.title_01 dt,
+	.title_01 dd{ float:left; }
+	.title_01 dt{ padding-left:20px; color:#93979a; font-size:16px; font-weight:bold; height:55px; }
+	.title_01 .title_l strong{ font-size:20px; display:inline-block; *display:inline; padding-left:40px; }
+	.title_01 .title_l span{ width:1px; overflow:hidden; padding:0 20px; color:#cbcbcd; font-weight:normal; }
+	.title_01 .title_r{ text-align:right; float:right; padding-right:20px; font-size:14px; font-style:normal; }
+	.title_01 .title_r a{ color:#6e6e6e; }
+	.title_01 .title_r a:hover{ color:#1663ff; }
+	.title_01 .title_r span{ background:#fb6b0d; font-size:12px; color:#fff; padding:0 5px; line-height:14px; }
+	.title_01.title_yellow dt,
+	.title_01.title_green dt,
+	.title_01.title_blue dt,
+	.title_01.title_red dt{ background-image:url(images/icon_title.png); background-repeat:no-repeat; }
+	.title_01.title_yellow dt{ background-position:20px -38px; }
+	.title_01.title_green dt{ background-position:20px -130px; }
+	.title_01.title_blue dt{ background-position:20px -85px; }
+	.title_01.title_red dt{ background-position:20px 13px; }
+	.title_01.title_yellow strong{ color:#fb9f0d; }
+	.title_01.title_green strong{ color:#24aa00; }
+	.title_01.title_blue strong{ color:#074a99; }
+	.title_01.title_red strong{ color:#b60002; }
+	.title_01.title_black strong{ color:#000; padding-left:0; }
+
+.title_02{ font-size:0; position:relative; overflow:hidden; padding-bottom:10px; }
 	.title_02 dt{
 		border-bottom:2px solid #bd0100; font-size:16px; font-weight:bold; line-height:20px; padding-bottom:15px;
 		position:absolute; left:0; top:0;

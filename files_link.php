@@ -62,11 +62,19 @@
     <dl>
         <dt>网站文件列表，对应文件名</dt>
         <dd><a target="_blank" href="index.php">首页</a><span>index.php</span></dd>
+
+        <dd><a target="_blank" href="page_01.php">网贷专栏－平台档案</a><span>page_01.php</span></dd>
+        <dd><a target="_blank" href="page_02.php">网贷专栏－平台档案－详情</a><span>page_02.php</span></dd>
+        <dd><a target="_blank" href="page_03.php">网贷专栏－平台导航</a><span>page_03.php</span></dd>
+        <dd><a target="_blank" href="page_04.php">网贷专栏－数据分析</a><span>page_04.php</span></dd>
+        <dd><a target="_blank" href="page_05.php">网贷专栏－网贷计算器</a><span>page_05.php</span></dd>
+
         <dd><a target="_blank" href="finances_01.php">理财产品－货币基金</a><span>finances_01.php</span></dd>
         <dd><a target="_blank" href="finances_02.php">理财产品－类余额宝产品</a><span>finances_02.php</span></dd>
         <dd><a target="_blank" href="finances_03.php">理财产品－网贷项目</a><span>finances_03.php</span></dd>
         <dd><a target="_blank" href="finances_04.php">理财产品－银行理财</a><span>finances_04.php</span></dd>
-        <dd><a target="_blank" href="about.php">关于我们</a><span>finances_04.php</span></dd>
+
+        <dd><a target="_blank" href="about.php">关于我们</a><span>about.php</span></dd>
     </dl>
 </body>
 </html>
