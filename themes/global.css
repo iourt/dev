@@ -348,7 +348,7 @@
 	.list_art_01 dt li.hit.hover{ color:#1663ff; }
 	.list_art_01 dt li.hit.up{ background-position:right -212px; }
 	.list_art_01 dt li.sub_01{ color:#a0a0a0; padding:0; }
-	.list_art_01 dd{ padding:0 20px 20px; }
+	.list_art_01 dd{ padding:0 20px; display:block; }
 	.list_art_01 .col_left,
 	.list_art_01 .col_mid,
 	.list_art_01 .col_right{ border-bottom:1px solid #dcdcdc; padding:15px 0; height:115px; float:left; }
