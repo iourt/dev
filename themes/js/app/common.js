@@ -18,14 +18,19 @@ var isPad = function(){
 	function refix(){
 		var $width = $("body").width(),
 			$fixed = $(".fixed");
-		if($width<1100){
+		if($width<1110){
 			$fixed.css("right","10px");
 		}else{
-			$fixed.css("right",(($width-990)/2-42-10)+"px");
+			$fixed.css("right",(($width-990)/2-42-20)+"px");
 		}
 	}
 
-
+	$(".fixed_email").toggle(function(){
+		$(this).addClass("current");
+	}, function(){
+		$(this).removeClass("current")
+	});
+	
 	$(window).on("scroll", function(){
 		console.log($(window).scrollTop());
 

@@ -146,19 +146,43 @@ body{
 	}
 
 /*侧边导航*/
-.fixed{
-	width:42px; position:fixed; height:145px; bottom:10px; z-index:100;
-}
+.fixed{ width:54px; position:fixed; height:188px; bottom:10px; z-index:100; }
 	.fixed a{
-		display:block; background-image:url(images/btn_fixed.png); background-repeat:no-repeat; width:42px; height:42px;
+		display:block; background-image:url(images/btn_fixed.png); background-repeat:no-repeat; width:54px; height:24px; text-align:center;
+		padding-top:30px; color:#cbd3d8;
 	}
-	.fixed a.fixed_user{
-		background-position:0 0; margin-bottom:5px;
+	.fixed a:hover{ color:#fff; }
+	.fixed a.fixed_user{ background-position:0 0; margin-bottom:5px; }
+	.fixed a:hover.fixed_user{ background-position:-85px 0; }
+	.fixed a.fixed_email{ background-position:0 -59px; margin-bottom:20px; }
+	.fixed a.fixed_email.current,
+	.fixed a:hover.fixed_email{ background-position:-85px -59px; color:#fff; }
+	.fixed a.fixed_top{ background-position:0 -134px; }
+	.fixed a:hover.fixed_top{ background-position:-85px -134px; }
+	.fixed a.fixed_email.current div.mod_box{ display:block; }
+	.fixed .fixed_msg{ text-align:left; }
+	.fixed .fixed_msg h3{ line-height:40px; font-weight:bold; font-weight:14px; }
+	.fixed .fixed_msg textarea{
+		width:400px; height:180px; border:1px solid #c2c2c2; margin:0; padding:5px; line-height:20px; margin-bottom:5px;
+		-webkit-border-radius:3px;
+		   -moz-border-radius:3px;
+			 -o-border-radius:3px;
+				border-radius:3px;
 	}
-	.fixed a.fixed_email{
-		background-position:0 -45px; margin-bottom:20px;
+	.fixed .fixed_msg textarea:focus{ outline:none; border:1px solid #7dadff; }
+	.fixed .fixed_msg input{
+		background:#1185d6; color:#fff; text-align:center; display:block; float:right; width:60px;
+		line-height:30px; border:none; cursor:pointer;
+		-webkit-border-radius:3px;
+		   -moz-border-radius:3px;
+			 -o-border-radius:3px;
+				border-radius:3px;
 	}
-	.fixed a.fixed_top{ background-position:0 -103px; }
+	.fixed .fixed_msg input:focus{ border:none; outline:none; }
+	.fixed .fixed_box_icon{
+		background:url(images/icon_box.png) no-repeat right -780px; width:15px; height:20px;
+		overflow:hidden; position:absolute; bottom:85px; right:-13px; z-index:4;
+	}
 
 
 .list_point{}
