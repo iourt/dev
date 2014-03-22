@@ -66,6 +66,7 @@
         <dd><a target="_blank" href="finances_02.php">理财产品－类余额宝产品</a><span>finances_02.php</span></dd>
         <dd><a target="_blank" href="finances_03.php">理财产品－网贷项目</a><span>finances_03.php</span></dd>
         <dd><a target="_blank" href="finances_04.php">理财产品－银行理财</a><span>finances_04.php</span></dd>
+        <dd><a target="_blank" href="about.php">关于我们</a><span>finances_04.php</span></dd>
     </dl>
 </body>
 </html>

@@ -446,3 +446,11 @@
 	.mod_count .r_li li:hover,
 	.mod_count .r_li li.hover{ background:#2e6299; }
 	.mod_count .r_li li.current{ background:#fb6b0d; }
+
+/*关于我们*/
+.about{ padding:70px 150px 0; background:url(images/icon_about.jpg) no-repeat 70px 70px; }
+	.about h1{ font-size:50px; color:#646464; padding-left:20px; }
+	.about h2{ color:#fb6b0d; border-bottom:2px solid #a0a0a0; line-height:40px; text-indent:20px; font-size:24px; }
+	.about .about_detail{ color:#000; font-size:18px; padding:20px; }
+	.about .about_detail p{ line-height:30px; margin-bottom:20px; }
+	.about .about_addr{ line-height:40px; font-size:18px; padding:20px; }
