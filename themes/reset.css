@@ -135,7 +135,7 @@ body{
 		line-height:30px; font-weight:bold; font-size:16px; line-height:30px; position:absolute; left:10px; top:10px; z-index:1;
 	}
 	.footer .footer_link a{
-		float:left; width:96px; line-height:30px; font-size:12px;
+		float:left; width:96px; line-height:30px; font-size:14px;
 	}
 	.footer .footer_link a:hover{ color:#fff; }
 	.footer .footer_copyright{
@@ -149,7 +149,7 @@ body{
 .fixed{ width:54px; position:fixed; height:188px; bottom:10px; z-index:100; }
 	.fixed a{
 		display:block; background-image:url(images/btn_fixed.png); background-repeat:no-repeat; width:54px; height:24px; text-align:center;
-		padding-top:30px; color:#cbd3d8;
+		padding-top:30px; color:#cbd3d8; cursor:pointer;
 	}
 	.fixed a:hover{ color:#fff; }
 	.fixed a.fixed_user{ background-position:0 0; margin-bottom:5px; }
@@ -163,7 +163,7 @@ body{
 	.fixed .fixed_msg{ text-align:left; }
 	.fixed .fixed_msg h3{ line-height:40px; font-weight:bold; font-weight:14px; }
 	.fixed .fixed_msg textarea{
-		width:400px; height:180px; border:1px solid #c2c2c2; margin:0; padding:5px; line-height:20px; margin-bottom:5px;
+		width:500px; height:160px; border:1px solid #c2c2c2; margin:0; padding:5px; line-height:20px; margin-bottom:5px;
 		-webkit-border-radius:3px;
 		   -moz-border-radius:3px;
 			 -o-border-radius:3px;
@@ -227,7 +227,7 @@ body{
 			border-radius:4px;
 }
 	.mod_box .scroll{
-		height:300px; overflow-y:auto;
+		height:390px; overflow-y:auto; margin:10px 0;
 		scrollbar-arrow-color:#aaa; /*三角箭头的颜色*/
 		scrollbar-face-color:#ddd; /*立体滚动条的颜色（包括箭头部分的背景色）*/
 		scrollbar-3dlight-color:#ddd; /*立体滚动条亮边的颜色*/

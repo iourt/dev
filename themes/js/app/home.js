@@ -78,12 +78,15 @@
 // 点击滚动
 (function(){
 	var $listSort = $(".home_list_slide li"),
-		len = $listSort.length;
+		len = $listSort.length,
+		$max = (len-1)/3;
+
 	$listSort.eq(0).addClass("top1");
 	$listSort.eq(1).addClass("top2");
 	$listSort.eq(2).addClass("top3");
 
 	var $listSlide = $(".home_list_slide"),
+		$listIcon  = $(".home_list_slide .icon"),
 		$listMove  = $(".home_list_slide ul"),
 		$btnLeft   = $(".home_list_slide .move_left"),
 		$btnRight  = $(".home_list_slide .move_right");
@@ -97,55 +100,47 @@
 	// 	$btnLeft.addClass("no");
 	// 	$btnRight.addClass("no");
 	// }
-	$btnLeft.hover(function(){
-		$(this).addClass("hover");
-	}, function(){
-		$(this).removeClass("hover");
-	});
-	$btnRight.hover(function(){
-		$(this).addClass("hover");
-	}, function(){
-		$(this).removeClass("hover");
-	});
 
 	$listSlide.hover(function(){
-		$btnLeft.css("display","block");
-		$btnRight.css("display","block");
+		$(this).addClass("hover");
 	}, function(){
-		$btnLeft.css("display","none");
-		$btnRight.css("display","none");
+		$(this).removeClass("hover");
 	});
 
+	// $listIcon.hover(function(){
+	// 	$(this).addClass("hover");
+	// }, function(){
+	// 	$(this).removeClass("hover");
+	// });
+
 	$btnLeft.on("click", function(){
-		if(clickCount>(len-5)){
-			// $(this).addClass("no");
+		if(clickCount==1){
+			$(this).addClass("hide");
+		}
+		if(clickCount==0){
 			return;
 		}
-		// if(clickCount>(len-6)){
-		// 	$(this).addClass("no");
-		// }
-		clickCount++;
-		// if(clickCount>0){
-		// 	$btnRight.removeClass("no");
-		// }
+		$btnRight.removeClass("hide");
+		clickCount--;
 		$listMove.animate({
-			left: "-"+clickCount*248+"px"
+			left: "-"+clickCount*248*3+"px"
 		}, 600);
 	});
 
 	$btnRight.on("click", function(){
-		if(clickCount===0){
+		console.log(clickCount);
+		if(clickCount == $max-2){
+			$(this).addClass("hide");
+		}
+		if(clickCount == $max-1){
+			$btnLeft.removeClass("hide");
+			clickCount = $max-1;
 			return;
 		}
-		// if(clickCount<=(len-4)){
-		// 	$btnLeft.removeClass("no");
-		// }
-		// if(clickCount===1){
-		// 	$(this).addClass("no");
-		// }
-		clickCount--;
+		$btnLeft.removeClass("hide");
+		clickCount++;
 		$listMove.animate({
-			left: "-"+clickCount*248+"px"
+			left: "-"+clickCount*248*3+"px"
 		}, 600);
 	});
 })();

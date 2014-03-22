@@ -48,7 +48,7 @@
         <div class="select_02 clearfix" style="margin-bottom:20px;">
             <div class="select_title clearfix">
                 <ul class="clearfix">
-                    <li class="current null">已选全部平台</li>
+                    <li class="current null">已选全部银行</li>
                 </ul>
             </div>
             <div id="type-1" class="select_li clearfix">
@@ -119,30 +119,10 @@
                     <h2>产品列表</h2>
                     <ul>
                         <li class="hit up">发售时间</li>
-                        <li class="hit">理财期限</li>
+                        <li class="hit down">理财期限</li>
                         <li class="hit up">收益率</li>
                         <li class="sub_01">排序：</li>
                     </ul>
-                    <script type="text/javascript">
-                    (function(){
-                        var $hit = $(".list_art_01 li.hit");
-                        $hit.toggle(function(){
-                            var cl = $(this).attr("class");
-                            if(cl.indexOf("up") >= 0){
-                                $(this).removeClass("up");
-                            }else{
-                                $(this).addClass("up");
-                            }
-                        }, function(){
-                            var cl = $(this).attr("class");
-                            if(cl.indexOf("up") >= 0){
-                                $(this).removeClass("up");
-                            }else{
-                                $(this).addClass("up");
-                            }
-                        });
-                    })();
-                    </script>
                 </dt>
                 <dd class="clearfix">
                     <div class="col_left">

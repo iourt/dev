@@ -599,7 +599,7 @@
 
 
 <div class="home_border_988 clearfix">
-    <h3 class="title_01 title_blue" style="background:#f6f6f8;/">
+    <h3 class="title_01 title_blue" style="background:#f6f6f8;">
         <dl>
             <dt class="title_l"><strong>类余额宝理财产品</strong><span>|</span>最潮、最in的互联网理财</dt>
             <dd class="title_r"><a href="">更多</a></dd>
@@ -607,9 +607,10 @@
     </h3>
 
     <div class="home_list_slide clearfix">
-        <div class="move_left"></div>
-        <div class="move_right"></div>
+        <a class="icon move_left hide"></a>
+        <a class="icon move_right"></a>
         <ul>
+            <!-- 1 -->
             <li>
                 <dl>
                     <dt>
@@ -635,6 +636,7 @@
                     </dd>
                 </dl>
             </li>
+            <!-- 2 -->
             <li>
                 <dl>
                     <dt>
@@ -660,6 +662,7 @@
                     </dd>
                 </dl>
             </li>
+            <!-- 3 -->
             <li>
                 <dl>
                     <dt>
@@ -685,6 +688,7 @@
                     </dd>
                 </dl>
             </li>
+            <!-- 4 -->
             <li>
                 <dl>
                     <dt>
@@ -710,6 +714,7 @@
                     </dd>
                 </dl>
             </li>
+            <!-- 5 -->
             <li>
                 <dl>
                     <dt>
@@ -735,6 +740,7 @@
                     </dd>
                 </dl>
             </li>
+            <!-- 6 -->
             <li>
                 <dl>
                     <dt>
@@ -760,6 +766,85 @@
                     </dd>
                 </dl>
             </li>
+            <!-- 7 -->
+            <li>
+                <dl>
+                    <dt>
+                        <img src="themes/temp/1.jpg" />
+                        <a href="">余额宝</a>
+                    </dt>
+                    <dd>
+                        <div class="row_t">天弘基金. 增利宝货币</div>
+                        <div class="row_b">1.2323</div>
+                        <div class="row_m">
+                            <span>万份收益(元)</span> 01-28
+                        </div>
+                        <div class="row_f">
+                            <div>
+                                <span>6.891%</span><br>
+                                单日年化收益
+                            </div>
+                            <div>
+                                <span>9%</span><br>
+                                七日年化收益
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </li>
+            <!-- 8 -->
+            <li>
+                <dl>
+                    <dt>
+                        <img src="themes/temp/1.jpg" />
+                        <a href="">余额宝</a>
+                    </dt>
+                    <dd>
+                        <div class="row_t">天弘基金. 增利宝货币</div>
+                        <div class="row_b">1.2323</div>
+                        <div class="row_m">
+                            <span>万份收益(元)</span> 01-28
+                        </div>
+                        <div class="row_f">
+                            <div>
+                                <span>6.891%</span><br>
+                                单日年化收益
+                            </div>
+                            <div>
+                                <span>9%</span><br>
+                                七日年化收益
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </li>
+            <!-- 9 -->
+            <li>
+                <dl>
+                    <dt>
+                        <img src="themes/temp/1.jpg" />
+                        <a href="">余额宝</a>
+                    </dt>
+                    <dd>
+                        <div class="row_t">天弘基金. 增利宝货币</div>
+                        <div class="row_b">1.2323</div>
+                        <div class="row_m">
+                            <span>万份收益(元)</span> 01-28
+                        </div>
+                        <div class="row_f">
+                            <div>
+                                <span>6.891%</span><br>
+                                单日年化收益
+                            </div>
+                            <div>
+                                <span>9%</span><br>
+                                七日年化收益
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </li>
+            <!-- 10 -->
             <li>
                 <dl>
                     <dt>

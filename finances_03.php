@@ -140,7 +140,7 @@
 	<div class="mod_right clearfix">
         <div class="border_02" style="height:379px;">
             <dl class="title_02 clearfix">
-                <dt>理财圈资讯</dt>
+                <dt>网贷百科</dt>
                 <dd><a href="">更多</a></dd>
             </dl>
             <ul class="list_point clearfix">
@@ -166,33 +166,17 @@
 		<table class="table_list_03" cellspacing="0" cellpadding="0">
 			<tr>
 				<th class="col null"></th>
-				<th class="col hit_box col_01">网贷平台</th>
+				<th class="col hit_box col_01 up">网贷平台</th>
 				<th class="col">项目名称</th>
-				<th class="col hit_box col_03">融资金额<br><span class="color_gray">(元)</span></th>
-				<th class="col hit_box col_04">进度</th>
-				<th class="col hit_box col_05">起点金额<br><span class="color_gray">(元)</span></th>
-				<th class="col hit_box col_06">年化利率</th>
-				<th class="col hit_box col_07">期限</th>
-				<th class="col hit_box col_08">收益金额<br><span class="color_gray">(元)</span></th>
-				<th class="col hit_box col_09">还款方式</th>
+				<th class="col hit_box col_03 up">融资金额<br><span class="color_gray">(元)</span></th>
+				<th class="col hit_box col_04 up">进度</th>
+				<th class="col hit_box col_05 up">起点金额<br><span class="color_gray">(元)</span></th>
+				<th class="col hit_box col_06 up">年化利率</th>
+				<th class="col hit_box col_07 up">期限</th>
+				<th class="col hit_box col_08 up">收益金额<br><span class="color_gray">(元)</span></th>
+				<th class="col hit_box col_09 up">还款方式</th>
 				<th class="col"></th>
 				<th class="col null"></th>
-				<script type="text/javascript">
-				(function(){
-					var $hitBox = $(".hit_box"),
-						isClick = [];
-
-					$hitBox.on("click", function(){
-						var i = $(this).index();
-						if(!isClick[i]){
-							$(this).addClass("up");
-						}else{
-							$(this).removeClass("up");
-						}
-						isClick[i] = !isClick[i];
-					});
-				})();
-				</script>
 			</tr>
 			<tr>
 				<td class="null"></td>
