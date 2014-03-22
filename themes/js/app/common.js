@@ -25,27 +25,32 @@ var isPad = function(){
 		}
 	}
 
-	$(".fixed_email").toggle(function(){
-		$(this).addClass("current");
-	}, function(){
-		$(this).removeClass("current")
-	});
+	var $btn      = $(".fixed_email"),
+		$btnClose = $(".fixed .mod_box_close"),
+		$show     = $(".fixed .mod_box");
+
+	$btnClose.on("click", function(){
+		$btn.removeClass("current");
+		$show.css("display","none");
+		$btn.unbind();
+	})
+	$btn.live("click", function(){
+		$(this).toggle(function(){
+			$show.css("display","block");
+			$(this).addClass("current");
+		}, function(){
+			$show.css("display","none");
+			$(this).removeClass("current");
+		});
+		$(this).trigger("click");
+	})
 	
 	$(window).on("scroll", function(){
-		console.log($(window).scrollTop());
-
-		var a = $(window).height(),
+		var a = "innerHeight" in window ? window.innerHeight : document.documentElement.offsetHeight;
 			b = $("body").height(),
 			c = $(".footer").height(),
 			d = $(window).scrollTop(),
 			e = b - a -d;
-
-			console.log("window "+$(window).height());
-			console.log("body "+$("body").height());
-			console.log("footer "+$(".footer").height());
-			console.log("scrollTop "+$(window).scrollTop());
-			console.log("b-a-d "+(b-a-d));
-
 		if(e<=c){
 			var d = $(window).scrollTop() - $("body").height() - $(".footer").height() - $(window).height();
 			$(".fixed").css("bottom", (10+c-e)+"px");

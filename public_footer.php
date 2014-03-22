@@ -33,19 +33,17 @@
         <![endif]-->
         <div class="fixed">
             <a class="fixed_user" href="">关于</a>
-            <a class="fixed_email">
-                反馈
-                <div class="mod_box clearfix" style="top:auto;bottom:10px;left:auto;right:62px;">
-                    <div class="fixed_box_icon"></div>
-                    <div class="mod_box_close"></div>
-                    <div class="fixed_msg clearfix">
-                        <h3>反馈问题</h3>
-                        <textarea></textarea>
-                        <input type="submit" value="确定" />
-                    </div>
-                </div>
-            </a>
+            <a class="fixed_email">反馈</a>
             <a class="fixed_top" href="#">回页顶</a>
+            <div class="mod_box clearfix" style="top:auto;bottom:10px;left:auto;right:62px;">
+                <div class="fixed_box_icon"></div>
+                <div class="mod_box_close"></div>
+                <div class="fixed_msg clearfix">
+                    <h3>反馈问题</h3>
+                    <textarea></textarea>
+                    <input type="submit" value="确定" />
+                </div>
+            </div>
         </div>
         <script type="text/javascript" src="themes/js/app/common.js"></script>
     </body>
