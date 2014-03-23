@@ -1,85 +1,39 @@
-﻿.home_banner{
-	height:321px; color:#fff; margin-bottom:25px; background:url(images/banner.jpg) no-repeat center center #005ca7;
-}
-	.home_banner .home_banner_t{
-		height:8px; font-size:0; width:100%; background:url(images/banner_shadow.png) repeat-x 0 0;
-	}
-	.home_banner .home_banner_left{
-		padding-top:50px; width:550px; overflow:hidden; float:left;
-	}
-	.home_banner .home_banner_left dt{
-		padding-left:80px; display:block; margin-bottom:25px; font:bold 18px/40px "Microsoft YaHei";
-	}
+﻿.home_banner{ height:321px; color:#fff; margin-bottom:25px; background:url(images/banner.jpg) no-repeat center center #005ca7; }
+	.home_banner .home_banner_t{ height:8px; font-size:0; width:100%; background:url(images/banner_shadow.png) repeat-x 0 0; }
+	.home_banner .home_banner_left{ padding-top:50px; width:550px; overflow:hidden; float:left; }
+	.home_banner .home_banner_left dt{ padding-left:80px; display:block; margin-bottom:25px; font:bold 18px/40px "Microsoft YaHei"; }
 	.home_banner .home_banner_left dt div{
 		border-bottom:2px solid #81acd6; cursor:pointer;
 		background-image:url(images/icon_box.png); background-repeat:no-repeat; background-position:450px -657px;
 	}
 	.home_banner .home_banner_left dt div.hover{ background-position:450px -707px; }
-	.home_banner .home_banner_left dt div span{
-		float:right; padding-right:25px;
-	}
-	.home_banner .home_banner_left li{
-		display:block; height:22px; line-height:20px; margin-bottom:8px; overflow:hidden; font-size:14px;
-	}
-	.home_banner .home_banner_left .b_left{
-		float:left; width:80px; text-indent:10px;
-	}
-	.home_banner .home_banner_left .b_mid{
-		float:left; width:365px; background:#3581c9; height:22px; position:relative;
-	}
-	.home_banner .home_banner_left .b_mid div{
-		position:absolute; left:0; top:0; height:22px; z-index:1;
-	}
+	.home_banner .home_banner_left dt div span{ float:right; padding-right:25px; }
+	.home_banner .home_banner_left li{ display:block; height:22px; line-height:20px; margin-bottom:8px; overflow:hidden; font-size:14px; }
+	.home_banner .home_banner_left .b_left{ float:left; width:80px; text-indent:10px; }
+	.home_banner .home_banner_left .b_mid{ float:left; width:365px; background:#3581c9; height:22px; position:relative; }
+	.home_banner .home_banner_left .b_mid div{ position:absolute; left:0; top:0; height:22px; z-index:1; }
 	.home_banner .home_banner_left .b_mid span{
 		display:block; position:absolute; left:0; top:0; height:22px; width:100%; font-size:12px; text-align:center;
 		line-height:22px; z-index:2; font-family:Arial;
 	}
-	.home_banner .home_banner_left .b_mid.color_1 div{
-		background:#fb4b0f;
-	}
-	.home_banner .home_banner_left .b_mid.color_2 div{
-		background:#fa770f;
-	}
-	.home_banner .home_banner_left .b_mid.color_3 div{
-		background:#fb6b0b;
-	}
-	.home_banner .home_banner_left .b_mid.color_4 div{
-		background:#fb9f0e;
-	}
-	.home_banner .home_banner_left .b_mid.color_5 div{
-		background:#fccb0d;
-	}
-	.home_banner .home_banner_left .b_right{
-		padding-left:20px; float:left;
-	}
-	.home_banner .home_banner_left .b_right span{
-		font-size:16px; color:#fb6a0d; font-weight:bold; font-family:Arial;
-	}
-	.home_banner .home_banner_right{
-		width:340px; padding-right:10px; float:right;
-	}
-	.home_banner .home_banner_right .r_top{
-		height:130px; padding:30px 0 0 130px;
-	}
-	.home_banner .home_banner_right .r_top .r_a{
-		font:bold 20px/40px "Microsoft YaHei";
-	}
-	.home_banner .home_banner_right .r_top .r_b{
-		font-size:16px;
-	}
+	.home_banner .home_banner_left .b_mid.color_1 div{ background:#fb4b0f; }
+	.home_banner .home_banner_left .b_mid.color_2 div{ background:#fa770f; }
+	.home_banner .home_banner_left .b_mid.color_3 div{ background:#fb6b0b; }
+	.home_banner .home_banner_left .b_mid.color_4 div{ background:#fb9f0e; }
+	.home_banner .home_banner_left .b_mid.color_5 div{ background:#fccb0d; }
+	.home_banner .home_banner_left .b_right{ padding-left:20px; float:left; }
+	.home_banner .home_banner_left .b_right span{ font-size:16px; color:#fb6a0d; font-weight:bold; font-family:Arial; }
+	.home_banner .home_banner_right{ width:340px; padding-right:10px; float:right; }
+	.home_banner .home_banner_right .r_top{ height:130px; padding:30px 0 0 130px; }
+	.home_banner .home_banner_right .r_top .r_a{ font:bold 20px/40px "Microsoft YaHei"; }
+	.home_banner .home_banner_right .r_top .r_b{ font-size:16px; }
 	.home_banner .home_banner_right .r_top .r_input{
 		background:#d2d3d3; border:none; height:25px; padding:2px 5px; font:bold 14px/25px "Microsoft YaHei";
 		color:#fb6b0d; width:100px; outline:none;
 	}
-	.home_banner .home_banner_right .r_top .r_c{
-		font:14px/35px "Microsoft YaHei"; overflow:hidden; height:30px;
-	}
-	.home_banner .home_banner_right .r_top .r_c span{
-		color:#fa770f; padding-left:10px;
-	}
-	.home_banner .home_banner_right .r_li{
-		font-size:0; padding:10px; text-align:center; line-height:0;
-	}
+	.home_banner .home_banner_right .r_top .r_c{ font:14px/35px "Microsoft YaHei"; overflow:hidden; height:30px; }
+	.home_banner .home_banner_right .r_top .r_c span{ color:#fa770f; padding-left:10px; }
+	.home_banner .home_banner_right .r_li{ font-size:0; padding:10px; text-align:center; line-height:0; }
 	.home_banner .home_banner_right .r_li li{
 		width:90px; height:30px; line-height:30px; text-align:center; overflow:hidden; margin:5px 6px; font-size:12px;
 		background:#305a87; cursor:pointer; float:left;
@@ -95,36 +49,21 @@
 
 
 
-.h_border{
-	border:1px solid #dcdcde; background:#fff; margin-bottom:20px;
-}
-.home_left{
-	width:690px; float:left;
-}
+.h_border{ border:1px solid #dcdcde; background:#fff; margin-bottom:20px; }
+
+
+
+.home_left{ width:690px; float:left; }
 	.home_left .h_border{ padding-bottom:20px; }
-	.home_left .home_msg{
-		height:35px; line-height:35px;
-	}
-	.home_left .home_msg li{
-		 line-height:35px; text-indent:20px; text-align:left; color:#fc6b0e;
-	}
-	.home_left .home_msg.ScrollUp{
-		position:relative; height:35px; overflow:hidden;
-	}
-	.home_left .home_msg.ScrollUp ul{
-		position:absolute; left:0; top:0; width:100%;
-	}
+	.home_left .home_msg{ height:35px; line-height:35px; }
+	.home_left .home_msg li{ line-height:35px; text-indent:20px; text-align:left; color:#fc6b0e; }
+	.home_left .home_msg.ScrollUp{ position:relative; height:35px; overflow:hidden; }
+	.home_left .home_msg.ScrollUp ul{ position:absolute; left:0; top:0; width:100%; }
 	.home_left .home_msg.ScrollUp li{ display:block; }
 
-	.home_list_table{
-		border-spacing:0; width:100%;
-	}
-	.home_list_table th.w_col{
-		background:#ecf1f5; line-height:25px; height:25px; color:#575c62; text-align:left;
-	}
-	.home_list_table td.w_col{
-		border-bottom:1px solid #ececec; padding:15px 0;
-	}
+	.home_list_table{ border-spacing:0; width:100%; }
+	.home_list_table th.w_col{ background:#ecf1f5; line-height:25px; height:25px; color:#575c62; text-align:left; }
+	.home_list_table td.w_col{ border-bottom:1px solid #ececec; padding:15px 0; }
 	.home_list_table .span_box_yellow,
 	.home_list_table .span_box_green,
 	.home_list_table .span_box_blue,
@@ -237,10 +176,14 @@
 	.list_detail_li .caption{ background:#ecf1f5; color:#000; line-height:23px; }
 	.list_detail_li td{ line-height:27px; font-size:12px; font-family:Arial; }
 
+
+
 .home_right{ width:280px; float:right; margin-bottom:20px; }
 	.home_right .h_border{ padding:15px; }
 
+
 .home_border_988{ margin:0 auto; width:988px; border:1px solid #dcdcdc; background:#fff; margin-bottom:20px; }
+
 
 .home_list_slide{ height:247px; overflow:hidden; position:relative; width:100%; }
 	.home_list_slide .icon,
@@ -277,46 +220,23 @@
 	.home_list_slide li dd .row_f div span{ color:#000; font-size:16px; font-family:Arial Black; }
 
 
-.money_list{
-	border-bottom:1px solid #ebebeb;
-}
-	.money_list li{
-		width:226px; float:left; padding:10px; border-right:1px solid #ebebeb;
-	}
-	.money_list .money_logo{
-		position:relative; padding-left:80px; border-bottom:1px solid #ebebeb; height:100px;
-	}
+
+.money_list{ border-bottom:1px solid #ebebeb; }
+	.money_list li{ width:226px; float:left; padding:10px; border-right:1px solid #ebebeb; }
+	.money_list .money_logo{ position:relative; padding-left:80px; border-bottom:1px solid #ebebeb; height:100px; }
 	.money_list .money_logo em{
 		position:absolute; left:0; top:68px; line-height:18px; color:#bebebe; width:70px; text-align:center;
 		display:block; font-size:12px;
 	}
-	.money_list .money_logo img{
-		position:absolute; left:0; top:0; width:70px;
-	}
-	.money_list .money_logo div{
-		margin-bottom:10px; line-height:18px; height:58px; font-size:14px;
-	}
-	.money_list .money_logo span{
-		color:#636363; font-size:12px;
-	}
-	.money_list .money_num{
-		color:#a0a0a0; padding-bottom:15px; clear:both; height:100px;
-	}
-	.money_list .money_num dd{
-		display:block;
-	}
-	.money_list .money_num dd .money_num_col{
-		width:103px; float:left; line-height:18px; padding:15px 0 0 10px;
-	}
-	.money_list .money_num span{
-		color:#000; font-size:16px; font-weight:bold; font-family:Arial Black;
-	}
-	.money_list .money_num em{
-		color:#fb6b0d; font-size:12px;
-	}
-	.money_list .money_num em strong{
-		color:#fb6b0d; font-size:20px;  font-weight:bold;
-	}
+	.money_list .money_logo img{ position:absolute; left:0; top:0; width:70px; }
+	.money_list .money_logo div{ margin-bottom:10px; line-height:18px; height:58px; font-size:14px; }
+	.money_list .money_logo span{ color:#636363; font-size:12px; }
+	.money_list .money_num{ color:#a0a0a0; padding-bottom:15px; clear:both; height:100px; }
+	.money_list .money_num dd{ display:block; }
+	.money_list .money_num dd .money_num_col{ width:103px; float:left; line-height:18px; padding:15px 0 0 10px; }
+	.money_list .money_num span{ color:#000; font-size:16px; font-weight:bold; font-family:Arial Black; }
+	.money_list .money_num em{ color:#fb6b0d; font-size:12px; }
+	.money_list .money_num em strong{ color:#fb6b0d; font-size:20px;  font-weight:bold; }
 	.money_list .money_num .hidden_text{}
 	.money_list .money_num .hidden_text samp{
 		position:relative; width:15px; height:15px; display:inline-block; display:*inline; vertical-align:middle; cursor:pointer;
@@ -358,11 +278,10 @@
 	.money_list .money_time .clock_time.clock_start span{ background:#fa6c0a; }
 
 
+
 .home_link{ text-align:center; }
 	.home_link a{
 		color:#8d98a7; display:block; height:60px; line-height:60px; font-size:18px; width:250px; margin:0 auto;
 		background-image:url(images/icon_box.png); background-repeat:no-repeat; background-position:220px -80px;
 	}
-	.home_link a:hover{
-		color:#1663ff; background-position:220px -130px;
-	}
+	.home_link a:hover{ color:#1663ff; background-position:220px -130px; }

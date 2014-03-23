@@ -153,6 +153,8 @@ var isPad = function(){
 				$elem  = $(params.elem),
 				type   = params.type || 1;
 
+			if(!$elem) return;
+
 			self.moveY   = 0;
 			self.$distY  = params.distY;
 			self.$num    = $(num).length;
@@ -203,5 +205,11 @@ new ScrollText().init({
 new ScrollText().init({
 	elem: ".home_msg",
 	distY: 35,
+	type: 1
+});
+
+new ScrollText().init({
+	elem: ".list_art_02 dd",
+	distY: 30,
 	type: 1
 });

@@ -1,4 +1,4 @@
-﻿body,h1,h2,h3,p,dl,dd,ol,ul,th,td,fieldset,input,button,textarea,form,canvas,audio,video,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{
+﻿body,h1,h2,h3,p,dl,dt,dd,ol,ul,th,td,fieldset,input,button,textarea,form,canvas,audio,video,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{
 	margin:0; padding:0;
 }
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{
@@ -209,6 +209,7 @@ body{
 	.title_01 dt{ padding-left:20px; color:#93979a; font-size:16px; font-weight:bold; height:55px; }
 	.title_01 .title_l strong{ font-size:20px; display:inline-block; *display:inline; padding-left:40px; }
 	.title_01 .title_l span{ width:1px; overflow:hidden; padding:0 20px; color:#cbcbcd; font-weight:normal; }
+	.title_01 .title_l em{ background:url(images/icon_warning.png) no-repeat center center; padding:10px; }
 	.title_01 .title_r{ text-align:right; float:right; padding-right:20px; font-size:14px; font-style:normal; }
 	.title_01 .title_r a{ color:#6e6e6e; }
 	.title_01 .title_r a:hover{ color:#1663ff; }

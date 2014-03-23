@@ -9,9 +9,16 @@
 	<div>网贷专栏 > <a href="">平台档案</a></div>
 </div>
 <div class="wrap clearfix">
-	<div>
-		2月13日 陆金所成交金额300万，共有115人成功投资投资；
-	</div>
+
+	<dl class="list_art_02 clearfix">
+		<dt>昨日成交</dt>
+		<dd>
+			<ul>
+				<li>2月13日 陆金所成交金额300万，共有115人成功投资投资；</li>
+			</ul>
+		</dd>
+	</dl>
+
 	<div class="border_04 clearfix">
         <h3 class="title_01 title_black">
             <dl>
@@ -28,12 +35,12 @@
 	<div class="border_05 clearfix" style="margin-bottom:20px;">
 		<table class="table_list_04"  cellspacing="0" cellpadding="0">
 			<tr>
-				<th class="col_01">网贷平台名</th>
-				<th class="col_02">平台上线时间</th>
-				<th class="col_03">所属公司</th>
-				<th class="col_04">公司地址</th>
-				<th class="col_05">注册资金<br>（万）</th>
-				<th class="col_06">公司成立时间</th>
+				<th class="col_01 hit_box up">网贷平台名</th>
+				<th class="col_02 hit_box down">平台上线时间</th>
+				<th class="col_03 hit_box up">所属公司</th>
+				<th class="col_04 hit_box down">公司地址</th>
+				<th class="col_05 hit_box up">注册资金<br><span>（万）</span></th>
+				<th class="col_06 hit_box down">公司成立时间</th>
 			</tr>
 			<tr>
 				<td class="col_01">爱投资</td>
