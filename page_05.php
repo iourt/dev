@@ -14,9 +14,30 @@
 		<h1>网贷理财计算器</h1>
 		<div class="this_detail clearfix">
 			<div class="this_input clearfix">
-				<div class="sub_1">投资金额：<input type="text" value="" />元</div>
-				<div class="sub_1">年化利率：<input type="text" value="" />％</div>
-				<div class="sub_1">期限：<input type="text" value="" />个月</div>
+				<div class="sub_1">
+					投资金额：<input class="input_a" type="text" value="" />元
+
+					<div class="mod_box">
+						<div class="mod_box_icon"></div>
+						<div class="clearfix">请输入数字</div>
+					</div>
+				</div>
+				<div class="sub_2">
+					年化利率：<input class="input_b" type="text" value="" />％
+
+					<div class="mod_box">
+						<div class="mod_box_icon"></div>
+						<div class="clearfix">请输入数字</div>
+					</div>
+				</div>
+				<div class="sub_3">
+					期限：<input class="input_c" type="text" value="" />个月
+
+					<div class="mod_box">
+						<div class="mod_box_icon"></div>
+						<div class="clearfix">请输入数字</div>
+					</div>
+				</div>
 			</div>
 
 			<div class="this_radio clearfix">
@@ -28,7 +49,7 @@
 
 			<div class="this_chk clearfix">
 				<div class="this_btn">开始计算</div>
-				<div class="this_reset">清空</div>
+				<div class="this_reset"><a>清空</a></div>
 				<input type="checkbox" /> 显示还款时间表
 			</div>
 
@@ -40,58 +61,61 @@
 				<li style="width:70%;">您将在5个月后收回全部本息</li>
 			</ul>
 
-			<h3>本息回收时间表</h3>
-			<table cellspacing="0" cellpadding="0">
-				<tr>
-					<th>月份</th>
-					<th>月收本息</th>
-					<th>月收本金</th>
-					<th>月收利息</th>
-					<th>待收本息</th>
-				</tr>
-				<tr>
-					<td>1月</td>
-					<td>125.00</td>
-					<td>0.00</td>
-					<td>123.00</td>
-					<td>43222.00</td>
-				</tr>
-				<tr>
-					<td>2月</td>
-					<td>125.00</td>
-					<td>0.00</td>
-					<td>123.00</td>
-					<td>43222.00</td>
-				</tr>
-				<tr>
-					<td>3月</td>
-					<td>125.00</td>
-					<td>0.00</td>
-					<td>123.00</td>
-					<td>43222.00</td>
-				</tr>
-				<tr>
-					<td>4月</td>
-					<td>125.00</td>
-					<td>0.00</td>
-					<td>123.00</td>
-					<td>43222.00</td>
-				</tr>
-				<tr>
-					<td>5月</td>
-					<td>125.00</td>
-					<td>0.00</td>
-					<td>123.00</td>
-					<td>43222.00</td>
-				</tr>
-				<tr>
-					<td>6月</td>
-					<td>125.00</td>
-					<td>0.00</td>
-					<td>123.00</td>
-					<td>43222.00</td>
-				</tr>
-			</table>
+
+			<div id="timeList" style="display:none;">
+				<h3>本息回收时间表</h3>
+				<table cellspacing="0" cellpadding="0">
+					<tr>
+						<th>月份</th>
+						<th>月收本息</th>
+						<th>月收本金</th>
+						<th>月收利息</th>
+						<th>待收本息</th>
+					</tr>
+					<tr>
+						<td>1月</td>
+						<td>125.00</td>
+						<td>0.00</td>
+						<td>123.00</td>
+						<td>43222.00</td>
+					</tr>
+					<tr>
+						<td>2月</td>
+						<td>125.00</td>
+						<td>0.00</td>
+						<td>123.00</td>
+						<td>43222.00</td>
+					</tr>
+					<tr>
+						<td>3月</td>
+						<td>125.00</td>
+						<td>0.00</td>
+						<td>123.00</td>
+						<td>43222.00</td>
+					</tr>
+					<tr>
+						<td>4月</td>
+						<td>125.00</td>
+						<td>0.00</td>
+						<td>123.00</td>
+						<td>43222.00</td>
+					</tr>
+					<tr>
+						<td>5月</td>
+						<td>125.00</td>
+						<td>0.00</td>
+						<td>123.00</td>
+						<td>43222.00</td>
+					</tr>
+					<tr>
+						<td>6月</td>
+						<td>125.00</td>
+						<td>0.00</td>
+						<td>123.00</td>
+						<td>43222.00</td>
+					</tr>
+				</table>
+			</div>
 
 			<div class="this_text">
 				按月支付本息（等额本息），即借款人每月以相等的金额偿还借款本息，也是银行房贷等采用的方法。<br>
@@ -99,6 +123,54 @@
 				每月付息到期还本，即借款人每月偿还固定利息，最后一期偿还全部本金。
 			</div>
 		</div>
+		<script type="text/javascript">
+		(function(){
+			var $inputA = $(".input_a"),
+				$inputB = $(".input_b"),
+				$inputC = $(".input_c"),
+				$btnReset = $(".this_reset"),
+				$inputChk = $("input[type=checkbox]"),
+				$timeList = $("#timeList"),
+				$inputR  = $(".this_radio div");
+
+			$btnReset.click(function(){
+				$inputA.val("");
+				$inputB.val("");
+				$inputC.val("");
+			});
+
+			$inputR.click(function(){
+				$(this).children("input").attr('checked', 'true');
+			});
+
+			$inputChk.on("change", function(){
+				if($(this).attr("checked")){
+					$timeList.css("display","block");
+				}else{
+					$timeList.css("display","none");
+				}
+			});
+
+			$inputA.on("input propertychange", function(){
+		        var a = $(this).val();
+		        a = a.replace(/[^\d.]/g, "");
+		        a = a.replace(/^\./g, "");
+		        a = a.replace(/\.{2,}/g,"."); 
+		        $(this).val(a);
+		    });
+			$inputB.on("input propertychange", function(){
+		        var a = $(this).val();
+		        a = a.replace(/[^\d.]/g, "");
+		        a = a.replace(/^\./g, "");
+		        a = a.replace(/\.{2,}/g,"."); 
+		        $(this).val(a);
+		    });
+			$inputC.on("input propertychange", function(){
+		        var a = $(this).val();
+		        $(this).val(a.match(/\d+/g));
+		    });
+		})();
+		</script>
 	</div>
 </div>
 <?php include 'public_footer.php'; ?>

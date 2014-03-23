@@ -1,10 +1,10 @@
 <div class="show_page clearfix">
 	<a class="prev" >上一页</a>
-	<a >1</a>
-	<a >2</a>
-	<a >3</a>
-	<a >4</a>
-	<a >5</a>
+	<a>1</a>
+	<a>2</a>
+	<a>3</a>
+	<a>4</a>
+	<a>5</a>
 	<span>...</span>
 	<a class="next">下一页</a>
 	<span>共6页</span>

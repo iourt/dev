@@ -23,7 +23,7 @@
 			<ul class="mod_intro_td_1 clearfix">
 				<li>
 					<div>平台网址：</div>
-					http://www.renrendai.com
+					<a href="">http://www.renrendai.com</a>
 				</li>
 				</li>
 				<li>
@@ -101,7 +101,7 @@
 					<dt>人人贷以普惠金融的梦想及互联网金融创新的基因凝聚了一批充满阳光、活力和进取精神的金融及技术精英，他们成为了伟大梦想脚踏实地的践行者。</dt>
 					<dd class="clearfix">
 						<ul class="clearfix">
-							<li>
+							<li class="clearfix">
 								<img src="themes/temp/3.jpg" />
 								<h4>张适时</h4>
 								毕业于清华大学经济管理学院金融系。 <br>
@@ -110,7 +110,7 @@
 								往返新疆内蒙等地。 <br>
 								2010年，与合伙人共同创建互联网信贷服务平台-人人贷。
 							</li>
-							<li>
+							<li class="clearfix">
 								<img src="themes/temp/3.jpg" />
 								<h4>张适时</h4>
 								毕业于清华大学经济管理学院金融系。 <br>
