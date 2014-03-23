@@ -56,6 +56,16 @@
             text-decoration:none;
             margin-right:20%;
         }
+        dd:hover{
+            background:rgba(255,255,255,.1);
+        }
+        dd:hover a{ 
+            background:-webkit-linear-gradient(left, #ffc000, #ec0083);
+        }
+        dd:hover span{
+            background:none;
+            color:#fff;
+        }
     </style>
 </head>
 <body>
