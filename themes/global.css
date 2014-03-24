@@ -391,9 +391,9 @@
 .table_list_04 .up{ background-image:url(images/up.png); background-repeat:no-repeat; }
 .table_list_04 .down{ background-image:url(images/down.png); background-repeat:no-repeat; }
 .table_list_04 th.col_01.up,
-.table_list_04 th.col_01.down{ background-position:80px center; }
+.table_list_04 th.col_01.down{ background-position:85px center; }
 .table_list_04 th.col_02.up,
-.table_list_04 th.col_02.down{ background-position:85px center; }
+.table_list_04 th.col_02.down{ background-position:90px center; }
 .table_list_04 th.col_03.up,
 .table_list_04 th.col_03.down{ background-position:60px center; }
 .table_list_04 th.col_04.up,

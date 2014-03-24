@@ -20,6 +20,10 @@
 		</div>
 		<div class="mod_intro_right clearfix">
 			<div class="mod_intro_th_1" id="1"></div>
+			<!-- 如果需要左边的竖条就用下面的样式 -->
+			<!-- <h3 class="mod_intro_title" id="1">52理财</h3> -->
+			<!-- 如果不需要背景图片就用下面的样式 -->
+			<!-- <h3 class="mod_intro_title" id="1" style="margin-top:30px;background:none;padding-left:50px;">52理财</h3> -->
 			<ul class="mod_intro_td_1 clearfix">
 				<li>
 					<div>平台网址：</div>
