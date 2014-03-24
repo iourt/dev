@@ -132,6 +132,18 @@
 		</div>
 		<script type="text/javascript">
 		(function(){
+			var $menu     = $(".mod_intro_left"),
+				$menuDist = $menu.offset().top;
+			$(window).on("scroll", function(){
+				var $menuTop  = $(window).scrollTop();
+				if($menuDist <= $menuTop){
+					$menu.addClass("set");
+				}else{
+					$menu.removeClass("set");
+				}
+			});
+		})();
+		(function(){
 			var $menu = $(".mod_intro_left a");
 			$menu.click(function(){
 				$menu.removeClass("current");
