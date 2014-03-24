@@ -141,6 +141,22 @@ var isPad = function(){
 	}
 })();
 
+
+// 平台档案侧边MENU
+(function(){
+	var $menu     = $(".mod_intro_left"),
+		$menuDist = $menu.offset().top;
+	$(window).on("scroll", function(){
+		var $menuTop  = $(window).scrollTop();
+
+		if($menuDist <= $menuTop){
+			$menu.addClass("set");
+		}else{
+			$menu.removeClass("set");
+		}
+	});
+})();
+
 // 滚动字幕
 (function(window){
 	var ScrollText = function(){};

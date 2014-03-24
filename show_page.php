@@ -17,10 +17,10 @@
 </div>
 <script type="text/javascript">
 (function(){
-	var $input = $(".show_page input"),
-		$end   = $(".show_page .end"),
-		$btn   = $(".show_page .btn");
+	var $input = $(".show_page input");
 	$input.focus(function(){
+		var $btn = $(this).parent().parent().children().children(".btn"),
+			$end = $(this).parent().parent().children().children(".end");
 		$btn.animate({
 			left: "0"
 		}, 700);
@@ -29,11 +29,11 @@
 		}, 700);
 	});
 
-	var $prev = $(".show_page .prev"),
-		$link = $(".show_page a");
+	var $link = $(".show_page a");
 	$link.on("click", function(){
-		var index = $(this).index();
-		$link.removeClass("current");
+		var index = $(this).index(),
+			$prev = $(this).parent().children(".prev");
+		$(this).parent().children("a").removeClass("current");
 		$(this).addClass("current");
 		if(index>=2){
 			$prev.css("visibility","visible");	
