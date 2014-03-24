@@ -19,7 +19,9 @@
 			<a href="#5">公司管理团队</a>
 		</div>
 		<div class="mod_intro_right clearfix">
-			<div class="mod_intro_th_1" id="1"></div>
+			<div class="mod_intro_th_1" id="1">
+				<img src="themes/images/logo_about.jpg">52理财
+			</div>
 			<!-- 如果需要左边的竖条就用下面的样式 -->
 			<!-- <h3 class="mod_intro_title" id="1">52理财</h3> -->
 			<!-- 如果不需要背景图片就用下面的样式 -->

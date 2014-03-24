@@ -551,7 +551,7 @@
 
 	.mod_intro_title{ font-size:24px; color:#0697da; padding:0 50px 0 70px; font-weight:normal; background:url(images/title_02.jpg) no-repeat 50px center; }
 
-	.mod_intro_th_1{ height:100px; background:url(images/logo_about.jpg) no-repeat 35px center; border-bottom:1px solid #dcdcdc; }
+	.mod_intro_th_1{ height:100px; padding-left:35px; border-bottom:1px solid #dcdcdc; font-size:24px; color:#0697da; line-height:100px; }
 	.mod_intro_td_1{ padding:30px 40px; border-bottom:1px solid #dcdcdc; margin-bottom:40px;  }
 	.mod_intro_td_1 li{ position:relative; padding-left:150px; line-height:30px; }
 	.mod_intro_td_1 li div{ position:absolute; left:0; width:140px; text-align:right; color:#7f7f7f; }
@@ -569,7 +569,7 @@
 	.mod_intro_td_5{ padding:30px 50px; }
 	.mod_intro_td_5 dt{ color:#7f7f7f; line-height:25px; padding-bottom:20px; }
 	.mod_intro_td_5 ul{ padding:0; }
-	.mod_intro_td_5 li{ border-top:1px solid #dcdcdc; padding:0 0 20px 150px; position:relative; vertical-align:top; line-height:25px; font-size:14px; }
+	.mod_intro_td_5 li{ border-top:1px solid #dcdcdc; padding:0 0 20px 150px; position:relative; vertical-align:top; line-height:25px; }
 	.mod_intro_td_5 li img{ width:125px; padding:3px; border:1px solid #dcdcdc; position:absolute; left:0; top:20px; }
 	.mod_intro_td_5 li h4{ border-bottom:1px solid #dcdcdc; line-height:40px; vertical-align:top; font-size:16px; font-weight:normal; color:#0697da; }
 
