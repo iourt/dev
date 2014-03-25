@@ -660,7 +660,7 @@
 	.list_tab_01_list th.col_6.up,
 	.list_tab_01_list th.col_6.down{ background-position:100px center; }
 
-	.list_tab_01_list td{ height:55px; border-bottom:1px solid #dcdcdc; }
+	.list_tab_01_list td{ height:40px; border-bottom:1px solid #dcdcdc; }
 	.list_tab_01_list td.col_1{ font-weight:bold; padding-left:10px; }
 	.list_tab_01_list td.col_2{ color:#fb6a0d; text-align:center; }
 	.list_tab_01_list td.col_3,
@@ -714,7 +714,7 @@
 	.article_left h1{ font-size:30px; color:#2a3748; font-weight:normal; line-height:60px; }
 	.article_left .art_author{ color:#646464; line-height:40px; font-size:14px; border-bottom:1px solid #ebebeb; }
 	.article_left .art_author span{ padding-right:30px; }
-	.article_left .art_author a{ color:#0f5be5; }
+	/*.article_left .art_author a{ color:#0f5be5; }*/
 	.article_left .art_author a:hover{ color:#1663ff; }
 
 	.article_left .art_content{ font-size:18px; line-height:36px; padding:20px 0; }
