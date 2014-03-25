@@ -13,56 +13,44 @@
 	<div class="calculators clearfix">
 		<h1>网贷理财计算器</h1>
 		<div class="this_detail clearfix">
-			<div class="this_input clearfix">
-				<div class="sub_1">
-					投资金额：<input class="input_a" type="text" value="" />元
-
-					<div class="mod_box">
-						<div class="mod_box_icon"></div>
-						<div class="clearfix">请输入数字</div>
-					</div>
-				</div>
-				<div class="sub_2">
-					年化利率：<input class="input_b" type="text" value="" />％
-
-					<div class="mod_box">
-						<div class="mod_box_icon"></div>
-						<div class="clearfix">请输入数字</div>
-					</div>
-				</div>
-				<div class="sub_3">
-					期限：<input class="input_c" type="text" value="" />个月
-
-					<div class="mod_box">
-						<div class="mod_box_icon"></div>
-						<div class="clearfix">请输入数字</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="this_radio clearfix">
-				<div class="sub_1">还款方式：</div>
-				<div class="sub_2"><input type="radio" name="m" /> 按月支付本息</div>
-				<div class="sub_3"><input type="radio" name="m" /> 每月付息到期还本</div>
-				<div class="sub_4"><input type="radio" name="m" /> 到期一次性还本付息</div>
-			</div>
+			<ul class="this_input clearfix">
+				<li class="sub_1">
+					投资金额：<input class="input_a" type="text" value="" />元<br>
+					<span> </span>
+				</li>
+				<li class="sub_2" class="sub_1">
+					期限：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="input_b" type="text" value="" />个月<br>
+					<span> </span>
+				</li>
+				<li class="sub_3">
+					还款方式：
+					<select>
+						<option>按月支付本息</option>
+						<option>每月付息到期还本</option>
+						<option>到期一次性还本付息</option>
+					</select>
+				</li>
+				<li class="sub_4">
+					年化利率：<input class="input_c" type="text" value="" />％<br>
+					<span> </span>
+				</li>
+			</ul>
 
 			<div class="this_chk clearfix">
 				<div class="this_btn">开始计算</div>
 				<div class="this_reset"><a>清空</a></div>
-				<input type="checkbox" /> 显示还款时间表
 			</div>
-
-			<h3>收益描述</h3>
-			<ul class="this_descr clearfix">
-				<li style="width:30%;">投资金额 <span class="color_yellow">10000.00</span>元</li>
-				<li style="width:70%;" style="width:30%;">应收本息 <span class="color_yellow">625.00</span>元</li>
-				<li style="width:30%;">月收利息 <span class="color_yellow">625.00</span>元</li>
-				<li style="width:70%;">您将在5个月后收回全部本息</li>
-			</ul>
 
 
 			<div id="timeList" style="display:none;">
+
+				<h3>收益描述</h3>
+				<ul class="this_descr clearfix">
+					<li style="width:30%;">投资金额 <span class="color_yellow">10000.00</span>元</li>
+					<li style="width:70%;" style="width:30%;">应收本息 <span class="color_yellow">625.00</span>元</li>
+					<li style="width:30%;">月收利息 <span class="color_yellow">625.00</span>元</li>
+					<li style="width:70%;">您将在5个月后收回全部本息</li>
+				</ul>
 				<h3>本息回收时间表</h3>
 				<table cellspacing="0" cellpadding="0">
 					<tr>
@@ -77,42 +65,42 @@
 						<td>125.00</td>
 						<td>0.00</td>
 						<td>123.00</td>
-						<td>43222.00</td>
+						<td style="color:#ba0000;">43222.00</td>
 					</tr>
 					<tr>
 						<td>2月</td>
 						<td>125.00</td>
 						<td>0.00</td>
 						<td>123.00</td>
-						<td>43222.00</td>
+						<td style="color:#ba0000;">43222.00</td>
 					</tr>
 					<tr>
 						<td>3月</td>
 						<td>125.00</td>
 						<td>0.00</td>
 						<td>123.00</td>
-						<td>43222.00</td>
+						<td style="color:#ba0000;">43222.00</td>
 					</tr>
 					<tr>
 						<td>4月</td>
 						<td>125.00</td>
 						<td>0.00</td>
 						<td>123.00</td>
-						<td>43222.00</td>
+						<td style="color:#ba0000;">43222.00</td>
 					</tr>
 					<tr>
 						<td>5月</td>
 						<td>125.00</td>
 						<td>0.00</td>
 						<td>123.00</td>
-						<td>43222.00</td>
+						<td style="color:#ba0000;">43222.00</td>
 					</tr>
 					<tr>
 						<td>6月</td>
 						<td>125.00</td>
 						<td>0.00</td>
 						<td>123.00</td>
-						<td>43222.00</td>
+						<td style="color:#ba0000;">43222.00</td>
 					</tr>
 				</table>
 			</div>
@@ -129,26 +117,31 @@
 				$inputB = $(".input_b"),
 				$inputC = $(".input_c"),
 				$btnReset = $(".this_reset"),
-				$inputChk = $("input[type=checkbox]"),
-				$timeList = $("#timeList"),
-				$inputR  = $(".this_radio div");
+				$btn      = $(".this_btn"),
+				$timeList = $("#timeList");
 
 			$btnReset.click(function(){
 				$inputA.val("");
 				$inputB.val("");
 				$inputC.val("");
+				$timeList.css("display","none");
 			});
 
-			$inputR.click(function(){
-				$(this).children("input").attr('checked', 'true');
-			});
+			$btn.on("click", function(){
+				var a = $inputA.val();
+					b = $inputB.val();
+					c = $inputC.val();
 
-			$inputChk.on("change", function(){
-				if($(this).attr("checked")){
-					$timeList.css("display","block");
-				}else{
-					$timeList.css("display","none");
+				if(!a){
+					$(".this_input .sub_1 span").html("输入不能为空");
 				}
+				if(!b){
+					$(".this_input .sub_2 span").html("输入不能为空");
+				}
+				if(!c){
+					$(".this_input .sub_4 span").html("输入不能为空");
+				}
+				if(a && b && c) $timeList.css("display","block");
 			});
 
 			$inputA.on("input propertychange", function(){
@@ -157,6 +150,7 @@
 		        a = a.replace(/^\./g, "");
 		        a = a.replace(/\.{2,}/g,"."); 
 		        $(this).val(a);
+				$(".this_input .sub_1 span").html("");
 		    });
 			$inputB.on("input propertychange", function(){
 		        var a = $(this).val();
@@ -164,10 +158,12 @@
 		        a = a.replace(/^\./g, "");
 		        a = a.replace(/\.{2,}/g,"."); 
 		        $(this).val(a);
+				$(".this_input .sub_2 span").html("");
 		    });
 			$inputC.on("input propertychange", function(){
 		        var a = $(this).val();
 		        $(this).val(a.match(/\d+/g));
+				$(".this_input .sub_4 span").html("");
 		    });
 		})();
 		</script>

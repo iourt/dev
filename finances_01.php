@@ -19,47 +19,54 @@
                     <li class="current null">已选全部基金公司</li>
                 </ul>
             </div>
-			<div class="select_detail clearfix">
+			<!-- <div class="select_detail clearfix"> -->
+			<div class="select_detail clearfix" style="padding-top:10px;padding-bottom:10px;">
 				<div class="select_col">选择基金公司</div>
-				<ul class="select_case_a clearfix">
-					<li class="no_title">不限</li>
-					<li class="current">热门</li>
-					<li><b>A-G</b></li>
-					<li><b>H-M</b></li>
-					<li><b>N-T</b></li>
-					<li><b>U-Z</b></li>
-				</ul>
-				<ul class="select_case_b clearfix">
-					<li data-id="1">华夏基金</li>
-					<li data-id="2">大成基金</li>
-					<li data-id="3">东吴基金</li>
-					<li data-id="4">国投瑞银</li>
-					<li data-id="5">长城基金</li>
-					<li data-id="6">长盛基金</li>
-					<li data-id="7">富国基金</li>
-					<li data-id="8">富安达基金</li>
-					<li data-id="9">广发基金</li>
-					<li data-id="10">博时基金</li>
-					<li data-id="12">宝盈基金</li>
-					<li data-id="13">国泰基金</li>
-					<li data-id="14">东方基金</li>
-					<li data-id="15">长信基金</li>
-					<li data-id="16">财通基金</li>
-					<li data-id="17">光大保德信</li>
-					<li data-id="18">方正富邦</li>
-					<li data-id="19">长安基金</li>
-					<li data-id="20">安信基金</li>
-					<li data-id="21">国金通用</li>
-					<li data-id="22">德邦基金</li>
-					<li data-id="23">道富基金</li>
-					<li data-id="24">国开泰富</li>
-					<li data-id="25">国联安基金</li>
-					<li data-id="26">东证资管</li>
-					<li data-id="27">国寿安保</li>
-					<li data-id="28">工银瑞信</li>
-					<li data-id="29">国海富兰克林</li>
-				</ul>
+				<div class="no_title">不限</div>
+			</div> 
+
+			<div class="select_dashed clearfix">
+				<div>
+					<ul class="select_case_a clearfix">
+						<li class="s_1 current"><span>热门</span></li>
+						<li class="s_2 "><span>A-G</span></li>
+						<li class="s_3 "><span>H-M</span></li>
+						<li class="s_4 " class="s_5"><span>N-T</span></li>
+						<li class="s_5 "><span>U-Z</span></li>
+					</ul>
+					<ul class="select_case_b clearfix">
+						<li data-id="1">华夏基金</li>
+						<li data-id="2">大成基金</li>
+						<li data-id="3">东吴基金</li>
+						<li data-id="4">国投瑞银</li>
+						<li data-id="5">长城基金</li>
+						<li data-id="6">长盛基金</li>
+						<li data-id="7">富国基金</li>
+						<li data-id="8">富安达基金</li>
+						<li data-id="9">广发基金</li>
+						<li data-id="10">博时基金</li>
+						<li data-id="12">宝盈基金</li>
+						<li data-id="13">国泰基金</li>
+						<li data-id="14">东方基金</li>
+						<li data-id="15">长信基金</li>
+						<li data-id="16">财通基金</li>
+						<li data-id="17">光大保德信</li>
+						<li data-id="18">方正富邦</li>
+						<li data-id="19">长安基金</li>
+						<li data-id="20">安信基金</li>
+						<li data-id="21">国金通用</li>
+						<li data-id="22">德邦基金</li>
+						<li data-id="23">道富基金</li>
+						<li data-id="24">国开泰富</li>
+						<li data-id="25">国联安基金</li>
+						<li data-id="26">东证资管</li>
+						<li data-id="27">国寿安保</li>
+						<li data-id="28">工银瑞信</li>
+						<li data-id="29">国海富兰克林</li>
+					</ul>
+				</div>
 			</div>
+			<!-- </div> -->
 			<div class="select_detail clearfix">
 				<div class="select_col">按字母找基金</div>
 				<dl class="clearfix">

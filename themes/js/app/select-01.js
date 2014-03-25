@@ -1,7 +1,7 @@
 (function(){
-	var $hotOne     = $(".select_case_a li"),
-		$hotTwo     = $(".select_case_b li"),
-		$hotThree   = $(".select_case_c li"),
+	var $hotOne    = $(".select_case_a li"),
+		$hotTwo    = $(".select_case_b li"),
+		$hotThree  = $(".select_case_c li"),
 		$titleNo   = $(".select_01 no_title"),
         $titleDel  = $(".select_title .hit"),
 		$titleNull = $(".select_title .null"),
@@ -14,18 +14,32 @@
 	});
 
 	$hotOne.live("click", function(){
-		$(this).toggle(function(){
-			$(this).addClass("current");
-		}, function(){
-			$(this).removeClass("current");
-		});
+		// $(this).toggle(function(){
+		// 	$(this).addClass("current");
+		// }, function(){
+		// 	$(this).removeClass("current");
+		// });
+		$hotOne.removeClass("current");
+		$(this).addClass("current");
 	    $(this).trigger('click');
 	});
+
+
+	$(".no_title").on("click", function(){
+		$(this).addClass("current");
+		$hotTwo.removeClass("current");
+		$hotTwo.unbind();
+		$titleNull.css("display","block");
+		$(".select_title .hit").remove();
+	});
+
 
 	$hotTwo.live("click", function(){
 		$(this).toggle(function(){
 			var dataText = $(this).html(),
 				dataId   = $(this).attr("data-id");
+
+			$(".no_title").removeClass("current");
 			$titleList.append('<li class="hit" data-id="'+dataId+'"">'+dataText+'</li>');
 			$titleNo.removeClass("current");
 			$(this).addClass("current");
