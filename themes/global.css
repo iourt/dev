@@ -679,7 +679,7 @@
 	.calculators .this_input li span{ color:red; padding-left:80px; line-height:30px; }
 
 	.calculators .this_input input{
-		border:1px solid #dcdcdc; height:20px; line-height:30px; width:90px; color:#666; margin:0 5px; padding:5px;
+		border:1px solid #dcdcdc; height:20px; line-height:20px; width:90px; color:#666; margin:0 5px; padding:5px;
 		-webkit-border-radius:3px;
 		   -moz-border-radius:3px;
 			 -o-border-radius:3px;

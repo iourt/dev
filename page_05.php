@@ -134,36 +134,42 @@
 
 				if(!a){
 					$(".this_input .sub_1 span").html("输入不能为空");
+				}else{
+					$(".this_input .sub_1 span").html("");
 				}
 				if(!b){
 					$(".this_input .sub_2 span").html("输入不能为空");
+				}else{
+					$(".this_input .sub_2 span").html("");
 				}
 				if(!c){
 					$(".this_input .sub_4 span").html("输入不能为空");
+				}else{
+					$(".this_input .sub_4 span").html("");
 				}
 				if(a && b && c) $timeList.css("display","block");
 			});
 
 			$inputA.on("input propertychange", function(){
+				$(".this_input .sub_1 span").html("");
 		        var a = $(this).val();
 		        a = a.replace(/[^\d.]/g, "");
 		        a = a.replace(/^\./g, "");
 		        a = a.replace(/\.{2,}/g,"."); 
 		        $(this).val(a);
-				$(".this_input .sub_1 span").html("");
 		    });
 			$inputB.on("input propertychange", function(){
+				$(".this_input .sub_2 span").html("");
 		        var a = $(this).val();
 		        a = a.replace(/[^\d.]/g, "");
 		        a = a.replace(/^\./g, "");
 		        a = a.replace(/\.{2,}/g,"."); 
 		        $(this).val(a);
-				$(".this_input .sub_2 span").html("");
 		    });
 			$inputC.on("input propertychange", function(){
+				$(".this_input .sub_4 span").html("");
 		        var a = $(this).val();
 		        $(this).val(a.match(/\d+/g));
-				$(".this_input .sub_4 span").html("");
 		    });
 		})();
 		</script>
