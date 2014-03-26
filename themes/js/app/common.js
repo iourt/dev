@@ -12,9 +12,9 @@ var isPad = function(){
 // 浮动的侧边按钮
 (function(){
 	refix();
-	window.addEventListener("resize", function(){
-		refix();
-	}, false);
+	// window.addEventListener("resize", function(){
+	// 	refix();
+	// }, false);
 	function refix(){
 		var $width = $("body").width(),
 			$fixed = $(".fixed");

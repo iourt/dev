@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event){
+$(function(){
 	var BannerChange = function(){
 		return (this instanceof BannerChange)
 			? this.init()
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 	};
 
 	BannerChange = new BannerChange();
-}, false);
+});
 
 // banner
 (function(){

@@ -128,7 +128,6 @@
 	});
 
 	$btnRight.on("click", function(){
-		console.log(clickCount);
 		if(clickCount == $max-2){
 			$(this).addClass("hide");
 		}
