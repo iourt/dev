@@ -106,9 +106,9 @@
 			</div>
 
 			<div class="this_text">
-				按月支付本息（等额本息），即借款人每月以相等的金额偿还借款本息，也是银行房贷等采用的方法。<br>
-				因计算中存在四舍五入，最后一期还款金额与之前略有不同。<br>
-				每月付息到期还本，即借款人每月偿还固定利息，最后一期偿还全部本金。
+				<p>按月支付本息（等额本息），即借款人每月以相等的金额偿还借款本息，也是银行房贷等采用的方法。<br>
+					因计算中存在四舍五入，最后一期还款金额与之前略有不同。</p>
+				<p>每月付息到期还本，即借款人每月偿还固定利息，最后一期偿还全部本金。</p>
 			</div>
 		</div>
 		<script type="text/javascript">
@@ -133,17 +133,17 @@
 					c = $inputC.val();
 
 				if(!a){
-					$(".this_input .sub_1 span").html("输入不能为空");
+					$(".this_input .sub_1 span").html("*输入不能为空");
 				}else{
 					$(".this_input .sub_1 span").html("");
 				}
 				if(!b){
-					$(".this_input .sub_2 span").html("输入不能为空");
+					$(".this_input .sub_2 span").html("*输入不能为空");
 				}else{
 					$(".this_input .sub_2 span").html("");
 				}
 				if(!c){
-					$(".this_input .sub_4 span").html("输入不能为空");
+					$(".this_input .sub_4 span").html("*输入不能为空");
 				}else{
 					$(".this_input .sub_4 span").html("");
 				}
