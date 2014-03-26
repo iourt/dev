@@ -622,7 +622,7 @@
 	.mod_intro_td_5 li h4{ border-bottom:1px solid #dcdcdc; line-height:40px; vertical-align:top; font-size:16px; font-weight:normal; color:#0697da; }
 
 
-.list_tab_01{ border-bottom:5px solid #0360ba; height:40px; }
+.list_tab_01{ border-bottom:2px solid #0360ba; height:40px; }
 	.list_tab_01 dt{ float:right; color:#646464; font-size:14px; padding-top:10px; }
 	.list_tab_01 dt span{ font-size:24px; font-family:Arial; font-weight:bold; color:#fb6a0d; }
 	.list_tab_01 dd{
@@ -688,9 +688,9 @@
 	.calculators .this_input input:focus{ outline:none; border:1px solid #7dadff;  }
 
 	.calculators .this_chk{ border-bottom:2px solid #ebebeb; padding:20px 0; line-height:30px; position:relative; }
-	.calculators .this_chk .this_reset{ width:100px; position:absolute; left:200px; top:25px; text-align:center; }
+	.calculators .this_chk .this_reset{ width:100px; position:absolute; left:200px; top:25px; text-align:center; cursor:pointer; }
 	.calculators .this_chk .this_btn{
-		background:#1285d6; color:#fff; text-align:center; width:130px; height:37px; line-height:37px; margin:0 auto; cursor:pointer;
+		background:#0697da; color:#fff; text-align:center; width:130px; height:37px; line-height:37px; margin:0 auto; cursor:pointer;
 		-webkit-border-radius:37px;
 		   -moz-border-radius:37px;
 			 -o-border-radius:37px;
@@ -748,7 +748,7 @@
 	.article_right .more_read_title span{ font-size:18px; font-family:Arial; color:#000; }
 	.article_right .more_read_text{ background:#f5f5f5; padding:10px; }
 	.article_right .more_read_text dt{ font-size:16px; color:#0a65ff; font-weight:bold; line-height:20px; }
-	.article_right .more_read_text dt a{ color:#0a65ff; }
+	.article_right .more_read_text dt a{ color:#0697da; }
 	.article_right .more_read_text dt a:hover{ color:#1663ff; }
 	.article_right .more_read_text dd{ color:#646464; line-height:20px; padding-top:10px; font-size:14px; }
 	.article_right .more_read_text dd div{ padding-top:10px; font-family:Arial; }
