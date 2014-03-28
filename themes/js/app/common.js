@@ -29,7 +29,7 @@ var isPad = function(){
 		$btnClose = $(".fixed .mod_box_close"),
 		$show     = $(".fixed .mod_box");
 
-	$btnClose.on("click", function(){
+	$btnClose.bind("click", function(){
 		$btn.removeClass("current");
 		$show.css("display","none");
 		$btn.unbind();
@@ -45,7 +45,7 @@ var isPad = function(){
 		$(this).trigger("click");
 	})
 	
-	$(window).on("scroll", function(){
+	$(window).bind("scroll", function(){
 		var a = "innerHeight" in window ? window.innerHeight : document.documentElement.offsetHeight;
 			b = $("body").height(),
 			c = $(".footer").height(),
@@ -73,7 +73,7 @@ var isPad = function(){
 		$(this).children(".sub_menu").css("display","none");
 	});
 
-	$subMenu.on("click", function(){
+	$subMenu.bind("click", function(){
 		$(this).css("position","relative");
 		$(this).addClass("hover");
 		$(this).children(".sub_menu").css("display","block");
@@ -101,7 +101,7 @@ var isPad = function(){
 	}, function(){
 		$(this).removeClass("hover_close");
 	});
-	$listDetailsClose.on("click", function(){
+	$listDetailsClose.bind("click", function(){
 		$(this).parent().css("display","none");
 		// $(".home_list_table .w_5").removeClass("hover");
 		$listDetails.css("position","static");
@@ -112,7 +112,7 @@ var isPad = function(){
 	},function(){
 		$(this).removeClass("hover");
 	});
-	$listDetails.on("click", function(){
+	$listDetails.bind("click", function(){
 		$listDetailsBox.css("display","none");
 		$(this).parent().css("position","relative");
 		$(this).parent().addClass("hover");
@@ -125,7 +125,7 @@ var isPad = function(){
 (function(){
 	var $boxDetails = $(".box_detail");
 	if(isPad()){
-		$boxDetails.on("click", function(){
+		$boxDetails.bind("click", function(){
 			$boxDetails.children(".mod_box").css("display","none");
 			$(this).css("position","relative");
 			$(this).children(".mod_box").css("display","block");

@@ -127,7 +127,7 @@
 				$timeList.css("display","none");
 			});
 
-			$btn.on("click", function(){
+			$btn.bind("click", function(){
 				var a = $inputA.val();
 					b = $inputB.val();
 					c = $inputC.val();
@@ -150,7 +150,7 @@
 				if(a && b && c) $timeList.css("display","block");
 			});
 
-			$inputA.on("input propertychange", function(){
+			$inputA.bind("input propertychange", function(){
 				$(".this_input .sub_1 span").html("");
 		        var a = $(this).val();
 		        a = a.replace(/[^\d.]/g, "");
@@ -158,7 +158,7 @@
 		        a = a.replace(/\.{2,}/g,"."); 
 		        $(this).val(a);
 		    });
-			$inputB.on("input propertychange", function(){
+			$inputB.bind("input propertychange", function(){
 				$(".this_input .sub_2 span").html("");
 		        var a = $(this).val();
 		        a = a.replace(/[^\d.]/g, "");
@@ -166,7 +166,7 @@
 		        a = a.replace(/\.{2,}/g,"."); 
 		        $(this).val(a);
 		    });
-			$inputC.on("input propertychange", function(){
+			$inputC.bind("input propertychange", function(){
 				$(".this_input .sub_4 span").html("");
 		        var a = $(this).val();
 		        $(this).val(a.match(/\d+/g));

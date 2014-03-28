@@ -29,7 +29,7 @@ $(function(){
 		        $bannerText  = $(".home_banner_right .r_c span"),
 		        $otherShow   = $(".home_border_988 .title_green .title_r span");
 
-		    $bannerLi.on("click", function(){
+		    $bannerLi.bind("click", function(){
 		        $bannerLi.removeClass("current");
 		        $(this).addClass("current");
 		        $bannerInput.val($(this).attr("data-num"));
@@ -43,14 +43,14 @@ $(function(){
 		    	$(this).removeClass("hover");
 		    })
 
-		    $bannerInput.on("focus", function(){
+		    $bannerInput.bind("focus", function(){
 		        if($(this).val() == "0"){
 		        	$(this).val("");
 		        }
 		    });
 
 		    // 输入结束数据变化
-		    $bannerInput.on("change", function(){
+		    $bannerInput.bind("change", function(){
 		        $bannerText.html($bannerInput.val());
 		        $otherShow.html("当前投资金额"+$bannerInput.val()+"元");
 		    });
@@ -117,7 +117,7 @@ $(function(){
 		textVal[index] = $(this).html();
 	});
 
-	banner.on("click", function(){
+	banner.bind("click", function(){
 		if(!isClick){
 			banner.html("年收益");
 			$spanText.eq(0).html("100.5");

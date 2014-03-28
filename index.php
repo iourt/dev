@@ -55,7 +55,7 @@
                                 <div class="list_detail_icon"></div>
                                 <div class="list_detail_close"></div>
                                 <div class="scroll clearfix">
-                                    <ul class="list_detail_text">
+                                    <ul class="list_detail_text clearfix">
                                         <li class="l_d_t_a clearfix">
                                             <div class="l_d_t_l">还款方式</div>
                                             <div class="l_d_t_r">等额本息</div>
@@ -63,7 +63,7 @@
                                         <li class="l_d_t_b clearfix">
                                             <div class="l_d_t_l">收益描述</div>
                                             <div class="l_d_t_r">
-                                                <table>
+                                                <table cellspacing="0" cellpadding="0">
                                                     <tr><td>投资金额<span>50000 元</span></td><td>年化利率<span>8.61%</span></td></tr>
                                                     <tr><td>应收利息<span>1630.00 元</span></td><td>月收本息<span>6450.00 元</span></td></tr>
                                                 </table>
@@ -72,8 +72,8 @@
                                         <li class="l_d_t_c clearfix">
                                             <div>您将在8个月后收回全部本息</div>
                                             <div>
-                                                奖励    100.00元
                                                 <span>共获收益     1730.00 元</span>
+                                                奖励    100.00元
                                             </div>
                                         </li>
                                         <li class="l_d_t_d">本息回收时间表</li>
@@ -122,8 +122,8 @@
                                         <li class="l_d_t_c clearfix">
                                             <div>您将在8个月后收回全部本息</div>
                                             <div>
-                                                奖励    100.00元
                                                 <span>共获收益     1730.00 元</span>
+                                                奖励    100.00元
                                             </div>
                                         </li>
                                         <li class="l_d_t_d">本息回收时间表</li>
@@ -166,8 +166,8 @@
                                         <li class="l_d_t_c clearfix">
                                             <div>您将在8个月后收回全部本息</div>
                                             <div>
-                                                奖励    100.00元
                                                 <span>共获收益     1730.00 元</span>
+                                                奖励    100.00元
                                             </div>
                                         </li>
                                         <li class="l_d_t_d">本息回收时间表</li>
@@ -216,8 +216,8 @@
                                         <li class="l_d_t_c clearfix">
                                             <div>您将在8个月后收回全部本息</div>
                                             <div>
-                                                奖励    100.00元
                                                 <span>共获收益     1730.00 元</span>
+                                                奖励    100.00元
                                             </div>
                                         </li>
                                         <li class="l_d_t_d">本息回收时间表</li>
@@ -266,8 +266,8 @@
                                         <li class="l_d_t_c clearfix">
                                             <div>您将在8个月后收回全部本息</div>
                                             <div>
-                                                奖励    100.00元
                                                 <span>共获收益     1730.00 元</span>
+                                                奖励    100.00元
                                             </div>
                                         </li>
                                         <li class="l_d_t_d">本息回收时间表</li>
@@ -327,8 +327,8 @@
                                         <li class="l_d_t_c clearfix">
                                             <div>您将在8个月后收回全部本息</div>
                                             <div>
-                                                奖励    100.00元
                                                 <span>共获收益     1730.00 元</span>
+                                                奖励    100.00元
                                             </div>
                                         </li>
                                         <li class="l_d_t_d">本息回收时间表</li>
@@ -377,8 +377,8 @@
                                         <li class="l_d_t_c clearfix">
                                             <div>您将在8个月后收回全部本息</div>
                                             <div>
-                                                奖励    100.00元
                                                 <span>共获收益     1730.00 元</span>
+                                                奖励    100.00元
                                             </div>
                                         </li>
                                         <li class="l_d_t_d">本息回收时间表</li>
@@ -438,8 +438,8 @@
                                         <li class="l_d_t_c clearfix">
                                             <div>您将在8个月后收回全部本息</div>
                                             <div>
-                                                奖励    100.00元
                                                 <span>共获收益     1730.00 元</span>
+                                                奖励    100.00元
                                             </div>
                                         </li>
                                         <li class="l_d_t_d">本息回收时间表</li>
@@ -1090,7 +1090,7 @@
 // 计时器调
 (function(){
     var $clockTime = $(".money_time");
-    $clockTime.each(function(i){
+    $clockTime.each(function(){
         var $this = $(this);
         new TimeCount().init({
             type: true,

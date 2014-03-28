@@ -108,16 +108,13 @@ body{
 		color:#656565; display:block; font:bold 14px/30px "Microsoft YaHei"; text-align:center; border-bottom:1px solid #ebebeb;
 	}
 	.header_logo .sub_menu .sub_menu_t{
-		width:20px; height:14px; background:url(images/icon_03.png) no-repeat center center; overflow:hidden;
-		position:absolute; top:-14px; right:40px;
+		width:20px; height:14px; overflow:hidden; position:absolute; top:-14px; right:40px; background:url(images/icon_box.png) no-repeat 0 -620px;
 	}
 	.header_logo .sub_menu .sub_menu_c{ padding:5px 10px 10px; }
 	.header_logo .menu_icon{
 		background-image:url(images/icon_box.png); background-repeat:no-repeat; background-position:100px -417px;
 	}
-	.header_logo .menu_icon.hover{
-		color:#044b9d; background-position:100px -517px;
-	}
+	.header_logo .menu_icon.hover{ color:#044b9d; background-position:100px -517px; }
 
 
 /*底部样式*/
@@ -160,8 +157,9 @@ body{
 	.fixed a.fixed_top{ background-position:0 -134px; }
 	.fixed a:hover.fixed_top{ background-position:-85px -134px; }
 	.fixed a.fixed_email.current div.mod_box{ display:block; }
+	.fixed .mod_box{ height:260px; }
 	.fixed .fixed_msg{ text-align:left; }
-	.fixed .fixed_msg h3{ line-height:40px; font-weight:bold; font-weight:14px; }
+	.fixed .fixed_msg h3{ line-height:40px; font-weight:bold; font-weight:bold; font-size:14px; width:200px; }
 	.fixed .fixed_msg textarea{
 		width:500px; height:160px; border:1px solid #c2c2c2; margin:0; padding:5px; line-height:20px; margin-bottom:5px;
 		-webkit-border-radius:3px;

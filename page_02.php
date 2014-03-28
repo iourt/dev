@@ -134,7 +134,7 @@
 		(function(){
 			var $menu     = $(".mod_intro_left"),
 				$menuDist = $menu.offset().top;
-			$(window).on("scroll", function(){
+			$(window).bind("scroll", function(){
 				var $menuTop  = $(window).scrollTop();
 				if($menuDist <= $menuTop){
 					$menu.addClass("set");

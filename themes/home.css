@@ -157,20 +157,23 @@
 		background-image:url(images/icon_box.png); background-repeat:no-repeat; background-position:0 -200px;
 	}
 	.list_detail_close.hover_close{ background-position:0 -250px; }
-	.list_detail_text{ line-height:25px; }
-	.list_detail_text .l_d_t_a,
-	.list_detail_text .l_d_t_b{ padding-bottom:10px; }
-	.list_detail_text .l_d_t_a div,
-	.list_detail_text .l_d_t_b div{ display:inline-block; *display:inline; vertical-align:top; }
-	.list_detail_text .l_d_t_a .l_d_t_l,
+	.list_detail_text{ line-height:25px; height:200px; }
+
+	.list_detail_text .l_d_t_a{ padding-bottom:10px; height:20px; }
+	.list_detail_text .l_d_t_a div{ display:block; vertical-align:top; float:left; }
+	.list_detail_text .l_d_t_a .l_d_t_l{ width:70px; font-weight:bold; font-size:14px; }
+	.list_detail_text .l_d_t_a .l_d_t_r{ width:310px; }
+
+	.list_detail_text .l_d_t_b{ padding-bottom:10px; border-bottom:1px solid #ebebeb; height:50px; }
+	.list_detail_text .l_d_t_b div{ display:block; vertical-align:top; float:left; }
 	.list_detail_text .l_d_t_b .l_d_t_l{ width:70px; font-weight:bold; font-size:14px; }
-	.list_detail_text .l_d_t_a .l_d_t_r,
 	.list_detail_text .l_d_t_b .l_d_t_r{ width:310px; }
 	.list_detail_text .l_d_t_b .l_d_t_r table{ border-spacing:0; width:100%; }
 	.list_detail_text .l_d_t_b .l_d_t_r span{ color:#fc6b0e; padding-left:20px; }
-	.list_detail_text .l_d_t_b{ border-bottom:1px solid #ebebeb; }
-	.list_detail_text .l_d_t_c{ color:#2985f7; border-bottom:1px solid #ebebeb; padding:10px 0; margin-bottom:10px; }
+
+	.list_detail_text .l_d_t_c{ color:#2985f7; border-bottom:1px solid #ebebeb; padding:10px 0; margin-bottom:10px; height:50px; }
 	.list_detail_text .l_d_t_c span{ float:right; }
+
 	.list_detail_text .l_d_t_d{ line-height:30px; font-weight:bold; font-weight:14px; }
 	.list_detail_li{ color:#646464; width:100%; /*border-collapse:collapse;*/ border-spacing:0; text-align:center; }
 	.list_detail_li .caption{ background:#ecf1f5; color:#000; line-height:23px; }
@@ -269,7 +272,7 @@
 	.money_list .money_time .clock_time{ color:#a0a0a0; font-size:14px; text-align:center; }
 	.money_list .money_time .clock_time span{
 		width:30px; height:30px; line-height:30px; font-size:20px; font-family:Arial; margin:0 2px;
-		text-align:center; display:inline-block; *display:inline; background:#29333d; color:#fff;
+		text-align:center; display:inline-block; *display:inline; *padding:0 5px; background:#29333d; color:#fff;
 		-webkit-border-radius:3px;
 		   -moz-border-radius:3px;
 			 -o-border-radius:3px;

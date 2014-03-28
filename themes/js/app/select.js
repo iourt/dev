@@ -18,7 +18,7 @@
 	    $(this).trigger('click');
 	});
 
-    $no.on("click", function(){
+    $no.bind("click", function(){
         $(this).parent().children().children().children().removeClass("current");
         $(this).addClass("current");
         $li.unbind();
@@ -44,7 +44,7 @@
 	    $(this).trigger('click');
 	});
 
-    $titleNo.on("click", function(){
+    $titleNo.bind("click", function(){
     	$(".select_title .hit").remove();
         $(this).parent().children().children().children().removeClass("current");
         $(this).addClass("current");

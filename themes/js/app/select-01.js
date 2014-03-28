@@ -25,7 +25,7 @@
 	});
 
 
-	$(".no_title").on("click", function(){
+	$(".no_title").bind("click", function(){
 		$(this).addClass("current");
 		$hotTwo.removeClass("current");
 		$hotTwo.unbind();
@@ -79,7 +79,7 @@
 	    $(this).trigger('click');
 	});
 
-	$(".select_no").on("click", function(){
+	$(".select_no").bind("click", function(){
 		var $a = $(this).parent().children().children().children("li");
 		$a.removeClass("current");
 		$a.unbind();

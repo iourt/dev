@@ -30,7 +30,7 @@
 	});
 
 	var $link = $(".show_page a");
-	$link.on("click", function(){
+	$link.bind("click", function(){
 		var index = $(this).index(),
 			$prev = $(this).parent().children(".prev");
 		$(this).parent().children("a").removeClass("current");

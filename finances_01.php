@@ -12,7 +12,7 @@
 
 
 <div class="wrap clearfix">
-	<div class="mod_left clearfix">
+	<div class="mod_left clearfix" style="padding-bottom:20px;">
 		<div class="border_03 select_01">
             <div class="select_title clearfix">
                 <ul class="clearfix">
@@ -160,11 +160,11 @@
 							}, function(){
 								$(this).removeClass("hover");
 							});
-							$show.on("click", function(){
+							$show.bind("click", function(){
 								$(this).parent(".col_box").addClass("hover");
 								$box.css("display", "block");
 							});
-							$close.on("click", function(){
+							$close.bind("click", function(){
 								$(this).parent().parent(".col_box").removeClass("hover");
 								$box.css("display", "none");
 							});

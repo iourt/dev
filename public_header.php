@@ -9,7 +9,7 @@
         <!--[if lte IE 6]>
         <script type="text/javascript" src="themes/js/lib/iepng.js"></script>
         <![endif]-->
-        <script type="text/javascript" src="themes/js/lib/jquery-1.8.3.js"></script>
+        <script type="text/javascript" src="themes/js/lib/jquery-1.4.2.js"></script>
     </head>
     <body>
         <div class="header_msg">

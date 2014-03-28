@@ -8,11 +8,11 @@
 	var ua = navigator.userAgent.toLowerCase(),
 		o  = ua.match(/iPad/i);
 	if(o=="ipad"){
-		$boxDetails.on("click", function(){
+		$boxDetails.bind("click", function(){
 			$(this).css("position","relative");
 			$(this).children(".box_detail_show").css("display","block");
 		});
-		$boxShow.on("click", function(){
+		$boxShow.bind("click", function(){
 			$(this).css("display","none");
 			$(this).parent().css("position","static");
 		});
@@ -40,7 +40,7 @@
 	}, function(){
 		$(this).removeClass("hover_close");
 	});
-	$btnClose.on("click", function(){
+	$btnClose.bind("click", function(){
 		$(this).parent().css("display","none");
 		$(".home_list_table .w_5").removeClass("hover");
 		$listDetails.css("position","static");
@@ -51,7 +51,7 @@
 	},function(){
 		$(this).removeClass("hover");
 	});
-	$listDetails.on("click", function(){
+	$listDetails.bind("click", function(){
 		$(".list_detail_float").css("display","none");
 		$(this).parent().css("position","relative");
 		// $(this).parent().addClass("hover");
@@ -76,7 +76,7 @@
 
 
 // 点击滚动
-(function(){
+$(function(){
 	var $listSort = $(".home_list_slide li"),
 		len = $listSort.length,
 		$max = (len-1)/3;
@@ -113,7 +113,7 @@
 	// 	$(this).removeClass("hover");
 	// });
 
-	$btnLeft.on("click", function(){
+	$btnLeft.bind("click", function(){
 		if(clickCount==1){
 			$(this).addClass("hide");
 		}
@@ -127,7 +127,7 @@
 		}, 600);
 	});
 
-	$btnRight.on("click", function(){
+	$btnRight.bind("click", function(){
 		if(clickCount == $max-2){
 			$(this).addClass("hide");
 		}
@@ -142,7 +142,7 @@
 			left: "-"+clickCount*248*3+"px"
 		}, 600);
 	});
-})();
+});
 
 
 // 计时器
@@ -153,7 +153,7 @@
             var conf  = conf || {},
                 $elem = conf.elem,
             	tType = conf.type || false;
-            
+
             this.$changeText = $elem.children(conf.changeText);
             this.$changeTime = $elem.children(conf.changeTime);
             this.disTime     = conf.times;
@@ -194,9 +194,10 @@
             a = time.split(' ');
             b = a[0].split('-');
             c = a[1].split(':');
+
             var time = (new Date(b[0], b[1]-1, b[2], c[0], c[1], c[2]).getTime())/1000;
             return time;
-        },
+        }
     };
 	window.TimeCount = TimeCount;
 })(window);

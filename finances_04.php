@@ -37,7 +37,7 @@
             (function(){
                 var $a = $(".mod_count li"),
                     $input = $(".r_input");
-                $a.on("click", function(){
+                $a.bind("click", function(){
                     $a.removeClass("current");
                     $(this).addClass("current");
                     $input.val($(this).attr("data-num"));
