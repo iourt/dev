@@ -660,7 +660,7 @@
 	.list_tab_01_list th.col_6.up,
 	.list_tab_01_list th.col_6.down{ background-position:100px center; }
 
-	.list_tab_01_list td{ height:40px; border-bottom:1px solid #dcdcdc; }
+	.list_tab_01_list td{ height:50px; border-bottom:1px solid #dcdcdc; }
 	.list_tab_01_list td.col_1{ font-weight:bold; padding-left:10px; }
 	.list_tab_01_list td.col_2{ color:#fb6a0d; text-align:center; }
 	.list_tab_01_list td.col_3,
@@ -670,7 +670,7 @@
 
 
 
-.calculators{ border:1px solid #dcdcdc; background:#fff; margin-bottom:30px; }
+.calculators{ border:1px solid #dcdcdc; background:#fff; margin-bottom:30px; min-height:800px; }
 	.calculators h1{ border-bottom:1px solid #dcdcdc; font-size:24px; padding:0 120px; line-height:80px; font-weight:normal; }
 	.calculators .this_detail{ padding:40px 120px 35px; font-size:14px; }
 
