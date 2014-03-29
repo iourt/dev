@@ -607,9 +607,9 @@
 	.list_url dt{ font-size:24px; font-weight:bold; color:#034694; border-bottom:1px solid #ebebeb; padding:10px 0; }
 	.list_url dt span{ color:#a0a0a0; font-size:14px; padding-left:20px; font-weight:normal; }
 	.list_url dd{ padding:10px 0; }
-	.list_url dd a{ display:block; float:left; line-height:30px; margin-right:30px; font-size:14px; color:#000; white-space:nowrap; font-family:"Microsoft YaHei"; }
+	.list_url dd a{ display:block; float:left; line-height:30px; width:150px; font-size:16px; color:#000; white-space:nowrap; font-family:"Microsoft YaHei"; }
 	.list_url dd a:hover{ color:#1663ff; }
-	.list_url dd a.warning{ background:url(images/icon_warning.png) no-repeat right center; padding-right:20px; color:#d0d0d0; }
+	.list_url dd a .warning{ background:url(images/icon_warning.png) no-repeat right center; padding:0 10px; color:#d0d0d0; }
 	.list_url dd a:hover.warning{ color:#1663ff; }
 
 
