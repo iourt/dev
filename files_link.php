@@ -73,6 +73,8 @@
         <dt>网站文件列表，对应文件名</dt>
         <dd><a target="_blank" href="index.php">首页</a><span>index.php</span></dd>
 
+        <dd><a target="_blank" href="news.php">理财圈资讯</a><span>news.php</span></dd>
+
         <dd><a target="_blank" href="404.php">404</a><span>404.php</span></dd>
         <dd><a target="_blank" href="detail.php">理财圈资讯－详情</a><span>detail.php</span></dd>
         <dd><a target="_blank" href="learning.php">理财微课堂</a><span>learning.php</span></dd>

@@ -1,4 +1,4 @@
-﻿body,h1,h2,h3,p,dl,dt,dd,ol,ul,th,td,fieldset,input,button,textarea,form,canvas,audio,video,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{
+﻿*{
 	margin:0; padding:0;
 }
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{
@@ -245,6 +245,9 @@ body{
 	.title_03.border_green dt{ border-bottom:3px solid #369403; }
 	.title_03.border_red dt{ border-bottom:3px solid #fb6b0d; }
 	.title_03 dd{ border-bottom:3px solid #515151; float:right; line-height:45px; width:775px; }
+
+
+.title_04{ height:30px; line-height:30px; background:#1285d6; text-indent:10px; color:#fff; font-size:16px; font-weight:bold; }
 
 
 /*弹窗*/

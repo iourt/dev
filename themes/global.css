@@ -756,5 +756,30 @@
 
 
 .banner_01{ height:130px; position:absolute; left:0; top:-50px; width:100%; }
+.banner_02{ height:100px; position:absolute; left:0; top:-50px; width:100%; }
+
 	.half_list{ width:50%; float:left; }
 	.half_list h3{ font-size:18px; line-height:40px; font-weight:normal; padding:20px 0 0 25px; font-weight:bold; }
+
+
+.new_list_01{ width:650px; float:left; }
+	.new_list_01 li{ height:150px; padding:20px 0; }
+	.new_list_01 li img{ width:200px; height:150px; float:left; margin-right:20px; }
+	.new_list_01 li h3{ line-height:30px; height:30px; font-size:20px; }
+	.new_list_01 li h4{ height:30px; line-height:30px; font-size:14px; font-weight:normal; }
+	.new_list_01 li h4 a{ color:#2985f7; }
+	.new_list_01 li h4 a:hover{ color:#1663ff; }
+	.new_list_01 li div{ color:#646464; font-size:16px; line-height:20px; height:65px; }
+	.new_list_01 li h5{ color:#a0a0a0; font-weight:normal; font-size:14px; line-height:26px; height:25px; }
+	.new_list_01 li h5 span{ padding-right:20px }
+
+
+.new_list_02{}
+	.new_list_02 li{ margin-bottom:10px; }
+	.new_list_02 li h3{ font-weight:normal; font-size:14px; padding:10px; }
+	.new_list_02 li h3 span{ color:#646464; font-size:12px; font-family:Arial; padding-left:20px; }
+	.new_list_02 li div{ background:#f5f5f5; padding:10px; color:#646464; line-height:20px; font-size:14px; }
+
+
+.new_list_right{ float:right; width:260px; }
+
