@@ -104,7 +104,11 @@ var isPad = function(){
 	$listDetailsClose.bind("click", function(){
 		$(this).parent().css("display","none");
 		// $(".home_list_table .w_5").removeClass("hover");
-		$listDetails.css("position","static");
+		// $listDetails.css("position","static");
+
+		$(this).parent().parent().css({
+			"position": "static"
+		});
 	});
 	
 	$listDetails.hover(function(){
@@ -115,9 +119,12 @@ var isPad = function(){
 	$listDetails.bind("click", function(){
 		$listDetailsBox.css("display","none");
 		// $(this).parent().css("position","relative");
+		$listDetails.parent().css({
+			"position": "static"
+		});
 		$(this).parent().css({
 			"position": "relative",
-			"z-index": "2"
+			"z-index": "10"
 		});
 		$(this).parent().addClass("hover");
 		$(this).parent().children(".mod_box").css("display","block");

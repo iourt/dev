@@ -49,7 +49,10 @@
 	$btnClose.bind("click", function(){
 		$(this).parent().css("display","none");
 		$(".home_list_table .w_5").removeClass("hover");
-		$listDetails.css("position","static");
+		// $listDetails.css("position","static");
+		$listDetails.parent().css({
+			"position": "static"
+		});
 	});
 	
 	$listDetails.hover(function(){
@@ -59,6 +62,9 @@
 	});
 	$listDetails.bind("click", function(){
 		$(".list_detail_float").css("display","none");
+		$listDetails.parent().css({
+			"position": "static"
+		});
 		$(this).parent().css({
 			"position": "relative",
 			"z-index": "2"
