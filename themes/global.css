@@ -314,9 +314,9 @@
 	.list_detail .list_detail_text .l_d_t_c{ color:#2985f7; border-bottom:1px solid #ebebeb; padding:10px 0; margin-bottom:10px; }
 	.list_detail .list_detail_text .l_d_t_c span{ float:right; }
 	.list_detail .list_detail_text .l_d_t_d{ line-height:30px; font-weight:bold; font-weight:14px; }
-	.list_detail .list_detail_li{ color:#646464; width:100%; /*border-collapse:collapse;*/ border-spacing:0; text-align:center; }
-/*	.list_detail .list_detail_li .caption{ background:#ecf1f5; color:#000; line-height:23px; }
-	.list_detail .list_detail_li td{ line-height:27px; }*/*/
+	.list_detail .list_detail_li{ color:#646464; width:100%;  border-spacing:0; text-align:center; }
+	.list_detail .list_detail_li .caption{ background:#ecf1f5; color:#000; line-height:23px; }
+	.list_detail .list_detail_li td{ line-height:27px; }*/
 
 
 
