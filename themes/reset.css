@@ -94,7 +94,7 @@ body{
 	.header_logo a{ color:#28292b; }
 	.header_logo li .sub_menu a{ color:#656565; }
 	.header_logo .sub_menu{
-		display:none; position:absolute; left:50%; margin-left:-70px; top:55px; z-index:1; width:120px; background:#fff; border:1px solid #d4dade;
+		display:none; position:absolute; left:50%; margin-left:-70px; top:55px; z-index:5; width:120px; background:#fff; border:1px solid #d4dade;
 		-webkit-box-shadow:2px 2px 3px rgba(0,0,0,.1), -2px -2px 3px rgba(0,0,0,.1);
 		   -moz-box-shadow:2px 2px 3px rgba(0,0,0,.1), -2px -2px 3px rgba(0,0,0,.1);
 			 -o-box-shadow:2px 2px 3px rgba(0,0,0,.1), -2px -2px 3px rgba(0,0,0,.1);
@@ -108,7 +108,7 @@ body{
 		color:#656565; display:block; font:bold 14px/30px "Microsoft YaHei"; text-align:center; border-bottom:1px solid #ebebeb;
 	}
 	.header_logo .sub_menu .sub_menu_t{
-		width:20px; height:14px; overflow:hidden; position:absolute; top:-14px; right:40px; background:url(images/icon_box.png) no-repeat 0 -620px;
+		width:20px; height:14px; overflow:hidden; position:absolute; top:-14px; *top:-13px; right:40px; z-index:6; background:url(images/icon_box.png) no-repeat 0 -620px;
 	}
 	.header_logo .sub_menu .sub_menu_c{ padding:5px 10px 10px; }
 	.header_logo .menu_icon{

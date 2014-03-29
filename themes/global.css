@@ -755,8 +755,12 @@
 
 
 
-.banner_01{ height:130px; position:absolute; left:0; top:-50px; width:100%; }
-.banner_02{ height:100px; position:absolute; left:0; top:-50px; width:100%; }
+.banner_01,
+.banner_02{ background:url(images/banner_shadow.png) repeat-x 0 top; width:100%; }
+.banner_01{ height:130px; }
+.banner_02{ height:100px; }
+.banner_01 img,
+.banner_02 img{ width:990px; margin:0 auto; display:block; }
 
 	.half_list{ width:50%; float:left; }
 	.half_list h3{ font-size:18px; line-height:40px; font-weight:normal; padding:20px 0 0 25px; font-weight:bold; }

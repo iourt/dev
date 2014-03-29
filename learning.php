@@ -5,10 +5,9 @@
 	color:#044b9d
 }
 </style>
-<div class="path">&nbsp;</div>
+<div class="banner_01"><img src="themes/temp/banner.jpg" /></div>
 
-<div class="wrap clearfix" style="position:relative;padding:80px 0 30px;">
-    <div class="banner_01"><img src="themes/temp/banner.jpg" /></div>
+<div class="wrap clearfix" style="padding:0 0 30px;">
     
 
     <div class="border_08 clearfix" style="margin-bottom:20px;">
