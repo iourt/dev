@@ -62,6 +62,7 @@
                 </div>
                 <div class="r_c">当前投资金额 <span>50000</span> 元</div>
             </div>
+            <div class="r_mid">快速选择投资金额</div>
             <ul class="r_li clearfix"> 
                 <li data-num="1000"   data-font="一千">1000</li>
                 <li data-num="3000"   data-font="三千">3000</li>

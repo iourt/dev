@@ -24,7 +24,7 @@
 	.home_banner .home_banner_left .b_right{ padding-left:20px; float:left; }
 	.home_banner .home_banner_left .b_right span{ font-size:16px; color:#fb6a0d; font-weight:bold; font-family:Arial; }
 	.home_banner .home_banner_right{ width:340px; padding-right:10px; float:right; }
-	.home_banner .home_banner_right .r_top{ height:130px; padding:30px 0 0 130px; }
+	.home_banner .home_banner_right .r_top{ height:120px; padding:30px 0 0 130px; }
 	.home_banner .home_banner_right .r_top .r_a{ font:bold 20px/40px "Microsoft YaHei"; }
 	.home_banner .home_banner_right .r_top .r_b{ font-size:16px; }
 	.home_banner .home_banner_right .r_top .r_input{
@@ -33,7 +33,10 @@
 	}
 	.home_banner .home_banner_right .r_top .r_c{ font:14px/35px "Microsoft YaHei"; overflow:hidden; height:30px; }
 	.home_banner .home_banner_right .r_top .r_c span{ color:#fa770f; padding-left:10px; }
-	.home_banner .home_banner_right .r_li{ font-size:0; padding:10px; text-align:center; line-height:0; }
+
+	.home_banner .home_banner_right .r_mid{ width:100px; margin:0 auto; height:20px; line-height:20px; color:#9c9eab; font-size:12px; padding-left:8px; }
+
+	.home_banner .home_banner_right .r_li{ font-size:0; padding:10px; padding-top:0; text-align:center; line-height:0; }
 	.home_banner .home_banner_right .r_li li{
 		width:90px; height:30px; line-height:30px; text-align:center; overflow:hidden; margin:5px 6px; font-size:12px;
 		background:#305a87; cursor:pointer; float:left;
