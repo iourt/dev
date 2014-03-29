@@ -49,7 +49,7 @@
             c = a[1].split(':');
             var time = (new Date(b[0], b[1]-1, b[2], c[0], c[1], c[2]).getTime())/1000;
             return time;
-        },
+        }
     };
     window.TimeCount = TimeCount;
 })(window);

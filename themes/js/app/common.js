@@ -114,7 +114,11 @@ var isPad = function(){
 	});
 	$listDetails.bind("click", function(){
 		$listDetailsBox.css("display","none");
-		$(this).parent().css("position","relative");
+		// $(this).parent().css("position","relative");
+		$(this).parent().css({
+			"position": "relative",
+			"z-index": "2"
+		});
 		$(this).parent().addClass("hover");
 		$(this).parent().children(".mod_box").css("display","block");
 	});

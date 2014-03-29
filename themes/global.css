@@ -298,7 +298,8 @@
 	}
 	.list_detail .list_detail_hit:hover,
 	.list_detail .list_detail_hit.hover{ color:#1663ff; background-position:right -325px; }
-	.list_detail .list_detail_text{ line-height:25px; }
+/*	.list_detail .list_detail_text{ line-height:25px; height:200px; }
+
 	.list_detail .list_detail_text .l_d_t_a,
 	.list_detail .list_detail_text .l_d_t_b{ padding-bottom:10px; }
 	.list_detail .list_detail_text .l_d_t_a div,
@@ -314,11 +315,39 @@
 	.list_detail .list_detail_text .l_d_t_c span{ float:right; }
 	.list_detail .list_detail_text .l_d_t_d{ line-height:30px; font-weight:bold; font-weight:14px; }
 	.list_detail .list_detail_li{ color:#646464; width:100%; /*border-collapse:collapse;*/ border-spacing:0; text-align:center; }
-	.list_detail .list_detail_li .caption{ background:#ecf1f5; color:#000; line-height:23px; }
-	.list_detail .list_detail_li td{ line-height:27px; }
+/*	.list_detail .list_detail_li .caption{ background:#ecf1f5; color:#000; line-height:23px; }
+	.list_detail .list_detail_li td{ line-height:27px; }*/*/
+
+
+
+	.list_detail_text{ line-height:25px; height:200px; }
+
+	.list_detail_text .l_d_t_a{ padding-bottom:10px; height:20px; }
+	.list_detail_text .l_d_t_a div{ display:block; vertical-align:top; float:left; }
+	.list_detail_text .l_d_t_a .l_d_t_l{ width:70px; font-weight:bold; font-size:14px; }
+	.list_detail_text .l_d_t_a .l_d_t_r{ width:310px; }
+
+	.list_detail_text .l_d_t_b{ padding-bottom:10px; border-bottom:1px solid #ebebeb; height:50px; }
+	.list_detail_text .l_d_t_b div{ display:block; vertical-align:top; float:left; }
+	.list_detail_text .l_d_t_b .l_d_t_l{ width:70px; font-weight:bold; font-size:14px; }
+	.list_detail_text .l_d_t_b .l_d_t_r{ width:310px; }
+	.list_detail_text .l_d_t_b .l_d_t_r table{ border-spacing:0; width:100%; }
+	.list_detail_text .l_d_t_b .l_d_t_r span{ color:#fc6b0e; padding-left:20px; }
+
+	.list_detail_text .l_d_t_c{ color:#2985f7; border-bottom:1px solid #ebebeb; padding:10px 0; margin-bottom:10px; height:50px; }
+	.list_detail_text .l_d_t_c span{ float:right; }
+
+	.list_detail_text .l_d_t_d{ line-height:30px; font-weight:bold; font-weight:14px; }
+	.list_detail_li{ color:#646464; width:100%; /*border-collapse:collapse;*/ border-spacing:0; text-align:center; }
+	.list_detail_li .caption{ background:#ecf1f5; color:#000; line-height:23px; }
+	.list_detail_li td{ line-height:27px; font-size:12px; font-family:Arial; }
+
+
 
 	.table_list_03 .list_detail{ position:relative; }
 	.table_list_03 .list_detail .mod_box{ left:-300px; text-align:left; width:400px; top:40px; padding:20px 15px; }
+
+
 
 
 .table_list_04{ width:100%; font-size:14px; }
@@ -459,14 +488,14 @@
 	.list_art_01 .sub_link{ text-align:right; padding:10px; }
 	.list_art_01 .sub_link a{ color:#a0a0a0; }
 	.list_art_01 .sub_link a:hover{ color:#1663ff; }
-	.list_art_01 .money_time{ background:#f8f8f8; padding:10px 10px 15px; }
+	.list_art_01 .money_time{ background:#f8f8f8; padding:10px 10px 15px; height:65px; }
 	.list_art_01 .money_time .clock_text{
 		line-height:20px; font-size:13px; text-align:center; margin-bottom:10px;
 		background:url(images/icon_clock.png) no-repeat 43px; center;
 	}
 	.list_art_01 .money_time .clock_time{ color:#a0a0a0; font-size:13px; text-align:center; }
 	.list_art_01 .money_time .clock_time span{
-		width:30px; height:30px; line-height:30px; font-size:20px; font-family:Arial; margin:0 2px;
+		width:30px; height:30px; line-height:30px; font-size:20px; font-family:Arial; margin:0 2px; *padding:0 5px;
 		text-align:center; display:inline-block; *display:inline; background:#29333d; color:#fff;
 		-webkit-border-radius:3px;
 		   -moz-border-radius:3px;
@@ -536,9 +565,9 @@
 
 /*理财计算*/
 .mod_count{
-	background:url(images/icon_money.png) no-repeat 20px center #034694; padding-left:340px; position:relative; height:140px; overflow:hidden;
+	background:url(images/icon_money.png) no-repeat 20px center #034694; /*padding-left:340px;*/ padding-left:140px; height:140px; overflow:hidden;
 }
-	.mod_count .r_top{ position:absolute; left:130px; top:10px; color:#fff; }
+	.mod_count .r_top{ /*position:absolute; left:130px; top:10px;*//* margin-left:-130px; margin-top:10px;*/ float:left; color:#fff; margin-top:10px; }
 	.mod_count .r_top .r_a{ font:bold 20px/40px "Microsoft YaHei"; }
 	.mod_count .r_top .r_b{ font-size:16px; }
 	.mod_count .r_top .r_input{
@@ -547,7 +576,7 @@
 	}
 	.mod_count .r_top .r_c{ font:14px/35px "Microsoft YaHei"; overflow:hidden; height:30px; }
 	.mod_count .r_top .r_c span{ color:#fa770f; padding-left:10px; }
-	.mod_count .r_li{ font-size:0; padding:10px; text-align:center; line-height:0; }
+	.mod_count .r_li{ font-size:0; padding:10px; text-align:center; line-height:0; width:350px; float:right; }
 	.mod_count .r_li li{
 		width:90px; height:30px; line-height:30px; text-align:center; overflow:hidden; margin:5px 6px; font-size:12px; color:#fff;
 		background:#305a87; cursor:pointer; float:left;

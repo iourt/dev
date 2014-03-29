@@ -9,7 +9,10 @@
 		o  = ua.match(/iPad/i);
 	if(o=="ipad"){
 		$boxDetails.bind("click", function(){
-			$(this).css("position","relative");
+			$(this).css({
+				"position": "relative",
+				"z-index": "2"
+			});
 			$(this).children(".box_detail_show").css("display","block");
 		});
 		$boxShow.bind("click", function(){
@@ -18,7 +21,10 @@
 		});
 	}else{
 		$boxDetails.hover(function(){
-			$(this).css("position","relative");
+			$(this).css({
+				"position": "relative",
+				"z-index": "2"
+			});
 			$(this).children(".box_detail_show").css("display","block");
 		}, function(){
 			$(this).css("position","static");
@@ -53,7 +59,10 @@
 	});
 	$listDetails.bind("click", function(){
 		$(".list_detail_float").css("display","none");
-		$(this).parent().css("position","relative");
+		$(this).parent().css({
+			"position": "relative",
+			"z-index": "2"
+		});
 		// $(this).parent().addClass("hover");
 		$(this).parent().children(".list_detail_float").css("display","block");
 	});

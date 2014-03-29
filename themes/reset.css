@@ -112,7 +112,7 @@ body{
 	}
 	.header_logo .sub_menu .sub_menu_c{ padding:5px 10px 10px; }
 	.header_logo .menu_icon{
-		background-image:url(images/icon_box.png); background-repeat:no-repeat; background-position:100px -417px;
+		background-image:url(images/icon_box.png); background-repeat:no-repeat; background-position:100px -417px; z-index:2;
 	}
 	.header_logo .menu_icon.hover{ color:#044b9d; background-position:100px -517px; }
 
@@ -227,7 +227,7 @@ body{
 	.title_01.title_red strong{ color:#b60002; }
 	.title_01.title_black strong{ color:#000; padding-left:0; }
 
-.title_02{ font-size:0; position:relative; overflow:hidden; padding-bottom:10px; }
+.title_02{ font-size:0; position:relative; overflow:hidden; padding-bottom:10px; z-index:1; }
 	.title_02 dt{
 		border-bottom:2px solid #bd0100; font-size:16px; font-weight:bold; line-height:20px; padding-bottom:15px;
 		position:absolute; left:0; top:0;
