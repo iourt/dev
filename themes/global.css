@@ -553,15 +553,15 @@
 	.show_page a.next.current{ background:none; color:#333; }
 	.show_page span.input{ margin-right:0; padding-right:0; position:relative; z-index:2; }
 	.show_page input{
-		border:1px solid #cecccd; line-height:28px; height:28px; width:60px; text-align:center; margin-left:3px; color:#999;
+		border:1px solid #cecccd; line-height:28px; height:28px; *line-height:27x; *height:27px; width:60px; text-align:center; margin-left:3px; color:#999;
 	}
 	.show_page input:focus{ border:1px solid #7dadff; outline:none; }
 	.show_page .move{ padding:0 10px; z-index:1; position:relative; vertical-align:middle; font-size:12px; line-height:30px; }
 	.show_page .btn{
 		background:#024594; color:#fff; line-height:29px; display:block; font-size:12px; width:40px; text-align:center;
-		position:absolute; left:-60px; top:1px; cursor:pointer; *padding-top:0; *padding-bottom:0; *left:-61px; *top:9px;
+		position:absolute; left:-60px; top:1px; cursor:pointer; *padding-top:0; *padding-bottom:0; *left:-61px; *top:7px;
 	}
-	.show_page .end{ padding:0; display:block; width:20px; line-height:30px; position:absolute; left:0; top:1px; *top:9px; }
+	.show_page .end{ padding:0; display:block; width:20px; line-height:30px; position:absolute; left:0; top:1px; *top:7px; }
 
 /*理财计算*/
 .mod_count{

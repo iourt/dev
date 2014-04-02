@@ -170,7 +170,7 @@
 			$inputC.bind("change", function(){
 				$(".this_input .sub_4 span").html("");
 		        var a = $(this).val();
-		        $(this).val(a.match(/\d+/g));
+		        $(this).val(a.replace(/[^\d]/g,""));
 		    });
 		})();
 		</script>
