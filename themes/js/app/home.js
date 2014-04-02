@@ -216,3 +216,9 @@ $(function(){
     };
 	window.TimeCount = TimeCount;
 })(window);
+
+
+
+$(".home_list_table tr:last-child td").css({
+	"border-bottom": "none"
+});

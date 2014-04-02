@@ -57,7 +57,6 @@
 
 
 .home_left{ width:690px; float:left; }
-	.home_left .h_border{ padding-bottom:20px; }
 	.home_left .home_msg{ height:35px; line-height:35px; }
 	.home_left .home_msg li{ line-height:35px; text-indent:20px; text-align:left; color:#fc6b0e; }
 	.home_left .home_msg.ScrollUp{ position:relative; height:35px; overflow:hidden; }

@@ -224,3 +224,27 @@ new ScrollText().init({
 	distY: 30,
 	type: 1
 });
+
+
+
+$(".table_list_04 tr:last-child td").css({
+	"border-bottom": "none"
+});
+$(".list_tab_01_list tr:last-child td").css({
+	"border-bottom": "none"
+});
+$(".list_art_01 dd:last-child div").css({
+	"border-bottom": "none"
+});
+
+$(".table_list_01 tr:last-child td").css({
+	"border-bottom": "none"
+});
+
+$(".table_list_02 tr:last-child td").css({
+	"border-bottom": "none"
+});
+
+$(".table_list_03 tr:last-child td").css({
+	"border-bottom": "none"
+});

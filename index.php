@@ -10,7 +10,7 @@
 <div class="home_wrapper clearfix">
     <div class="home_left clearfix">
 
-        <div class="h_border" style="height:526px;">
+        <div class="h_border">
             <h3 class="title_01 title_red">
                 <dl>
                     <dt class="title_l"><strong>网贷项目理财</strong><span>|</span>收益高，投资门槛低</dt>
@@ -464,7 +464,7 @@
             </div>
         </div>
 
-        <div class="h_border" style="height:511px;">
+        <div class="h_border">
             <h3 class="title_01 title_yellow" style="margin-bottom:20px;">
                 <dl>
                     <dt class="title_l"><strong>货币基金理财</strong><span>|</span>收益高，投资门槛低</dt>
