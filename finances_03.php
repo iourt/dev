@@ -185,7 +185,7 @@
 
 
 <div class="wrap clearfix">
-	<div class="border_04" style="margin-bottom:20px;">
+	<div class="border_03" style="margin-bottom:20px;">
 		<table class="table_list_03" cellspacing="0" cellpadding="0">
 			<tr>
 				<th class="col null"></th>
