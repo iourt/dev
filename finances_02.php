@@ -11,7 +11,7 @@
 
 
 <div class="wrap clearfix">
-	<div class="border_04" style="margin-bottom:30px;">
+	<div class="border_03" style="margin-bottom:30px;">
 		<table class="table_list_02" cellspacing="0" cellpadding="0">
 		<tr>
 			<th class="null"></th>
