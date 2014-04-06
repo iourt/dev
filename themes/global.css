@@ -29,15 +29,19 @@
 	.select_01 .select_title li.null{ line-height:26px; }
 	.select_01 .select_title li.hit{
 		border:1px dotted #ce2d3c; padding:0 20px 0 5px; color:#ce2d3c; line-height:24px; cursor:pointer;
-		background-image:url(images/icon_close.jpg?5); background-repeat:no-repeat; background-position:right 3px;
+		background-image:url(images/icon_close.jpg); background-repeat:no-repeat; background-position:right 2px;
 	}
 	.select_01 .select_title .hit:hover,
-	.select_01 .select_title .hit.hover{ background-position:right -37px; }
+	.select_01 .select_title .hit.hover{ background-position:right -38px; }
 	.select_01 .select_detail{ padding:10px 20px 0 130px; position:relative; }
 
 	.select_01 .select_col{ position:absolute; left:20px; top:10px; color:#646464; line-height:25px; }
-	.select_01 li:hover,
-	.select_01 li.hover{ background:#e5e5e5; cursor:pointer; }
+	.select_01 .select_case_a li:hover,
+	.select_01 .select_case_a li.hover,
+	.select_01 .select_case_b li:hover,
+	.select_01 .select_case_b li.hover,
+	.select_01 .select_case_c li:hover,
+	.select_01 .select_case_c li.hover{ background:#e5e5e5; cursor:pointer; }
 
 	.select_01 .no_title{ line-height:25px; width:40px; text-align:center; cursor:pointer; margin-left:-10px; }
 	.select_01 .no_title.current{ background:#fb6b0d; color:#fff; }
@@ -88,10 +92,10 @@
 	.select_02 .select_title li.null{ line-height:26px; }
 	.select_02 .select_title li.hit{
 		border:1px dotted #ce2d3c; padding:0 20px 0 5px; color:#ce2d3c; line-height:24px; cursor:pointer;
-		background-image:url(images/icon_close.jpg?5); background-repeat:no-repeat; background-position:right 3px;
+		background-image:url(images/icon_close.jpg); background-repeat:no-repeat; background-position:right 2px;
 	}
 	.select_02 .select_title .hit:hover,
-	.select_02 .select_title .hit.hover{ background-position:right -37px; }
+	.select_02 .select_title .hit.hover{ background-position:right -38px; }
 	.select_02 .select_li{ margin-bottom:10px; }
 	.select_02 .select_li .select_li_title{ width:90px; color:#646464; float:left; text-align:right; line-height:25px; }
 	.select_02 .select_li .select_li_no:hover,
