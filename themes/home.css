@@ -104,7 +104,7 @@
 	.home_list_table.col_mod_01 .w_3{ width:70px; font-family:Arial; }
 	.home_list_table.col_mod_01 td.w_3{ color:#fb6a0d; }
 	.home_list_table.col_mod_01 .w_4{ width:80px; text-align:center; }
-	.home_list_table.col_mod_01 .w_5{ width:80px; display:block; }
+	.home_list_table.col_mod_01 .w_5{ width:80px;/* display:block;*/ }
 	.home_list_table.col_mod_01 .w_6{ width:80px; }
 	.home_list_table.col_mod_02 .w_3{ width:110px; font-family:Arial; }
 	.home_list_table.col_mod_02 .w_4{ width:80px; font-family:Arial; }
@@ -128,7 +128,7 @@
 				border-radius:4px;
 	}
 	.home_list_table .scroll{
-		height:390px; overflow-y:auto; margin:10px 0;
+		height:385px; overflow-y:auto; margin:10px 0;
 		scrollbar-arrow-color:#aaa; /*三角箭头的颜色*/
 		scrollbar-face-color:#ddd; /*立体滚动条的颜色（包括箭头部分的背景色）*/
 		scrollbar-3dlight-color:#ddd; /*立体滚动条亮边的颜色*/
@@ -141,7 +141,7 @@
 	.home_list_table .box_detail_icon,
 	.home_list_table .list_detail_icon{
 		width:20px; height:14px; background:url(images/icon_box.png) no-repeat 0 -620px; overflow:hidden;
-		position:absolute; top:-13px; right:40px;
+		position:absolute; top:-13px; *top:-13px; right:40px;
 	}
 	/*第二列浮动框*/
 	.home_list_table .box_detail_show{ width:100px; top:30px; right:-5px; display:none; }
@@ -153,7 +153,7 @@
 	}
 	.list_detail.hover,
 	.home_list_table .w_5.hover .list_detail{ color:#2985f7; background-position:25px -345px; }
-	.home_list_table .list_detail_float{ width:400px; top:50px; right:-5px; }
+	.home_list_table .list_detail_float{ width:400px; top:45px; right:-5px; }
 	.list_detail_close{
 		width:20px; height:20px; position:absolute; right:10px; top:10px; z-index:2; cursor:pointer;
 		background-image:url(images/icon_box.png); background-repeat:no-repeat; background-position:0 -200px;
