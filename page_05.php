@@ -1,4 +1,5 @@
 <?php include 'public_header.php'; ?>
+oo
 <link rel="stylesheet" href="themes/global.css?123" type="text/css" />
 <style type="text/css">
 .header_logo li.menu_cart{
