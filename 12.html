@@ -7,6 +7,7 @@
     	<meta name="format-detection" content="telephone=no" />
         <link rel="stylesheet" href="themes/themes.css" type="text/css" />
         <script src="themes/js/jquery.min-1.8.2.js"></script>
+        <script src="themes/js/ScrollFix.js"></script>
     </head>
     <body>
         <style type="text/css">
@@ -18,22 +19,8 @@
             <li><a href="">主题精选</a></li>
         </ul>
         <section id="scrollfix" class="scrollfix">
+
             <ul class="img_list_03">
-                <li>
-                    <div>
-                        <a href="">
-                            <img src="themes/temp/1.jpg" />
-                            <dl>
-                                <dt>阿萨德发生打</dt>
-                                <dd>阿萨德发生打阿萨德发生打</dd>
-                            </dl>
-                            <article>
-                                特价￥
-                                <span>2300</span>
-                            </article>
-                        </a>
-                    </div>
-                </li>
                 <li>
                     <div>
                         <a href="">
@@ -94,6 +81,7 @@
 
                 // Handle the start of interactions
                 elem.addEventListener('touchstart', function(event){
+                    
                     startY = event.touches[0].pageY;
                     startTopScroll = elem.scrollTop;
 
@@ -104,8 +92,8 @@
                         elem.scrollTop = elem.scrollHeight - elem.offsetHeight - 1;
                 }, false);
             };
-
-            new ScrollFix('#scrollfix');
+            var scrollfix = document.getElementById('scrollfix');
+            new ScrollFix(scrollfix);
             
             $(document).ready(function(){
                 $(document).scrollTop(0);
