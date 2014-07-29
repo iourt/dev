@@ -22,22 +22,28 @@
             <li><strong>(皇室)</strong></li>
         </ul>
         
-        <ul class="bxslider">
-            <li><img src="themes/temp/1.jpg" /></li>
-            <li><img src="themes/temp/2.jpg" /></li>
-            <li><img src="themes/temp/3.jpg" /></li>
-            <li><img src="themes/temp/4.jpg" /></li>
-        </ul>
+        <section style="position:relative;">
+            <ul class="bxslider">
+                <li><img src="themes/temp/1.jpg" /></li>
+                <li><img src="themes/temp/2.jpg" /></li>
+                <li><img src="themes/temp/3.jpg" /></li>
+                <li><img src="themes/temp/4.jpg" /></li>
+            </ul>
+
+            <ul class="aside">
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
         <script type="text/javascript">
             $(document).ready(function(){
                 $('.bxslider').bxSlider({
                     touchEnabled: false,
-                    controls: true,
+                    controls: false,
                     auto: true
                 });
             });
         </script>
-
 
         <div class="icon icon_blue_day">
             Day 1
