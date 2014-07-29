@@ -6,98 +6,107 @@
     	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     	<meta name="format-detection" content="telephone=no" />
         <link rel="stylesheet" href="themes/themes.css" type="text/css" />
-        <script src="themes/js/jquery.min-1.8.2.js"></script>
-        <script src="themes/js/ScrollFix.js"></script>
     </head>
     <body>
         <style type="text/css">
-            html{ height:100%; }
-            body{ height:100%; overflow:hidden; display:block; -webkit-overflow-scrolling:touch; }
+            .tab_01{ position:fixed; top:0; }
+            .img_list_03{ position:absolute; top:60px; }
         </style>
         <ul class="tab_01">
             <li class="current"><a href="">每日特选</a></li>
             <li><a href="">主题精选</a></li>
         </ul>
-        <section id="scrollfix" class="scrollfix">
-
-            <ul class="img_list_03">
-                <li>
-                    <div>
-                        <a href="">
-                            <img src="themes/temp/1.jpg" />
-                            <dl>
-                                <dt>阿萨德发生打</dt>
-                                <dd>阿萨德发生打阿萨德发生打</dd>
-                            </dl>
-                            <article>
-                                特价￥
-                                <span>2300</span>
-                            </article>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <a href="">
-                            <img src="themes/temp/1.jpg" />
-                            <dl>
-                                <dt>阿萨德发生打</dt>
-                                <dd>阿萨德发生打阿萨德发生打</dd>
-                            </dl>
-                            <article>
-                                特价￥
-                                <span>2300</span>
-                            </article>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <a href="">
-                            <img src="themes/temp/1.jpg" />
-                            <dl>
-                                <dt>阿萨德发生打</dt>
-                                <dd>阿萨德发生打阿萨德发生打</dd>
-                            </dl>
-                            <article>
-                                特价￥
-                                <span>2300</span>
-                            </article>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <script type="text/javascript">
-            var ScrollFix = function(elem) {
-                // Variables to track inputs
-                var startY, startTopScroll;
-
-                elem = elem || document.querySelector(elem);
-
-                // If there is no element, then do nothing  
-                if(!elem)
-                    return;
-
-                // Handle the start of interactions
-                elem.addEventListener('touchstart', function(event){
-                    
-                    startY = event.touches[0].pageY;
-                    startTopScroll = elem.scrollTop;
-
-                    if(startTopScroll <= 0)
-                        elem.scrollTop = 1;
-
-                    if(startTopScroll + elem.offsetHeight >= elem.scrollHeight)
-                        elem.scrollTop = elem.scrollHeight - elem.offsetHeight - 1;
-                }, false);
-            };
-            var scrollfix = document.getElementById('scrollfix');
-            new ScrollFix(scrollfix);
-            
-            $(document).ready(function(){
-                $(document).scrollTop(0);
-            });
-        </script>
+        <ul class="img_list_03">
+            <li>
+                <div>
+                    <a href="">
+                        <img src="themes/temp/1.jpg" />
+                        <dl>
+                            <dt>阿萨德发生打</dt>
+                            <dd>阿萨德发生打阿萨德发生打</dd>
+                        </dl>
+                        <article>
+                            特价￥
+                            <span>2300</span>
+                        </article>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <img src="themes/temp/1.jpg" />
+                        <dl>
+                            <dt>阿萨德发生打</dt>
+                            <dd>阿萨德发生打阿萨德发生打</dd>
+                        </dl>
+                        <article>
+                            特价￥
+                            <span>2300</span>
+                        </article>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <img src="themes/temp/1.jpg" />
+                        <dl>
+                            <dt>阿萨德发生打</dt>
+                            <dd>阿萨德发生打阿萨德发生打</dd>
+                        </dl>
+                        <article>
+                            特价￥
+                            <span>2300</span>
+                        </article>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <img src="themes/temp/1.jpg" />
+                        <dl>
+                            <dt>阿萨德发生打</dt>
+                            <dd>阿萨德发生打阿萨德发生打</dd>
+                        </dl>
+                        <article>
+                            特价￥
+                            <span>2300</span>
+                        </article>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <img src="themes/temp/1.jpg" />
+                        <dl>
+                            <dt>阿萨德发生打</dt>
+                            <dd>阿萨德发生打阿萨德发生打</dd>
+                        </dl>
+                        <article>
+                            特价￥
+                            <span>2300</span>
+                        </article>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">
+                        <img src="themes/temp/1.jpg" />
+                        <dl>
+                            <dt>阿萨德发生打</dt>
+                            <dd>阿萨德发生打阿萨德发生打</dd>
+                        </dl>
+                        <article>
+                            特价￥
+                            <span>2300</span>
+                        </article>
+                    </a>
+                </div>
+            </li>
+        </ul>
     </body>
 </html>
