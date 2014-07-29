@@ -11,16 +11,13 @@
     <body>
         <style type="text/css">
             html{ height:100%; }
-            body{ height:100%; overflow:hidden; }
+            body{ height:100%; overflow:hidden; display:block; -webkit-overflow-scrolling:touch; }
         </style>
-        <script type="text/javascript">
-            $(document).scrollTop(0);
-        </script>
         <ul class="tab_01">
             <li class="current"><a href="">每日特选</a></li>
             <li><a href="">主题精选</a></li>
         </ul>
-        <section class="scrollfix">
+        <section id="scrollfix" class="scrollfix">
             <ul class="img_list_03">
                 <li>
                     <div>
@@ -84,5 +81,35 @@
                 </li>
             </ul>
         </section>
+        <script type="text/javascript">
+            var ScrollFix = function(elem) {
+                // Variables to track inputs
+                var startY, startTopScroll;
+
+                elem = elem || document.querySelector(elem);
+
+                // If there is no element, then do nothing  
+                if(!elem)
+                    return;
+
+                // Handle the start of interactions
+                elem.addEventListener('touchstart', function(event){
+                    startY = event.touches[0].pageY;
+                    startTopScroll = elem.scrollTop;
+
+                    if(startTopScroll <= 0)
+                        elem.scrollTop = 1;
+
+                    if(startTopScroll + elem.offsetHeight >= elem.scrollHeight)
+                        elem.scrollTop = elem.scrollHeight - elem.offsetHeight - 1;
+                }, false);
+            };
+
+            new ScrollFix('#scrollfix');
+            
+            $(document).ready(function(){
+                $(document).scrollTop(0);
+            });
+        </script>
     </body>
 </html>
