@@ -40,3 +40,22 @@ em,b{
 body{
     font-size:12px; background:#f3f5f7;
 }
+
+.footer{ background:#000; color:#fff; width:960px; margin:0 auto; line-height:60px; padding:0 20px; }
+
+.menu{ width:1000px; margin:0 auto; font-size:0; }
+.menu li{ width:250px; display:inline-block; display:*inline; font-size:14px; font-weight:bold; }
+
+
+.header{ width:1000px; margin:0 auto; }
+
+.wrapper{ width:1000px; margin:0 auto; }
+
+
+.left{
+    float:left; width:600px; padding:0 20px;
+}
+
+.right{
+    float:right; width:320px; padding:0 20px;
+}
