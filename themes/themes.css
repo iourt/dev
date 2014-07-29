@@ -27,6 +27,11 @@ a:visited{ text-decoration:none; }
 a:hover{ color:#247df5; color:#1663ff; }
 em,b{ font-style:normal; }
 
+.scrollfix{
+    height:100%; width:100%; padding-top:44px;
+    overflow-x:hidden; overflow-y:auto;
+}
+
 /*logo*/
 .logo{ width:100%; background:#c2ad8f; padding:20px 10px 10px; text-align:center; box-sizing:border-box; }
 .logo img{ display:block; margin:0 auto; width:200px; }
@@ -230,8 +235,9 @@ em,b{ font-style:normal; }
 
 /*tab*/
 .tab_01{
-    width:100%; height:60px; display:-webkit-box; position:relative;
+    width:100%; height:60px; display:-webkit-box;
     background:-webkit-linear-gradient(top, #727171, #020202);
+    position:absolute; top:0; left:0; z-index:100;
 }
 .tab_01:before,
 .tab_01:after{ content:""; display:block; position:absolute; left:50%; z-index:1; }
@@ -270,6 +276,15 @@ em,b{ font-style:normal; }
 .btn_02{
     color:#fff; text-align:center; line-height:30px; width:220px; margin-top:-15px; position:relative;
     -webkit-border-radius:15px; z-index:3; float:right; margin-right:10px; font-size:12px;
-    background:-webkit-linear-gradient(top, #6a95ce, #365e8e);
-    border:1px solid #23456d; cursor:pointer;
+    border:1px solid #23456d; cursor:pointer; text-indent:20px;
+    background-image:url(images/icon_hand_01.png), -webkit-linear-gradient(top, #6a95ce, #365e8e);
+    background-repeat:no-repeat, repeat;
+    background-position:15px center, 0 0;
+    background-size:20px auto, auto;
+}
+.btn_02.current{
+    background-image:url(images/icon_hand_02.png), -webkit-linear-gradient(top, #6a95ce, #365e8e);
+    background-repeat:no-repeat, repeat;
+    background-position:15px center, 0 0;
+    background-size:20px auto, auto;
 }
