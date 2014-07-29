@@ -79,9 +79,17 @@ em,b{ font-style:normal; }
 .title_01{ color:#f0433e; font:bold 20px/40px Arial; text-align:center; border-bottom:5px solid #f0433e; }
 .title_02{ width:100%; font:bold 20px/20px Arial; color:#f0433e; padding:10px; box-sizing:border-box; text-align:center; }
 
+.title_03{
+    background:-webkit-linear-gradient(top, #545252, #000); height:40px; line-height:40px;
+    color:#fff; text-align:center; font-size:14px; padding:0 10px; -webkit-box-sizing:border-box;
+}
+.title_03 li{ display:inline-block; }
+.title_03 li:nth-child(2){ width:100px; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; }
+
+
 
 /*detail*/
-.detail{ width:100%; font:14px/20px Arial; box-sizing:border-box; padding:10px; }
+.detail{ width:100%; font:14px/20px Arial; -webkit-box-sizing:border-box; padding:10px; }
 
 .detail_01{ width:100%; position:relative; }
 .detail_01 div{ padding:20px; color:#9fa0a0; line-height:21px; }
@@ -169,6 +177,9 @@ em,b{ font-style:normal; }
 .icon_hotel{ background:url(images/icon_hotel.png) no-repeat center center; background-size:100% 100%; }
 .icon_shopping{ background:url(images/icon_shopping.png) no-repeat center center; background-size:100% 100%; }
 
+.icon{ display:inline-block; }
+.icon_01{}
+
 
 /*content*/
 .content{ width:100%; }
@@ -201,6 +212,13 @@ em,b{ font-style:normal; }
 .content .this_text strong{ font-size:16px; line-height:24px; }
 
 
+.content_01{ padding:20px 10px; }
+.content_01 h2{ color:#fff; font-size:16px; font-weight:normal; line-height:30px; }
+.content_01 article{ color:#989898; font-size:12px; }
+.content_01 a{ color:#1a9fd8; display:block; line-height:30px; padding-bottom:10px; border-bottom:1px dotted #1a9fd8; }
+
+
+
 /*tab*/
 .tab_01{
     width:100%; height:60px; display:-webkit-box; position:relative;
@@ -229,3 +247,20 @@ em,b{ font-style:normal; }
     display:block; text-align:center; padding-top:25px;
 }
 .tab_01 li.current a{ color:#fff; }
+
+
+
+
+/*button*/
+.btn_01{
+    width:90%; margin:0 auto; display:block; line-height:36px; text-align:center; color:#fff;
+    background:-webkit-linear-gradient(top, #b5b6b6, #898a8a); font-size:16px;
+    -webkit-border-radius:18px;
+}
+
+.btn_02{
+    color:#fff; text-align:center; line-height:30px; width:220px; margin-top:-15px; position:relative;
+    -webkit-border-radius:15px; z-index:3; float:right; margin-right:10px; font-size:12px;
+    background:-webkit-linear-gradient(top, #6a95ce, #365e8e);
+    border:1px solid #23456d; cursor:pointer;
+}
