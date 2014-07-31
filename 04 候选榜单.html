@@ -16,7 +16,7 @@
     <body>
         <div class="header">
             <div class="reg">
-                <a href="">注册 | SING UP</a>
+                <a class="js_reg">注册 | SING UP</a>
             </div>
             <ul class="bxslider">
                 <li><img src="themes/temp/img.jpg" /></li>
@@ -105,7 +105,7 @@
                         </div>
 
                         <div class="this_vote">
-                            <div class="this_vote_btn">投票</div>
+                            <div class="js_vote this_vote_btn">投票</div>
                             <div class="this_vote_text">
                                 阿萨德发斯蒂芬撒的发生的发生的发斯蒂芬撒地方阿萨德发是打发是打发阿萨德发斯蒂芬撒的发生的发生的发斯蒂芬撒地方阿萨德发是
                             </div>
@@ -129,41 +129,36 @@
                         </div>
 
                         <div class="this_vote">
-                            <div class="this_vote_btn">投票</div>
+                            <div class="js_vote this_vote_btn">投票</div>
                             <div class="this_vote_text">
                                 阿萨德发斯蒂芬撒的发生的发生的发斯蒂芬撒地方阿萨德发是打发是打发阿萨德发斯蒂芬撒的发生的发生的发斯蒂芬撒地方阿萨德发是
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <script type="text/javascript">
-                $(document).ready(function(){
-                    var $listTitleH3 = $('.list_03 h3'),
-                        $listTitleH4 = $('.list_03 h4'),
-                        $listCheck = $('.list_03 .this_chk');
-
-                    $listTitleH3.on('click', function(){
-                        $(this).closest('.this_block').addClass('current');
-                    });
-
-                    $listTitleH4.on('click', function(){
-                        $(this).closest('.this_list').addClass('current');
-                    });
-
-                    $listCheck.on('click', function(){
-                        $(this).addClass('current');
-                    });
-                });
-                </script>
             </div>
 
             <div class="right">
+                <div class="right_img"><img src="themes/images/right_01.jpg" /></div>
+
                 <div class="link_01 clearfix">
-                    <img src="themes/images/right_01.jpg" />
-                    <a class="this_rss" href="">订阅</a>
-                    <a class="this_app" href="">APP Store</a>
+                    <img src="themes/temp/book.jpg" />
+                    <ul class="clearfix">
+                        <li>
+                            <span style="color:#898989">JULY 2014</span><br>
+                            女性专题<br><br>
+                            <a class="this_rss" href="">订阅</a>
+                        </li>
+                        <li>
+                            漫游app现已上线<br>
+                            订阅价格更优惠<br><br>
+                            <a class="this_app" href=""><img src="themes/images/appstore.jpg" /></a>
+                        </li>
+                    </ul>
                 </div>
+
+                <div class="right_img"><img src="themes/images/right_02.jpg" /></div>
+                
                 <div class="link_02 clearfix">
                     <a href="">
                         <img src="themes/temp/3.jpg" />
@@ -178,6 +173,54 @@
         </div>
 
 
+
+        <!-- 投票相关代码 -->
+        <div class="js_mask mask"></div>
+
+        <!-- 继续投票弹框 -->
+        <div class="box box_vote clearfix" style="display:block;">
+            <div class="js_close this_close">X</div>
+            <div class="this_text">
+                投票已成功<br>
+                是否继续下一个类别投票?<br><br>
+
+                Success!<br>
+                Do you want voting next type?<br><br>
+
+                <a href="" style="margin-right:20px;">是 YES</a>
+                <a href="">否 NO</a>
+            </div>
+        </div>
+
+        <!-- 投票失败弹框 -->
+        <div class="box box_vote clearfix" style="display:block;">
+            <div class="js_close this_close">X</div>
+            <div class="this_text">
+                抱歉<br>
+                您的2014漫游中国·旅行奖投票已超过上限，<br>
+                请重新选择或者减少选择数量。<br><br>
+
+                Error!<br>
+                Voting has exceeded the limit, please vote again.<br>
+            </div>
+        </div>
+
+        <!-- 投票失败弹框 -->
+        <div class="box box_vote clearfix" style="display:block;">
+            <div class="js_close this_close">X</div>
+            <div class="this_text">
+                感谢您的投票<br>
+                感谢您注册2014漫游中国·旅行奖投票已成功<br>
+                我们将在参加者中抽取部分会员送出精美礼品。<br><br>
+
+                THANK YOU!<br>
+                Thank you for voted 2014 China Travel Awards!<br>
+            </div>
+        </div>
+
         <script type="text/javascript" src="themes/js/common.js"></script>
+        <script type="text/javascript">
+            siteCommon.setVote();
+        </script>
     </body>
 </html>
