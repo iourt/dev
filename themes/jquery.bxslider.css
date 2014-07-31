@@ -91,51 +91,56 @@
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a {
-	background: #666;
 	text-indent: -9999px;
 	display: block;
-	width: 6px;
-	height: 6px;
+	width: 10px;
+	height: 10px;
 	margin: 0 5px;
 	outline: 0;
-	-moz-border-radius: 6px;
-	-webkit-border-radius: 6px;
-	border-radius: 6px;
+/*	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background: #666;*/
+	background:url(images/icon_slider.png) no-repeat 0 0;
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
-	background: #fff;
+	/*background: #fff;*/
+	background:url(images/icon_slider.png) no-repeat -10px 0;
 }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
 .bx-wrapper .bx-prev {
 	left: 10px;
-	background: url(images/controls.png) no-repeat 0 -32px;
+	background: url(images/icon_arrow.png) no-repeat 0 -165px;
 }
 
 .bx-wrapper .bx-next {
 	right: 10px;
-	background: url(images/controls.png) no-repeat -43px -32px;
+	background: url(images/icon_arrow.png) no-repeat 0 -55px;
 }
 
 .bx-wrapper .bx-prev:hover {
-	background-position: 0 0;
+	background-position: 0 -110px;
 }
 
 .bx-wrapper .bx-next:hover {
-	background-position: -43px 0;
+	background-position: 0 0;
 }
 
 
 .bx-wrapper .bx-controls-direction a {
 	position: absolute;
 	top: 50%;
-	margin-top: -16px;
 	outline: 0;
-	width: 32px;
+/*	width: 32px;
 	height: 32px;
+	margin-top: -16px;*/
+	width:32px;
+	height:55px;
+	margin-top:-27px;
 	text-indent: -9999px;
 	z-index: 9999;
 }
