@@ -74,7 +74,14 @@ var siteCommon = {
 
         $('.js_vote').on('click', function(){
 
+            var top = $(document).scrollTop() + $(window).height()/2;
+
             self.setMaskHeight(); // 显示遮罩层
+
+            $('.js_box').css({
+                'display': 'block',
+                'top': top+'px'
+            });
             
         });
     }

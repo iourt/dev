@@ -28,11 +28,13 @@ em,b{ font-style:normal; }
 
 
 /*header*/
-.header{ width:1000px; margin:0 auto; }
+.header{ width:1000px; margin:0 auto; position:relative; }
 .header .reg{ width:100%; }
 .header .reg,
 .header .reg a{ color:#fff; display:block; line-height:30px; height:30px; text-align:center; cursor:pointer; }
 .header .reg a{ width:150px; background:#b7aa88;  }
+.header .this_logo{ position:absolute; left:10px; top:40px; z-index:10; width:200px; }
+.header .this_logo img{ width:100%; }
 
 
 

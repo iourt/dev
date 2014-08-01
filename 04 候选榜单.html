@@ -9,6 +9,10 @@
         <link rel="stylesheet" type="text/css" href="themes/themes.css" />
         <link rel="stylesheet" type="text/css" href="themes/jquery.bxslider.css" />
 
+
+        <!--[if lte IE 6]>
+        <script type="text/javascript" src="themes/js/iepng.js"></script>
+        <![endif]-->
         <!--<script type="text/javascript" src="themes/js/jquery-1.4.2.js"></script> -->
         <script type="text/javascript" src="themes/js/jquery.min-1.8.2.js"></script>
         <script type="text/javascript" src="themes/js/jquery.bxslider.min.js"></script>
@@ -33,6 +37,8 @@
                     });
                 });
             </script>
+
+            <div class="this_logo"><img src="themes/images/logo.png" /></div>
         </div>
 
         <ul class="menu">
@@ -178,7 +184,7 @@
         <div class="js_mask mask"></div>
 
         <!-- 继续投票弹框 -->
-        <div class="box box_vote clearfix" style="display:block;">
+        <div class="js_box box box_vote clearfix">
             <div class="js_close this_close">X</div>
             <div class="this_text">
                 投票已成功<br>
@@ -193,7 +199,7 @@
         </div>
 
         <!-- 投票失败弹框 -->
-        <div class="box box_vote clearfix" style="display:block;">
+        <div class="box box_vote clearfix">
             <div class="js_close this_close">X</div>
             <div class="this_text">
                 抱歉<br>
@@ -206,7 +212,7 @@
         </div>
 
         <!-- 投票失败弹框 -->
-        <div class="box box_vote clearfix" style="display:block;">
+        <div class="box box_vote clearfix">
             <div class="js_close this_close">X</div>
             <div class="this_text">
                 感谢您的投票<br>
