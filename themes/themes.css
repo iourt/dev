@@ -21,7 +21,7 @@ em,b{ font-style:normal; }
 .footer{ background:#000; color:#fff; width:960px; margin:0 auto; line-height:60px; padding:0 20px; }
 
 .menu{ width:1000px; margin:0 auto; font-size:0; }
-.menu li{ width:250px; display:inline-block; display:*inline; font-size:14px; font-weight:bold; }
+.menu li{ width:249px; border-left:1px solid #fff; display:inline-block; display:*inline; font-size:14px; font-weight:bold; }
 .menu li a{ display:block; background:#b7aa88; color:#fff; line-height:40px; text-align:center; }
 .menu li a:hover{ background:#000; }
 
