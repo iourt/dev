@@ -18,7 +18,14 @@
 
             <div class="this_logo_1"><img src="themes/images/app_start_logo.png" /></div>
 
-            <div class="this_logo"></div>
+            <!-- <div class="this_logo"></div> -->
+            <section class="canvas_log">
+                <canvas id="canvas"></canvas>
+            </section>
+            <style type="text/css">
+                .canvas_log{ text-align:center; padding:10px 0; }
+                canvas{ margin:0 auto; }
+            </style>
 
             <article>Enter to Vote</article>
 
