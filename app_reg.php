@@ -17,7 +17,8 @@
         <section class="register">
 
             <h2>
-                SING UP 2014 CHINA TRAVEL AWARD<br>
+                <span style="font-size:26px;">SING UP</span><br>
+                2014 CHINA TRAVEL AWARD<br>
                 注册及参加投票
             </h2>
             <h3>参加注册投票，有机会获得精美礼品一份</h3>
@@ -34,13 +35,13 @@
             </dl>
 
             <div class="this_btn">
-                <a href="">获得验证码</a>
+                <!-- <a href="">获得验证码</a> -->
                 <a href="">注册</a>
             </div>
 
             <div class="this_line"></div>
 
-            <h4>你也可以使用微信账号注册</h4>
+<!--             <h4>你也可以使用微信账号注册</h4>
 
             <div class="this_weixin"><a href="">微信 Weichat</a></div>
 
@@ -49,7 +50,17 @@
                 注册投票账号之后进行投票您将由机会获得由<br>
                 漫游Travel+Leisure送出的精美礼品一份，<br>
                 机会难得，您还等什么？
-            </article>
+            </article> -->
+
+            <style type="text/css">
+                .register{
+                    background:url(themes/images/app_box_logo.jpg) no-repeat center bottom; padding-bottom:120px; border-bottom:20px solid #fff;
+                    background-size:280px auto;
+                }
+                .register dt{ text-align:center; }
+                .register dd input{ width:100%; -webkit-box-sizing:border-box; }
+                .register .this_btn a{ display:block; width:100%; background:#000; }
+            </style>
         </section>
 
         <script type="text/javascript" src="themes/js/app_common.js"></script>
