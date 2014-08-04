@@ -15,7 +15,7 @@ a:visited{ text-decoration:none; }
 em,b{ font-style:normal; }
 
 .clearfix:after{ content:""; display:block; height:0; overflow:hidden; clear:both; }
-.clearfix{ *+height:1%; }
+.clearfix{ *zoom:1; }
 
 
 .footer{ background:#000; color:#fff; width:960px; margin:0 auto; line-height:60px; padding:0 20px; }
@@ -30,8 +30,7 @@ em,b{ font-style:normal; }
 /*header*/
 .header{ width:1000px; margin:0 auto; position:relative; }
 .header .reg{ width:100%; }
-.header .reg,
-.header .reg a{ color:#fff; display:block; line-height:30px; height:30px; text-align:center; cursor:pointer; }
+.header .reg a{ color:#fff; display:block; line-height:30px; height:30px; text-align:center; cursor:pointer;}
 .header .reg a{ width:150px; background:#b7aa88;  }
 .header .this_logo{ position:absolute; left:10px; top:40px; z-index:10; width:200px; }
 .header .this_logo img{ width:100%; }
@@ -181,7 +180,7 @@ em,b{ font-style:normal; }
 .box_reg .this_title{ font-size:20px; font-weight:bold; text-align:center; line-height:20px; padding:20px 0; }
 .box_reg .this_wrapper{
     width:660px; background:url(images/reg_bg.jpg) no-repeat center 0; padding:10px 30px;
-    overflow:hidden;
+    /*overflow:hidden;*/
 }
 .box_reg .this_wrapper .this_left{
     width:300px; float:left; background:url(images/reg_left_bg.jpg) no-repeat 0 bottom;
@@ -195,7 +194,7 @@ em,b{ font-style:normal; }
 .box_reg .this_wrapper .this_right dd input{ height:20px; line-height:20px; padding:5px; width:180px; border:1px solid #ccc; }
 .box_reg .this_wrapper .this_right .btn_a{ font-size:0; padding-top:20px; }
 .box_reg .this_wrapper .this_right .btn_a a{
-    display:inline-block; display:*inline; width:100px; height:30px; line-height:30px; text-align:center;
+    display:block; float:left; width:100px; height:30px; line-height:30px; text-align:center;
     background:#898989; font-weight:bold; color:#fff; font-size:14px;
 }
 .box_reg .this_wrapper .this_right .btn_a a.btn_code{ margin-right:20px; }
