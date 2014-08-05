@@ -22,6 +22,15 @@ var appCanvas = {
     init: function() {
         var self = this;
 
+        // 斜边
+        self.edge = Math.sqrt(150*150*2);
+        // 弧度的计算公式为： 2*Math.PI/360*角度
+        self.radian = 2 * Math.PI / 360,
+        // 原X坐标
+        self.centerX = Math.cos(self.radian * (45+0)) * self.edge;
+        // 原Y坐标
+        self.centerY = Math.sin(self.radian * (45+0)) * self.edge;
+
         self.imgLoad();
     },
 
@@ -31,7 +40,8 @@ var appCanvas = {
         self.image = new Image();
 
         self.image.onload = function() {
-            self.drawImg();
+            // self.drawImg();
+            self.playAnimate();
         };
 
         self.image.src = '/themes/images/app_canvas_logo.png';
@@ -50,44 +60,56 @@ var appCanvas = {
         var canvasWidth  = canvas.width,
             canvasHeight = canvas.height;
 
-        // 斜边
-        self.edge = Math.sqrt(260*260*2);
-
-        // 原X坐标
-        this.centerX = Math.cos(this.radian * (45+0)) * this.edge;
-        // 原Y坐标
-        this.centerY = Math.sin(this.radian * (45+0)) * this.edge;
-        
-
         // 弧度的计算公式为： 2*Math.PI/360*角度
-        var radian = 2 * Math.PI / 360,
-            c = self.edge,
-            x = Math.cos(radian * angle) * c, // 转动角度后的X坐标
-            y = Math.sin(radian * angle) * c; // 转动角度后的Y坐标
+        var c = self.edge;
+
+        var x1 = Math.cos(self.radian * (45+angle.a)) * c, // 转动角度后的X坐标
+            y1 = Math.sin(self.radian * (45+angle.a)) * c; // 转动角度后的Y坐标
+
+
+        var x2 = Math.cos(self.radian * (45+angle.b)) * c, // 转动角度后的X坐标
+            y2 = Math.sin(self.radian * (45+angle.b)) * c; // 转动角度后的Y坐标
+
+
+        ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+        ctx.save();
+        ctx.translate( self.centerX-x1, self.centerY-y1 );
+        ctx.rotate(angle.a * Math.PI / 180);
+        ctx.drawImage(self.image, 0, 0, 300, 300, 0, 0, 300, 300);
+        ctx.restore();
 
         ctx.save();
-        // ctx.clearRect(0, 0, canvasWidth, canvasHeight);
-        ctx.translate(self.centerX-x, self.centerY-y);
-        ctx.rotate(angle * Math.PI / 180);
-        self.drawImageBox(self.imgPos[0]);
+        ctx.translate( self.centerX-x2, self.centerY-y2 );
+        ctx.rotate(angle.b * Math.PI / 180);
+        ctx.drawImage(self.image, 300, 0, 300, 300, 0, 0, 300, 300);
+        
         ctx.restore();
-        self.drawImageBox(self.imgPos[1]);
+        ctx.drawImage(self.image, 600, 0, 300, 300, 0, 0, 300, 300);
     },
 
     playAnimate: function(data){
         var self = this;
-        var now = 0;
+
+        var angle = {
+                a: 0,
+                b: 360
+            },
+            dist = 1;
+
         requestAnimationFrame(callback);
-        function callback(){
-            now++;
-            self.isClick = true;
-            if (now < self.steps.length) {
-                var angle = self.steps[now];
+
+        function callback() {
+            angle.a = angle.a + dist;
+            angle.b = angle.b - dist;
+
+            if (angle.a <= 360 && angle.b >= 0) {
                 self.showAnimate(angle);
-                requestAnimationFrame(callback);
             }else{
-                self.showBonus(data);
+                angle.a = 0;
+                angle.b = 360;
             }
+            requestAnimationFrame(callback);
+
         }
     },
 };
