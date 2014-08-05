@@ -219,3 +219,9 @@ em,b{ font-style:normal; }
     display:inline-block; display:*inline; background:#b7aa88; text-align:center; width:150px; line-height:40px;
     color:#fff;
 }
+
+
+
+.canvas{
+    width:1000px; margin:0 auto; background:url(images/logo.jpg) no-repeat 0 0; height:900px;
+}

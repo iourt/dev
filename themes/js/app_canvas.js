@@ -87,7 +87,7 @@ var appCanvas = {
         ctx.drawImage(self.image, 600, 0, 300, 300, 0, 0, 300, 300);
     },
 
-    playAnimate: function(data){
+    playAnimate: function(){
         var self = this;
 
         var angle = {
