@@ -67,7 +67,6 @@ var drawLogo = {
         self.image = new Image();
 
         self.image.onload = function() {
-            // self.drawImg();
             self.playAnimate();
         };
 
@@ -131,9 +130,13 @@ var drawLogo = {
         ctx.translate( self.centerX-x2, self.centerY-y2 );
         ctx.rotate(angle.b * Math.PI / 180);
         ctx.drawImage(self.image, distX, 0, distX, distY, 0, 0, distX, distY);
-        
         ctx.restore();
+        
         ctx.drawImage(self.image, distX*2, 0, distX, distY, 0, 0, distX, distY);
+    },
+
+    drawLine: function() {
+        var self = this;
     }
 };
 
