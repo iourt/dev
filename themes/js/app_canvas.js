@@ -71,7 +71,7 @@ var appCanvas = {
             y2 = Math.sin(self.radian * (45+angle.b)) * c; // 转动角度后的Y坐标
 
 
-        ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+        // ctx.clearRect(0, 0, canvasWidth, canvasHeight);
         ctx.save();
         ctx.translate( self.centerX-x1, self.centerY-y1 );
         ctx.rotate(angle.a * Math.PI / 180);
