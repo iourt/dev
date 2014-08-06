@@ -11,6 +11,11 @@ var drawLogo = {
     init: function() {
         var self = this;
 
+        // 开始的线条距离
+        self.line = [305, 380, 390, 320, 330, 320, 365, 390, 368, 329];
+
+        self.state = [false, false, false, false, false, false, false, false, false, false];
+
         if (!self.canvasSupport()) {
             var canvas = document.getElementById('logo');
             canvas.className = 'canvas';
@@ -102,7 +107,6 @@ var drawLogo = {
     showAnimate: function(angle) {
         var self = this;
 
-
         var ctx = self.ctx;
 
         var distX = self.options.x,
@@ -118,8 +122,11 @@ var drawLogo = {
         var x2 = Math.cos(self.radian * (45+angle.b)) * c, // 转动角度后的X坐标
             y2 = Math.sin(self.radian * (45+angle.b)) * c; // 转动角度后的Y坐标
 
-
         ctx.clearRect(0, 0, distX, distY);
+
+        self.drawLine();
+        self.drawCircle();
+        
         ctx.save();
         ctx.translate( self.centerX-x1, self.centerY-y1 );
         ctx.rotate(angle.a * Math.PI / 180);
@@ -135,8 +142,73 @@ var drawLogo = {
         ctx.drawImage(self.image, distX*2, 0, distX, distY, 0, 0, distX, distY);
     },
 
+    drawClear: function() {
+    },
+
+    // 画线条
     drawLine: function() {
-        var self = this;
+        var self = this,
+            ctx = self.ctx;
+
+        for (var i=0; i<10; i++) {
+            if (self.line[i] <= 400 && !self.state[i]){
+                self.line[i]++;
+            } else {
+                self.state[i] = true;
+                self.line[i]--;
+                if (self.line[i] === 320) {
+                    self.state[i] = false;
+                }
+            }
+        }
+
+        ctx.save();
+        ctx.translate(400, 400);
+        ctx.strokeStyle = '#b7aa88';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+
+
+        for(var i=0; i<10; i++){
+            ctx.save();
+            ctx.rotate(Math.PI / 180 * (i*5+100));
+            ctx.moveTo(0, 0);
+            ctx.lineTo(self.line[i], 0);
+            ctx.restore();
+
+            ctx.save();
+            ctx.rotate(Math.PI / 180 * (i*5+200));
+            ctx.moveTo(0, 0);
+            ctx.lineTo(self.line[i], 0);
+            ctx.restore();
+
+            ctx.save();
+            ctx.rotate(Math.PI / 180 * (i*5+280));
+            ctx.moveTo(0, 0);
+            ctx.lineTo(self.line[i], 0);
+            ctx.restore();
+        }
+
+        ctx.closePath();
+        ctx.stroke();
+        ctx.restore();
+    },
+
+    // 画圆
+    drawCircle: function() {
+        var self = this,
+            ctx = self.ctx;
+
+        ctx.fillStyle = '#fff'; // 等同于fillStyle="rgba(255,255,255,1)";
+        ctx.beginPath();
+        ctx.arc(400, 400, 320, 0, 2 * Math.PI, true);
+        ctx.closePath();
+        ctx.fill();
+    },
+
+    drawAnimate: function() {
+        var self = this,
+            ctx = self.ctx;
     }
 };
 
