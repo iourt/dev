@@ -12,7 +12,7 @@ var drawLogo = {
         var self = this;
 
         // 开始的线条距离
-        self.line = [305, 380, 390, 320, 330, 320, 365, 390, 368, 329];
+        self.line = [304, 380, 390, 320, 330, 320, 362, 390, 368, 320];
 
         self.state = [false, false, false, false, false, false, false, false, false, false];
 
@@ -155,10 +155,10 @@ var drawLogo = {
 
         for (var i=0; i<10; i++) {
             if (self.line[i] <= 400 && !self.state[i]){
-                self.line[i]++;
+                self.line[i] = self.line[i] + 2;
             } else {
                 self.state[i] = true;
-                self.line[i]--;
+                self.line[i] = self.line[i] - 2;
                 if (self.line[i] === 320) {
                     self.state[i] = false;
                 }
