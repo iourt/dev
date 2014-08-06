@@ -35,6 +35,9 @@ var drawLogo = {
     initCanvas: function() {
         var self = this;
 
+        var show = document.getElementById('logo_link');
+        show.style.cssText = "display:block";
+
         var logo = document.getElementById('logo');
         logo.style.cssText = "width:1000px;height:800px;margin:0 auto;text-align:center;";
 
