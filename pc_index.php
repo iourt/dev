@@ -9,7 +9,7 @@
 
 
     <div class="img_01">
-        <img src="/themes/temp/1.jpg" alt="" />
+        <img src="/themes/temp/pc_01.jpg" alt="" />
     </div>
 
     <div class="wrapper clearfix">
