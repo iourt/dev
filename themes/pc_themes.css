@@ -33,7 +33,7 @@ em,b{ font-style:normal; }
 .left{
     width: 270px;
     float: left;
-    background: #d8b484;
+    background: url(images/pc_left_bottom.jpg) #d8b484 no-repeat 0 bottom;
 }
 .left .left_top{
     width: 270px;
@@ -44,7 +44,6 @@ em,b{ font-style:normal; }
     width: 270px;
     padding-bottom: 200px;
     text-align: center;
-    background: url(images/pc_left_bottom.jpg) #d8b484 no-repeat 0 bottom;
 }
 
 
@@ -53,9 +52,15 @@ em,b{ font-style:normal; }
     width: 830px;
     float: right;
     position: relative;
+    padding-bottom: 70px;
 }
 .wrapper{
     padding: 0 30px;
+}
+
+/*slider*/
+.img_slider img{
+    width: 830px;
 }
 
 
@@ -66,6 +71,7 @@ em,b{ font-style:normal; }
     top: 10px;
     z-index: 99;
     width: 160px;
+    border-top: 1px solid #b8976e;
 }
 .menu span{
     font-weight: bold;

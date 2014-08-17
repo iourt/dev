@@ -13,9 +13,6 @@
 
 /** RESET AND LAYOUT
 ===================================*/
-.bxslider img{
-	width:100%;
-}
 
 .bx-wrapper {
 	position: relative;
@@ -37,8 +34,8 @@
 	-webkit-box-shadow: 0 0 5px #ccc;
 	box-shadow: 0 0 5px #ccc;
 	border:  5px solid #fff;
-	left: -5px;*/
-	background: #fff;
+	left: -5px;
+	background: #fff;*/
 	
 	/*fix other elements on the page moving (on Chrome)*/
 	-webkit-transform: translatez(0);
@@ -51,7 +48,7 @@
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
 	position: absolute;
-	bottom: -30px;
+	/*bottom: -30px;*/
 	width: 100%;
 }
 
@@ -76,11 +73,10 @@
 	font-family: Arial;
 	font-weight: bold;
 	color: #666;
-
-	position:absolute;
-	left:0;
-	bottom:10px;
-	/*background:red;*/
+	/*padding-top: 20px;*/
+	background: #000;
+	overflow: hidden;
+	height: 10px;
 }
 
 .bx-wrapper .bx-pager .bx-pager-item,
@@ -91,56 +87,53 @@
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a {
+	/*background: #666;*/
 	text-indent: -9999px;
 	display: block;
-	width: 10px;
+	/*width: 10px;*/
+	width: 164px;
 	height: 10px;
-	margin: 0 5px;
+	/*margin: 0 5px;*/
+	margin: 0 1px;
 	outline: 0;
-/*	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-	background: #666;*/
-	background:url(images/icon_slider.png) no-repeat 0 0;
+/*	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;*/
+	background: #857d7a;
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
-	/*background: #fff;*/
-	background:url(images/icon_slider.png) no-repeat -10px 0;
+	background: #9e7c59;
 }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
 .bx-wrapper .bx-prev {
 	left: 10px;
-	background: url(images/icon_arrow.png) no-repeat 0 -165px;
+	background: url(images/controls.png) no-repeat 0 -32px;
 }
 
 .bx-wrapper .bx-next {
 	right: 10px;
-	background: url(images/icon_arrow.png) no-repeat 0 -55px;
+	background: url(images/controls.png) no-repeat -43px -32px;
 }
 
 .bx-wrapper .bx-prev:hover {
-	background-position: 0 -110px;
-}
-
-.bx-wrapper .bx-next:hover {
 	background-position: 0 0;
 }
 
+.bx-wrapper .bx-next:hover {
+	background-position: -43px 0;
+}
 
 .bx-wrapper .bx-controls-direction a {
 	position: absolute;
 	top: 50%;
+	margin-top: -16px;
 	outline: 0;
-/*	width: 32px;
+	width: 32px;
 	height: 32px;
-	margin-top: -16px;*/
-	width:32px;
-	height:55px;
-	margin-top:-27px;
 	text-indent: -9999px;
 	z-index: 9999;
 }

@@ -7,6 +7,22 @@
         <li><a href="">TICKET <span>票务</span></a></li>
     </ul>
 
+    <div class="img_slider">
+        <ul class="bxslider">
+            <li><img src="/themes/temp/1.jpg" title="" /></li>
+            <li><img src="/themes/temp/1.jpg" title="" /></li>
+            <li><img src="/themes/temp/1.jpg" title="" /></li>
+            <li><img src="/themes/temp/1.jpg" title="" /></li>
+            <li><img src="/themes/temp/1.jpg" title="" /></li>
+        </ul>
+        <script type="text/javascript">
+            $('.bxslider').bxSlider({
+                touchEnabled: false,
+                controls: false,
+                auto: true
+            });
+        </script>
+    </div>
 
     <div class="img_01">
         <img src="/themes/temp/pc_01.jpg" alt="" />

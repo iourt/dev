@@ -29,9 +29,6 @@
         <div class="this_right">Dee Dee Brigewater-Dear Ella</div>
     </div>
 
-    <script type="text/javascript" src="themes/js/app_common.js"></script>
-    <script type="text/javascript">
-        siteCommon.setVote();
-    </script>
+    <script type="text/javascript" src="themes/js/pc_common.js"></script>
 </body>
 </html>
