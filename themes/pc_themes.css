@@ -109,6 +109,39 @@ em,b{ font-style:normal; }
 }
 
 
+.text_02{
+    padding: 0 0 20px 20px;
+}
+.text_02 li{
+    float: left;
+}
+.text_02 .this_detail{
+    padding-right: 10px;
+    width: 600px;
+    border-right: 1px solid #bfbfbf;
+}
+.text_02 .this_detail h3{
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 40px;
+}
+.text_02 .this_detail div{
+    padding: 10px 0;
+    line-height: 20px;
+}
+.text_02 .this_time{
+    width: 189px;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+
+
+
+
+
+
+
 /*img*/
 .img_01{
     margin-bottom: 20px;
@@ -116,6 +149,52 @@ em,b{ font-style:normal; }
 .img_01 img{
     width: 830px;
 }
+
+
+.img_02{
+    margin-bottom: 10px;
+    display: block;
+}
+.img_02 a{
+    display: block;
+    position: relative;
+}
+.img_02,
+.img_02 a,
+.img_02 a img,
+.img_02 a .this_mask{
+    width: 830px;
+    height: 467px;
+}
+.img_02 a:hover div{
+    display: block;
+}
+.img_02 a div{
+    position: absolute;
+    left: 0;
+    display: none;
+    z-index: 1;
+}
+.img_02 a .this_mask{
+    top: 0;
+    opacity: 0.7;
+    background: #000;
+}
+.img_02 a .this_detail{
+    text-align: center;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+.img_02 a .this_detail h3{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
 
 
 /*list*/
@@ -182,6 +261,68 @@ em,b{ font-style:normal; }
 .list_01 li.this_even .this_time{
     left: 0;
 }
+
+
+
+.list_02{
+
+}
+.list_02 li{
+    float: left;
+    width: 410px;
+}
+.list_02 li.this_odd{
+    margin-right: 10px;
+}
+.list_02 li a{
+    position: relative;
+    display: block;
+}
+.list_02 li a,
+.list_02 li a img,
+.list_02 li a .this_mask{
+    width: 410px;
+    height: 410px;
+    cursor: pointer;
+}
+.list_02 li a:hover div{
+    display: block;
+}
+.list_02 li a div{
+    display: none;
+    position: absolute;
+    left: 0;
+}
+.list_02 li a .this_mask{
+    background: #000;
+    opacity: .7;
+    top: 0;
+}
+.list_02 li a .this_detail{
+    text-align: center;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+.list_02 li a .this_detail h3{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .footer{
     width: 1100px;

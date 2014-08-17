@@ -15,4 +15,6 @@ var siteCommon = {
     }
 };
 
-siteCommon.init();
+window.onload = function() {
+    siteCommon.setLeft();
+};
