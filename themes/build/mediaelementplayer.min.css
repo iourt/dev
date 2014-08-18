@@ -1,6 +1,6 @@
 .mejs-container {
     position: relative;
-    background: #000;
+    /*background: #000;*/
     font-family: Helvetica,Arial;
     text-align: left;
     vertical-align: top;
@@ -113,7 +113,7 @@
     width: 80px;
     height: 80px;
     margin: -40px 0 0 -40px;
-    background: #333;
+/*    background: #333;
     background: url(background.png);
     background: rgba(0,0,0,0.9);
     background: -webkit-gradient(linear,0% 0,0% 100%,from(rgba(50,50,50,0.9)),to(rgba(0,0,0,0.9)));
@@ -121,7 +121,7 @@
     background: -moz-linear-gradient(top,rgba(50,50,50,0.9),rgba(0,0,0,0.9));
     background: -o-linear-gradient(top,rgba(50,50,50,0.9),rgba(0,0,0,0.9));
     background: -ms-linear-gradient(top,rgba(50,50,50,0.9),rgba(0,0,0,0.9));
-    background: linear-gradient(rgba(50,50,50,0.9),rgba(0,0,0,0.9));
+    background: linear-gradient(rgba(50,50,50,0.9),rgba(0,0,0,0.9));*/
 }
 
 .mejs-overlay-loading span {
@@ -138,14 +138,14 @@
     padding: 0;
     bottom: 0;
     left: 0;
-    background: url(background.png);
+/*    background: url(background.png);
     background: rgba(0,0,0,0.7);
     background: -webkit-gradient(linear,0% 0,0% 100%,from(rgba(50,50,50,0.7)),to(rgba(0,0,0,0.7)));
     background: -webkit-linear-gradient(top,rgba(50,50,50,0.7),rgba(0,0,0,0.7));
     background: -moz-linear-gradient(top,rgba(50,50,50,0.7),rgba(0,0,0,0.7));
     background: -o-linear-gradient(top,rgba(50,50,50,0.7),rgba(0,0,0,0.7));
     background: -ms-linear-gradient(top,rgba(50,50,50,0.7),rgba(0,0,0,0.7));
-    background: linear-gradient(rgba(50,50,50,0.7),rgba(0,0,0,0.7));
+    background: linear-gradient(rgba(50,50,50,0.7),rgba(0,0,0,0.7));*/
     height: 30px;
     width: 100%;
 }
@@ -199,6 +199,9 @@
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
+
+    /*todo*/
+    display: none;
 }
 
 .mejs-container .mejs-controls .mejs-time span {
@@ -210,6 +213,28 @@
     margin: 1px 2px 0 0;
     width: auto;
 }
+
+/*todo*/
+.mejs-inner .mejs-controls .mejs-play,
+.mejs-inner .mejs-controls .mejs-pause{
+    width: 70px;
+    height: 20px;
+    margin-top: -4px;
+}
+.mejs-inner .mejs-controls .mejs-play button,
+.mejs-inner .mejs-controls .mejs-pause button{
+    width: 60px;
+    height: 20px;
+    outline: none;
+    background: transparent url(play.png) no-repeat;
+}
+.mejs-inner .mejs-controls .mejs-pause button{
+    background-position: 0 -50px;
+}
+
+
+
+
 
 .mejs-controls .mejs-play button {
     background-position: 0 0;
@@ -227,6 +252,10 @@
     direction: ltr;
     width: 200px;
     padding-top: 5px;
+
+
+    /*todo*/
+    display: none;
 }
 
 .mejs-controls .mejs-time-rail span {

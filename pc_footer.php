@@ -27,20 +27,16 @@
                     />
                 </object>
             </div> -->
-
-            
-
  
-    <script src="themes/build/mediaelement-and-player.min.js"></script>
-    <script src="testforfiles.js"></script> 
-    <link rel="stylesheet" href="themes/build/mediaelementplayer.min.css" />
+            <script src="themes/build/mediaelement-and-player.min.js"></script>
+            <link rel="stylesheet" href="themes/build/mediaelementplayer.min.css" />
 
 
-    <audio id="player2" src="themes/music/1.mp3" type="audio/mp3" controls="controls"></audio>
+            <audio id="player2" src="themes/music/1.mp3" type="audio/mp3" controls="controls"></audio>
 
-    <script>
-        $('audio,video').mediaelementplayer();
-    </script>
+            <script>
+                $('audio,video').mediaelementplayer();
+            </script>
         </div>
         <div class="this_right">Dee Dee Brigewater-Dear Ella</div>
     </div>
