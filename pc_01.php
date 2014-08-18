@@ -1,4 +1,7 @@
 <?php include 'pc_header.php'; ?>
+
+
+    
 <div class="img_slider">
     <ul class="bxslider">
         <li><img src="/themes/temp/1.jpg" title="" /></li>

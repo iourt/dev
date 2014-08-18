@@ -378,14 +378,14 @@ em,b{ font-style:normal; }
     overflow: hidden;
     float: left;
 }
-.footer .this_mid div{
+/*.footer .this_mid div{
     width: 360px;
     height: 26px;
     position: absolute;
     left: -1px;
     top: -1px;
     z-index: 1;
-}
+}*/
 .footer .this_right{
     width: 300px;
     color: #898989;
