@@ -1,3 +1,4 @@
+        </div>
     </div>
     <div class="footer">
         <div class="this_left">&copy; 2014 SHANGHAIJAZZWEEK.COM</div>

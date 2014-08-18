@@ -23,3 +23,22 @@
                     <img src="/themes/images/link.png" alt="" />
                 </div>
             </div>
+            <div class="right clearfix">
+                <ul class="js_menu menu">
+                    <li data-url>
+                        <div></div>
+                        <a href="">NEWS <span>首页</span></a>
+                    </li>
+                    <li>
+                        <div></div>
+                        <a href="">ARTIST <span>艺术家</span></a>
+                    </li>
+                    <li>
+                        <div></div>
+                        <a href="">SCHEDULE <span>演出安排</span></a>
+                    </li>
+                    <li>
+                        <div></div>
+                        <a href="">TICKET <span>票务</span></a>
+                    </li>
+                </ul>

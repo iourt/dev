@@ -76,7 +76,7 @@ em,b{ font-style:normal; }
 .menu span{
     font-weight: bold;
 }
-.menu li{
+/*.menu li{
     border-bottom: 1px solid #b8976e;
     text-align: right;
     color: #d9a969;
@@ -90,8 +90,36 @@ em,b{ font-style:normal; }
 .menu li a:hover{
     color: #fff;
     background: url(images/pc_menu_bg.jpg) #d1ad7f repeat-y 0 0;
+}*/
+.menu li{
+    border-bottom: 1px solid #b8976e;
+    display: block;
+    height: 25px;
+    cursor: pointer;
+    position: relative;
 }
-
+.menu li div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 0;
+    height: 25px;
+    background: url(images/pc_menu_bg.jpg) #d1ad7f repeat-y 0 0;
+}
+.menu li a{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 95%;
+    line-height: 25px;
+    text-align: right;
+    color: #d9a969;
+}
+.menu li a:hover{
+    color: #fff;
+}
 
 /*title*/
 .title_01{
