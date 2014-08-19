@@ -359,7 +359,7 @@ em,b{ font-style:normal; }
     margin-left: -550px;
     bottom: 0;
     height: 50px;
-    background: #000;
+    background: #111;
     font-size: 12px;
 }
 .footer .this_left{
@@ -370,14 +370,34 @@ em,b{ font-style:normal; }
     float: left;
 }
 .footer .this_mid{
-    margin-top: 13px;
+    margin-top: 10px;
     margin-right: 10px;
-    width: 359px;
+    width: 180px;
     /*width: 180px;*/
     height: 24px;
     position: relative;
     overflow: hidden;
     float: left;
+}
+.footer .this_mid div{
+    position: absolute;
+}
+.footer .this_mid div.this_audio{
+    width: 300px;
+    left: -140px;
+    z-index: 1;
+}
+.footer .this_mid div.this_play{
+    width: 60px;
+    height: 25px;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    cursor: pointer;
+    background: url(build/play.png) #000 no-repeat 0 5px;
+}
+.footer .this_mid div.this_play.current{
+    background-position: 0 -45px;
 }
 /*.footer .this_mid div{
     width: 360px;
@@ -388,7 +408,7 @@ em,b{ font-style:normal; }
     z-index: 1;
 }*/
 .footer .this_right{
-    width: 300px;
+    width: 400px;
     color: #898989;
     line-height: 50px;
     float: left;
