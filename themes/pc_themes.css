@@ -372,8 +372,8 @@ em,b{ font-style:normal; }
 .footer .this_mid{
     margin-top: 13px;
     margin-right: 10px;
-    /*width: 359px;*/
-    width: 180px;
+    width: 359px;
+    /*width: 180px;*/
     height: 24px;
     position: relative;
     overflow: hidden;
