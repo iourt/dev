@@ -39,6 +39,14 @@ var siteCommon = {
         var $menu = $('.js_menu'),
             $bodyWidth = $("body").width();
 
+        $(window).on('scroll', function() {
+            change();
+        });
+
+        $(window).on('resize', function() {
+            change();
+        });
+
         function refix(){
 
             if($bodyWidth<1100){
@@ -58,7 +66,7 @@ var siteCommon = {
             }
         }
 
-        $(window).on("scroll", function(){
+        function change() {
             var sTop = $(window).scrollTop();
 
             if (sTop >= 170) {
@@ -70,7 +78,7 @@ var siteCommon = {
                     'right': '20px'
                 });
             }
-        });
+        }
     },
 
     setMusic: function(params) {

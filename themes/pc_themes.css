@@ -359,6 +359,13 @@ em,b{ font-style:normal; }
 
 
 
+.img_video{
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+.img_video img{
+    width: 830px;
+}
 
 
 

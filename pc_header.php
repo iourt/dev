@@ -7,7 +7,7 @@
         <meta name="format-detection" content="telephone=no" />
 
         <link rel="stylesheet" type="text/css" href="themes/pc_themes.css" />
-        <link rel="stylesheet" type="text/css" href="themes/jquery.bxslider.css" />
+        <link rel="stylesheet" type="text/css" href="themes/jquery.bxslider.pc.css" />
 
         <!--<script type="text/javascript" src="themes/js/jquery-1.4.2.js"></script> -->
         <!--[if lte IE 6]>

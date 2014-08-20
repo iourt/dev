@@ -2,7 +2,7 @@
 
 
     
-<div class="img_slider">
+<div class="js_img img_slider">
     <ul class="bxslider">
         <li><img src="/themes/temp/1.jpg" title="" /></li>
         <li><img src="/themes/temp/2.jpg" title="" /></li>
@@ -19,8 +19,23 @@
     </script>
 </div>
 
-<div class="img_01">
-    <img src="/themes/temp/1.jpg" alt="" />
+
+<link rel="stylesheet" type="text/css" href="themes/jquery.bxslider.video.css" />
+<div class="js_video img_video">
+    <ul class="bxvideo">
+        <li><img src="/themes/temp/1.jpg" title="" /></li>
+        <li><img src="/themes/temp/2.jpg" title="" /></li>
+        <li><img src="/themes/temp/3.jpg" title="" /></li>
+    </ul>
+    <script type="text/javascript">
+        $('.bxvideo').bxSlider({
+            touchEnabled: false,
+            controls: false,
+            auto: false
+        });
+
+        $('.js_video .bx-pager-item')
+    </script>
 </div>
 
 <div class="wrapper clearfix">
