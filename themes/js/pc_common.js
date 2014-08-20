@@ -36,8 +36,7 @@ var siteCommon = {
 
     // 菜单浮动
     fixMenu: function() {
-        var $menu = $('.js_menu'),
-            $bodyWidth = $("body").width();
+        var $menu = $('.js_menu');
 
         $(window).on('scroll', function() {
             change();
@@ -48,6 +47,7 @@ var siteCommon = {
         });
 
         function refix(){
+            var $bodyWidth = $("body").width();
 
             if($bodyWidth<1100){
 
