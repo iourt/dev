@@ -2,6 +2,7 @@
     </div>
 
     <div class="footer">
+        <div class="this_bg">123123</div>
         <div class="this_left">&copy; 2014 SHANGHAIJAZZWEEK.COM</div>
         <div class="this_mid">
             <script src="themes/build/mediaelement-and-player.min.js"></script>

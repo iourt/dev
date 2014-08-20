@@ -356,11 +356,20 @@ em,b{ font-style:normal; }
     width: 1100px;
     position: fixed;
     left: 50%;
+    z-index: 100;
     margin-left: -550px;
     bottom: 0;
     height: 50px;
     background: #111;
     font-size: 12px;
+}
+.footer .this_bg{
+    width: 1100px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    background: url(images/pc_footer_top.png) no-repeat 0 0;
 }
 .footer .this_left{
     width: 250px;

@@ -10,6 +10,9 @@
         <link rel="stylesheet" type="text/css" href="themes/jquery.bxslider.css" />
 
         <!--<script type="text/javascript" src="themes/js/jquery-1.4.2.js"></script> -->
+        <!--[if lte IE 6]>
+        <script type="text/javascript" src="themes/js/lib/iepng.js"></script>
+        <![endif]-->
         <script type="text/javascript" src="themes/js/jquery.min-1.8.2.js"></script>
         <script type="text/javascript" src="themes/js/jquery.bxslider.min.js"></script>
     </head>
