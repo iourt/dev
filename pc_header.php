@@ -23,7 +23,24 @@
             <div class="js_left left clearfix">
                 <div class="left_top"></div>
                 <div class="left_bottom">
-                    <img src="/themes/images/link.png" alt="" />
+                    <h3>主办方</h3>
+                    <ul>
+                        <li><a href=""><img src="/themes/link/01.png" alt="" /></a></li>
+                        <li><a href=""><img src="/themes/link/02.png" alt="" /></a></li>
+                    <ul>
+                    <h3>独家冠名赞助品牌</h3>
+                    <ul>
+                        <li><a href=""><img src="/themes/link/03.png" alt="" /></a></li>
+                    <ul>
+                    <h3>协办方</h3>
+                    <ul>
+                        <li><a href=""><img src="/themes/link/04.png" alt="" /></a></li>
+                        <li><a href=""><img src="/themes/link/05.png" alt="" /></a></li>
+                        <li><a href=""><img src="/themes/link/06.png" alt="" /></a></li>
+                        <li><a href=""><img src="/themes/link/07.png" alt="" /></a></li>
+                        <li><a href=""><img src="/themes/link/08.png" alt="" /></a></li>
+                        <li><a href=""><img src="/themes/link/09.png" alt="" /></a></li>
+                    <ul>
                 </div>
             </div>
             <div class="right clearfix">

@@ -45,6 +45,21 @@ em,b{ font-style:normal; }
     padding-bottom: 200px;
     text-align: center;
 }
+.left .left_bottom h3{
+    color: #614c3f;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+}
+.left .left_bottom li{
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+}
+.left .left_bottom li img{
+    display: block;
+    margin: 0 auto;
+}
 
 
 
