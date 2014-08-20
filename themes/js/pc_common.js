@@ -4,6 +4,7 @@ var siteCommon = {
 
         self.setLeft();
         self.setMenu();
+        self.fixMenu();
     },
 
     setLeft: function() {
@@ -17,6 +18,7 @@ var siteCommon = {
 
     // 菜单
     setMenu: function() {
+
         var $menu = $('.js_menu li'),
             $menuWidth = $menu.width();
         
@@ -30,6 +32,45 @@ var siteCommon = {
             }, 300);
         });
 
+    },
+
+    // 菜单浮动
+    fixMenu: function() {
+        var $menu = $('.js_menu'),
+            $bodyWidth = $("body").width();
+
+        function refix(){
+
+            if($bodyWidth<1100){
+
+                $menu.css({
+                    'position': 'fixed',
+                    'right': '20px'
+                });
+
+            }else{
+
+                $menu.css({
+                    'position': 'fixed',
+                    'right': (($bodyWidth-1100)/2+20)+'px'
+                });
+
+            }
+        }
+
+        $(window).on("scroll", function(){
+            var sTop = $(window).scrollTop();
+
+            if (sTop >= 170) {
+                refix();
+            } else {
+
+                $menu.css({
+                    'position': 'absolute',
+                    'right': '20px'
+                });
+            }
+        });
     },
 
     setMusic: function(params) {
