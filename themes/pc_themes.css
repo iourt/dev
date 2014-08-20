@@ -347,11 +347,12 @@ em,b{ font-style:normal; }
     bottom: 0;
     width: 100%;
     font-size: 12px;
+    line-height: 20px;
     padding-bottom: 10px;
 }
 .list_02 li a .this_detail h3{
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 12px;
+    line-height: 20px;
     font-weight: normal;
     margin-bottom: 20px;
 }
@@ -415,7 +416,7 @@ em,b{ font-style:normal; }
 }
 .footer .this_mid div.this_audio{
     width: 300px;
-    left: -140px;
+    left: -132px;
     z-index: 1;
 }
 .footer .this_mid div.this_play{
@@ -425,7 +426,7 @@ em,b{ font-style:normal; }
     top: 0;
     z-index: 2;
     cursor: pointer;
-    background: url(build/play.png) #000 no-repeat 0 5px;
+    background: url(build/play.png) #000 no-repeat 0 4px;
 }
 .footer .this_mid div.this_play.current{
     background-position: 0 -45px;
