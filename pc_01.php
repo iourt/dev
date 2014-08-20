@@ -31,10 +31,15 @@
         $('.bxvideo').bxSlider({
             touchEnabled: false,
             controls: false,
-            auto: false
-        });
+            auto: false,
+            onSliderLoad: function() {
+                var $that = $('.js_video .bx-wrapper .bx-pager .bx-pager-item');
 
-        $('.js_video .bx-pager-item')
+                $that.eq(0).find('a').html('ANTHONY STRONG');
+                $that.eq(1).find('a').html('DEE DEE BRIDGEWATER');
+                $that.eq(2).find('a').html('CUI JIAN 崔健');
+            }
+        });
     </script>
 </div>
 

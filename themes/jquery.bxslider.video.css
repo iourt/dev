@@ -49,7 +49,8 @@
 .js_video .bx-wrapper .bx-controls-auto {
 	position: absolute;
 	/*bottom: -30px;*/
-	width: 100%;
+	/*width: 100%;*/
+	width: 831px;
 }
 
 /* LOADER */
@@ -69,14 +70,15 @@
 
 .js_video .bx-wrapper .bx-pager {
 	text-align: center;
-	font-size: .85em;
-	font-family: Arial;
-	font-weight: bold;
-	color: #666;
+	/*font-size: .85em;*/
+	/*font-family: Arial;*/
+	/*font-weight: bold;*/
+	/*color: #666;*/
 	/*padding-top: 20px;*/
 	/*background: #000;*/
 	overflow: hidden;
-	height: 10px;
+	/*height: 10px;*/
+	height: 30px;
 }
 
 .js_video .bx-wrapper .bx-pager .bx-pager-item,
@@ -88,15 +90,19 @@
 
 .js_video .bx-wrapper .bx-pager.bx-default-pager a {
 	/*background: #666;*/
-	text-indent: -9999px;
+	/*text-indent: -9999px;*/
 	display: block;
 	/*width: 10px;*/
 	/*width: 164px;*/
 	/*height: 10px;*/
 
 	width: 276px;
+	height: 30px;
 	margin-right: 1px;
 
+	font-size: 14px;
+	line-height: 30px;
+	color: #000;
 
 	/*margin: 0 5px;*/
 	/*margin: 0 1px;*/
@@ -104,12 +110,15 @@
 /*	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;*/
-	background: #857d7a;
+	/*background: #857d7a;*/
+	background: url(images/pc_tab.png) no-repeat 0 0;
 }
 
 .js_video .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .js_video .bx-wrapper .bx-pager.bx-default-pager a.active {
-	background: #9e7c59;
+	/*background: #9e7c59;*/
+	background-position: 0 -30px;
+	color: #fff;
 }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
