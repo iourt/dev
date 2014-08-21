@@ -49,8 +49,8 @@
 .js_video .bx-wrapper .bx-controls-auto {
 	position: absolute;
 	/*bottom: -30px;*/
-	/*width: 100%;*/
-	width: 831px;
+	width: 100%;
+	/*width: 831px;*/
 }
 
 /* LOADER */
