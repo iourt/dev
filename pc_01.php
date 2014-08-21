@@ -2,7 +2,7 @@
 
 
     
-<div class="js_img img_slider">
+<div class="js_img img_slider" style="margin-bottom:30px;">
     <ul class="bxslider">
         <li><img src="/themes/temp/1.jpg" title="" /></li>
         <li><img src="/themes/temp/2.jpg" title="" /></li>
@@ -20,28 +20,27 @@
 </div>
 
 
-<link rel="stylesheet" type="text/css" href="themes/jquery.bxslider.video.css" />
-<div class="js_video img_video">
-    <ul class="bxvideo">
-        <li><img src="/themes/temp/1.jpg" title="" /></li>
-        <li><img src="/themes/temp/2.jpg" title="" /></li>
-        <li><img src="/themes/temp/3.jpg" title="" /></li>
+<link rel="stylesheet" type="text/css" href="themes/slider.css" />
+<script type="text/javascript" src="themes/js/slider.js"></script>
+<div id="banner-fade" style="margin-bottom:50px;">
+    <ul class="video">
+        <li><img src="/themes/temp/1.jpg" title="ANTHONY STRONG"></li>
+        <li><img src="/themes/temp/2.jpg" title="DEE DEE BRIDGEWATER"></li>
+        <li><img src="/themes/temp/3.jpg" title="CUI JIAN 崔健"></li>
     </ul>
-    <script type="text/javascript">
-        $('.bxvideo').bxSlider({
-            touchEnabled: false,
-            controls: false,
-            auto: false,
-            onSliderLoad: function() {
-                var $that = $('.js_video .bx-wrapper .bx-pager .bx-pager-item');
-
-                $that.eq(0).find('a').html('ANTHONY STRONG');
-                $that.eq(1).find('a').html('DEE DEE BRIDGEWATER');
-                $that.eq(2).find('a').html('CUI JIAN 崔健');
-            }
-        });
-    </script>
 </div>
+
+<script class="secret-source">
+jQuery(document).ready(function($) {
+
+    $('#banner-fade').video({
+        height      : 400,
+        width       : 830,
+        responsive  : true
+    });
+
+});
+</script>
 
 <div class="wrapper clearfix">
     <h2 class="title_01">

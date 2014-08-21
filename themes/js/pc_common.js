@@ -94,11 +94,11 @@ var siteCommon = {
         if (current == 0) {
             $title.html(detail[current].title);
         }
-
-        mediaElement.play();
         
         var player = new MediaElement('player', {
             success: function (mediaElement, domObject) {
+
+                // mediaElement.play();
                 // add event listener
                 mediaElement.addEventListener('ended', function(e) {
                     if (current < (num-1)){

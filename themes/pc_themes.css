@@ -248,6 +248,8 @@ em,b{ font-style:normal; }
     border-bottom: 1px solid #bfbfbf;
     position: relative;
     height: 185px;
+    display: block;
+    overflow: hidden;
 }
 .list_01 li .this_img,
 .list_01 li .this_text{
