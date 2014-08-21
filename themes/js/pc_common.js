@@ -95,6 +95,8 @@ var siteCommon = {
             $title.html(detail[current].title);
         }
 
+        mediaElement.play();
+        
         var player = new MediaElement('player', {
             success: function (mediaElement, domObject) {
                 // add event listener
