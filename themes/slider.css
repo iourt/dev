@@ -1,19 +1,23 @@
 ul.video{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
 li.video-slide{position:absolute; display:none;}
-ul.video-controls{list-style:none;margin:0;padding:0;z-index:9999;}
+ul.video-controls{
+    list-style:none;margin:0;padding:0;z-index:9999;
+    height: 0;
+    overflow: hidden;
+}
 ul.video-controls.v-centered li a{position:absolute;}
 ul.video-controls.v-centered li.video-next a{right:0;}
 ul.video-controls.v-centered li.video-prev a{left:0;}
 ol.video-markers{list-style: none; padding: 0; margin: 0; width:100%;}
-ol.video-markers.h-centered{text-align: center;}
 ol.video-markers{
     height: 30px;
     text-align: center;
 }
 ol.video-markers li{
     width: 276px;
-    display: inline-block;
-    *display: inline;
+    height: 30px;
+    position: relative;
+    float: left;
 }
 ol.video-markers li a{
     display: block;
@@ -23,7 +27,8 @@ ol.video-markers li a{
     color: #000;
     background: url(images/pc_tab.png) no-repeat 0 0;
 }
-ol.video-markers li a.current,
+
+ol.video-markers li.active-marker a,
 ol.video-markers li a:hover{
     background-position: 0 -60px;
     color: #fff;

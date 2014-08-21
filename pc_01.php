@@ -22,12 +22,15 @@
 
 <link rel="stylesheet" type="text/css" href="themes/slider.css" />
 <script type="text/javascript" src="themes/js/slider.js"></script>
-<div id="banner-fade" style="margin-bottom:50px;">
-    <ul class="video">
-        <li><img src="/themes/temp/1.jpg" title="ANTHONY STRONG"></li>
-        <li><img src="/themes/temp/2.jpg" title="DEE DEE BRIDGEWATER"></li>
-        <li><img src="/themes/temp/3.jpg" title="CUI JIAN 崔健"></li>
-    </ul>
+
+<div style="height:430px;margin-bottom:20px;">
+    <div id="banner-fade" class="clearfix">
+        <ul class="video">
+            <li><img src="/themes/temp/1.jpg" title="ANTHONY STRONG"></li>
+            <li><img src="/themes/temp/2.jpg" title="DEE DEE BRIDGEWATER"></li>
+            <li><img src="/themes/temp/3.jpg" title="CUI JIAN 崔健"></li>
+        </ul>
+    </div>
 </div>
 
 <script class="secret-source">
