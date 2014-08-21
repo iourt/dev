@@ -98,7 +98,10 @@ var siteCommon = {
         var player = new MediaElement('player', {
             success: function (mediaElement, domObject) {
 
-                // mediaElement.play();
+                mediaElement.play();
+                isClick = !isClick;
+                 $('.js_music_play').addClass('current');
+
                 // add event listener
                 mediaElement.addEventListener('ended', function(e) {
                     if (current < (num-1)){

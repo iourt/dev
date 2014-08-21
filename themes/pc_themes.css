@@ -387,6 +387,7 @@ em,b{ font-style:normal; }
     height: 50px;
     background: #111;
     font-size: 12px;
+    *margin: 0 auto;
 }
 .footer .this_bg{
     width: 1100px;
@@ -422,13 +423,13 @@ em,b{ font-style:normal; }
     z-index: 1;
 }
 .footer .this_mid div.this_play{
-    width: 60px;
+    width: 120px;
     height: 25px;
     left: 0;
     top: 0;
     z-index: 2;
     cursor: pointer;
-    background: url(build/play.png) #000 no-repeat 0 4px;
+    background: url(build/play.png) #111 no-repeat 0 4px;
 }
 .footer .this_mid div.this_play.current{
     background-position: 0 -45px;
