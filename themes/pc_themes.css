@@ -143,6 +143,21 @@ em,b{ font-style:normal; }
     font-size: 30px;
 }
 
+.title_02{
+    padding: 10px 20px;
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.title_03{
+    padding: 0 20px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
 
 /*text*/
 .text_01{
@@ -460,4 +475,198 @@ em,b{ font-style:normal; }
 }
 .footer .this_link img{
     height: 25px;
+}
+
+
+
+
+
+.schedule_main{
+    padding: 20px;
+}
+.schedule_main .this_left{
+    width: 400px;
+    float: left;
+    position: relative;
+}
+.schedule_main .this_left dt{
+    height: 39px;
+    clear: both;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+.schedule_main .this_left dt div{
+    width: 25%;
+    float: left;
+    line-height: 40px;
+    text-indent: 10px;
+}
+.schedule_main .this_left dd{
+    border-bottom: 1px solid #ccc;
+    height: 39px;
+    overflow: hidden;
+}
+.schedule_main .this_left .time{
+    width: 25%;
+    float: left;
+    line-height: 20px;
+    padding: 10px 0;
+    text-indent: 10px;
+}
+.schedule_main .this_left .this_text_01,
+.schedule_main .this_left .this_text_02,
+.schedule_main .this_left .this_text_03{
+    position: absolute;
+    padding: 10px;
+    width: 90px;
+    font-size: 12px;
+    line-height: 14px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+.schedule_main .this_left .this_text_01{
+    background: url(images/line.png?v011212) #c9bc9c;
+}
+.schedule_main .this_left .this_text_02{
+    background: url(images/line.png?v101212) #acc5ca;
+}
+.schedule_main .this_left .this_text_img{
+    width: 120px;
+    height: 160px;
+    position: absolute;
+    background: #444;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 99999;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+.schedule_main .this_left .this_text_img img{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+}
+.schedule_main .this_left .this_text_img a{
+    background: #000;
+    color: #fff;
+    line-height: 40px;
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+.schedule_main .this_left .this_text_img span{
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    font-size: 0;
+    border-width: 10px;
+    border-color: transparent #444 transparent transparent;
+    border-style: solid;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+.schedule_main .this_right{
+    float: right;
+    width: 350px;
+}
+
+.schedule_main .this_right .this_title{
+    line-height: 40px;
+}
+.schedule_main .this_right .this_map{
+    height: 350px;
+    width: 350px;
+}
+
+.table{
+    padding: 20px;
+}
+.table .a{
+    width: 100%;
+}
+.table .b{
+    width: 100%;
+    border-right: 1px solid #ccc;
+}
+.table th{
+    font-weight: normal;
+    line-height: 40px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    width: 131px;
+}
+.table td{
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    width: 131px;
+    padding-bottom: 50px;
+    vertical-align: top;
+}
+.table dt{
+    line-height: 30px;
+    padding: 0 5px;
+}
+.table dd{
+    line-height: 20px;
+    padding: 0 5px 0 15px;
+    margin-bottom: 5px;
+}
+.table .yellow dd{
+    background: url(images/icon.png) #fff100 no-repeat 3px 8px;
+}
+.table .gray dd{
+    background: url(images/icon.png) #b5b7b6 no-repeat 3px 8px;
+}
+.table dd div{
+    position: absolute;
+    left: 100px;
+    bottom: -20px;
+    background: #444;
+    width: 120px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 10px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+.table dd div span{
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    font-size: 0;
+    border-width: 10px;
+    border-color: transparent #444 transparent transparent;
+    border-style: solid;
+
+    position: absolute;
+    left: -20px;
+    bottom: 20px;
+}
+.table dd div a{
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    width: 80px;
+    color: #fff;
+    background: #000;
+    margin: 0 auto;
+    margin-top: 10px;
 }
