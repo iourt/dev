@@ -105,20 +105,24 @@
         </div>
     </div>
     <script type="text/javascript">
-        function initialize(){
-            var position=new AMap.LngLat(116.397428,39.90923);
+        function initialize(params){
+            var position=new AMap.LngLat(params.lng, params.lat);
 
-            var mapObj=new AMap.Map("map1",{
+            var mapObj=new AMap.Map(params.elem, {
                     view: new AMap.View2D({//创建地图二维视口
-                    center:position,//创建中心点坐标
-                    zoom:14, //设置地图缩放级别
-                    rotation:0 //设置地图旋转角度
-                }),
-                lang:"zh_cn"//设置地图语言类型，默认：中文简体
-            });//创建地图实例
+                        center:position,//创建中心点坐标
+                        zoom:14, //设置地图缩放级别
+                        rotation:0 //设置地图旋转角度
+                    }),
+                    lang:"zh_cn"//设置地图语言类型，默认：中文简体
+                });//创建地图实例
         }
 
-        initialize();
+        initialize({
+            lng: 116.397428,
+            lat: 39.90923,
+            elem: "map1"
+        });
     </script>
 </div>
 
@@ -311,19 +315,11 @@
 </div>
 
 <script type="text/javascript">
-    function map(){
-        var position=new AMap.LngLat(116.397428,39.90923);
 
-        var mapObj=new AMap.Map("map2",{
-                view: new AMap.View2D({//创建地图二维视口
-                center:position,//创建中心点坐标
-                zoom:14, //设置地图缩放级别
-                rotation:0 //设置地图旋转角度
-            }),
-            lang:"zh_cn"//设置地图语言类型，默认：中文简体
-        });//创建地图实例
-    }
-
-    map();
+    initialize({
+        lng: 116.397428,
+        lat: 39.90923,
+        elem: "map2"
+    });
 </script>
 <?php include 'pc_footer.php'; ?>
