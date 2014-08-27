@@ -29,6 +29,7 @@
             <li><img src="/themes/temp/1.jpg" title="ANTHONY STRONG"></li>
             <li><img src="/themes/temp/2.jpg" title="DEE DEE BRIDGEWATER"></li>
             <li><img src="/themes/temp/3.jpg" title="CUI JIAN 崔健"></li>
+            <li><img src="/themes/temp/3.jpg" title="CUI JIAN 崔健"></li>
         </ul>
     </div>
 </div>
