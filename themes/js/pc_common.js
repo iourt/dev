@@ -133,6 +133,26 @@ var siteCommon = {
             }
             isClick = !isClick;
         });
+    },
+
+    videoTab: function(params) {
+        var self = this;
+
+        var tHeight = params && params.height ? params.height : 400,
+            elem = params && params.elem ? params.elem : '.js_tab';
+
+        var $detail = $(elem + ' .js_detail ul'),
+            $link = $(elem + ' .js_link li');
+
+        $link.on('click', function() {
+            var i = $(this).index();
+            $link.removeClass('current');
+            $(this).addClass('current');
+            $detail.animate({
+                left: -i*830
+            }, 500);
+        });
+
     }
 };
 

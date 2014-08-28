@@ -19,31 +19,24 @@
     </script>
 </div>
 
-
-<link rel="stylesheet" type="text/css" href="themes/slider.css" />
-<script type="text/javascript" src="themes/js/slider.js"></script>
-
-<div style="height:430px;margin-bottom:20px;">
-    <div id="banner-fade" class="clearfix">
-        <ul class="video">
-            <li><img src="/themes/temp/1.jpg" title="ANTHONY STRONG"></li>
-            <li><img src="/themes/temp/2.jpg" title="DEE DEE BRIDGEWATER"></li>
-            <li><img src="/themes/temp/3.jpg" title="CUI JIAN 崔健"></li>
-            <li><img src="/themes/temp/3.jpg" title="CUI JIAN 崔健"></li>
+<div class="js_tab video_tab">
+    <div class="js_detail this_detail">
+        <ul>
+            <li><img src="/themes/temp/1.jpg"></li>
+            <li><img src="/themes/temp/2.jpg"></li>
+            <li><img src="/themes/temp/3.jpg"></li>
+            <li><img src="/themes/temp/3.jpg"></li>
         </ul>
     </div>
+    <ul class="js_link this_link">
+        <li><a>ANTHONY STRONG</a></li>
+        <li><a>DEE DEE BRIDGEWATER</a></li>
+        <li><a>CUI JIAN 崔健</a></li>
+        <li><a>CUI JIAN 崔健</a></li>
+    </ul>
 </div>
-
-<script class="secret-source">
-jQuery(document).ready(function($) {
-
-    $('#banner-fade').video({
-        height      : 400,
-        width       : 830,
-        responsive  : true
-    });
-
-});
+<script type="text/javascript">
+    siteCommon.videoTab();
 </script>
 
 <div class="wrapper clearfix">

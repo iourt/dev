@@ -20,8 +20,6 @@
             <a href=""><img src="themes/link/sns_twitter.png" /></a>
         </div>
     </div>
-
-    <script type="text/javascript" src="themes/js/pc_common.js"></script>
     <script type="text/javascript">
         siteCommon.setMusic([
             {

@@ -15,6 +15,7 @@
         <![endif]-->
         <script type="text/javascript" src="themes/js/jquery.min-1.8.2.js"></script>
         <script type="text/javascript" src="themes/js/jquery.bxslider.min.js"></script>
+        <script type="text/javascript" src="themes/js/pc_common.js"></script>
     </head>
     <body>
         <div class="header"><img src="/themes/images/pc_logo.jpg" alt="" /></div>

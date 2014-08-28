@@ -670,3 +670,57 @@ em,b{ font-style:normal; }
     margin: 0 auto;
     margin-top: 10px;
 }
+
+
+.video_tab{
+    width: 100%;
+}
+.video_tab .this_detail{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    height: 400px;
+}
+.video_tab .this_detail ul{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3320px;
+}
+.video_tab .this_detail li{
+    float: left;
+    width: 830px;
+}
+.video_tab .this_detail li img{
+    width: 100%;
+    display: block;
+}
+.video_tab .this_link{
+    padding-left: 1px;
+    height: 30px;
+}
+.video_tab .this_link li{
+    /*width: 276px;*/
+    width: 207px;
+    height: 30px;
+    float: left;
+    cursor: pointer;
+}
+.video_tab .this_link li a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    /*width: 276px;*/
+
+    width: 207px;
+    color: #000;
+    text-align: center;
+    background: url(images/pc_tab.png) no-repeat 0 0;
+}
+.video_tab .this_link li.current a,
+.video_tab .this_link li a:hover{
+    background-position: 0 -60px;
+    color: #fff;
+}
