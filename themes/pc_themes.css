@@ -724,3 +724,99 @@ em,b{ font-style:normal; }
     background-position: 0 -60px;
     color: #fff;
 }
+
+
+.other{
+    background: url(images/line.jpg) repeat-y 580px 0
+
+}
+.other .this_left{
+    float: left;
+    width: 540px;
+    padding: 0 20px;
+}
+.other .this_left .this_title{
+    position: relative;
+    font-size: 30px;
+    line-height: 40px;
+    padding: 10px 0;
+}
+.other .this_left .this_title div{
+    line-height: 20px;
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+}
+.other .this_left .this_title span{
+    padding: 0 5px;
+    line-height: 12px;
+    border-radius: 3px;
+}
+.other .this_left .stand{
+    background: #e3c797;
+}
+.other .this_left .seat{
+    background: #9cd9d4;
+}
+.other .this_reg li{
+    padding: 10px 0;
+}
+.other .this_reg input{
+    padding: 0 10px;
+    line-height: 20px;
+    border: 1px solid #ccc;
+}
+.other .this_reg em{
+    padding: 3px 20px;
+    color: #fff;
+    vertical-align: middle;
+    border-radius: 3px;
+}
+.other .this_reg .this_gray{
+    background: #999b9a;
+}
+.other .this_reg .this_yellow{
+    background: #c8bb9b;
+}
+.other .this_list{
+    line-height: 20px;
+    padding: 10px 0;
+    border-top: 10px solid #eee;
+}
+.other .this_list span{
+    color: #fff;
+    padding: 3px 10px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 3px;
+}
+.other .this_list div{
+    float: left;
+    width: 180px;
+}
+.other .this_list li{
+    height: 20px;
+    padding: 10px 0;
+    display: block;
+}
+.other .this_list .this_line{
+    border-bottom: 1px solid #eee;
+}
+
+.other .this_right{
+    line-height: 20px;
+    float: right;
+    width: 230px;
+}
+
+.other .this_bug{
+    background: #000;
+    color: #fff;
+    line-height: 20px;
+    padding: 5px 20px;
+    width: 100px;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+}
