@@ -1,5 +1,14 @@
 <?php include 'app_header.php'; ?>
 
+<div style="width:100%;border-bottom:1px solid #7b674d;">
+    <img src="/themes/temp/1.jpg" title="" style="width:100%;" />
+</div>
+<ul class="img_list">
+    <li><a href=""><img src="/themes/temp/1.jpg" alt="" /></a></li>
+    <li><a href=""><img src="/themes/temp/1.jpg" alt="" /></a></li>
+    <li><a href=""><img src="/themes/temp/1.jpg" alt="" /></a></li>
+    <li><a href=""><img src="/themes/temp/1.jpg" alt="" /></a></li>
+</ul>
 
 <div class="text_01">
     <h2>
