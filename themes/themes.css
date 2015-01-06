@@ -614,8 +614,6 @@ em,b{ font-style:normal; }
 
 
 .timer{
-    border: 1px solid #000;
-    background:-webkit-linear-gradient(top, #494646, #000);
     height: 100px;
     width: 100px;
     text-align: center;
@@ -626,10 +624,17 @@ em,b{ font-style:normal; }
     display: -webkit-box;
     -webkit-box-align: center;
     -webkit-box-pack: center;
+    border: 1px solid #ccc;
+    background:-webkit-linear-gradient(top, #ccc, #ccc);
 }
 .timer span{
     font-size: 30px;
     font-weight: normal;
+}
+.timer.active{
+    border: 1px solid #000;
+    background:-webkit-linear-gradient(top, #494646, #000);
+    cursor: pointer;
 }
 
 .list_btn{

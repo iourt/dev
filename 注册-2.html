@@ -27,10 +27,41 @@
             </li>
         </ul>
 
-        <div class="timer">
-            <span>56</span><br>
+        <div class="js_timer timer">
+            <span>60</span><br>
             重新获取
         </div>
+
+        <script type="text/javascript">
+        var $timer = $(".js_timer"),
+            $tVar = $(".js_timer span");
+
+        var state = 6;
+        
+        timer();
+
+        $timer.on("click", function(){
+            if ($timer.hasClass("active")) {
+                state = 6;
+                $tVar.text(state);
+                $timer.removeClass("active");
+                timer();
+            }
+        });
+
+        function timer() {
+            setTimeout(function(){
+                state--;
+                $tVar.text(state);
+
+                if (state > 0) {
+                    timer(); 
+                } else {
+                    $timer.addClass("active");
+                }
+            }, 1000); 
+        }
+        </script>
 
         <a class="btn_black" style="margin:0 20px;display:block;" href="">完成</a>
 
