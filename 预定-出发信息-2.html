@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title></title>
+    	<meta charset="utf-8" />
+    	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    	<meta name="format-detection" content="telephone=no" />
+        <link rel="stylesheet" href="themes/themes.css" type="text/css" />
+
+        <script src="themes/js/jquery.min-1.8.2.js"></script>
+        <script src="themes/js/jquery.bxslider.min.js"></script>
+        <link href="themes/jquery.bxslider.css" rel="stylesheet" />
+    </head>
+    <body>
+        <style type="text/css">
+            body{ background:#ddddde; }
+        </style>
+
+        <header class="header_02">
+            <b>开始预定</b> - 托斯卡纳7日之旅
+        </header>
+
+        <div class="title_05">
+            出发信息
+        </div>
+        <ul class="list_input_01 js_sum">
+            <li>
+                <div>成人</div>
+                <span class="icon_less">-</span>
+                <input type="text" value="0" />
+                <span class="icon_sum">+</span>
+            </li>
+            <li>
+                <div>儿童<br>(2-12岁)</div>
+                <span class="icon_less">-</span>
+                <input type="text" value="0" />
+                <span class="icon_sum">+</span>
+            </li>
+            <li>
+                <div>房间数</div>
+                <span class="icon_less">-</span>
+                <input type="text" value="0" />
+                <span class="icon_sum">+</span>
+            </li>
+        </ul>
+
+        <script type="text/javascript">
+        var $btn = $(".js_sum span");
+        $btn.on("click", function () {
+            var type = $(this).attr("class"),
+                $input = $(this).parent().find("input"),
+                val = parseInt($input.val(), 0);
+            switch (type) {
+                case "icon_less":
+                    if (val > 0) {
+                        $input.val(val-1);
+                    }
+                break;
+                case "icon_sum":
+                    $input.val(val+1);
+                break;
+            }
+        })
+        </script>
+
+        <div class="text_01">
+            出发地点：上海<br>
+            出发日期：2015-01-01(周六)<br>
+            到达日期：2015-01-01(周三)
+        </div>
+
+        <ul class="art_list_05">
+            <li>
+                <div>合计合计</div>
+                <div></div>
+                <div>￥10000</div>
+            </li>
+            <li>
+                <div>合计合计合计</div>
+                <div></div>
+                <div>￥1001100</div>
+            </li>
+            <li>
+                <div>合合计计</div>
+                <div></div>
+                <div>￥10000</div>
+            </li>
+            <li>
+                <div>合计</div>
+                <div></div>
+                <div>￥1001111100</div>
+            </li>
+        </ul>
+
+        <a class="btn_black" style="margin:20px 10px;display:block;" href="">下一步</a>
+    </body>
+</html>
