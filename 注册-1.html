@@ -33,7 +33,45 @@
                 <label>确认密码</label>
                 <input type="password" value="" />
             </li>
+            <li>
+                <label>
+                    <p class="btn_black js_timer">
+                        短信验证<span style="display:inline-block;width:20px;">60</span>
+                    </p>
+                </label>
+                <input style="width:100px;margin-left:20px;" type="password" value="" />
+            </li>
         </ul>
+        <script type="text/javascript">
+        var $timer = $(".js_timer"),
+            $tVar = $(".js_timer span");
+
+        var state = 60;
+        
+        timer();
+
+        $timer.on("click", function(){
+            if ($timer.hasClass("active")) {
+                state = 60;
+                $tVar.text(state);
+                $timer.removeClass("active");
+                timer();
+            }
+        });
+
+        function timer() {
+            setTimeout(function(){
+                state--;
+                $tVar.text(state);
+
+                if (state > 0) {
+                    timer(); 
+                } else {
+                    $timer.addClass("active");
+                }
+            }, 1000); 
+        }
+        </script>
 
         <div style="text-align:center;line-height:40px;font-size:16px;color:#bbb;">请选择您的爱好</div>
 
@@ -51,6 +89,16 @@
         <a class="btn_black" style="margin:0 20px;display:block;" href="">下一步</a>
 
 
+        <style type="text/css">
+            body{ padding-bottom: 70px; }
+        </style>
+        <ul class="bottom_menu_04">
+            <li><a href="">搜索</a></li>
+            <li><a href="">个人</a></li>
+            <li><a href="">活动</a></li>
+        </ul>
+
+        
         <!--弹框布局 显示就去掉display:none-->
         <section class="frame" style="display:none;">
             <div class="frame_01">
@@ -67,6 +115,14 @@
                     <li>
                         <label>确认密码</label>
                         <input type="password" value="" />
+                    </li>
+                    <li>
+                        <label>
+                            <p class="btn_black js_timer">
+                                短信验证<span style="display:inline-block;width:20px;">60</span>
+                            </p>
+                        </label>
+                        <input style="width:100px;margin-left:20px;" type="password" value="" />
                     </li>
                 </ul>
 
