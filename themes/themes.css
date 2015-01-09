@@ -1115,3 +1115,98 @@ em,b{ font-style:normal; }
 .bottom_menu_04 li{
     margin: 0 5px;
 }
+
+
+.calendar_title{
+    width: 100%;
+    display: -webkit-box;
+    background:-webkit-linear-gradient(top, #a1a2a2, #898989);
+}
+.calendar_title li{
+    text-align: center;
+    color: #fff;
+    line-height: 20px;
+    padding: 10px 0;
+    width: 14%;
+    border-right: 1px solid #fff;
+}
+.calendar_title li:last-child{
+    border: none;
+}
+.calendar_btn li{
+    width: 30px;
+    height: 60px;
+    position: fixed;
+    z-index: 3;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+}
+.calendar_btn li:nth-child(1){
+    background: url(images/icon_s_left.png) no-repeat center center;
+    background-size: 100% auto;
+    left: 0;
+}
+.calendar_btn li:nth-child(2){
+    background: url(images/icon_s_right.png) no-repeat center center;
+    background-size: 100% auto;
+    right: 0;
+}
+
+.calendar_list{
+    width: 100%;
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+.calendar_list dd{
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transition: -webkit-transform 0.8s ease-in-out;
+}
+.calendar_list ul{
+    float: left;
+}
+.calendar_list li{
+    text-align: center;
+    color: #fff;
+    display: -webkit-box;
+    color: #898989;
+    background:-webkit-linear-gradient(top, #eeefef, #c9c9ca);
+}
+.calendar_list li div{
+    height: 80px;
+    padding: 10px 0;
+    width: 14%;
+    border-right: 1px solid #fff;
+    font-weight: normal;
+    font-size: 12px;
+    word-wrap: break-word; 
+    word-break: normal; 
+    overflow: hidden;
+}
+.calendar_list li div:last-child{
+    border: none;
+}
+.calendar_list li div:first-line{
+    font-size: 20px;
+}
+.calendar_list li div.this_select,
+.calendar_list li div.this_active{
+    color: #000;
+}
+.calendar_list li div.this_active{
+    background:-webkit-linear-gradient(top, #dcdddd, #9fa0a0);
+}
+.calendar_list li div.this_select:first-line,
+.calendar_list li div.this_active:first-line{
+    color: #72bbdc;
+}
+
+
+
+
+
+
+
