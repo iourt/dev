@@ -83,14 +83,20 @@ em,b{ font-style:normal; }
 .cr_slider .this_content{
     width: 100%;
     overflow: hidden;
+    /*position: relative;*/
 }
 .cr_slider ul{
     display: -webkit-box;
+/*    position: absolute;
+    left: 0;
+    top: 0;*/
 }
 .cr_slider li{
 }
 .cr_slider li img{
-    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
 }
 .cr_slider .this_num{
     color: #ff6798;

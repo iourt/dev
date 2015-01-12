@@ -19,7 +19,7 @@
 
             self.$jsSlider = $(".js_slider");
             self.$jsNav = $(".js_slider ul");
-            self.$jsDt = $(".js_slider dt");
+            self.$jsDt = $(".js_slider img");
             self.$jsLi = $(".js_slider li");
             self.Len = self.$jsLi.length;
             self.current = 0;
@@ -30,6 +30,14 @@
             self.$jsSlider.css({
                 "display": "block"
             });
+
+            self.$jsLi.css({
+                "width": self.tWidth + "px"
+            })
+
+            for (var i=0; i<self.Len; i++) {
+                $(".js_slider li").eq(i).find("img").after('<span class="this_num">'+(i+1)+'/'+self.Len+'</span>');
+            }
         },
 
         addEvent: function(){
