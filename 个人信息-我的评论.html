@@ -61,9 +61,65 @@
         <style type="text/css">
             body{ padding-bottom: 60px; }
         </style>
-        <ul class="bottom_menu_02">
-            <li class="current"><a href="">我的评论</a></li>
-            <li><a href="">收到回复</a></li>
+        <ul class="js_tab bottom_menu_02">
+            <li class="current">我的评论</li>
+            <li>收到回复</li>
+            <div></div>
         </ul>
+        <script type="text/javascript">
+        (function(){
+            var $jsTab = $(".js_tab"),
+                $jsTabLi = $(".js_tab li"),
+                $jsTabDiv = $(".js_tab div");
+
+            $jsTabLi.on("click", function(){
+                var tWidth = $("body").width(),
+                    tIndex = $(this).index(),
+                    tClass = $(this).attr("class"),
+                    tDiv = $jsTabDiv.attr("class");
+
+                if (!tClass) {
+                    var isTrue = /this_replay/.test(tDiv);
+                    if (tIndex==0) {
+                        $jsTabLi.removeClass("current");
+                        $(this).addClass("current");
+                        if (isTrue) {
+                            $jsTabDiv.css({
+                                '-webkit-transition': '-webkit-transform 0.5s ease-in-out',
+                                '-webkit-transform': 'translate3d('+ -tWidth/2 +'px, 0, 0)'
+                            });
+                        } else {
+                            $jsTabDiv.css({
+                                '-webkit-transition': '-webkit-transform 0.5s ease-in-out',
+                                '-webkit-transform': 'translate3d(0, 0, 0)'
+                            });
+                        }
+                        $jsTabDiv.on("webkitTransitionEnd", function(e){
+                            $jsTabDiv.removeClass("this_right");
+                        });
+                    } else {
+                        $jsTabLi.removeClass("current");
+                        $(this).addClass("current");
+                        if (isTrue) {
+                            $jsTabDiv.css({
+                                '-webkit-transition': '-webkit-transform 0.5s ease-in-out',
+                                '-webkit-transform': 'translate3d(0, 0, 0)'
+                            });
+                        } else {
+                            $jsTabDiv.css({
+                                '-webkit-transition': '-webkit-transform 0.5s ease-in-out',
+                                '-webkit-transform': 'translate3d('+ tWidth/2 +'px, 0, 0)'
+                            });
+                        }
+
+                        $jsTabDiv.on("webkitTransitionEnd", function(e){
+                            $jsTabDiv.addClass("this_right");
+                        });
+                    }
+                }
+
+            });
+        })();
+        </script>
     </body>
 </html>
