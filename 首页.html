@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title></title>
+    	<meta charset="utf-8" />
+    	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    	<meta name="format-detection" content="telephone=no" />
+        <link rel="stylesheet" href="themes/themes.css" type="text/css" />
+
+        <script src="themes/js/jquery.min-1.8.2.js"></script>
+        <script src="themes/js/jquery.bxslider.min.js"></script>
+        <link href="themes/jquery.bxslider.css" rel="stylesheet" />
+    </head>
+    <body>
+        <link href="themes/jquery.bxslider.blue.css" rel="stylesheet" />
+
+        <style type="text/css">
+            body{ background:#eeefef; }
+            .bx-pager{
+                top: 10px !important;
+                text-align: right !important;
+                padding-left: 0 !important;
+            }
+            .bx-pager a{
+                text-indent: -999px !important;
+                line-height: 80px !important;
+                overflow: hidden;
+            }
+            .bxslider .this_title{
+                width: 100%;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                color: #fff;
+                padding-left: 10px;
+                padding-bottom: 5px;
+                line-height: 20px;
+                font-weight: normal;
+                background: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.6));
+            }
+            .bxslider .this_title:first-line{
+                font-size: 20px;
+            }
+            .bxslider .this_price{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                padding-right: 10px;
+                color: #fff;
+                padding-bottom: 5px;
+            }
+            .bxslider .this_price span{
+                font-size: 26px;
+                font-weight: normal;
+            }
+        </style>
+
+        <ul class="bxslider">
+            <li>
+                <img src="themes/temp/1.jpg" />
+                <div class="this_title">
+                    维纳尔<br>
+                    瑞士意大利七日神秘之旅
+                </div>
+                <div class="this_price">￥<span>18000</span></span>
+            </li>
+            <li>
+                <img src="themes/temp/2.jpg" />
+                <div class="this_title">
+                    维纳尔<br>
+                    瑞士意大利七日神秘之旅
+                </div>
+                <div class="this_price">￥<span>18000</span></span>
+            </li>
+            <li>
+                <img src="themes/temp/3.jpg" />
+                <div class="this_title">
+                    维纳尔<br>
+                    瑞士意大利七日神秘之旅
+                </div>
+                <div class="this_price">￥<span>18000</span></span>
+            </li>
+            <li>
+                <img src="themes/temp/4.jpg" />
+                <div class="this_title">
+                    维纳尔<br>
+                    瑞士意大利七日神秘之旅
+                </div>
+                <div class="this_price">￥<span>18000</span></span>
+            </li>
+        </ul>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.bxslider').bxSlider({
+                    touchEnabled: false,
+                    controls: false,
+                    auto: true
+                });
+            });
+        </script>
+
+        <section class="text_06">
+            <img src="themes/images/bg_03.jpg" />
+            <ul>
+                <li>订机票</li>
+                <li>自游行</li>
+                <li>扫一扫</li>
+                <li>主题游</li>
+            <ul>
+        </section>
+
+
+        <style type="text/css">
+            body{ padding-bottom: 70px; }
+        </style>
+        <ul class="bottom_menu_04">
+            <li><a href="">搜索</a></li>
+            <li><a href="">个人</a></li>
+            <li><a href="">活动</a></li>
+        </ul>
+    </body>
+</html>
