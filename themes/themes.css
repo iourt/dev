@@ -756,9 +756,8 @@ em,b{ font-style:normal; }
 }
 .text_userinfo li{
     border-bottom: 1px solid #dfdfdf;
-    line-height: 30px;
-    height: 30px;
-    padding: 5px 0;
+    line-height: 20px;
+    padding: 10px 0;
     display: -webkit-box;
 }
 .text_userinfo li label{
