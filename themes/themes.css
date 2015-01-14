@@ -128,13 +128,24 @@ em,b{ font-style:normal; }
 }
 
 .title_06{
-    background:url(images/icon_arrow_right.png) no-repeat center center, -webkit-linear-gradient(top, #545252, #000);
-    background-size: 25px auto, auto;
+    background: -webkit-linear-gradient(top, #545252, #000);
     height:40px;
     line-height:40px;
     color: #fff;
     display: block;
     padding: 0 10px;
+    position: relative;
+}
+.title_06:after{
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    background: url(images/icon_arrow_right.png) no-repeat right center;
+    background-size: 100% auto;
 }
 .title_06:hover{
     color: #fff;
