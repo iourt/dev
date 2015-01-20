@@ -1557,25 +1557,6 @@ em,b{ font-style:normal; }
     font-size: 12px;
     float: left;
 }
-.menu_01 li:before{
-    display: block;
-    content: "";
-    height: 5px;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 16px;
-    background: #000;
-}
-.menu_01 li:nth-child(1):before{
-    width: 50%;
-    right: 0;
-    left: auto;
-}
-.menu_01 li:last-child:before{
-    width: 50%;
-    left: 0;
-}
 .menu_01 li:after{
     content: "";
     width: 10px;
