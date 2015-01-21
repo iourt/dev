@@ -682,6 +682,25 @@ em,b{ font-style:normal; }
     font-weight: normal;
     position: relative;
 }
+
+.header_01 div,
+.header_02 div{
+    width: 26px;
+    height: 26px;
+    -webkit-border-radius: 13px;
+    color: #fff;
+    border: 1px solid #000;
+    position: absolute;
+    left: 20px;
+    top: 8px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 26px;
+    background:-webkit-linear-gradient(top, #000, #494646);
+}
 .header_01{
     text-align: center; 
 }
