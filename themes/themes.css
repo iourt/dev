@@ -93,8 +93,14 @@ em,b{ font-style:normal; }
 }
 .img_list_03 li dt{ font:bold 20px/25px FZLanTingHeiS-DB1-GBK; }
 .img_list_03 li dd{ font:14px/20px FZLanTingHeiS-EL-GB; color:#ddd; }
-.img_list_03 article{ position:absolute; color:#ddd; z-index:2; right:10px; bottom:8px; }
-.img_list_03 article span{ font-size:26px; color:#fff; }
+.img_list_03 article{
+    position:absolute; color:#fff; z-index:2; right:0; bottom:8px;
+    background: rgba(0,0,0,.7);
+    padding: 0 5px;
+    font-weight: normal;
+    line-height: 20px;
+}
+/*.img_list_03 article span{ font-size:16px; }*/
 
 
 /*title*/
