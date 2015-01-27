@@ -42,3 +42,36 @@ em,b{
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+
+.header{
+    height: 48px;
+    display: -webkit-box;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #000;
+    width: 100%;
+    color: #fff;
+}
+.header div:nth-child(1){
+    width: 60px;
+}
+.header div:nth-child(2){
+    -webkit-box-flex: 1;
+}
+.header div:nth-child(3){
+    width: 50px;
+    height: 48px;
+    background: url(images/icon_shopping.png) no-repeat 0 0;
+    /*background-size: auto 30px;*/
+}
+
+
+
+
+
+
+
+
+
