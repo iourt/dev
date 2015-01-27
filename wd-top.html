@@ -11,32 +11,41 @@
     <body>
         <header class="header">
             <div></div>
-            <div></div>
-            <div>123</div>
+            <div>
+                <span>剩余：6天</span>
+            </div>
+            <div><span>1</span></div>
         </header>
 
-        <section class="slider_01">
+        <section class="js_slide slider_01">
             <ul>
                 <li>
                     <img src="themes/temp/1.jpg" />
+                    <div>这里是标题标题这里是标题标题</div>
                 </li>
                 <li>
                     <img src="themes/temp/2.jpg" />
+                    <div>这里是标题标题这里是标题标题</div>
                 </li>
                 <li>
                     <img src="themes/temp/3.jpg" />
+                    <div>这里是标题标题这里是标题标题</div>
                 </li>
             </ul>
         </section>
 
-        <nav class="nav_01">
+        <nav class="js_nav nav_01">
             <li class="current">1</li>
             <li>2</li>
             <li>3</li>
         </nav>
         <script type="text/javascript">
         (function() {
-            var $nav = $(".js_nav");
+            var $nav = $(".js_nav li");
+            $nav.on("click", function(){
+                $nav.removeClass("current");
+                $(this).addClass("current");
+            });
         })();
         </script>
 
@@ -45,20 +54,40 @@
                 <img src="themes/temp/img.jpg" />
                 <div>asdfasfasdfasd</div>
                 <div>
-                    <span>4.2折</span>
-                    <span>￥239</span>
-                    <span>￥580</span>
+                    <span class="this_a">4.2折</span>
+                    <span class="this_b">￥239</span>
+                    <span class="this_c">￥580</span>
                 </div>
             </li>
             <li>
                 <img src="themes/temp/img.jpg" />
                 <div>asdfasfasdfasd</div>
                 <div>
-                    <span>4.2折</span>
-                    <span>￥239</span>
-                    <span>￥580</span>
+                    <span class="this_a">4.2折</span>
+                    <span class="this_b">￥239</span>
+                    <span class="this_c">￥580</span>
+                </div>
+            </li>
+            <li>
+                <img src="themes/temp/img.jpg" />
+                <div>asdfasfasdfasd</div>
+                <div>
+                    <span class="this_a">4.2折</span>
+                    <span class="this_b">￥239</span>
+                    <span class="this_c">￥580</span>
+                </div>
+            </li>
+            <li>
+                <img src="themes/temp/img.jpg" />
+                <div>asdfasfasdfasd</div>
+                <div>
+                    <span class="this_a">4.2折</span>
+                    <span class="this_b">￥239</span>
+                    <span class="this_c">￥580</span>
                 </div>
             </li>
         </ul>
+
+        <script type="text/javascript" src="themes/js/common.js"></script>
     </body>
 </html>
