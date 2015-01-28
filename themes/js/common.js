@@ -1,6 +1,7 @@
-var showImages = {
+var appueImages = {
     /*
     * @params:
+    *     touch: true
     *     click: false
     */
     init: function (params) {
@@ -17,7 +18,9 @@ var showImages = {
 
         // self._loop();
 
-        self.addEvent();
+        if (options.touch) {
+            self.addEvent();
+        }
 
         if (options.click) {
             self._click();
@@ -71,28 +74,6 @@ var showImages = {
             self._touchend(e);
         });
     },
-
-    // _loop: function () {
-    //     var self = this;
-
-    //     setTimeout(function(){
-    //         self._move();
-    //     }, 3000);
-    // },
-
-    // _move: function () {
-    //     var self = this;
-
-    //     self.$nav.css({
-    //         "-webkit-transition": "-webkit-transform 1s ease-in-out",
-    //         "-webkit-transform": "translate3d("+ -self.bodyWidth * self.current +"px, 0, 0)"
-    //     });
-
-    //     self.$nav.on("webkitTransitionEnd", function(){
-    //         self.current++;
-    //         self._loop();
-    //     });
-    // },
 
     _touchstart: function (e) {
         var self = this;
@@ -191,14 +172,6 @@ var showImages = {
         });
     },
 
-    /*
-    * @params
-    *     el: 执行移动的元素
-    *     timer: 时间
-    *     type: 动画滚动类型
-    *     x: 横向移动距离 
-    *     y: 纵向移动距离
-    */
     refresh: function (params) {
         var self = this;
 

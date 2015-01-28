@@ -118,7 +118,7 @@ em,b{
     content: "";
     position: absolute;
     width: 15px;
-    height: 2px;
+    height: 1px;
     background: #8b8d8e;
     left: 2px;
     top: 50%;
@@ -128,7 +128,7 @@ em,b{
     -webkit-transform: rotate(-45deg);
 }
 .icon_return:after{
-    margin-top: 2px;
+    margin-top: 3px;
     -webkit-transform: rotate(45deg);
 }
 
@@ -322,7 +322,7 @@ em,b{
     bottom: 0;
     z-index: 100;
     width: 100%;
-    background: rgba(0,0,0,.8);
+    background: rgba(0,0,0,.9);
     padding: 5px 0;
     height: 30px;
     display: -webkit-box;
@@ -412,7 +412,7 @@ em,b{
 
 
 /*link*/
-.link_01 a{
+.link_01 li{
     display: block;
     line-height: 20px;
     padding: 10px;
@@ -427,7 +427,17 @@ em,b{
 /*content*/
 .content_01{
     line-height: 20px;
+    padding: 10px;
 }
 .content_01 img{
     max-width: 100%;
 }
+
+/*wrapper*/
+.wrapper_01{
+
+}
+.wrapper_02{
+    display: none;
+}
+
