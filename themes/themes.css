@@ -179,13 +179,13 @@ em,b{
 .slider_02 .this_left,
 .slider_02 .this_right{
     background: rgba(0,0,0,.3);
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     position: absolute;
     top: 50%;
     margin-top: -15px;
     cursor: pointer;
-    -webkit-border-radius: 15px;
+    -webkit-border-radius: 20px;
 }
 .slider_02 .this_left{
     left: 10px;
@@ -213,20 +213,20 @@ em,b{
     -webkit-transform: rotate(45deg);
 }
 .slider_02 .this_left:before{
-    top: 10px;
-    left: 6px;
+    top: 15px;
+    left: 10px;
 }
 .slider_02 .this_left:after{
-    top: 20px;
-    left: 6px;
+    top: 25px;
+    left: 10px;
 }
 .slider_02 .this_right:before{
-    top: 20px;
-    right: 7px;
+    top: 25px;
+    right: 11px;
 }
 .slider_02 .this_right:after{
-    top: 10px;
-    right: 7px;
+    top: 15px;
+    right: 11px;
 }
 
 
