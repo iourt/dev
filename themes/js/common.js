@@ -2,17 +2,32 @@ var showImages = {
     init: function () {
         var self = this;
 
+        var dom = ".js_slide";
+
         self.current = 1;
 
-        self.$slide = $(".js_slide");
-        self.$nav = $(".js_slide ul");
+        self.$slide = $(dom);
+        self.$nav = $(dom +" ul");
         self.bodyWidth = $("body").width();
 
-        self.$slide.css({
-            "height": $(".js_slide img").height() + $(".js_slide div").height()
-        });
-        self.$slide.find("li").css({
+        var len = $(dom +" li").length,
+            tHeight = $(dom +" li").height();
+
+
+        alert(len);
+
+
+        $(dom +" li").css({
             "width": self.bodyWidth
+        });
+
+        self.$nav.css({
+            "height": self.$slide.find("li").height(),
+            "width": self.bodyWidth * len
+        })
+        self.$slide.css({
+            "height": $(dom +" li").height() + $(dom +" div").height(),
+            "display": "block"
         });
 
         self._loop();
