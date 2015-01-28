@@ -1,14 +1,14 @@
 var showImages = {
     /*
     * @params:
-    *     touch: true
+    *     click: false
     */
     init: function (params) {
         var self = this;
 
         var i,
             options = {
-                touch: true
+                click: false
             };
 
         for (i in params) options[i] = params[i];
@@ -17,9 +17,9 @@ var showImages = {
 
         // self._loop();
 
-        if (options.touch) {
-            self.addEvent();
-        } else {
+        self.addEvent();
+
+        if (options.click) {
             self._click();
         }
     },
@@ -165,6 +165,30 @@ var showImages = {
 
     _click: function () {
         var self = this;
+
+        $(self.dom +" .this_left").on("click", function(e){
+            if (self.current == 0) return;
+            self.current--;
+            self.refresh({
+                'e': e,
+                'x': -self.current * self.tWidth,
+                'y': 0,
+                'timer': '0.5s',
+                'type': 'ease-in-out'
+            });
+        });
+
+        $(self.dom +" .this_right").on("click", function(e){
+            if (self.current + 1 >= self.len) return;
+            self.current++;
+            self.refresh({
+                'e': e,
+                'x': -self.current * self.tWidth,
+                'y': 0,
+                'timer': '0.5s',
+                'type': 'ease-in-out'
+            });
+        });
     },
 
     /*
@@ -199,5 +223,3 @@ var showImages = {
     }
 
 }
-
-showImages.init();
