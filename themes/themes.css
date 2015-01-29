@@ -84,11 +84,13 @@ em,b{
 .header div:nth-child(3){
     width: 50px;
     height: 48px;
+}
+.header .this_shopping{
     background: url(images/icon_shopping.png) no-repeat 0 center;
     background-size: auto 20px;
     position: relative;
 }
-.header div:nth-child(3) span{
+.header .this_shopping span{
     background: #ecbc4f;
     width: 20px;
     height: 20px;
@@ -431,13 +433,5 @@ em,b{
 }
 .content_01 img{
     max-width: 100%;
-}
-
-/*wrapper*/
-.wrapper_01{
-
-}
-.wrapper_02{
-    display: none;
 }
 
