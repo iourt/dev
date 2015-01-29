@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title></title>
+    	<meta charset="utf-8" />
+    	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    	<meta name="format-detection" content="telephone=no" />
+        <link rel="stylesheet" href="themes/themes.css" type="text/css" />
+        <script type="text/javascript" src="themes/js/zepto.min.js"></script>
+        <script type="text/javascript" src="themes/js/common.js"></script>
+    </head>
+    <body>
+
+        <section class="frame">
+            <div class="frame_con">
+                <h2>使用新地址</h2>
+                <div class="this_text">
+                    啊的说法是地方撒旦法是的发生的
+                </div>
+                <ul>
+                    <li><input value="" placeholder="直接输入收货人姓名" /></li>
+                    <li>
+                        <div>请选择</div>
+                        <div>请选择</div>
+                        <div>请选择</div>
+                    </li>
+                    <li><input value="" placeholder="直接输入收货人地址" /></li>
+                    <li><input value="" placeholder="直接输入手机号" /></li>
+                    <li>
+                        <span class="js_toggle this_toggle"></span>
+                        设为常用地址
+                    </li>
+                </ul>
+                <button>保存</button>
+            </div>
+        </section>
+        <script type="text/javascript">
+        (function(){
+            var $jsToggle = $(".js_toggle");
+
+            $jsToggle.on("click", function(){
+                var buff = $(this).hasClass("current");
+                if (buff) {
+                    $(this).removeClass("current");
+                } else {
+                    $(this).addClass("current");
+                }
+            });
+        })();
+        </script>
+    </body>
+</html>

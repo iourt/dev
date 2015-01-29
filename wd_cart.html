@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title></title>
+    	<meta charset="utf-8" />
+    	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    	<meta name="format-detection" content="telephone=no" />
+        <link rel="stylesheet" href="themes/themes.css" type="text/css" />
+        <script type="text/javascript" src="themes/js/zepto.min.js"></script>
+        <script type="text/javascript" src="themes/js/common.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div><span class="icon_return"></span>返回</div>
+            <div>
+                <span class="this_mid">闪购袋</span>
+            </div>
+            <div class="js_text this_text">编辑</div>
+        </header>
+
+        <ul class="list_04">
+            <li>
+                速度是<br>
+                爱仕达法师打发撒旦法的说法<br>
+                爱仕达法师打发撒旦法的说法<br>
+                asdfasdf
+            </li>
+        </ul>
+
+        <dl class="js_list list_03">
+            <dd>
+                <ul>
+                    <li class="this_lia"><span class="js_minus"></span></li>
+                    <li class="this_lib">
+                        <img src="themes/temp/img.jpg" />
+                        <div>
+                            爱仕达法师打发撒旦法的说法
+                        </div>
+                        <div>
+                            <input value="1" />
+                            ￥350
+                        </div>
+                    </li>
+                </ul>
+            </dd>
+            <dd>
+                <ul>
+                    <li class="this_lia"><span class="js_minus"></span></li>
+                    <li class="this_lib">
+                        <img src="themes/temp/img.jpg" />
+                        <div>
+                            爱仕达法师打发撒旦法的说法
+                        </div>
+                        <div>
+                            <input value="1" />
+                            ￥350
+                        </div>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+        <script type="text/javascript">
+        (function(){
+            var $jsText = $(".js_text"),
+                $jsList = $(".js_list ul"),
+                $jsMinus = $(".js_minus");
+
+            $jsText.on("click", function(){
+                var buff = $(this).hasClass("edit");
+
+                if (buff) {
+
+                } else {
+                    $(this).addClass("edit");
+                    $(this).text("完成");
+
+                    $jsList.css({
+                        "-webkit-transition": "-webkit-transform 1s ease-in-out",
+                        "-webkit-transform": "translate3d(70px, 0, 0)"
+                    })
+                }
+            });
+
+            $jsMinus.on("click", function(){
+                $(this).closest("dd").remove();
+            });
+        })();
+        </script>
+
+
+        <style type="text/css">
+        body{
+            padding-bottom: 50px;
+            background: #e6e6e6;
+        }
+        </style>
+        <ul class="menu_02">
+            <li></li>
+            <li>
+                合计：<span>$ 123.3</span>
+            </li>
+            <li>立即结算</li>
+            <li></li>
+        </ul>
+    </body>
+</html>
