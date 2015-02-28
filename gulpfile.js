@@ -10,17 +10,17 @@ var task = {
 
 		gulp.src('./source/themes/all.scss')
 			.pipe(sass())
-			.pipe(gulp.dest('./build/themes/'));
+			.pipe(gulp.dest('./'+ type +'/themes/'));
 
 	},
 	
 	move: function() {
 
 		gulp.src([
-                'source/**/*.html',
-                'source/**/*.js',
-				'source/**/*.jpg',
-				'source/**/*.png'
+                './source/**/*.html',
+                './source/**/*.js',
+				'./source/**/*.jpg',
+				'./source/**/*.png'
 			])
 			.pipe(gulp.dest('./build/'));
 
@@ -32,7 +32,7 @@ var task = {
         	url = '';
 
         connect.server({
-            root: 'build',
+            root: type,
             port: '9999',
             livereload: true
         });
@@ -80,9 +80,15 @@ gulp.task('clean', function() {
 });
 
 
-gulp.task('run', ['clean'], function() {
-	task.sass();
-    task.move();
-	task.connect();
+gulp.task('run', function() {
+	task.sass('source');
+	task.connect('source');
 	task.watch();
+});
+
+
+
+gulp.task('build', ['clean'], function() {
+    task.sass('build');
+    task.move();
 });
