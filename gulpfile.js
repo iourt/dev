@@ -64,7 +64,7 @@ var task = {
     reload: function() {
     	var self = this;
 
-    	self.sass();
+    	self.sass('source');
     }
 };
 
