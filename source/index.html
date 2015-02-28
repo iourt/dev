@@ -5,14 +5,38 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta name="format-detection" content="telephone=no" />
+        <script type="text/javascript" src="js/zepto.min-1.1.6.js"></script>
         <link rel="stylesheet" href="themes/all.css" type="text/css" />
     </head>
     <body>
 
         <ul class="tab_01">
-            <li>主题</li>
+            <li class="current">主题</li>
             <li>目的地</li>
             <li>特惠</li>
         </ul>
+        <script type="text/javascript">
+        (function(){
+            $('.tab_01 li').on('click', function(){
+                $('.tab_01 li').removeClass('current');
+                $(this).addClass('current');
+            });
+        })();
+        </script>
+
+        <div class="menu_01">
+            <ul>
+                <li>亲子</li>
+                <li>海岛</li>
+                <li>美食</li>
+                <li>度假</li>
+            </ul>
+            <ul>
+                <li>运动</li>
+                <li>冒险</li>
+                <li>文学</li>
+                <li>更多</li>
+            </ul>
+        </div>
     </body>
 </html>

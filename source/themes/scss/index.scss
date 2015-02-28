@@ -7,5 +7,83 @@
     li{
         display: block;
         width: 33.3333%;
+        line-height: 40px;
+        cursor: pointer;
+        &.current{
+            background: #e50150;
+            position: relative;
+            &:before,
+            &:after{
+                content: '';
+                display: block;
+                width: 0;
+                height: 0;
+                position: absolute;
+                left: 50%;
+                margin-left: -5px;
+                bottom: -10px;
+                border-style: solid;
+                border-width: 5px;
+                border-color: #e50150 transparent transparent transparent;
+            }
+        }
+    }
+}
+
+
+.menu_01{
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    font-size: 0;
+    padding: 10px 0;
+    ul{
+        display: -webkit-box;
+        -webkit-box-align: center;
+        -webkit-box-pack: center;
+        li{
+            display: block;
+            font-size: 16px;
+            width: 70px;
+            height: 70px;
+            color: #fff;
+            margin: 5px;
+            line-height: 100px;
+            overflow: hidden;
+            cursor: pointer;
+            -webkit-border-radius: 35px;
+        }
+        &:nth-child(1){
+            li{
+                &:nth-child(1){
+                    background: #e50150;
+                }
+                &:nth-child(2){
+                    background: #eb6f65;
+                }
+                &:nth-child(3){
+                    background: #f6ac6d;
+                }
+                &:nth-child(4){
+                    background: #c16f9d;
+                }
+            }
+        }
+        &:nth-child(2){
+            li{
+                &:nth-child(1){
+                    background: #96cfaf;
+                }
+                &:nth-child(2){
+                    background: #8eb0dd;
+                }
+                &:nth-child(3){
+                    background: #8483bd;
+                }
+                &:nth-child(4){
+                    background: #ad4496;
+                }
+            }
+        }
     }
 }
