@@ -25,17 +25,19 @@ var task = {
 
 		gulp.src('./source/themes/all.scss')
 			.pipe(sass())
-			.pipe(gulp.dest('build/themes'));
+			.pipe(gulp.dest('./build/themes/'));
 
 	},
 	
 	move: function() {
 
 		gulp.src([
+                'source/**/*.html',
+                'source/**/*.js',
 				'source/**/*.jpg',
 				'source/**/*.png'
 			])
-			.pipe(gulp.dest('build/'));
+			.pipe(gulp.dest('./build/'));
 
 	},
 
@@ -45,8 +47,8 @@ var task = {
         	url = '';
 
         connect.server({
-            root: type,
-            port: "9999",
+            root: 'build',
+            port: '9999',
             livereload: true
         });
 
@@ -66,6 +68,7 @@ var task = {
 
     watch: function() {
     	var self = this;
+
     	gulp.watch([
     		'./source/**/*.scss'
     	], function(){
@@ -76,11 +79,7 @@ var task = {
     reload: function() {
     	var self = this;
 
-    	self.templates();
     	self.sass();
-
-
-		// connect.reload();
     }
 };
 
@@ -98,6 +97,7 @@ gulp.task('clean', function() {
 
 gulp.task('run', ['clean'], function() {
 	task.sass();
-	task.connect('source');
+    task.move();
+	task.connect();
 	task.watch();
 );
