@@ -1,24 +1,9 @@
-var fs           = require('fs'),
-	argv         = require('yargs').argv,
-	os           = require('os'),
-
+var os           = require('os'),
 	gulp 		 = require('gulp'),
 	shell        = require('gulp-shell'),
-	rename       = require('gulp-rename'),
-	wrap         = require('gulp-wrap'),
 	clean 		 = require('gulp-clean'),
 	sass         = require('gulp-sass'),
-	concat       = require('gulp-concat'),
-	connect 	 = require('gulp-connect'),
-	replace      = require('gulp-replace'),
-	declare      = require('gulp-declare');
-
-var dev = argv.dev,
-	buildpath = './build/';
-
-if (dev == 'cp') {
-	buildpath = build.dir().toString();
-}
+	connect 	 = require('gulp-connect');
 
 var task = {
 	sass: function(type) {
@@ -100,4 +85,4 @@ gulp.task('run', ['clean'], function() {
     task.move();
 	task.connect();
 	task.watch();
-);
+});
