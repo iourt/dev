@@ -47,3 +47,13 @@ em,b{
     -webkit-box-sizing: border-box;
     -webkit-overflow-scrolling: touch;
 }
+
+@mixin overflow{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin rgb($num: .4){
+    background: rgba(0,0,0,$num);
+}
