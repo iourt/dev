@@ -1,26 +1,28 @@
-﻿.icon_01{
+﻿.icon_01,
+.icon_02,
+.icon_tel,
+.icon_ok{
     display: inline-block;
     width: 30px;
     height: 30px;
     vertical-align: middle;
+}
+
+.icon_01{
     background: url(images/icon_16.png) no-repeat center center;
     background-size: 18px auto;
 }
-
 .icon_02{
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
     background: url(images/icon_17.png) no-repeat center center;
     background-size: 18px auto;
 }
 
 .icon_tel{
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
     background: url(images/icon_28.png) no-repeat center center;
+    background-size: 18px auto;
+}
+
+.icon_ok{
+    background: url(images/icon_29.png) no-repeat center center;
     background-size: 18px auto;
 }

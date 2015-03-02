@@ -144,3 +144,49 @@
         }
     }
 }
+
+
+.detail_info{
+    border: 10px solid #fff;
+    li{
+        border-bottom: 1px solid #000;
+        display: -webkit-box;
+        line-height: 30px;
+        padding: 5px 0;
+        div{
+            &:nth-child(1){
+                width: 80px;
+            }
+            &:nth-child(2){
+                -webkit-box-flex: 1; 
+            }
+        }
+        dl{
+            width: 100%;
+            dt{
+                line-height: 30px;
+                border-bottom: 1px dashed #000;
+                margin-bottom: 5px;
+            }
+            dd{
+                display: -webkit-box;
+                div{
+                    -webkit-box-flex: 1;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}
+
+
+.detail_order_money{
+    background: #000;
+    line-height: 30px;
+    color: #fff;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    span{
+        float: right;
+    }
+}
