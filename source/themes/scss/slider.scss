@@ -1,0 +1,32 @@
+﻿.slider{
+    width: 100%;
+    position: relative;
+    ul{
+        display: -webkit-box;
+        li{
+            display: block;
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .this_icon{
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+        z-index: 3;
+        width: 100%;
+        font-size: 0;
+        div{
+            width: 8px;
+            height: 8px;
+            background: rgba(0,0,0,.6);
+            display: inline-block;
+            margin-left: 10px;
+            &.current{
+                background: rgba(255,255,255,.8);
+            }
+        }
+    }
+}
