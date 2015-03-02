@@ -1,7 +1,8 @@
 ﻿.icon_01,
 .icon_02,
 .icon_tel,
-.icon_ok{
+.icon_ok,
+.icon_arrow{
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -24,5 +25,10 @@
 
 .icon_ok{
     background: url(images/icon_29.png) no-repeat center center;
+    background-size: 18px auto;
+}
+
+.icon_arrow{
+    background: url(images/icon_30.png) no-repeat center center;
     background-size: 18px auto;
 }

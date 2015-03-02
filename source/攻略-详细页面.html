@@ -25,7 +25,7 @@
                 </div>
             </section>
 
-            <section class="js_slider_01 slider">
+            <section class="js_slider slider">
                 <ul>
                     <li><img src="themes/temp/01.jpg" /></li>
                     <li><img src="themes/temp/02.jpg" /></li>
@@ -40,7 +40,7 @@
                 假如你厌倦了城市的浮华与喧闹，假如你想避开旅地的吵杂与遥远，假如你想在小寒节气里感受一番冬日暖阳的景象。那么，就和[漫旅行]一同出发吧！关上手机，抛弃电视，去现实版的“桃花源”过几天自然生活。
             </div>
 
-            <section class="js_slider_02 slider" style="margin-bottom:10px;">
+            <section class="js_slider slider" style="margin-bottom:10px;">
                 <ul>
                     <li><img src="themes/temp/01.jpg" /></li>
                     <li><img src="themes/temp/02.jpg" /></li>
@@ -57,7 +57,7 @@
                 假如你想避开旅地的吵杂与遥远，假如你想在小寒节气里感受一番冬日暖阳的景象。
             </div>
 
-            <section class="js_slider_03 slider" style="margin-bottom:10px;">
+            <section class="js_slider slider" style="margin-bottom:10px;">
                 <ul>
                     <li><img src="themes/temp/01.jpg" /></li>
                     <li><img src="themes/temp/02.jpg" /></li>
@@ -70,7 +70,7 @@
                 假如你想避开旅地的吵杂与遥远，假如你想在小寒节气里感受一番冬日暖阳的景象。
             </div>
 
-            <section class="js_slider_04 slider" style="margin-bottom:10px;">
+            <section class="js_slider slider" style="margin-bottom:10px;">
                 <ul>
                     <li><img src="themes/temp/01.jpg" /></li>
                     <li><img src="themes/temp/02.jpg" /></li>
@@ -85,10 +85,19 @@
         </section>
 
         <script type="text/javascript">
-            new Slider().init('.js_slider_01');
-            new Slider().init('.js_slider_02');
-            new Slider().init('.js_slider_03');
-            new Slider().init('.js_slider_04');
+        (function(){
+            var $slider = $('.js_slider'),
+                len = $slider.length;
+
+            for (var i=0; i<len; i++) {
+                var slider = new Slider();
+                
+                slider.init({
+                    elem: '.js_slider',
+                    z: i
+                });
+            }
+        })();
         </script>
     </body>
 </html>

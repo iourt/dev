@@ -105,7 +105,19 @@
         </section>
 
         <script type="text/javascript">
-            new Slider().init('.js_slider');
+        (function(){
+            var $slider = $('.js_slider'),
+                len = $slider.length;
+
+            for (var i=0; i<len; i++) {
+                var slider = new Slider();
+                
+                slider.init({
+                    elem: '.js_slider',
+                    z: i
+                });
+            }
+        })();
         </script>
     </body>
 </html>
