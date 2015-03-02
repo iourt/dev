@@ -1,0 +1,63 @@
+﻿.explain{
+    border: 10px solid #fff;
+    .this_name{
+        margin-bottom: 10px;
+        display: -webkit-box;
+        -webkit-box-align: center;
+        img{
+            width: 70px;
+            height: 70px;
+            display: block;
+            border: 5px solid #a0a0a0;
+            -webkit-border-radius: 70px;
+        }
+        div{
+            -webkit-box-flex: 1;
+            color: #737172;
+            line-height: 20px;
+            padding-left: 10px;
+            &:first-line{
+                color: #000;
+            }
+        }
+    }
+
+    .this_title_01{
+        font-size: 16px;
+        line-height: 30px;
+        padding-left: 15px;
+        background: url(images/icon_10.png) no-repeat 0 center;
+        background-size: 13px auto;
+    }
+
+    .this_text{
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    .this_icon_air{
+        background: url(images/icon_11.png) no-repeat 0 0;
+        background-size: 20px auto;
+        padding-left: 20px;
+    }
+    .this_icon_shop{
+        background: url(images/icon_12.png) no-repeat 0 0;
+        background-size: 20px auto;
+        padding-left: 20px;
+    }
+    .this_icon_car{
+        background: url(images/icon_13.png) no-repeat 0 0;
+        background-size: 20px auto;
+        padding-left: 20px;
+    }
+    .this_icon_camera{
+        background: url(images/icon_14.png) no-repeat 0 0;
+        background-size: 20px auto;
+        padding-left: 20px;
+    }
+    .this_icon_repast{
+        background: url(images/icon_15.png) no-repeat 0 0;
+        background-size: 20px auto;
+        padding-left: 20px;
+    }
+}

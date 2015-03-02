@@ -1,59 +1,84 @@
-(function(){
-    var str = '';
+var Slider = function(){};
 
-    var $slider = $('.js_slider'),
-        $dom = $('.js_slider ul');
+Slider.prototype = {
+    init: function(dom){
+        var self = this;
 
-    var current = 1;
+        self.nav = dom;
+        self.$slider = $(self.nav);
+        self.$dom = $(self.nav+' ul');
+        
+        self.w = $(self.nav+' li').width();
+        self.len = $(self.nav+' li').length;
 
-    var $w = $('.js_slider li').width(),
-        len = $('.js_slider li').length;
+        self.config();
 
-    var $html = $('.js_slider li').eq(0).clone();
+        self._html();
 
-    $('.js_slider ul').append($html);
+        self._loop();
+    },
 
-    for (var i=0; i<len; i++) {
-        str += '<div></div>';
-    }
-    $slider.append('<div class="this_icon">'+str+'</div>');
-    $('.js_slider .this_icon div').eq(0).addClass('current');
+    config: function(){
+        var self = this;
 
+        self.current = 1;
+    },
 
-    function move(){
+    _html: function(){
+        var self = this;
 
-        $dom.css({
-            '-webkit-transform': 'translate3d(-'+ 320*current +'px, 0, 0)',
+        var str = '';
+            $html = $(self.nav+' li').eq(0).clone();
+
+        $(self.nav+' ul').append($html);
+
+        for (var i=0; i<self.len; i++) {
+            str += '<div></div>';
+        }
+
+        self.$slider.append('<div class="this_icon">'+str+'</div>');
+        
+        $(self.nav+' .this_icon div').eq(0).addClass('current');
+    },
+
+    _move: function(){
+        var self = this;
+
+        self.$dom.css({
+            '-webkit-transform': 'translate3d(-'+ self.w*self.current +'px, 0, 0)',
             '-webkit-transition': '-webkit-transform 1s ease-in-out'
         });
-        icon(current);
+
+        self._icon(self.current);
         
-        $dom.on('webkitTransitionEnd', function (e) {
-            if(current == len+1) {
+        self.$dom.on('webkitTransitionEnd', function (e) {
+            if(self.current == self.len+1) {
                 $(this).attr('style', '');
-                current = 1;
-                icon(0);
+                self.current = 1;
+                self.icon(0);
             }
         });
 
-        current++;
+        self.current++;
 
-        if (current == len+1){
-            icon(0);
+        if (self.current == self.len+1){
+            self._icon(0);
         }
-        loop();
-    }
 
-    function loop(){
+        self._loop();
+    },
+
+    _loop: function(){
+        var self = this;
+
         setTimeout(function(){
-            move();
+            self._move();
         }, 4000);
-    }
+    },
 
-    function icon(num){
-        $('.js_slider .this_icon div').removeClass('current');
-        $('.js_slider .this_icon div').eq(num).addClass('current');
+    _icon: function(num){
+        var self = this;
+        $(self.nav+' .this_icon div').removeClass('current');
+        $(self.nav+' .this_icon div').eq(num).addClass('current');
     }
-
-    loop();
-})();
+}
