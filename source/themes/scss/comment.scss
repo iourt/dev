@@ -1,0 +1,12 @@
+﻿.textarea{
+    display: block;
+    padding: 10px;
+    textarea{
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 10px;
+        height: 200px;
+        -webkit-box-sizing: border-box;
+    }
+}
