@@ -31,4 +31,7 @@
 .icon_arrow{
     background: url(images/icon_30.png) no-repeat center center;
     background-size: 18px auto;
+    &.this_up{
+        -webkit-transform: rotate(180deg);
+    }
 }

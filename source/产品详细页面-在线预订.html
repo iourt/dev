@@ -14,15 +14,157 @@
             在线预订
         </h2>
 
-        <h2 class="title_01" style="background:#000;">
+        <h2 class="title_01" style="background:#000;margin-bottom:10px;">
             <span class="icon_01"></span>
             托斯卡纳庄园
         </h2>
 
+
+        <nav class="js_tab tab_02">
+            <li class="current">尊享之旅</li>
+            <li>体验之旅</li>
+        </nav>
+        <script type="text/javascript">
+        (function(){
+            var $tab = $('.js_tab li');
+
+            $tab.on('click', function(){
+                var state = $(this).hasClass('current');
+                if (!state) {
+                    $tab.removeClass('current');
+                    $(this).addClass('current');
+                }
+            });
+        })();
+        </script>
+
+
+
+        <script type="text/javascript" src="js/calendar.js"></script>
+        <section class="calendar">
+
+            <ul class="this_month">
+                <li><</li>
+                <li class="js_month">2015年-5月</li>
+                <li>></li>
+            </ul>
+
+            <ul class="this_week">
+                <li>周一</li>
+                <li>周二</li>
+                <li>周三</li>
+                <li>周四</li>
+                <li>周五</li>
+                <li>周六</li>
+                <li>周日</li>
+            </ul>
+
+
+            <section class="js_calendar this_date_slide">
+                <div class="this_colgroup">
+                    <ul class="this_date">
+                        <li>
+                            <div></div><div></div><div></div>
+                            <div></div><div></div><div>1</div>
+                            <div>2</div>
+                        </li>
+                        <li>
+                            <div>3</div><div>4</div><div>5</div>
+                            <div>6</div><div>7</div><div class="selected">8</div>
+                            <div>9</div>
+                        </li>
+                        <li>
+                            <div>10</div><div>11</div><div>12</div>
+                            <div>13</div><div>14</div><div>15</div>
+                            <div>16</div>
+                        </li>
+                        <li>
+                            <div>17</div><div>18</div><div>19</div>
+                            <div>20</div><div>21</div><div>22</div>
+                            <div>23</div>
+                        </li>
+                        <li>
+                            <div>24</div><div>25</div><div>26</div>
+                            <div>27</div><div>28</div><div>29</div>
+                            <div>30</div>
+                        </li>
+                        <li>
+                            <div>31</div><div></div><div></div>
+                            <div></div><div></div><div></div>
+                            <div></div>
+                        </li>
+                    </ul>
+                    <ul class="this_date">
+                        <li>
+                            <div></div><div></div><div></div>
+                            <div></div><div></div><div>1</div>
+                            <div>2</div>
+                        </li>
+                        <li>
+                            <div>3</div><div>4</div><div>5</div>
+                            <div>6</div><div>7</div><div class="selected">8</div>
+                            <div>9</div>
+                        </li>
+                        <li>
+                            <div>10</div><div>11</div><div>12</div>
+                            <div>13</div><div>14</div><div>15</div>
+                            <div>16</div>
+                        </li>
+                        <li>
+                            <div>17</div><div>18</div><div>19</div>
+                            <div>20</div><div>21</div><div>22</div>
+                            <div>23</div>
+                        </li>
+                        <li>
+                            <div>24</div><div>25</div><div>26</div>
+                            <div>27</div><div>28</div><div>29</div>
+                            <div>30</div>
+                        </li>
+                        <li>
+                            <div>31</div><div></div><div></div>
+                            <div></div><div></div><div></div>
+                            <div></div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="btn_red" style="margin:0;">￥230,000</div>
+        </section>
+        <script type="text/javascript">
+        (function(){
+            var $calendar = $('.js_calendar'),
+                len = $calendar.length;
+
+            for (var i=0; i<len; i++) {
+                var calendar = new Calendar();
+                
+                calendar.init({
+                    elem: '.js_calendar',
+                    z: i,
+                    title: ['2015年-5月','2015年-6月']
+                });
+            }
+        })();
+        (function(){
+            var $date = $('.js_calendar .this_date div');
+
+            $date.on('click', function(){
+                var state = $(this).hasClass('selected');
+
+                if (state) {
+                    $(this).removeClass('selected');
+                } else {
+                    $(this).addClass('selected');
+                }
+            })
+        })();
+        </script>
+
         <section class="order">
 
             <div class="this_city_list">
-                <h3>出发城市</h3>
+                <h3>出发城市<span class="icon_arrow"></span></h3>
                 <dl>
                     <dt>A</dt>
                     <dd>
@@ -42,12 +184,15 @@
             (function(){
                 var iClick = false,
                     $a = $('.this_city_list h3'),
-                    $b = $('.this_city_list dl');
+                    $b = $('.this_city_list dl'),
+                    $c = $('.this_city_list h3 .icon_arrow');
 
                 $a.on('click', function(){
                     if (iClick) {
+                        $c.removeClass('this_up');
                         $b.hide();
                     } else {
+                        $c.addClass('this_up');
                         $b.show();
                     }
                     iClick = !iClick;
@@ -59,15 +204,27 @@
                 <dt>出行人数</dt>
                 <dd>
                     <label>成人</label>
-                    <input type="number" value="" />
+                    <div>
+                        <span>-</span>
+                        <input type="number" value="" />
+                        <span>+</span>
+                    </div>
                 </dd>
                 <dd>
                     <label>儿童<br>（2-12岁）</label>
-                    <input type="number" value="" />
+                    <div>
+                        <span>-</span>
+                        <input type="number" value="" />
+                        <span>+</span>
+                    </div>
                 </dd>
                 <dd>
                     <label>房间数</label>
-                    <input type="number" value="" />
+                    <div>
+                        <span>-</span>
+                        <input type="number" value="" />
+                        <span>+</span>
+                    </div>
                 </dd>
             </dl>
 
@@ -117,7 +274,7 @@
             <input type='checkbox' />
         </div>
 
-        <div class="btn_red">
+        <div class="btn_red" style="margin-bottom:20px;">
             提交订单
         </div>
     </body>
