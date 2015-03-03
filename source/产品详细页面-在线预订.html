@@ -21,6 +21,40 @@
 
         <section class="order">
 
+            <div class="this_city_list">
+                <h3>出发城市</h3>
+                <dl>
+                    <dt>A</dt>
+                    <dd>
+                        <span>安吉</span>
+                        <span>安吉安吉</span>
+                        <span>安吉安吉</span>
+                        <span>安吉安吉吉吉</span>
+                        <span>安吉安吉</span>
+                    </dd>
+                    <dt>B</dt>
+                    <dd>
+                        <span>安吉</span>
+                    </dd>
+                </dl>
+            </div>
+            <script type="text/javascript">
+            (function(){
+                var iClick = false,
+                    $a = $('.this_city_list h3'),
+                    $b = $('.this_city_list dl');
+
+                $a.on('click', function(){
+                    if (iClick) {
+                        $b.hide();
+                    } else {
+                        $b.show();
+                    }
+                    iClick = !iClick;
+                })
+            })();
+            </script>
+
             <dl class="this_input_num">
                 <dt>出行人数</dt>
                 <dd>

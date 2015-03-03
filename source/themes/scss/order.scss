@@ -1,6 +1,38 @@
 ﻿.order{
     border: 10px solid #fff;
 
+
+    .this_city_list{
+        margin-bottom: 10px;
+        h3{
+            background: #717071;
+            line-height: 30px;
+            padding: 5px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: normal; 
+        }
+        dl{
+            background: #d8d8d9;
+            padding: 5px;
+            display: none;
+            dt{
+                line-height: 30px;
+            }
+            dd{
+                a,
+                span{
+                    line-height: 20px;
+                    margin-bottom: 5px;
+                    display: inline-block;
+                    margin-right: 5px;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+
+
     .this_input_num{
         margin-bottom: 10px;
         dt{
@@ -10,7 +42,7 @@
             color: #fff;
         }
         dd{
-            
+
         }
     }
 
