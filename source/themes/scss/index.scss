@@ -52,44 +52,96 @@
             overflow: hidden;
             cursor: pointer;
             -webkit-border-radius: 35px;
+            a{
+                display: block;
+                color: #fff;
+            }
         }
         &:nth-child(1){
             li{
                 &:nth-child(1){
-                    background: url(images/icon_02.png) no-repeat center 5px #e50150;
-                    background-size: 40px auto;
+                    a{
+                        background: url(images/icon_02.png) no-repeat center 5px #e50150;
+                        background-size: 40px auto;
+                        &:active{
+                            background: url(images/icon_02.png) no-repeat center 5px #a30035;
+                            background-size: 40px auto;
+                        }
+                    }
                 }
                 &:nth-child(2){
-                    background: url(images/icon_03.png) no-repeat center 5px  #eb6f65;
-                    background-size: 40px auto;
+                    a{
+                        background: url(images/icon_03.png) no-repeat center 5px  #eb6f65;
+                        background-size: 40px auto;
+                        &:active{
+                            background: url(images/icon_03.png) no-repeat center 5px  #a84c46;
+                            background-size: 40px auto;
+                        }
+                    }
                 }
                 &:nth-child(3){
-                    background: url(images/icon_04.png) no-repeat center 5px  #f6ac6d;
-                    background-size: 40px auto;
+                    a{
+                        background: url(images/icon_04.png) no-repeat center 5px  #f6ac6d;
+                        background-size: 40px auto;
+                        &:active{
+                            background: url(images/icon_04.png) no-repeat center 5px  #ad794c;
+                            background-size: 40px auto;
+                        }
+                    }
                 }
                 &:nth-child(4){
-                    background: url(images/icon_05.png) no-repeat center 5px  #c16f9d;
-                    background-size: 40px auto;
+                    a{
+                        background: url(images/icon_05.png) no-repeat center 5px  #c16f9d;
+                        background-size: 40px auto;
+                        &:active{
+                            background: url(images/icon_05.png) no-repeat center 5px  #8a4d70;
+                            background-size: 40px auto;
+                        }
+                    }
                 }
             }
         }
         &:nth-child(2){
             li{
                 &:nth-child(1){
-                    background: url(images/icon_06.png) no-repeat center 5px  #96cfaf;
-                    background-size: 40px auto;
+                    a{
+                        background: url(images/icon_06.png) no-repeat center 5px  #96cfaf;
+                        background-size: 40px auto;
+                        &:active{
+                            background: url(images/icon_06.png) no-repeat center 5px  #69947e;
+                            background-size: 40px auto;
+                        }
+                    }
                 }
                 &:nth-child(2){
-                    background: url(images/icon_07.png) no-repeat center 5px  #8eb0dd;
-                    background-size: 40px auto;
+                    a{
+                        background: url(images/icon_07.png) no-repeat center 5px  #8eb0dd;
+                        background-size: 40px auto;
+                        &:active{
+                            background: url(images/icon_07.png) no-repeat center 5px  #637d9e;
+                            background-size: 40px auto;
+                        }
+                    }
                 }
                 &:nth-child(3){
-                    background: url(images/icon_08.png) no-repeat center 5px  #8483bd;
-                    background-size: 40px auto;
+                    a{
+                        background: url(images/icon_08.png) no-repeat center 5px  #8483bd;
+                        background-size: 40px auto;
+                        &:active{
+                            background: url(images/icon_08.png) no-repeat center 5px  #5d5b88;
+                            background-size: 40px auto;
+                        }
+                    }
                 }
                 &:nth-child(4){
-                    background: url(images/icon_09.png) no-repeat center 5px  #ad4496;
-                    background-size: 40px auto;
+                    a{
+                        background: url(images/icon_09.png) no-repeat center 5px  #ad4496;
+                        background-size: 40px auto;
+                        &:active{
+                            background: url(images/icon_09.png) no-repeat center 5px  #7c2b6b;
+                            background-size: 40px auto;
+                        }
+                    }
                 }
             }
         }
@@ -212,6 +264,10 @@
             div{
                 background: #1a65b0;
                 border-right: 5px solid #fff;
+                a{
+                    display: block;
+                    color: #fff;
+                }
             }
             &:nth-child(3n) div{
                 border-right: 0;

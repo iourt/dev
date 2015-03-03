@@ -1,8 +1,20 @@
-﻿.btn_red{
-    background: #e5004f;
+﻿.btn_red,
+.btn_blue{
     line-height: 30px;
     text-align: center;
     color: #fff;
     margin: 0 10px;
     cursor: pointer;
+    a{
+        display: block;
+        color: #fff;
+    }
+}
+
+.btn_red{
+    background: #e5004f;
+}
+
+.btn_blue{
+    background: #1b64b0;
 }
