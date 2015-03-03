@@ -61,14 +61,22 @@ Slider.prototype = {
     _touchstart: function(e) {
         var self = this;
 
-        self.eventStop(e);
+        // self.eventStop(e);
 
         self.basePageX = self.getPage(e, "pageX");
         self.basePageY = self.getPage(e, "pageY");
+
+        self.scrolling = true;
+        self.moveReady = false;
     },
 
     _touchmove: function(e) {
         var self = this;
+        
+
+        if (!self.scrolling) {
+            return;
+        }
         
         var pageX = self.getPage(e, "pageX"),
             pageY = self.getPage(e, "pageY"),
@@ -76,27 +84,47 @@ Slider.prototype = {
             distY,
             moveX = 0;
 
-        self.eventStop(e);
 
-        distX = pageX - self.basePageX;
-        distY = pageY - self.basePageY;
+        if (self.moveReady) {
+            self.eventStop(e);
 
-        self.moveX = distX;
-        self.moveY = distY;
+            distX = pageX - self.basePageX;
+            distY = pageY - self.basePageY;
 
-        if (self.current > 0 && self.current < self.Len - 1) {
-            moveX = distX + self.newX;
+            self.moveX = distX;
+            self.moveY = distY;
+
+            if (self.current > 0 && self.current < self.Len - 1) {
+                moveX = distX + self.newX;
+            } else {
+                moveX = distX/3 + self.newX;
+            }
+
+            self.refresh({
+                'e': e,
+                'x': moveX,
+                'y': 0,
+                'timer': '0s',
+                'type': 'ease'
+            });
+
         } else {
-            moveX = distX/3 + self.newX;
-        }
+            var triangle = self.getTriangleSide(self.basePageX, self.basePageY, pageX, pageY);
 
-        self.refresh({
-            'e': e,
-            'x': moveX,
-            'y': 0,
-            'timer': '0s',
-            'type': 'ease'
-        });
+            if (triangle.z > 5) {
+
+                if (self.getAngle(triangle) > 55) {
+                    // self.eventStop(e);
+                    self.moveReady = true;
+                    // self.element.addEventListener('click', self, true);
+
+                } else {
+
+                    self.scrolling = false;
+
+                }
+            }
+        }
     },
 
     _touchend: function(e) {
@@ -127,6 +155,25 @@ Slider.prototype = {
         self.newX = -self.current * self.w;
 
         self.changedCurrent();
+    },
+
+    getTriangleSide: function(x1, y1, x2, y2){
+        var x = Math.abs(x1 - x2),
+            y = Math.abs(y1 - y2),
+            z = Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
+
+        return {
+            x: x,
+            y: y,
+            z: z
+        };
+    },
+
+    getAngle: function(triangle) {
+        var cos = triangle.y / triangle.z,
+            radina = Math.acos(cos);
+
+        return 180 / (Math.PI / radina);
     },
 
     refresh: function (params) {
