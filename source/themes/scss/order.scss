@@ -1,3 +1,43 @@
 ﻿.order{
     border: 10px solid #fff;
+
+    .this_input_num{
+        margin-bottom: 10px;
+        dt{
+            background: #717071;
+            line-height: 30px;
+            padding: 5px;
+            color: #fff;
+        }
+        dd{
+            
+        }
+    }
+
+    .this_input_li{
+        dt{
+            background: #717071;
+            line-height: 30px;
+            padding: 5px;
+            color: #fff;
+        }
+        dd{
+            background: #d8d8d9;
+            padding: 10px 5px;
+            line-height: 30px;
+            display: -webkit-box;
+            label{
+                display: block;
+                width: 90px;
+            }
+            input{
+                display: block;
+                border: none;
+                line-height: 20px;
+                padding: 5px;
+                -webkit-box-flex: 1;
+                outline: none;
+            }
+        }
+    }
 }
