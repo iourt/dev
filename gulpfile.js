@@ -1,9 +1,10 @@
-var os           = require('os'),
-	gulp 		 = require('gulp'),
-	shell        = require('gulp-shell'),
-	clean 		 = require('gulp-clean'),
-	sass         = require('gulp-sass'),
-	connect 	 = require('gulp-connect');
+var os      = require('os'),
+	gulp    = require('gulp'),
+	shell   = require('gulp-shell'),
+	clean   = require('gulp-clean'),
+	sass    = require('gulp-sass'),
+	connect = require('gulp-connect'),
+    zip     = require('gulp-zip');
 
 var task = {
 	sass: function(type) {
@@ -90,4 +91,19 @@ gulp.task('run', function() {
 gulp.task('build', ['clean'], function() {
     task.sass('build');
     task.move();
+});
+
+
+gulp.task('default', function(){
+    task.connect('build');
+});
+
+
+gulp.task('zip', function () {
+    var d = new Date(),
+        version = d.getTime();
+
+    return gulp.src('build/*')
+        .pipe(zip(version+'.zip'))
+        .pipe(gulp.dest('build'));
 });
