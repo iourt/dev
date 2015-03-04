@@ -101,7 +101,22 @@ gulp.task('default', function(){
 
 gulp.task('zip', function () {
     var d = new Date(),
-        version = d.getTime();
+        y = d.getFullYear().toString(),
+        m = d.getMonth(),
+        t = d.getDate().toString(),
+        h = d.getHours().toString(),
+        s = d.getMinutes();
+
+    if (m < 9) {
+        m++;
+        m = '0' + m;
+    }
+
+    if (t<9) {
+        t = 0 + t;
+    }
+
+    var version = y + m + t + '-' + h + '-' + s;
 
     return gulp.src('build/*')
         .pipe(zip(version+'.zip'))
