@@ -2,7 +2,17 @@
 .icon_02,
 .icon_tel,
 .icon_ok,
-.icon_arrow{
+.icon_arrow,
+.icon_shut,
+.icon_order,
+.icon_info,
+.icon_collect,
+.icon_comment,
+.icon_set,
+.icon_about,
+.icon_mycomment,
+.icon_path,
+.icon_mycollect{
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -35,3 +45,52 @@
         -webkit-transform: rotate(180deg);
     }
 }
+
+.icon_shut{
+    background: url(images/icon_32.png) no-repeat center center;
+    background-size: 18px auto;
+}
+
+.icon_order{
+    background: url(images/icon_33.png) no-repeat center center;
+}
+.icon_info{
+    background: url(images/icon_34.png) no-repeat center center;
+}
+.icon_collect{
+    background: url(images/icon_35.png) no-repeat center center;
+}
+.icon_comment{
+    background: url(images/icon_36.png) no-repeat center center;
+}
+.icon_set{
+    background: url(images/icon_37.png) no-repeat center center;
+}
+.icon_about{
+    background: url(images/icon_38.png) no-repeat center center;
+}
+.icon_order,
+.icon_info,
+.icon_collect,
+.icon_comment,
+.icon_set,
+.icon_about{
+    background-size: 28px auto;
+}
+
+.icon_mycomment{
+    background: url(images/icon_39.png) no-repeat center center;
+    background-size: 25px auto;
+}
+
+.icon_path{
+    background: url(images/icon_40.png) no-repeat center center;
+    background-size: 18px auto;
+    width: 20px;
+}
+
+.icon_mycollect{
+    background: url(images/icon_41.png) no-repeat center center;
+    background-size: 25px auto;
+}
+

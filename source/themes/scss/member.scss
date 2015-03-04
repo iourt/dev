@@ -1,0 +1,228 @@
+﻿.member{
+
+    .this_member_info{
+        display: -webkit-box;
+        padding: 10px;
+        border-bottom: 1px solid #c9c9ca;
+        -webkit-box-align: center;
+        img{
+            display: block;
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+            border: 4px solid #9f9fa0;
+            -webkit-border-radius: 80px;
+        }
+        ul{
+            display: block;
+            -webkit-box-flex: 1;
+            li{
+                line-height: 20px;
+                &.this_i_id{
+                    color: #000;
+                }
+                &.this_i_text{
+                    color: #999;
+                }
+                &.this_i_num{
+                    color: #1b64b0;
+                }
+            }
+        }
+    }
+
+    .this_member_menu{
+        padding: 10px;
+        li{
+            line-height: 30px;
+            padding: 10px 0;
+            color: #717071;
+            border-bottom: 1px solid #c9c9ca;
+            span{
+                margin-right: 5px;
+            }
+            a{
+                display: block;
+                color: #717071;
+            }
+        }
+    }
+
+
+    .this_member_comment{
+        li{
+            display: -webkit-box;
+            -webkit-box-align: center;
+            padding: 10px;
+            img{
+                display: block;
+                width: 50px;
+                height: 50px;
+                -webkit-border-radius: 50px;
+                margin-right: 10px;
+            }
+            dl{
+                display: block;
+                -webkit-box-flex: 1;
+                dt{
+                    line-height: 30px;
+                    .this_i_date{
+                        color: #999;
+                        font-size: 12px;
+                    }
+                }
+                dd{
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+            }
+            &:nth-child(even){
+                background: #eee;
+            }
+        }
+    }
+
+    .this_member_collect{
+        margin-bottom: 20px;
+        li{
+            border-bottom: 1px solid #eee;
+            padding: 10px;
+            .this_i_img{
+                position: relative;
+                margin-bottom: 3px;
+                img{
+                    width: 100%;
+                }
+                p{
+                    @include rgb();
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    line-height: 30px;
+                    color: #fff;
+                    width: 100%;
+                    display: -webkit-box;
+                    span{
+                        display: block;
+                        &:nth-child(1){
+                            -webkit-box-flex: 1;
+                            padding-left: 10px;
+                        }
+                        &:nth-child(2){
+                            width: auto;
+                            padding-right: 10px;
+                        }
+                    }
+                }
+            }
+
+            .this_i_text{
+                background: #eee;
+                padding: 10px;
+                display: -webkit-box;
+                -webkit-box-align: center;
+                p{
+                    display: block;
+                    -webkit-box-flex: 1;
+                    line-height: 20px;
+                }
+                a{
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    -webkit-border-radius: 50px;
+                    text-align: center;
+                    color: #fff;
+                    line-height: 50px;
+                    &.this_i_pay{
+                        background: #e5004f;
+                    }
+                    &.this_i_comment{
+                        background: #458ecd;
+                    }
+                }
+            }
+        }
+    }
+
+    .this_member_tab{
+        background: #c9c9ca;
+        color: #fff;
+        padding: 10px 20px;
+        display: -webkit-box;
+        li{
+            display: block;
+            border-top: 1px solid #fff;
+            padding-top: 20px;
+            line-height: 20px;
+            width: auto;
+            -webkit-box-flex: 1;
+            text-align: center;
+            cursor: pointer;
+            &.current{
+                background: url(images/icon_42.png) no-repeat center 0;
+                background-size: 20px auto;
+            }
+        }
+    }
+
+    .this_member_order{
+        border-left: 10px solid #c9c9ca;
+        li{
+            border-bottom: 1px solid #c9c9ca;
+            display: -webkit-box;
+            padding: 10px;
+            -webkit-box-align: center;
+            p{
+                line-height: 20px;
+                color: #999;
+                -webkit-box-flex: 1;
+                font-size: 12px;
+                &:first-line{
+                    color: #000;
+                    font-size: 14px;
+                }
+            }
+            .this_i_btn{
+                display: block;
+                width: 50px;
+                height: 50px;
+                -webkit-border-radius: 50px;
+                line-height: 50px;
+                text-align: center;
+                color: #fff;
+                &.this_i_pay{
+                    background: #e5004f;
+                }
+                &.this_i_comment{
+                    background: #458ecd;
+                }
+            }
+        }
+    }
+
+    .this_member_news{
+        li{
+            display: -webkit-box;
+            border-top: 1px solid #c9c9ca;
+            border-bottom: 1px solid #c9c9ca;
+            margin-bottom: 5px;
+            div{
+                &.this_i_btn{
+                    width: 40px;
+                    cursor: pointer;
+                    background: url(images/icon_17.png) no-repeat center center  #c9c9ca;
+                    background-size: 30px auto;
+                    &.this_i_ok{
+                        background: url(images/icon_29.png) no-repeat center center #e5004f;
+                        background-size: 30px auto;
+                    }
+                }
+                &.this_i_text{
+                    padding: 10px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}

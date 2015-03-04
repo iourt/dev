@@ -57,3 +57,10 @@ em,b{
 @mixin rgb($num: .4){
     background: rgba(0,0,0,$num);
 }
+
+.color_red{
+    color: #e5004f;
+}
+.color_black{
+    color: #000;
+}
