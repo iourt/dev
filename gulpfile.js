@@ -118,7 +118,7 @@ gulp.task('zip', function () {
 
     var version = y + m + t + '-' + h + '-' + s;
 
-    return gulp.src('build/*')
+    return gulp.src('build/**/*')
         .pipe(zip(version+'.zip'))
         .pipe(gulp.dest('build'));
 });
