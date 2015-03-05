@@ -57,6 +57,43 @@ Calendar.prototype = {
         self.$nav.on("touchend", function(e){
             self._touchend(e);
         });
+
+        self._click();
+    },
+
+    _click: function(){
+        var self = this;
+
+        $('.js_month_left').on('click', function(e){
+            if (!self.current) return;
+
+            self.current--;
+
+            self.refresh({
+                'e': e,
+                'x': -self.current * self.w,
+                'y': 0,
+                'timer': '0.5s',
+                'type': 'ease-in-out'
+            });
+
+            self.changedCurrent();
+        });
+
+        $('.js_month_right').on('click', function(e){
+            if (self.current >= self.len-1) return;
+            self.current++;
+
+            self.refresh({
+                'e': e,
+                'x': -self.current * self.w,
+                'y': 0,
+                'timer': '0.5s',
+                'type': 'ease-in-out'
+            });
+
+            self.changedCurrent();
+        });
     },
 
     _touchstart: function(e) {
@@ -155,7 +192,7 @@ Calendar.prototype = {
             'type': 'ease-in-out'
         });
 
-        self.newX = -self.current * self.w;
+        // self.newX = -self.current * self.w;
 
         self.changedCurrent();
     },
@@ -190,6 +227,8 @@ Calendar.prototype = {
 
     changedCurrent: function() {
         var self = this;
+        
+        self.newX = -self.current * self.w;
 
         $('.js_month').html(self.titleName[self.current]);
     },
