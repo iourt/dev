@@ -97,6 +97,17 @@
             label{
                 display: block;
                 width: 90px;
+                &.this_i_select{
+                    background: url(images/icon_43.png) no-repeat 55px center;
+                    background-size: 20px auto;
+                    select{
+                        -webkit-appearance: none;
+                        background: none;
+                        border: none;
+                        outline: none;
+                        font-size: 14px;
+                    }
+                }
             }
             input{
                 display: block;
