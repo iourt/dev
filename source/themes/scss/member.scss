@@ -208,9 +208,12 @@
             border-bottom: 1px solid #c9c9ca;
             margin-bottom: 5px;
             div{
-                &.this_i_btn{
+                &.this_i_btn,
+                &.this_i_shut{
                     width: 40px;
                     cursor: pointer;
+                }
+                &.this_i_btn{
                     background: url(images/icon_17.png) no-repeat center center  #c9c9ca;
                     background-size: 30px auto;
                     &.this_i_ok{
@@ -218,7 +221,16 @@
                         background-size: 30px auto;
                     }
                 }
+                &.this_i_shut{
+                    background: url(images/icon_45.png) no-repeat center center  #c9c9ca;
+                    background-size: 30px auto;
+                    &.this_i_on{
+                        background: url(images/icon_45.png) no-repeat center center  #e5004f;
+                        background-size: 30px auto;
+                    }
+                }
                 &.this_i_text{
+                    -webkit-box-flex: 1;
                     padding: 10px;
                     line-height: 20px;
                 }
