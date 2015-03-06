@@ -1,5 +1,6 @@
 ﻿.btn_red,
-.btn_blue{
+.btn_blue,
+.btn_green{
     line-height: 40px;
     text-align: center;
     color: #fff;
@@ -17,6 +18,10 @@
 
 .btn_blue{
     background: #1b64b0;
+}
+
+.btn_green{
+    background: #78bc28;
 }
 
 
