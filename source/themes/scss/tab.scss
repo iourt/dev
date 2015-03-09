@@ -7,6 +7,7 @@
     li{
         display: block;
         width: 33.3333%;
+        -webkit-box-flex: 1;
         line-height: 40px;
         cursor: pointer;
         @include border_right_half;
@@ -29,7 +30,7 @@
             }
         }
         &:last-child{
-            border-right: none;
+            border-right: 0;
         }
     }
 }
