@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>title</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="format-detection" content="telephone=no" />
+        <script type="text/javascript" src="js/zepto.min-1.1.6.js"></script>
+        <script type="text/javascript" src="js/slider.js"></script>
+        <link rel="stylesheet" href="themes/all.css" type="text/css" />
+    </head>
+    <body>
+
+        <section class="member">
+
+            <div class="this_member_my_info">
+                <img src="themes/temp/3.jpg" />
+                <button class="js_btn this_edit"></button>
+                积分：1200
+            </div>
+
+            <ul class="js_text this_member_my_text">
+                <li>
+                    <label>昵称</label>
+                    <span>钢铁侠</span>
+                </li>
+                <li>
+                    <label>性别</label>
+                    <span>男</span>
+                </li>
+                <li>
+                    <div class="this_i_pt">
+                        <label>兴趣</label>
+                        <div>
+                            <p>度假</p>
+                            <p>文学</p>
+                            <p>运动</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <label>手机</label>
+                    <span>13917565397</span>
+                </li>
+                <li>
+                    <label>电子邮箱</label>
+                    <span>GTX@163.com</span>
+                </li>
+            </ul>
+
+            <ul class="js_input this_member_my_input" style="display:none;">
+                <li>
+                    <label>昵称</label>
+                    <input type="text" value="" />
+                </li>
+                <li>
+                    <label>性别</label>
+                    <input type="text" value="" />
+                </li>
+                <li>
+                    <div class="this_i_pt">
+                        <label>兴趣</label>
+                        <div>
+                            <p>度假</p>
+                            <p>文学</p>
+                            <p>运动</p>
+                        </div>
+                    </div>
+                    <div class="this_i_pd">
+                        <p class="selected">度假</p>
+                        <p>文学</p>
+                        <p>运动</p>
+                        <p>度假</p>
+                        <p>文学</p>
+                        <p>运动</p>
+                        <p>度假</p>
+                        <p>文学</p>
+                        <p>运动</p>
+                        <p>度假</p>
+                        <p>文学</p>
+                        <p>运动</p>
+                        <p>度假</p>
+                        <p>文学</p>
+                        <p>运动</p>
+                        <p>度假</p>
+                        <p>文学</p>
+                        <p>运动</p>
+                        <p>度假</p>
+                        <p>文学</p>
+                        <p>运动</p>
+                        <p>度假</p>
+                        <p>文学</p>
+                        <p>运动</p>
+                        <p>度假</p>
+                        <p>文学</p>
+                        <p>运动</p>
+                        <p>度假</p>
+                        <p>文学</p>
+                        <p>运动</p>
+                        <p>度假</p>
+                        <p>文学</p>
+                        <p>运动</p>
+                        <p>度假</p>
+                        <p>文学</p>
+                        <p>运动</p>
+                    </div>
+                </li>
+                <li>
+                    <label>手机</label>
+                    <input type="tel" value="" />
+                </li>
+                <li>
+                    <label>电子邮箱</label>
+                    <input type="email" value="" />
+                </li>
+            </ul>
+
+            <div class="js_login btn_red" style="margin-bottom:20px;">
+                退出当前账号<span class="icon_shut"></span>
+            </div>
+
+            <script type="text/javascript">
+            (function(){
+                var $btn = $('.js_btn'),
+                    $text = $('.js_text'),
+                    $input = $('.js_input'),
+                    $login = $('.js_login');
+
+                $btn.on('click', function(){
+                    var state = $(this).hasClass('this_edit');
+
+                    if (state) {
+
+                        $btn.removeClass('this_edit');
+                        $btn.addClass('this_ok');
+                        $text.css('display', 'none');
+                        $input.css('display', 'block');
+                        $login.css('display', 'none');
+
+                    } else {
+
+                        $btn.addClass('this_edit');
+                        $btn.removeClass('this_ok');
+                        $text.css('display', 'block');
+                        $input.css('display', 'none');
+                        $login.css('display', 'block');
+
+                    }
+                });
+            })();
+            </script>
+        </section>
+    </body>
+</html>

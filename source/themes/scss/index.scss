@@ -4,6 +4,7 @@
     text-align: center;
     font-size: 0;
     padding: 10px 0;
+    padding-bottom: 0;
     ul{
         display: -webkit-box;
         -webkit-box-align: center;
@@ -11,59 +12,61 @@
         li{
             display: block;
             font-size: 16px;
-            width: 70px;
+            width: auto;
             height: 70px;
             color: #fff;
-            margin: 5px;
-            line-height: 100px;
             overflow: hidden;
             cursor: pointer;
-            -webkit-border-radius: 35px;
+            margin-bottom: 10px;
+            -webkit-box-flex: 1;
             a{
                 display: block;
-                color: #fff;
+                margin: 0 auto;
+                width: 70px;
+                height: 70px;
+                -webkit-border-radius: 35px;
             }
         }
         &:nth-child(1){
             li{
                 &:nth-child(1){
                     a{
-                        background: url(images/icon_02.png) no-repeat center 5px #e50150;
-                        background-size: 40px auto;
-                        &:active{
-                            background: url(images/icon_02.png) no-repeat center 5px #a30035;
-                            background-size: 40px auto;
-                        }
+                        background: url(images/icon_02.png) no-repeat center center #e50150;
+                        background-size: 100% auto;
+                        // &:active{
+                        //     background: url(images/icon_02.png) no-repeat center center #a30035;
+                        //     background-size: 100% auto;
+                        // }
                     }
                 }
                 &:nth-child(2){
                     a{
-                        background: url(images/icon_03.png) no-repeat center 5px  #eb6f65;
-                        background-size: 40px auto;
-                        &:active{
-                            background: url(images/icon_03.png) no-repeat center 5px  #a84c46;
-                            background-size: 40px auto;
-                        }
+                        background: url(images/icon_03.png) no-repeat center center  #eb6f65;
+                        background-size: 100% auto;
+                        // &:active{
+                        //     background: url(images/icon_03.png) no-repeat center center  #a84c46;
+                        //     background-size: 100% auto;
+                        // }
                     }
                 }
                 &:nth-child(3){
                     a{
-                        background: url(images/icon_04.png) no-repeat center 5px  #f6ac6d;
-                        background-size: 40px auto;
-                        &:active{
-                            background: url(images/icon_04.png) no-repeat center 5px  #ad794c;
-                            background-size: 40px auto;
-                        }
+                        background: url(images/icon_04.png) no-repeat center center  #f6ac6d;
+                        background-size: 100% auto;
+                        // &:active{
+                        //     background: url(images/icon_04.png) no-repeat center center  #ad794c;
+                        //     background-size: 100% auto;
+                        // }
                     }
                 }
                 &:nth-child(4){
                     a{
-                        background: url(images/icon_05.png) no-repeat center 5px  #c16f9d;
-                        background-size: 40px auto;
-                        &:active{
-                            background: url(images/icon_05.png) no-repeat center 5px  #8a4d70;
-                            background-size: 40px auto;
-                        }
+                        background: url(images/icon_05.png) no-repeat center center  #c16f9d;
+                        background-size: 100% auto;
+                        // &:active{
+                        //     background: url(images/icon_05.png) no-repeat center center  #8a4d70;
+                        //     background-size: 100% auto;
+                        // }
                     }
                 }
             }
@@ -72,42 +75,42 @@
             li{
                 &:nth-child(1){
                     a{
-                        background: url(images/icon_06.png) no-repeat center 5px  #96cfaf;
-                        background-size: 40px auto;
-                        &:active{
-                            background: url(images/icon_06.png) no-repeat center 5px  #69947e;
-                            background-size: 40px auto;
-                        }
+                        background: url(images/icon_06.png) no-repeat center center  #96cfaf;
+                        background-size: 100% auto;
+                        // &:active{
+                        //     background: url(images/icon_06.png) no-repeat center center  #69947e;
+                        //     background-size: 100% auto;
+                        // }
                     }
                 }
                 &:nth-child(2){
                     a{
-                        background: url(images/icon_07.png) no-repeat center 5px  #8eb0dd;
-                        background-size: 40px auto;
-                        &:active{
-                            background: url(images/icon_07.png) no-repeat center 5px  #637d9e;
-                            background-size: 40px auto;
-                        }
+                        background: url(images/icon_07.png) no-repeat center center  #8eb0dd;
+                        background-size: 100% auto;
+                        // &:active{
+                        //     background: url(images/icon_07.png) no-repeat center center  #637d9e;
+                        //     background-size: 100% auto;
+                        // }
                     }
                 }
                 &:nth-child(3){
                     a{
-                        background: url(images/icon_08.png) no-repeat center 5px  #8483bd;
-                        background-size: 40px auto;
-                        &:active{
-                            background: url(images/icon_08.png) no-repeat center 5px  #5d5b88;
-                            background-size: 40px auto;
-                        }
+                        background: url(images/icon_08.png) no-repeat center center #8483bd;
+                        background-size: 100% auto;
+                        // &:active{
+                        //     background: url(images/icon_08.png) no-repeat center center  #5d5b88;
+                        //     background-size: 100% auto;
+                        // }
                     }
                 }
                 &:nth-child(4){
                     a{
-                        background: url(images/icon_09.png) no-repeat center 5px  #ad4496;
-                        background-size: 40px auto;
-                        &:active{
-                            background: url(images/icon_09.png) no-repeat center 5px  #7c2b6b;
-                            background-size: 40px auto;
-                        }
+                        background: url(images/icon_09.png) no-repeat center center  #ad4496;
+                        background-size: 100% auto;
+                        // &:active{
+                        //     background: url(images/icon_09.png) no-repeat center center  #7c2b6b;
+                        //     background-size: 100% auto;
+                        // }
                     }
                 }
             }
