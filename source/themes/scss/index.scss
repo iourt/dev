@@ -24,95 +24,9 @@
                 margin: 0 auto;
                 width: 70px;
                 height: 70px;
-                -webkit-border-radius: 35px;
             }
-        }
-        &:nth-child(1){
-            li{
-                &:nth-child(1){
-                    a{
-                        background: url(images/icon_02.png) no-repeat center center #e50150;
-                        background-size: 100% auto;
-                        // &:active{
-                        //     background: url(images/icon_02.png) no-repeat center center #a30035;
-                        //     background-size: 100% auto;
-                        // }
-                    }
-                }
-                &:nth-child(2){
-                    a{
-                        background: url(images/icon_03.png) no-repeat center center  #eb6f65;
-                        background-size: 100% auto;
-                        // &:active{
-                        //     background: url(images/icon_03.png) no-repeat center center  #a84c46;
-                        //     background-size: 100% auto;
-                        // }
-                    }
-                }
-                &:nth-child(3){
-                    a{
-                        background: url(images/icon_04.png) no-repeat center center  #f6ac6d;
-                        background-size: 100% auto;
-                        // &:active{
-                        //     background: url(images/icon_04.png) no-repeat center center  #ad794c;
-                        //     background-size: 100% auto;
-                        // }
-                    }
-                }
-                &:nth-child(4){
-                    a{
-                        background: url(images/icon_05.png) no-repeat center center  #c16f9d;
-                        background-size: 100% auto;
-                        // &:active{
-                        //     background: url(images/icon_05.png) no-repeat center center  #8a4d70;
-                        //     background-size: 100% auto;
-                        // }
-                    }
-                }
-            }
-        }
-        &:nth-child(2){
-            li{
-                &:nth-child(1){
-                    a{
-                        background: url(images/icon_06.png) no-repeat center center  #96cfaf;
-                        background-size: 100% auto;
-                        // &:active{
-                        //     background: url(images/icon_06.png) no-repeat center center  #69947e;
-                        //     background-size: 100% auto;
-                        // }
-                    }
-                }
-                &:nth-child(2){
-                    a{
-                        background: url(images/icon_07.png) no-repeat center center  #8eb0dd;
-                        background-size: 100% auto;
-                        // &:active{
-                        //     background: url(images/icon_07.png) no-repeat center center  #637d9e;
-                        //     background-size: 100% auto;
-                        // }
-                    }
-                }
-                &:nth-child(3){
-                    a{
-                        background: url(images/icon_08.png) no-repeat center center #8483bd;
-                        background-size: 100% auto;
-                        // &:active{
-                        //     background: url(images/icon_08.png) no-repeat center center  #5d5b88;
-                        //     background-size: 100% auto;
-                        // }
-                    }
-                }
-                &:nth-child(4){
-                    a{
-                        background: url(images/icon_09.png) no-repeat center center  #ad4496;
-                        background-size: 100% auto;
-                        // &:active{
-                        //     background: url(images/icon_09.png) no-repeat center center  #7c2b6b;
-                        //     background-size: 100% auto;
-                        // }
-                    }
-                }
+            img{
+                width: 100%;
             }
         }
     }
