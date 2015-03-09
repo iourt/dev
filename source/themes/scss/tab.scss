@@ -9,6 +9,7 @@
         width: 33.3333%;
         line-height: 40px;
         cursor: pointer;
+        @include border_right_half;
         &.current{
             background: #e50150;
             position: relative;
@@ -26,6 +27,9 @@
                 border-width: 5px;
                 border-color: #e50150 transparent transparent transparent;
             }
+        }
+        &:last-child{
+            border-right: none;
         }
     }
 }
