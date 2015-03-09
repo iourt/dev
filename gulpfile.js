@@ -107,12 +107,12 @@ gulp.task('zip', function () {
         h = d.getHours().toString(),
         s = d.getMinutes();
 
-    if (m < 9) {
+    if (m <= 9) {
         m++;
         m = '0' + m;
     }
 
-    if (t<9) {
+    if (t <= 9) {
         t = 0 + t;
     }
 
