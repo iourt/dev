@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>title</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="format-detection" content="telephone=no" />
+        <script type="text/javascript" src="js/zepto.min-1.1.6.js"></script>
+    </head>
+    <body>
+        <style type="text/css">
+        *{padding:0;margin:0;}
+        body{
+            font-size: 14px;
+        }
+
+        .vote{
+            border: 10px solid #fff;
+        }
+        .vote li{
+            display: -webkit-box;
+        }
+        .vote li:nth-child(odd){
+            background: -webkit-linear-gradient(left, #fff 0, #fff 120px, #efefef 120px, #efefef);
+        }
+        .vote li:nth-child(even){
+            background: #f7f7f7;
+            background: -webkit-linear-gradient(left, #fff 0, #fff 120px, #f7f7f7 120px, #f7f7f7);
+        }
+        .vote li h3,
+        .vote li div{
+            display: block;
+            line-height: 30px;
+        }
+        .vote li h3{
+            width: 120px;
+            font-size: 14px;
+            font-weight: normal;
+        }
+        .vote li div{
+            width: auto;
+            -webkit-box-flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+        .vote li div p{
+            position: absolute;
+            left: -100%;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            /*-webkit-transform: translate3d(-100%, 0, 0);*/
+        }
+        .vote li div span{
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding-right: 5px;
+            color: #333;
+            display: block;
+            line-height: 30px;
+            z-index: 3;
+        }
+        .vote li:nth-child(1) p{
+            background: #f6c1c6;
+        }
+        .vote li:nth-child(2) p{
+            background: #fff793;
+        }
+        .vote li:nth-child(3) p{
+            background: #b2d57a;
+        }
+        .vote li:nth-child(4) p{
+            background: #cae9fa;
+        }
+        .vote li:nth-child(5) p{
+            background: #bbc1e2;
+        }
+        .vote li:nth-child(6) p{
+            background: #929fd0;
+        }
+        .vote li:nth-child(7) p{
+            background: #8cbae4;
+        }
+        .vote li:nth-child(8) p{
+            background: #fad5b5;
+        }
+        .vote li:nth-child(9) p{
+            background: #84cbc4;
+        }
+        .vote li:nth-child(10) p{
+            background: #cca8ce;
+        }
+        </style>
+
+        <ul class="js_vote vote">
+            <li>
+                <h3 data-num="10%">佳酒选酒店</h3>
+                <div>
+                    <p></p>
+                    <span>123</span>
+                </div>
+            </li>
+            <li>
+                <h3 data-num="20%">佳酒店票选酒店</h3>
+                <div>
+                    <p></p>
+                    <span>123</span>
+                </div>
+            </li>
+            <li>
+                <h3 data-num="70%">佳酒店选酒店</h3>
+                <div>
+                    <p></p>
+                    <span>123</span>
+                </div>
+            </li>
+            <li>
+                <h3 data-num="9%">佳酒店票选酒店</h3>
+                <div>
+                    <p></p>
+                    <span>123</span>
+                </div>
+            </li>
+            <li>
+                <h3 data-num="70%">佳酒店酒店</h3>
+                <div>
+                    <p></p>
+                    <span>123</span>
+                </div>
+            </li>
+            <li>
+                <h3 data-num="50%">佳酒店票选酒店</h3>
+                <div>
+                    <p></p>
+                    <span>123</span>
+                </div>
+            </li>
+            <li>
+                <h3 data-num="90%">佳酒店票选酒店</h3>
+                <div>
+                    <p></p>
+                    <span>123</span>
+                </div>
+            </li>
+            <li>
+                <h3 data-num="30%">佳酒店选酒店</h3>
+                <div>
+                    <p></p>
+                    <span>123</span>
+                </div>
+            </li>
+            <li>
+                <h3 data-num="10%">佳酒店票选酒店</h3>
+                <div>
+                    <p></p>
+                    <span>123</span>
+                </div>
+            </li>
+            <li>
+                <h3 data-num="60%">佳酒店票酒店</h3>
+                <div>
+                    <p></p>
+                    <span>123</span>
+                </div>
+            </li>
+        </ul>
+
+        <script type="text/javascript">
+        (function(){
+            var $vote = $('.js_vote li h3');
+
+            $vote.on('click', function(){
+                var num = $(this).data('num'),
+                    $p = $(this).closest('li').find('p');
+
+                $p.css({
+                    '-webkit-transform': 'translate3d('+num+', 0, 0)',
+                    '-webkit-transition': '-webkit-transform 1s ease'
+                });
+            });
+        })();
+        </script>
+    </body>
+</html>
