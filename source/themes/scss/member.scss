@@ -371,4 +371,20 @@
             background-size: 70% auto;
         }
     }
+
+    .this_member_app{
+        display: -webkit-box;
+        li{
+            width: auto;
+            -webkit-box-flex: 1;
+            text-align: center;
+            color: #727171;
+            padding: 10px 0;
+            img{
+                display: block;
+                width: 60px;
+                margin: 0 auto;
+            }
+        }
+    }
 }

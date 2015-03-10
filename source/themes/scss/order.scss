@@ -219,6 +219,23 @@
         padding: 10px;
         background: #fff;
     }
+    .this_text_01{
+        border-top: 1px solid #ccc;
+        margin: 0 10px;
+        margin-bottom: 20px;
+        padding: 10px;
+        text-align: center;
+        line-height: 20px;
+        span{
+            color: #9f9fa0;
+        }
+    }
+    .this_text_02{
+        line-height: 20px;
+        margin: 10px;
+        padding-top: 20px;
+        border-top: 1px solid #ccc;
+    }
 
     .this_pay_type{
         li{
@@ -261,16 +278,13 @@
         font-size: 20px;
         padding-bottom: 20px;
     }
-
-    .this_text_01{
-        border-top: 1px solid #ccc;
-        margin: 0 10px;
-        margin-bottom: 20px;
-        padding: 10px;
+    .this_pay_fail{
+        background: url(images/icon_49.png) no-repeat center 20px;
+        padding-top: 180px;
+        background-size: 150px auto;
+        color: #e5004f;
         text-align: center;
-        line-height: 20px;
-        span{
-            color: #9f9fa0;
-        }
+        font-size: 20px;
+        padding-bottom: 10px;
     }
 }
