@@ -107,14 +107,18 @@
         li{
             border-bottom: 1px solid #1b64b0;
             display: -webkit-box;
-            height: 100px;
+            -webkit-box-align: center;
+            background: -webkit-linear-gradient(left, #fff 0, #fff 70px, #1b64b0 70px, #fff 71px, #fff);
             div{
                 &:nth-child(1){
-                    width: 60px;
-                    line-height: 140px;
+                    width: 70px;
+                    height: 20px;
+                    line-height: 20px;
+                    padding-top: 45px;
+                    padding-bottom: 10px;
                     overflow: hidden;
                     text-align: center;
-                    border-right: 1px solid #1b64b0;
+                    // border-right: 1px solid #1b64b0;
                 }
                 &:nth-child(2){
                     -webkit-box-flex: 1;
@@ -122,27 +126,27 @@
                 }
             }
             .this_icon_air{
-                background: url(images/icon_21.png) no-repeat center 20px;
+                background: url(images/icon_21.png) no-repeat center 10px;
                 background-size: 40px auto;
             }
             .this_icon_hotel{
-                background: url(images/icon_22.png) no-repeat center 20px;
+                background: url(images/icon_22.png) no-repeat center 10px;
                 background-size: 40px auto;
             }
             .this_icon_car{
-                background: url(images/icon_23.png) no-repeat center 20px;
+                background: url(images/icon_23.png) no-repeat center 10px;
                 background-size: 40px auto;
             }
             .this_icon_visit{
-                background: url(images/icon_24.png) no-repeat center 20px;
+                background: url(images/icon_24.png) no-repeat center 10px;
                 background-size: 40px auto;
             }
             .this_icon_dine{
-                background: url(images/icon_25.png) no-repeat center 20px;
+                background: url(images/icon_25.png) no-repeat center 10px;
                 background-size: 40px auto;
             }
             .this_icon_other{
-                background: url(images/icon_26.png) no-repeat center 20px;
+                background: url(images/icon_26.png) no-repeat center 10px;
                 background-size: 40px auto;
             }
         }
