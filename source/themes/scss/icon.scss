@@ -12,7 +12,9 @@
 .icon_about,
 .icon_mycomment,
 .icon_path,
-.icon_mycollect{
+.icon_mycollect,
+.icon_female,
+.icon_male{
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -94,3 +96,12 @@
     background-size: 25px auto;
 }
 
+.icon_female{
+    background: url(images/icon_female.png) no-repeat center center;
+    background-size: 25px auto;
+}
+
+.icon_male{
+    background: url(images/icon_male.png) no-repeat center center;
+    background-size: 25px auto;
+}

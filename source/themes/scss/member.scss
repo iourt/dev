@@ -332,6 +332,25 @@
                 outline: none;
                 line-height: 30px;
             }
+            &.this_i_fm{
+                div{
+                    float: right;
+                    span{
+                        position: relative;
+                        &.selected:after{
+                            content: "";
+                            display: block;
+                            width: 10px;
+                            height: 10px;
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                            background: url(images/icon_ok.png) no-repeat center center;
+                            background-size: 100% auto;
+                        }
+                    }
+                }
+            }
         }
     }
 
