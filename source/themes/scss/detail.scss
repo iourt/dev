@@ -74,16 +74,10 @@
             text-align: center;
             color: #fff;
             line-height: 30px;
-
+            width: 0;
             -webkit-box-flex: 1;
             &.current{
                 background: #438fcd;
-            }
-            &:nth-child(1){
-                margin-right: 5px;
-            }
-            &:nth-child(2){
-                margin-left: 5px;
             }
         }
     }

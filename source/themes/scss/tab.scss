@@ -1,4 +1,6 @@
-﻿.tab_01{
+﻿
+
+.tab_01{
     background: #1965b0;
     height: 40px;
     color: #fff;
@@ -67,6 +69,36 @@
         }
         &:nth-child(2){
             margin-left: 5px;
+        }
+    }
+}
+
+.tab_03{
+    display: -webkit-box;
+    padding: 0 10px;
+    li{
+        background: #717071;
+        width: 0;
+        text-align: center;
+        color: #fff;
+        line-height: 30px;
+        -webkit-box-flex: 1;
+        cursor: pointer;
+        &.current{
+            background: #e5004f;
+            position: relative;
+            &:after{
+                display: block;
+                content: "";
+                width: 0;
+                height: 0;
+                position: absolute;
+                left: 50%;
+                bottom: -10px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: #e5004f transparent transparent transparent;
+            }
         }
     }
 }
