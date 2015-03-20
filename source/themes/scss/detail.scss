@@ -75,9 +75,13 @@
             color: #fff;
             line-height: 30px;
             width: 0;
+            margin-right: 5px;
             -webkit-box-flex: 1;
             &.current{
                 background: #438fcd;
+            }
+            &:last-child{
+                margin-right: 0;
             }
         }
     }
