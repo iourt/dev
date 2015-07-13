@@ -1,0 +1,149 @@
+﻿.dev_08_top {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 200px;
+    height: 380px;
+    font-size: 16px;
+    background: url(images/bg_01.jpg) no-repeat 0 0 #fff;
+    p {
+        padding-left: 20px;
+        line-height: 30px;
+    }
+}
+
+.dev_08_icon {
+    width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    margin-bottom: 20px;
+    img {
+        width: 980px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+.dev_08_menu {
+    width: 980px;
+    padding: 0 10px;
+    background: #000;
+    line-height: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+
+.dev_08_title {
+    font-size: 16px;
+    line-height: 40px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+.dev_08_list {
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 0;
+    li {
+        display: inline-block;
+        margin-bottom: 10px;
+        width: 490px;
+        position: relative;
+        &.a {
+            padding-right: 10px;
+        }
+        &.b {
+            padding-left: 10px;
+        }
+        img {
+            width: 100%;
+        }
+        div {
+            position: absolute;
+            line-height: 20px;
+            padding: 10px;
+            color: #fff;
+            left: 0;
+            bottom: 0;
+            z-index: 2;
+            font-size: 16px;
+        }
+    }
+}
+
+
+
+.dev_08_input {
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    dt {
+        line-height: 40px;
+        height: 40px;
+        text-indent: 10px;
+        color: #fff;
+        font-size: 16px;
+        background: #000;
+    }
+    dd {
+        padding: 10px;
+        background: #ddd;
+        li {
+            padding: 0 10px;
+            background: #fff;
+            line-height: 30px;
+            font-size: 14px;
+            margin-bottom: 10px;
+            div {
+                background: #fff;
+                width: 100px;
+                height: 100px;
+                display: inline-block;
+                position: relative;
+                margin-right: 10px;
+                span,
+                i {
+                    background: #dbdbd7;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                }
+                span {
+                    width: 50px;
+                    height: 10px;
+                    margin-left: -25px;
+                    margin-top: -5px;
+                }
+                i {
+                    width: 10px;
+                    height: 50px;
+                    margin-left: -5px;
+                    margin-top: -25px;
+                }
+            }
+            &.this_no {
+                padding: 0;
+                background: none;
+                font-size: 0;
+            }
+        }
+    }
+}
+
+
+.dev_08_btn {
+    width: 100px;
+    line-height: 40px;
+    text-align: center;
+    background: #ddd;
+    margin: 0 auto;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
