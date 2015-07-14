@@ -1,1 +1,73 @@
-﻿
+﻿/*****/
+
+.dev_09_input {
+    font-size: 14px;
+    width: 100%;
+    dt {
+        font-size: 16px;
+        background: #000;
+        color: #fff;
+        text-indent: 10px;
+        line-height: 40px;
+    }
+    dd {
+        background: #eee;
+        padding: 10px;
+        ul {
+            li {
+                margin-bottom: 10px;
+                background: #fff;
+                line-height: 30px;
+                display: -webkit-box;
+                padding: 5px 0;
+                -webkit-box-align: center;
+                label,
+                input,
+                textarea {
+                    display: block;
+                }
+                label {
+                    padding: 0 10px;
+                }
+                input,
+                textarea {
+                    line-height: 20px;
+                    border: 0;
+                    outline: none;
+                    padding: 10px;
+                    -webkit-box-sizing: border-box;
+                    -webkit-box-flex: 1;
+                }
+                textarea {
+                    height: 100px;
+                }
+                &.this_no {
+                    background: none;
+                }
+                &.this_sex {
+                    background: none;
+                    div {
+                        width: 0;
+                        -webkit-box-flex: 1;
+                    }
+                    input {
+                        -webkit-box-flex: 0;
+                        -webkit-appearance: button;
+                        width: 30px;
+                        height: 30px;
+                        background-color: #fff;
+                        background: url(images/icon_sex.png) no-repeat 0 0 #fff;
+                        background-size: 100% auto;
+                        margin-left: 10px;
+                        &:checked {
+                            background-color: #fff100;
+                        }
+                        &:nth-child(3) {
+                            background-position: 0 -28px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
