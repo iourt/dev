@@ -4,12 +4,14 @@ var os      = require('os'),
 	clean   = require('gulp-clean'),
 	sass    = require('gulp-sass'),
 	connect = require('gulp-connect'),
-    zip     = require('gulp-zip');
+    zip     = require('gulp-zip'),
+    plumber = require('gulp-plumber');
 
 var task = {
 	sass: function(type) {
 
 		gulp.src('./source/themes/all.scss')
+            .pipe(plumber())
 			.pipe(sass())
 			.pipe(gulp.dest('./'+ type +'/themes/'));
 
