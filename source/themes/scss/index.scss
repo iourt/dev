@@ -1,30 +1,37 @@
 ﻿.dev_08_top {
-    width: 1000px;
+    width: 620px;
     margin: 0 auto;
-    padding-top: 200px;
-    height: 380px;
-    font-size: 16px;
-    background: url(images/bg_01.jpg) no-repeat 0 0 #fff;
-    p {
-        padding-left: 20px;
-        line-height: 30px;
+    font-size: 14px;
+    position: relative;
+    div {
+        position: absolute;
+        padding-right: 100px;
+        left: 0;
+        bottom: 10px;   
+        p {
+            padding-left: 20px;
+            line-height: 30px;
+        }
+    }
+    img {
+        width: 100%;
     }
 }
 
 .dev_08_icon {
-    width: 1000px;
+    width: 620px;
     margin: 0 auto;
     background: #fff;
     margin-bottom: 20px;
     img {
-        width: 980px;
+        width: 600px;
         margin: 0 auto;
         display: block;
     }
 }
 
 .dev_08_menu {
-    width: 980px;
+    width: 600px;
     padding: 0 10px;
     background: #000;
     line-height: 40px;
@@ -41,19 +48,19 @@
 .dev_08_title {
     font-size: 16px;
     line-height: 40px;
-    width: 1000px;
+    width: 620px;
     margin: 0 auto;
 }
 
 
 .dev_08_list {
-    width: 1000px;
+    width: 620px;
     margin: 0 auto;
     font-size: 0;
     li {
         display: inline-block;
         margin-bottom: 10px;
-        width: 490px;
+        width: 300px;
         position: relative;
         &.a {
             padding-right: 10px;
@@ -80,7 +87,7 @@
 
 
 .dev_08_input {
-    width: 1000px;
+    width: 620px;
     margin: 0 auto;
     margin-bottom: 10px;
     dt {
