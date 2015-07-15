@@ -78,6 +78,14 @@
                     background: none;
                     -webkit-box-pack: center;
                 }
+				&.this_radio {
+					div {
+                        input {
+                            display: inline-block;
+                            margin-right: 10px;
+                        }
+					}
+				}
                 &.this_img {
                     background: #fff;
                     div {
